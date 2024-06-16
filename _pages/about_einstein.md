@@ -1,4 +1,6 @@
-`Computer Scientist`. My research interest is `software engineering` and computer science education. I’m currently focused on reducing query fatigue in searching the web for exploratory learning tasks. This involves exploring open questions that need to be answered towards designing an intelligent `conversational agents` (chatbots) for computer science students engaging in exploratory search.
+I am a `Research Assistant` within the Software Analysis and Compilation (SAC) Lab at the University of Delaware. I am also a software engineer, have served as an instuctor, teacher's assistant, and consultant.
+
+`Computer Scientist`. My research interest is `software engineering` and `computer science education`. I’m currently focused on reducing query fatigue in searching the web for exploratory learning tasks. This involves exploring open questions that need to be answered towards designing an intelligent `conversational agents` (chatbots) for computer science students engaging in exploratory search.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
