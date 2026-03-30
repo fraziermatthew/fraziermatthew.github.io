@@ -9,7 +9,7 @@ description: >
   Senior software engineer building scalable backend systems, AI-powered applications,
   and production data platforms.
 
-url: https://YOUR_GITHUB_USERNAME.github.io
+url: https://fraziermatthew.github.io
 baseurl: ""
 
 navbar_fixed: true
@@ -19,7 +19,7 @@ max_width: 1000px
 
 # Social links
 linkedin_username: matthewrfrazier
-github_username: YOUR_GITHUB_USERNAME
+github_username: fraziermatthew
 scholar_userid: ""
 orcid_id: ""
 
