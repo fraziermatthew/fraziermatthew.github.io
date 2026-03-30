@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://fraziermatthew.github.io//sitemap.xml
+Sitemap: https://fraziermatthew.github.io/sitemap.xml
