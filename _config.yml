@@ -33,7 +33,7 @@ profile:
     <p>Senior Software Engineer</p>
     <p>Ph.D., Computer and Information Sciences</p>
 
-news: true
+news: false
 latest_posts: false
 selected_papers: false
 
@@ -249,3 +249,9 @@ third_party_libraries:
 
 jekyll-minifier:
   compress_js: false
+
+exclude:
+  - _posts
+  - _news
+  - _bibliography
+  - "*.ipynb"
