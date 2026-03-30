@@ -1,0 +1,26 @@
+---
+---
+
+// Minimal polish layer for the al-folio theme.
+
+.post-title,
+.news-title,
+.title {
+  letter-spacing: 0.01em;
+}
+
+.profile img {
+  border-radius: 12px;
+}
+
+.clearfix p,
+.post-description,
+.project p {
+  line-height: 1.7;
+}
+
+blockquote {
+  border-left: 3px solid #999;
+  padding-left: 1rem;
+  font-style: italic;
+}
