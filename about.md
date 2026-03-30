@@ -5,7 +5,7 @@ permalink: /
 subtitle: Senior software engineer building scalable backend systems, full-stack applications, and AI-powered workflows.
 profile:
   align: right
-  image: profile-placeholder.png
+  image: denver3.jpg
   image_circular: false
 news: false
 selected_papers: false
