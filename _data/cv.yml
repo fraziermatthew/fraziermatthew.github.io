@@ -11,8 +11,8 @@
       institution: University of Delaware
       year: 2018 - 2024
       description:
-        - Advisor\: Lori Pollock
-        - Research in conversational agents, HCI, and applied AI
+        - Advised by Lori Pollock
+        - Research in conversational agents and applied AI
     - title: M.Sc., Computer Science (Cum Laude)
       institution: West Chester University of Pennsylvania
       year: 2016 - 2017
@@ -58,15 +58,15 @@
       institution: University of Delaware
       year: 2018 - 2024
       description:
-        - Conducted research on conversational agents for computer science education
-        - Designed LLM-based systems using RAG, CoT, and prompt engineering techniques
+        - Conducted mixed-methods empirical research on conversational agents for computer science education
+        - Designed LLM-based systems using prompt engineering techniques (RAG, CoT) 
         - Taught undergraduate computer science courses (programming, data structures, ethics)
 
     - title: Graduate Assistant & Researcher
       institution: West Chester University of Pennsylvania
       year: 2016 - 2017
       description:
-        - Developed computer vision system for parking lot object detection (Python, OpenCV)
+        - Developed computer vision system for parking lot availability object detection (Python, OpenCV)
 
 - title: Publications
   type: time_table

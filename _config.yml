@@ -108,14 +108,14 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Machination Learning # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+blog_name: Machination Learning # used if you enable the blog again
+# blog_nav_title: blog # uncomment and set a string to show "blog" in the navbar
 blog_description: Join me on my Stochastic Graduate Descent (to Enlightment? Madness? Only time will tell!)
 permalink: /blog/:year/:title/
 
-# Pagination
+# Pagination (for blog/index.html; set enabled: true when blog is not excluded)
 pagination:
-  enabled: true
+  enabled: false
 
 giscus:
   repo: fraziermatthew/fraziermatthew.github.io      # <your-github-user-name>/<your-github-repo-name>
@@ -182,6 +182,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - blog
+  - _posts
 keep_files:
   - CNAME
   - .nojekyll
@@ -223,7 +225,7 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  enabled: [] # blog archives disabled; set to [year, tags, categories] if you re-enable the blog
   layouts:
     year: archive-year
     tag: archive-tag

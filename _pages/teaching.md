@@ -17,7 +17,7 @@ nav_order: 5
 - Prof. Katie Wassil, Spring '23 (TA)
 
 ##### *"Computers, Ethics and Society"* (CISC 355)
-- Instructor, Summer '22 (J22)
+- Instructor, Summer '22
 - Prof. T. Greg Lynch, Spring '19 (TA)
 - Prof. T. Greg Lynch, Fall '19 (TA)
 - Prof. T. Greg Lynch, Winter '20 (TA)
@@ -32,7 +32,7 @@ nav_order: 5
 - Prof. Katie Wassil, Fall '19 (TA)
 - Prof. Katie Wassil, Fall '20 (TA)
 
-##### *"Data Structures"* (CISC 220)
+##### *"[Data Structures](https://www.eecis.udel.edu/~yarringt/CISC220/)"* (CISC 220)
 - Prof. Debra Yarrington, Spring '20 (TA)
 
 ---
@@ -46,7 +46,7 @@ nav_order: 5
 
 ### Responsibilities Included
 
-- Designed and delivered lectures, assignments, and course materials as Instructor for CISC 181 and CISC 355
+- Designed and delivered lectures, assignments, and course materials as an Instructor for CISC 181 and CISC 355
 - Created original final projects for CISC 181, including full specifications and evaluation criteria
 - Led classroom instruction, student engagement, and course direction as primary instructor
 - Ran lab sessions for CISC 106, guiding students through weekly programming assignments and reinforcing lecture material

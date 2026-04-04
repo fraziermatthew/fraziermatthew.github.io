@@ -1,0 +1,106 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Aniket Rege
+    - name: Languages
+      value: English, Hindi, Marathi
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D, Computer Sciences
+      institution: University of Wisconsin-Madison
+      year: 2023 - present
+      description:
+        - Working on Preference Learning and Generative Vision Models
+    - title: MS, Electrical and Computer Engineering
+      institution: University of Washington, Seattle
+      year: 2021 - 2023
+      description:
+        - Graduate Researcher at RAIVN Lab, Department of Computer Science
+        - Research focus on visual representation learning, learning from minimal supervision, and large scale image retrieval
+        - Graduate T.A.
+    - title: B. Tech, Electronics and Communication Engineering
+      institution: National Institute of Technology Karnataka
+      year: 2014-2018
+      description:
+        - Thesis on fairness of QUIC Protocol in real-world deployment.
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Scientist Intern
+      institution: Meta, Redmond
+      year: 2025
+      description:
+        - Addressing very long video video understanding (~1 week +) with an agentic approach, EGAgent
+        - Key contribution - modeling inter-entity relationships with a temporally annotated entity-scene graph
+        - State-of-the-art results on EgoLife and competitive on Video-MME (Long)
+    - title: Applied Research Intern
+      institution: NVIDIA, Redmond
+      year: 2022
+      description:
+        - Improved performance of MultiView LidarNet on pedestrians, a critical safety and reliability issue for autonomous vehicles
+        - Incorporation of pedestrian orientation-aware training schema to improve precision on cars by 21.3% and pedestrians by 14.7% at cost to recall
+        - To model long-range dependencies in representation subspace of Lidar point cloud, added naive multi-head attention at deeper layers, as well as ViT-style patched multi-head attention at shallower layers
+        - Creation of attention-augmented CNN improved overall pedestrian performance (+8% recall, +7.5% precision) at only +1.5 ms inference cost while also improving car performance
+    - title: Research Engineer
+      institution: Samsung Research, Bangalore
+      year: 2018 - 2021
+      description:
+        - Founding member in the team that developed and shipped Single Take Camera, the USP of the Galaxy S20 smartphone, which included an ML classification model for portrait mode effects and overall system logic
+        - Published two papers on structured video representations for motion understanding (ICCV W '21) and intelligent facial texture smoothing (CVPR W '20)
+        - Granted two US Patents for work on facial texture smoothing and deep learning candid image classification
+
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2023
+      items: 
+        - Department of Computer Sciences Scholarship
+    - year: 2022
+      items: 
+        - NeurIPS Scholar
+        - University of Washington Graduate School Award
+    - year: 2021
+      items: 
+        - Samsung HQ Best Project Award (Single Take Camera)
+    - year: 2019
+      items: 
+        - Samsung Best Paper '19 Finalist (Selected from all worldwide offices)
+        - Samsung India Outstanding Contribution Award (AI Beauty Solution shipped to 50M+ devices)
+    - year: 2017
+      items:
+        - Road to Global Entrepreneurship Summit (GES) '17 national finalist for "An analysis of sleep hygiene" project 
+
+- title: Extracurriculars
+  type: time_table
+  contents:
+    - title: Convener and Head
+      institution: Indian Society for Technical Education (ISTE), NITK
+      year: 2017-18
+      description:
+        - Led a team of 100+ students to conduct technical talk and cross-domain technical projects across STEM fields, business, literature, and graphic design.
+        - Head of the Electrical Engineering special interest group.
+        - Pioneered NITK's first annual technical club project expo in association with IEEE-NITK
+
+    - title: Joint Convener and Head
+      institution: Engineer NITK (Technical Fest)
+      year: 2017
+      description:
+        - Joint head of NITK's annual tech fest, Engineer, the second largest in South India.
+        - Co-led the Technites Committee, a three day expo of EECS projects primarily focused on embedded electronics and sound engineering.
+        - Initiated and organized the university's first cross-campus hackathon during the annual tech fest with SRIB.
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items: 
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
