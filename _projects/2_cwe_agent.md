@@ -1,13 +1,16 @@
 ---
 layout: page
-title: CWE Educational Vulnerability Injection System
+title: CWE Vulnerability Injection System
 description: Multi-agent AI pipeline for secure coding education and vulnerability assessment
+img: assets/img/cwe.png
 importance: 2
-category: work
+category: research
 permalink: /projects/cwe-agent/
 ---
 
-The CWE Educational Vulnerability Injection System is a **multi-agent AI pipeline** designed to support secure coding education by injecting, evaluating, ranking, and teaching software vulnerabilities in student-submitted code.
+[Common Weakness Enumeration](https://cwe.mitre.org/) (CWE) is a community-developed, MITRE-sponsored list of software and hardware flaws that can lead to vulnerabilities. It acts as a standardized dictionary to identify, mitigate, and prevent security weaknesses. CWEs describe the root cause of a vulnerability (e.g., buffer overflow), unlike CVEs (Vulnerability) or CVSS (Severity), which identify specific, exploitable instances.
+
+The Common Weakness Enumeration (CWE) Educational Vulnerability Injection System is a **multi-agent AI pipeline** designed to support secure coding education by injecting, evaluating, ranking, and teaching software vulnerabilities in student-submitted code.
 
 Rather than treating vulnerability detection as a static analysis task, the system frames security learning as an **interactive educational workflow**. It uses contextual information from course materials and assignment prompts to generate vulnerability variants that are relevant to the student’s code, then evaluates which injected weakness would create the most meaningful learning opportunity.
 

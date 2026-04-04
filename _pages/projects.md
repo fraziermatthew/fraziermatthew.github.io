@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Selected systems and research at the intersection of AI, data, and software engineering.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [work, research]
 horizontal: false
 ---
 

@@ -1,61 +1,81 @@
 ---
 layout: page
 title: Brand Compass
-description: AI-driven market intelligence and insight generation platform
-img: assets/img/brand_compass.jpg
+description: LLM-guided narrative generation for a hierarchical brand health scorecard
 importance: 1
 category: work
 permalink: /projects/brand-compass/
+img: assets/img/cwe.png
 ---
 
-Brand Compass is an **AI-driven market intelligence platform** that transforms large-scale marketing, audience, and competitive data into structured, decision-ready insights.
+Brand Compass is an **AI-assisted narrative layer** built on top of a hierarchical brand health scorecard that evaluates a client’s position within its market and competitive landscape.
 
-Unlike traditional dashboards, the system generates **hierarchical, narrative-driven outputs** that help users understand brand positioning, market dynamics, and strategic opportunities.
+The underlying scorecard was created using structured industry, client, and competitor data sources, with weighted sections spanning **Market Snapshot, Mental Availability, Physical Availability, and Perception**. Within each section, the dashboard presents charts, tables, and scores derived from multiple datasets and benchmarks.
+
+My contribution focused on designing how LLMs interpret that scorecard and the supporting raw data to generate **cohesive, decision-ready summaries** throughout the dashboard.
 
 ---
 
 ## What I Built
 
-I designed and developed the core system powering insight generation, combining:
+I designed the prompt architecture and reasoning strategy that enabled the LLM to turn structured scorecard outputs into clear, client-facing narratives.
 
-- **LLM-driven reasoning pipelines** for structured analysis  
-- **Prompt engineering frameworks** (CoT, ReAct, retrieval-based context injection)  
-- **Distributed backend services** for scalable data processing  
-- **Analytics pipelines** that transform raw data into interpretable outputs  
+This included:
+
+- **Prompt frameworks** using **ReAct, few-shot, and chain-of-thought reasoning**
+- Guidance for interpreting both **section-level scores** and **chart-level supporting visuals**
+- Logic for generating summaries that reflect the **hierarchical weighting and structure** of the scorecard
+- Prompt constraints to encourage **coherent storytelling across the full dashboard**, so individual insights reinforced rather than contradicted one another
 
 ---
 
-## System Design
+## System Context
 
-The platform operates as a layered intelligence system:
+The scorecard integrates multiple data sources across brand, competitive, and market analysis, including survey, media, sentiment, and advertising datasets.
 
-- **Data Layer** → Aggregates campaign, audience, and competitive datasets  
-- **Processing Layer** → Normalizes and structures inputs across dimensions  
-- **LLM Layer** → Generates insights using controlled reasoning workflows  
-- **Presentation Layer** → Outputs a hierarchical brand scorecard  
+These inputs are organized into four primary sections:
 
-This architecture enables the system to move beyond static reporting and toward **explainable, AI-assisted decision-making**.
+- **Market Snapshot**
+- **Mental Availability**
+- **Physical Availability**
+- **Perception**
+
+Each section contains its own metrics, visuals, and weighted score, and the LLM-generated summaries must interpret those signals in context while maintaining consistency with the broader brand story.
+
+---
+
+## My Contribution
+
+I did **not** create the underlying weighted score calculations or the mathematical framework behind the brand health model.
+
+My role was to design the **LLM integration layer** that translated those structured outputs into useful written insights.
+
+More specifically, I:
+
+- Positioned prompts to interpret scorecard data and raw supporting data together
+- Designed prompt patterns that guided the model toward **summary generation rather than unsupported freeform analysis**
+- Structured the system so the model could generate insights for both **individual charts** and **higher-level section summaries**
+- Focused on maintaining a **cohesive narrative across the dashboard**, ensuring multiple generated insights aligned into a unified brand story
+
+This work sat at the intersection of **prompt engineering, applied AI, and decision-support UX**.
 
 ---
 
 ## Technical Focus
 
-This project sits at the intersection of:
+This project reflects my interest in building AI systems that sit on top of structured analytical frameworks rather than replacing them.
 
-- Software Engineering  
-- Applied AI (LLMs, RAG, reasoning workflows)  
-- Data Systems and Analytics Infrastructure  
+It combines:
 
-It reflects my focus on building systems that **bridge raw data and human decision-making**.
+- LLM prompt design
+- narrative consistency across multi-panel dashboards
+- hierarchical interpretation of weighted business metrics
+- applied AI for decision-support systems
 
 ---
 
 ## Outcome
 
-Brand Compass demonstrates how AI can be used not just to answer questions, but to:
+Brand Compass explored how LLMs can enhance strategic analytics interfaces by turning structured scorecard outputs into more interpretable narratives.
 
-- Structure ambiguity  
-- Surface strategic patterns  
-- Deliver actionable insights at scale  
-
-It represents a shift from dashboards to **intelligent, narrative-driven analytics systems**.
+The project helped demonstrate both the promise and the limitations of using LLMs in this setting, especially when the goal is not just to summarize one metric, but to tell a **coherent story across an entire analytical dashboard**.
