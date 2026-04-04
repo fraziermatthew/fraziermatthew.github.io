@@ -78,3 +78,31 @@ Here's the code for the last row of images above:
 </div>
 ```
 {% endraw %}
+
+---
+layout: page
+title: Brand Compass
+description: AI-driven market intelligence and insight generation platform
+importance: 1
+category: work
+permalink: /projects/brand-compass/
+---
+
+Brand Compass is an **AI-driven market intelligence platform** designed to transform complex marketing, audience, and competitor data into structured, decision-ready insights. The system synthesizes large-scale datasets into a hierarchical scorecard that helps users understand brand positioning, market dynamics, and strategic opportunities.
+
+I designed and built the underlying insight generation workflows, combining **LLM-powered reasoning**, **prompt engineering**, and **data system design** to move beyond static dashboards and toward more interpretable, narrative-driven analytics.
+
+### Highlights
+
+- Built a hierarchical insight generation system spanning market, audience, perception, and growth dimensions
+- Developed **LLM-powered workflows** using structured prompt engineering patterns such as **CoT**, **ReAct**, and retrieval-based context injection
+- Integrated backend services and analytics pipelines to support scalable, real-time insight generation
+- Designed the system to convert raw campaign and benchmark data into explainable, actionable outputs for decision-makers
+
+### Technical Focus
+
+The project sits at the intersection of **software engineering**, **applied AI**, and **analytics infrastructure**. It reflects my broader interest in building systems that connect data pipelines, machine intelligence, and user-facing decision support.
+
+### Outcome
+
+Brand Compass demonstrates how AI can be used not just to answer questions, but to structure ambiguity, surface strategic patterns, and help people make better decisions from complex data.
