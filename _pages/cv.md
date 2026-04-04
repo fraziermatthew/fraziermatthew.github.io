@@ -1,8 +1,8 @@
 ---
 layout: cv
-permalink: /cv/
-title: cv
+permalink: /resume/
+title: resume
 nav: true
 nav_order: 4
-cv_pdf: Aniket_CV.pdf
+cv_pdf: Resume_3.19.26-swe.pdf
 ---
