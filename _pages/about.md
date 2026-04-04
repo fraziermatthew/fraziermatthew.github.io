@@ -13,7 +13,7 @@ profile:
     <p>PhD, Computer Science</p>
     <p>University of Delaware</p>
     <br/>
-    <p>Senior Software Engineer</p>
+    <p>Sr. Software Engineer</p>
     <p>Goodway Group</p>
 
 news: true  # includes a list of news items
