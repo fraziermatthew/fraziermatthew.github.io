@@ -1,8 +1,9 @@
 github_users:
-  - aniketrege
+  - fraziermatthew
+  - mattfraz
 
 github_repos:
-  - RAIVNLab/MRL
-  - RAIVNLab/AdANNS
-  - aniketrege/cure-bench
-  - facebookresearch/egagent
+  # - RAIVNLab/MRL
+  # - RAIVNLab/AdANNS
+  # - aniketrege/cure-bench
+  # - facebookresearch/egagent
