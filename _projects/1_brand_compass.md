@@ -8,6 +8,10 @@ category: work
 permalink: /projects/brand-compass/
 ---
 
+<p style="margin-top: -10px; margin-bottom: 20px;">
+  <a href="/projects/" style="text-decoration: none; font-size: 14px;">← Back to projects</a>
+</p>
+
 Brand Compass is an **AI-assisted narrative layer** built on top of a hierarchical brand health scorecard that evaluates a client’s position within its market and competitive landscape.
 
 The underlying scorecard was created using structured industry, client, and competitor data sources, with weighted sections spanning **Market Snapshot, Mental Availability, Physical Availability, and Perception**. Within each section, the dashboard presents charts, tables, and scores derived from multiple datasets and benchmarks.

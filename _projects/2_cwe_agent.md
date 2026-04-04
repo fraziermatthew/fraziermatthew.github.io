@@ -8,6 +8,10 @@ category: research
 permalink: /projects/cwe-agent/
 ---
 
+<p style="margin-top: -10px; margin-bottom: 20px;">
+  <a href="/projects/" style="text-decoration: none; font-size: 14px;">← Back to projects</a>
+</p>
+
 [Common Weakness Enumeration](https://cwe.mitre.org/) (CWE) is a community-developed, MITRE-sponsored list of software and hardware flaws that can lead to vulnerabilities. It acts as a standardized dictionary to identify, mitigate, and prevent security weaknesses. CWEs describe the root cause of a vulnerability (e.g., buffer overflow), unlike CVEs (Vulnerability) or CVSS (Severity), which identify specific, exploitable instances.
 
 The Common Weakness Enumeration (CWE) Educational Vulnerability Injection System is a **multi-agent AI pipeline** designed to support secure coding education by injecting, evaluating, ranking, and teaching software vulnerabilities in student-submitted code.

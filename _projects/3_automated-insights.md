@@ -8,6 +8,10 @@ category: work
 permalink: /projects/automated-insights/
 ---
 
+<p style="margin-top: -10px; margin-bottom: 20px;">
+  <a href="/projects/" style="text-decoration: none; font-size: 14px;">← Back to projects</a>
+</p>
+
 The Automated Insights System is a **production-oriented AI analytics pipeline** designed to generate structured, decision-ready insights from campaign performance data across **overall, channel, and audience dimensions**.
 
 <div class="row justify-content-sm-center">
