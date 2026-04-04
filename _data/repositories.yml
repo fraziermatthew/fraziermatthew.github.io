@@ -2,8 +2,7 @@ github_users:
   - fraziermatthew
 
 github_repos:
- - 
-  # - RAIVNLab/MRL
-  # - RAIVNLab/AdANNS
-  # - aniketrege/cure-bench
-  # - facebookresearch/egagent
+ - fraziermatthew/codee
+ - fraziermatthew/cwe-agent
+ - fraziermatthew/aida_search
+ - fraziermatthew/aida_api
