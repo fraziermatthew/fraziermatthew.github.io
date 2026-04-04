@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Brand Compass | Matthew  Frazier</title>
     <meta name="author" content="Matthew  Frazier">
-    <meta name="description" content="AI-driven market intelligence and insight generation platform">
+    <meta name="description" content="LLM-guided narrative generation for a hierarchical brand health scorecard">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -85,9 +85,6 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/teaching/">teaching</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/teaching/">teaching</a>
-              </li>
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
@@ -111,77 +108,94 @@
 
           <header class="post-header">
             <h1 class="post-title">Brand Compass</h1>
-            <p class="post-description">AI-driven market intelligence and insight generation platform</p>
+            <p class="post-description">LLM-guided narrative generation for a hierarchical brand health scorecard</p>
           </header>
 
           <article>
-            <p>Brand Compass is an <strong>AI-driven market intelligence platform</strong> that transforms large-scale marketing, audience, and competitive data into structured, decision-ready insights.</p>
+            <p>Brand Compass is an <strong>AI-assisted narrative layer</strong> built on top of a hierarchical brand health scorecard that evaluates a client’s position within its market and competitive landscape.</p>
 
-<p>Unlike traditional dashboards, the system generates <strong>hierarchical, narrative-driven outputs</strong> that help users understand brand positioning, market dynamics, and strategic opportunities.</p>
+<p>The underlying scorecard was created using structured industry, client, and competitor data sources, with weighted sections spanning <strong>Market Snapshot, Mental Availability, Physical Availability, and Perception</strong>. Within each section, the dashboard presents charts, tables, and scores derived from multiple datasets and benchmarks.</p>
+
+<p>My contribution focused on designing how LLMs interpret that scorecard and the supporting raw data to generate <strong>cohesive, decision-ready summaries</strong> throughout the dashboard.</p>
 
 <hr>
 
 <h2 id="what-i-built">What I Built</h2>
 
-<p>I designed and developed the core system powering insight generation, combining:</p>
+<p>I designed the prompt architecture and reasoning strategy that enabled the LLM to turn structured scorecard outputs into clear, client-facing narratives.</p>
+
+<p>This included:</p>
 
 <ul>
   <li>
-<strong>LLM-driven reasoning pipelines</strong> for structured analysis</li>
-  <li>
-<strong>Prompt engineering frameworks</strong> (CoT, ReAct, retrieval-based context injection)</li>
-  <li>
-<strong>Distributed backend services</strong> for scalable data processing</li>
-  <li>
-<strong>Analytics pipelines</strong> that transform raw data into interpretable outputs</li>
+<strong>Prompt frameworks</strong> using <strong>ReAct, few-shot, and chain-of-thought reasoning</strong>
+</li>
+  <li>Guidance for interpreting both <strong>section-level scores</strong> and <strong>chart-level supporting visuals</strong>
+</li>
+  <li>Logic for generating summaries that reflect the <strong>hierarchical weighting and structure</strong> of the scorecard</li>
+  <li>Prompt constraints to encourage <strong>coherent storytelling across the full dashboard</strong>, so individual insights reinforced rather than contradicted one another</li>
 </ul>
 
 <hr>
 
-<h2 id="system-design">System Design</h2>
+<h2 id="system-context">System Context</h2>
 
-<p>The platform operates as a layered intelligence system:</p>
+<p>The scorecard integrates multiple data sources across brand, competitive, and market analysis, including survey, media, sentiment, and advertising datasets.</p>
+
+<p>These inputs are organized into four primary sections:</p>
 
 <ul>
-  <li>
-<strong>Data Layer</strong> → Aggregates campaign, audience, and competitive datasets</li>
-  <li>
-<strong>Processing Layer</strong> → Normalizes and structures inputs across dimensions</li>
-  <li>
-<strong>LLM Layer</strong> → Generates insights using controlled reasoning workflows</li>
-  <li>
-<strong>Presentation Layer</strong> → Outputs a hierarchical brand scorecard</li>
+  <li><strong>Market Snapshot</strong></li>
+  <li><strong>Mental Availability</strong></li>
+  <li><strong>Physical Availability</strong></li>
+  <li><strong>Perception</strong></li>
 </ul>
 
-<p>This architecture enables the system to move beyond static reporting and toward <strong>explainable, AI-assisted decision-making</strong>.</p>
+<p>Each section contains its own metrics, visuals, and weighted score, and the LLM-generated summaries must interpret those signals in context while maintaining consistency with the broader brand story.</p>
+
+<hr>
+
+<h2 id="my-contribution">My Contribution</h2>
+
+<p>I did <strong>not</strong> create the underlying weighted score calculations or the mathematical framework behind the brand health model.</p>
+
+<p>My role was to design the <strong>LLM integration layer</strong> that translated those structured outputs into useful written insights.</p>
+
+<p>More specifically, I:</p>
+
+<ul>
+  <li>Positioned prompts to interpret scorecard data and raw supporting data together</li>
+  <li>Designed prompt patterns that guided the model toward <strong>summary generation rather than unsupported freeform analysis</strong>
+</li>
+  <li>Structured the system so the model could generate insights for both <strong>individual charts</strong> and <strong>higher-level section summaries</strong>
+</li>
+  <li>Focused on maintaining a <strong>cohesive narrative across the dashboard</strong>, ensuring multiple generated insights aligned into a unified brand story</li>
+</ul>
+
+<p>This work sat at the intersection of <strong>prompt engineering, applied AI, and decision-support UX</strong>.</p>
 
 <hr>
 
 <h2 id="technical-focus">Technical Focus</h2>
 
-<p>This project sits at the intersection of:</p>
+<p>This project reflects my interest in building AI systems that sit on top of structured analytical frameworks rather than replacing them.</p>
+
+<p>It combines:</p>
 
 <ul>
-  <li>Software Engineering</li>
-  <li>Applied AI (LLMs, RAG, reasoning workflows)</li>
-  <li>Data Systems and Analytics Infrastructure</li>
+  <li>LLM prompt design</li>
+  <li>narrative consistency across multi-panel dashboards</li>
+  <li>hierarchical interpretation of weighted business metrics</li>
+  <li>applied AI for decision-support systems</li>
 </ul>
-
-<p>It reflects my focus on building systems that <strong>bridge raw data and human decision-making</strong>.</p>
 
 <hr>
 
 <h2 id="outcome">Outcome</h2>
 
-<p>Brand Compass demonstrates how AI can be used not just to answer questions, but to:</p>
+<p>Brand Compass explored how LLMs can enhance strategic analytics interfaces by turning structured scorecard outputs into more interpretable narratives.</p>
 
-<ul>
-  <li>Structure ambiguity</li>
-  <li>Surface strategic patterns</li>
-  <li>Deliver actionable insights at scale</li>
-</ul>
-
-<p>It represents a shift from dashboards to <strong>intelligent, narrative-driven analytics systems</strong>.</p>
+<p>The project helped demonstrate both the promise and the limitations of using LLMs in this setting, especially when the goal is not just to summarize one metric, but to tell a <strong>coherent story across an entire analytical dashboard</strong>.</p>
 
           </article>
 
