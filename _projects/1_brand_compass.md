@@ -14,6 +14,15 @@ The underlying scorecard was created using structured industry, client, and comp
 
 My contribution focused on designing how LLMs interpret that scorecard and the supporting raw data to generate **cohesive, decision-ready summaries** throughout the dashboard.
 
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/brand_scorecard.png" title="Brand Compass Scorecard" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Example of the Brand Compass interface, where structured scorecard sections and AI-generated insights work together to tell a cohesive brand story.
+</div>
+
 ---
 
 ## What I Built

@@ -41,6 +41,15 @@ The architecture is organized as a staged pipeline:
 
 This design makes the system more than a vulnerability generator. It functions as an **AI-assisted instructional framework** for teaching secure software development.
 
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/cwe.png" title="CWE Agent Pipeline" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Multi-agent pipeline for injecting, evaluating, ranking, and explaining educational software vulnerabilities.
+</div>
+
 ---
 
 ## Technical Focus

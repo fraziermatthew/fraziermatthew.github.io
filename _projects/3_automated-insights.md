@@ -10,6 +10,15 @@ permalink: /projects/automated-insights/
 
 The Automated Insights System is a **production-oriented AI analytics pipeline** designed to generate structured, decision-ready insights from campaign performance data across **overall, channel, and audience dimensions**.
 
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/automated_insights2.png" title="Automated Insights System Flow" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  End-to-end pipeline from campaign data to LLM-generated insights.
+</div>
+
 Rather than relying on an LLM to infer meaning from raw data, the system separates **statistical reasoning from language generation**. Structured SQL pipelines compute all underlying facts, benchmarks, and signals, while the LLM is constrained to act as a controlled narrator that transforms those signals into clear, standardized insight outputs.
 
 ---
