@@ -20,7 +20,7 @@ Rather than treating vulnerability detection as a static analysis task, the syst
 
 ---
 
-## What I Built
+<h2 style="color: #b85f29; margin-top: 40px;">What I Built</h2>
 
 I designed and implemented an end-to-end workflow composed of four coordinated agents:
 
@@ -33,7 +33,7 @@ The overall goal was to create a system that connects **LLM reasoning, code tran
 
 ---
 
-## System Design
+<h2 style="color: #b85f29;">System Design</h2>
 
 The architecture is organized as a staged pipeline:
 
@@ -56,7 +56,7 @@ This design makes the system more than a vulnerability generator. It functions a
 
 ---
 
-## Technical Focus
+<h2 style="color: #b85f29;">Technical Focus</h2>
 
 This project sits at the intersection of:
 
@@ -69,7 +69,7 @@ It reflects my interest in building systems that use AI not just to automate tas
 
 ---
 
-## Outcome
+<h2 style="color: #b85f29;">Outcome</h2>
 
 The system demonstrates how multi-agent AI can be used to transform student code into a guided learning experience.
 
