@@ -3,9 +3,9 @@ layout: page
 title: Brand Compass
 description: LLM-guided narrative generation for a hierarchical brand health scorecard
 importance: 1
+img: assets/img/bc2.png
 category: work
 permalink: /projects/brand-compass/
-img: assets/img/cwe.png
 ---
 
 Brand Compass is an **AI-assisted narrative layer** built on top of a hierarchical brand health scorecard that evaluates a client’s position within its market and competitive landscape.

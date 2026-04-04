@@ -2,7 +2,8 @@
 layout: page
 title: Automated Insights System
 description: Structured statistical signal generation and LLM-governed insight production
-importance: 3
+img: assets/img/auto-insights1.png
+importance: 2
 category: work
 permalink: /projects/automated-insights/
 ---

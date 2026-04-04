@@ -3,7 +3,7 @@ layout: page
 title: CWE Vulnerability Injection System
 description: Multi-agent AI pipeline for secure coding education and vulnerability assessment
 img: assets/img/cwe.png
-importance: 2
+importance: 1
 category: research
 permalink: /projects/cwe-agent/
 ---
