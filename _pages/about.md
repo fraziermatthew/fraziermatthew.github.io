@@ -9,9 +9,12 @@ profile:
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
   address: >
-    <a href="https://github.com/WisconsinAIVision">WAIV Lab</a>, <a href="https://mlopt.ece.wisc.edu/">MLOPT</a>
-    <p>PhD Student, University</p>
-    <p>of Wisconsin-Madison</p>
+    <a href="https://sites.udel.edu/se-research/">SAC Lab</a>
+    <p>PhD, Computer Science</p>
+    <p>University of Delaware</p>
+    <br/>
+    <p>Senior Software Engineer</p>
+    <p>Goodway Group</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
