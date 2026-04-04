@@ -42,7 +42,7 @@ This included:
 
 ---
 
-<h2 style="color: #b85f29;">System Context</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">System Context</h2>
 
 The scorecard integrates multiple data sources across brand, competitive, and market analysis, including survey, media, sentiment, and advertising datasets.
 
@@ -57,7 +57,7 @@ Each section contains its own metrics, visuals, and weighted score, and the LLM-
 
 ---
 
-<h2 style="color: #b85f29;">My Contribution</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">My Contribution</h2>
 
 I did **not** create the underlying weighted score calculations or the mathematical framework behind the brand health model.
 
@@ -74,7 +74,7 @@ This work sat at the intersection of **prompt engineering, applied AI, and decis
 
 ---
 
-<h2 style="color: #b85f29;">Technical Focus</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
 
 This project reflects my interest in building AI systems that sit on top of structured analytical frameworks rather than replacing them.
 
@@ -87,7 +87,7 @@ It combines:
 
 ---
 
-<h2 style="color: #b85f29;">Outcome</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">Outcome</h2>
 
 Brand Compass explored how LLMs can enhance strategic analytics interfaces by turning structured scorecard outputs into more interpretable narratives.
 

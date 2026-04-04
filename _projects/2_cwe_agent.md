@@ -33,7 +33,7 @@ The overall goal was to create a system that connects **LLM reasoning, code tran
 
 ---
 
-<h2 style="color: #b85f29;">System Design</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">System Design</h2>
 
 The architecture is organized as a staged pipeline:
 
@@ -56,7 +56,7 @@ This design makes the system more than a vulnerability generator. It functions a
 
 ---
 
-<h2 style="color: #b85f29;">Technical Focus</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
 
 This project sits at the intersection of:
 
@@ -69,7 +69,7 @@ It reflects my interest in building systems that use AI not just to automate tas
 
 ---
 
-<h2 style="color: #b85f29;">Outcome</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">Outcome</h2>
 
 The system demonstrates how multi-agent AI can be used to transform student code into a guided learning experience.
 

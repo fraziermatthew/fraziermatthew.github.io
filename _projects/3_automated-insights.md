@@ -41,7 +41,7 @@ Although not part of the analytics team, I led the design and implementation in 
 
 ---
 
-<h2 style="color: #b85f29;">System Design</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">System Design</h2>
 
 The system is structured as a layered pipeline:
 
@@ -56,7 +56,7 @@ This architecture ensures insights are driven by **deterministic statistical log
 
 ---
 
-<h2 style="color: #b85f29;">My Contribution</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">My Contribution</h2>
 
 I owned the system from initial concept through implementation and documentation.
 
@@ -73,7 +73,7 @@ I also worked directly with analytics leadership to iterate on insight quality, 
 
 ---
 
-<h2 style="color: #b85f29;">Technical Focus</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
 
 This project sits at the intersection of:
 
@@ -86,7 +86,7 @@ It reflects my focus on building systems where **AI generation is grounded in st
 
 ---
 
-<h2 style="color: #b85f29;">Outcome</h2>
+<h2 style="color: #b85f29; margin-top: 40px;">Outcome</h2>
 
 The system enables scalable, repeatable generation of campaign insights that are:
 
