@@ -1,35 +1,29 @@
 ---
 layout: about
-title: about
+title: bio
 permalink: /
-subtitle: Senior software engineer building scalable backend systems, full-stack applications, and AI-powered workflows.
+subtitle: Hello There!
+
 profile:
   align: right
-  image: denver3.jpg
-  image_circular: false
-news: false
-selected_papers: false
-social: true
+  image: prof_pic.png
+  image_circular: false # crops the image to make it circular
+  address: >
+    <a href="https://github.com/WisconsinAIVision">WAIV Lab</a>, <a href="https://mlopt.ece.wisc.edu/">MLOPT</a>
+    <p>PhD Student, University</p>
+    <p>of Wisconsin-Madison</p>
+
+news: true  # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
 ---
 
-I am a senior software engineer with 10+ years of experience building production systems across backend, data, and full-stack environments. My core strength is designing scalable services, APIs, distributed workflows, and analytics platforms that support real business use cases.
+I'm a Ph.D student in Computer Sciences at the University of Wisconsin-Madison, where I spend most of time thinking about **heterogeneous preference learning** and **demographically diverse multimodal generative models**. I am fortunate to be jointly advised by [Ramya Vinayak](https://ramyakv.github.io/) and [Yong Jae Lee](https://pages.cs.wisc.edu/~yongjaelee/).
 
-At Goodway Group, I have worked across high-volume optimization systems, ETL pipelines, cloud infrastructure, and user-facing applications. My work includes improving the stability of systems processing tens of millions of daily decisions, integrating external platforms through APIs, and building event-driven services with AWS.
+Previously, I was an masters student at the University of Washington, Seattle where I worked with the RAIVN Lab advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/) and mentored by [Aditya Kusupati](https://homes.cs.washington.edu/~kusupati/). My MS research focused on large-scale efficient and deployable machine learning (Matryoshka), visual representation learning, and web-scale search. I was research scientist intern from May - Dec '25 at [Meta Reality Labs](https://about.meta.com/realitylabs/), working on long horizon reasoning for video understanding under [Hyo Jin Kim](https://www.cs.unc.edu/~hyojin/) and [Yuning Chai](https://www.linkedin.com/in/chaiyuning/).
 
-I also have hands-on experience integrating AI into software products. That includes retrieval and natural language query workflows, LLM-powered analytics, prompt-driven insight generation, and agent-style orchestration layered into production-facing systems. I position this work as applied systems engineering rather than frontier model research.
+<!-- In Summer ‘22 I interned in the deep learning for autonomous vehicles team at NVIDIA Redmond on Multiview LidarNet, supervised by Dr. [Nikolai Smolyanskiy](https://scholar.google.com/citations?user=KxfefwgAAAAJ&hl=en) and Dr. [Stan Birchfield](https://research.nvidia.com/person/stan-birchfield). Previously, I worked for several years as a research engineer at Samsung Research India, working on perception problems for the AI Camera, including as a founding member of [Single Take Camera](https://www.techradar.com/how-to/how-to-use-single-take-mode-on-samsung-phones), the USP of the Galaxy S20 flagship smartphone. -->
 
-While my foundation is backend and distributed systems, I regularly contribute across the stack using React, Next.js, and visualization tools when a product needs end-to-end ownership.
+I am also generally interested in computer vision, information retrieval, efficient+deployable ML, and personalization for generative models. If you are an undergrad or masters student interested in working with me, send me an email (I'll do my best to reply)!
 
-I completed a Ph.D. in Computer and Information Sciences at the University of Delaware, where my research focused on conversational agents, human-computer interaction, and AI-supported learning systems.
-
-## What I work on
-
-- Scalable backend systems and microservices
-- Cloud-native data and event-driven architectures
-- REST APIs, integrations, and platform engineering
-- Full-stack product features with React and Next.js
-- Applied AI systems, including retrieval and LLM-assisted workflows
-
-## Current focus
-
-I am most interested in roles where I can combine strong software engineering fundamentals with applied AI, product thinking, and end-to-end system ownership.
+**Reach me**: aniketr[at]cs[dot]wisc[dot]edu
