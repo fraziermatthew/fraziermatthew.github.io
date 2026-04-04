@@ -1,0 +1,43 @@
+---
+# University of Delaware
+F18 - Teacher's Assistant - Instructor: Katie Wassil - CISC106: General Computer Science for Engineers
+
+S19 - Teacher's Assistant - Instructor: Katie Wassil - CISC106: General Computer Science for Engineers
+S19 - Teacher's Assistant - Instructor: Dr. T Greg Lynch - CISC355: Computers, Ethics and Society
+
+F19 - Teacher's Assistant - Instructor: Katie Wassil - CISC106: General Computer Science for Engineers
+F19 - Teacher's Assistant - Instructor: Dr. T Greg Lynch - CISC355: Computers, Ethics and Society
+
+W20 - Teacher's Assistant - Instructor: Dr. T Greg Lynch - CISC355: Computers, Ethics and Society
+
+S20 - Teacher's Assistant - Instructor: Dr. T Greg Lynch - CISC355: Computers, Ethics and Society
+S20 - Teacher's Assistant - Instructor: Dr. Debra Yarrington - CISC220: Data Structures
+
+J20 - Instructor (me) - CISC181: Introduction to Computer Science II
+
+F20 - Teacher's Assistant - Instructor: Katie Wassil - CISC106: General Computer Science for Engineers
+F20 - Teacher's Assistant - Instructor: Dr. T Greg Lynch - CISC355: Computers, Ethics and Society
+
+W21 - Teacher's Assistant - Instructor: Dr. T Greg Lynch - CISC355: Computers, Ethics and Society
+
+S21 - Teacher's Assistant - Instructor: Katie Wassil - CISC181: Introduction to Computer Science II
+S21 - Teacher's Assistant - Instructor: Dr. T Greg Lynch - CISC355: Computers, Ethics and Society
+
+J21 - Instructor (me) - CISC181: Introduction to Computer Science II
+
+F21 - Research Assistant - Advisor: Dr. Lori Pollock
+
+S22 - Research Assistant - Advisor: Dr. Lori Pollock
+
+J22 - Instructor (me) - CISC355: Computers, Ethics and Society
+
+F22 - Research Assistant - Advisor: Dr. Lori Pollock
+
+S23 - Teacher's Assistant - Instructor: Katie Wassil - CISC181: Introduction to Computer Science II
+
+F23 - Research Assistant - Advisor: Dr. Lori Pollock
+
+S24 - Research Assistant - Advisor: Dr. Lori Pollock
+
+# West Chester University of Pennsylvania
+F17 - Teacher's Assistant - Instructor: Dr. Si Chen - CISC583: Topics in Security
