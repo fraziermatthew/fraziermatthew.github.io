@@ -11,29 +11,33 @@
       institution: Goodway Group
       year: 2021 - Present
       description:
-        - Designed AI-driven analytics systems and LLM-powered insight platforms
-        - Built distributed systems, microservices, and large-scale ETL pipelines
-        - Led integrations across platforms including TTD, Google Ads, Meta, and YouGov
+        - Improved production stability of RealValue™, a high-throughput distributed optimization system processing 40M+ impression-level decisions daily, by re-architecting validation logic and error handling (Datadog, Rollbar), reducing production errors by 90%
+        - Designed and deployed distributed data pipelines and ETL systems (Airflow, MWAA, Argo, Redshift, Snowflake, S3) supporting large-scale marketing analytics and multi-source data ingestion
+        - Architected integrations across 5+ external platforms (TTD, Google Ads, Meta, YouGov, Bing), enabling unified data processing and cross-platform analytics
+        - Built event-driven systems (AWS Lambda, SNS, SQS FIFO, S3) to automate analytics workflows, replacing manual notebook-based processes with asynchronous, production-grade pipelines
+        - Designed AI-driven analytics capabilities within the GOES™ platform, transforming campaign data into structured signals (SQL fact tables, benchmarks, tradeoff logic) to enable LLM-based reasoning
+        - Developed LLM-powered systems including RAG pipelines, streaming API integrations, and hierarchical insight generation (Brand Compass) using structured prompt engineering (CoT, ReAct, few-shot) and agentic workflows (CrewAI, LangChain, vector stores, Langfuse)
+        - Operated across backend, data, and AI system layers, bridging infrastructure, analytics, and LLM-driven reasoning in production environments
 
     - title: Senior Technical Operations Engineer (Business Intelligence)
       institution: Goodway Group
       year: 2018 - 2021
       description:
-        - Owned data reliability and analytics infrastructure (Airflow, Redshift, S3)
-        - Led incident response, root cause analysis, and system stability improvements
+        - Owned reliability, integrity, and availability of analytics infrastructure (Airflow, Redshift, S3, Tableau) supporting production reporting systems under strict data freshness SLAs
+        - Led organization-wide incident response, root cause analysis, and postmortem processes, implementing preventative monitoring and reducing recurring data pipeline failures
 
     - title: Principal Campaign Operations Engineer
       institution: Goodway Group
       year: 2014 - 2018
       description:
-        - Built automation systems reducing campaign production time by ~80%
-        - Managed programmatic campaign execution and reporting across platforms
+        - Built COLT, a web-based automation system for campaign production, reducing creative turnaround time by ~80% (10–12 days to ~2 days) and enabling scalable execution across multi-location clients (e.g., Chevrolet)
+        - Managed execution and reporting of large-scale programmatic campaigns across platforms including TTD, Google Ads, YouTube, and Meta
 
     - title: Senior SEO Strategist
       institution: IONOS (1&1 Internet)
       year: 2012 - 2014
       description:
-        - Led SEO and SEM strategies for 300+ websites using analytics and A/B testing
+        - Led SEO and SEM strategy for 300+ websites using A/B testing, keyword analysis, and user behavior analytics (CTR, engagement), improving organic traffic across US, UK, and Canadian markets
 
 - title: Research & Teaching
   type: time_table
@@ -42,15 +46,15 @@
       institution: University of Delaware
       year: 2018 - 2024
       description:
-        - Conducted mixed-methods empirical research on conversational agents for computer science education
-        - Designed LLM-based systems using prompt engineering techniques (RAG, CoT) 
-        - Taught undergraduate computer science courses (programming, data structures, ethics)
+        - Conducted research on conversational agents and LLM-guided reasoning in computer science education, designing systems that guide user reasoning through structured interaction (RAG, CoT, few-shot), resulting in publications at ICSE and ITiCSE
+        - Designed and implemented AI-based learning systems focused on reasoning support rather than direct answer generation
+        - Taught undergraduate computer science courses (programming, data structures, ethics), emphasizing debugging, system thinking, and applied problem-solving
 
     - title: Graduate Assistant & Researcher
       institution: West Chester University of Pennsylvania
       year: 2016 - 2017
       description:
-        - Developed computer vision system for parking lot availability object detection (Python, OpenCV)
+        - Developed computer vision system for parking availability detection using Python and OpenCV
 
 - title: Publications
   type: time_table

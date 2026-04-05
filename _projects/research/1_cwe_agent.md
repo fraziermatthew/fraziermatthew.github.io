@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "CWE Agent - Multi-Agent Vulnerability Learning System"
+title: "CWE Agent — Multi-Agent System for Automated Vulnerability Injection and Evaluation"
 description: Multi-agent AI pipeline for vulnerability injection, evaluation, and secure coding education
 img: assets/img/cwe.png
 importance: 1

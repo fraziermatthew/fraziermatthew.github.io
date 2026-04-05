@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Brand Compass - LLM Reasoning Layer for Analytics"
+title: "Brand Compass — LLM Reasoning System for Analytical Decision Support"
 description: LLM-driven reasoning layer for generating consistent, decision-ready narratives from a hierarchical brand health scorecard
 importance: 1
 img: assets/img/bc2.png

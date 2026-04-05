@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Automated Insights - Deterministic Analytics Pipeline"
+title: "Automated Insights — Deterministic Analytics and LLM-Guided Insight Generation Pipeline"
 description: Deterministic analytics pipeline with structured signal generation and LLM-constrained insight production
 img: assets/img/auto-insights1.png
 importance: 2

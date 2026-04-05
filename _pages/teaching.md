@@ -6,7 +6,10 @@ description: Teaching and instructional experience
 nav: true
 nav_order: 5
 ---
----
+
+I teach computer science with a focus on developing structured problem-solving, debugging skills, and applied reasoning in real-world systems.
+
+My teaching emphasizes bridging theoretical concepts with practical engineering workflows.
 
 ### University of Delaware
 
@@ -46,7 +49,7 @@ nav_order: 5
 
 ### Responsibilities Included
 
-- Designed and delivered lectures, assignments, and course materials as an Instructor for CISC 181 and CISC 355
+- Designed and delivered lectures, assignments, and course materials (Instructor - CISC 181 and CISC 355) emphasizing debugging, system thinking, and applied software engineering practices
 - Created original final projects for CISC 181, including full specifications and evaluation criteria
 - Led classroom instruction, student engagement, and course direction as primary instructor
 - Ran lab sessions for CISC 106, guiding students through weekly programming assignments and reinforcing lecture material

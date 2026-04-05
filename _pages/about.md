@@ -21,16 +21,42 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
+<!-- version 7 -->
+I build production-grade AI systems that transform large-scale data into structured, decision-ready intelligence.
+
+At Goodway Group, I design and operate distributed analytics and optimization systems operating high-throughput distributed optimization systems at scale, integrating multi-source data pipelines, event-driven architectures, and LLM-powered reasoning layers into production environments.
+
+My work focuses on **LLM-guided reasoning systems, data infrastructure, and agentic architectures**, where statistical signal generation and model inference are tightly coupled to produce consistent, interpretable outputs.
+
+I earned my Ph.D. in Computer and Information Sciences from the University of Delaware, where I studied conversational agents and human-centered AI under <a href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE.
+
+I design systems where **data, reasoning, and infrastructure operate as a unified layer**, enabling scalable decision-making beyond prototype AI solutions.
+
+<!-- version 6 -->
+<!-- I build production-grade AI systems that convert large-scale data into structured, decision-ready intelligence.
+
+My work centers on designing **LLM-powered reasoning systems, distributed data pipelines, and agentic architectures** that operate reliably in production and scale with real-world complexity.
+
+At Goodway Group, I design and deploy systems that transform multi-source marketing data into interpretable signals and decision-support tooling—bridging analytical infrastructure with LLM-guided reasoning layers.
+
+I earned my Ph.D. in Computer and Information Sciences from the University of Delaware, where I studied conversational agents and human-centered AI under <a href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE.
+
+I focus on building systems where **data, reasoning, and infrastructure are tightly coupled**, producing outputs that are consistent, explainable, and deployable in production environments. -->
+
 <!-- version 5 -->
-I build **production-grade AI systems** that transform complex data into structured, decision-ready intelligence.
+<!-- I design and build production-grade AI systems that transform large-scale data into structured, decision-ready intelligence.
 
-At Goodway Group, I design and deploy AI-driven analytics systems that operate reliably in production, converting large-scale marketing data into interpretable signals and actionable insights. My work spans **distributed data pipelines, retrieval-augmented generation (RAG), and agentic workflows**, with a focus on turning complex inputs into systems that produce consistent, high-signal outputs.
+My work focuses on **LLM-powered reasoning systems, distributed data pipelines, and agentic architectures** operating reliably at scale. -->
 
-I earned my Ph.D. in Computer and Information Sciences from the University of Delaware, where I conducted research in conversational agents and human-centered AI under [Lori Pollock](https://www.eecis.udel.edu/~pollock/). My work explored how language models guide reasoning through structured, interactive dialogue, with publications at ICSE and ITiCSE.
+<!-- I build **production-grade AI systems** that transform complex data into structured, decision-ready intelligence. -->
+
+<!-- At Goodway Group, I design and deploy AI-driven analytics systems that operate reliably in production, converting large-scale marketing data into interpretable signals and actionable insights. My work spans **distributed data pipelines, retrieval-augmented generation (RAG), and agentic workflows**, with a focus on turning complex inputs into systems that produce consistent, high-signal outputs. -->
+
+<!-- I earned my Ph.D. in Computer and Information Sciences from the University of Delaware, where I conducted research in conversational agents and human-centered AI under [Lori Pollock](https://www.eecis.udel.edu/~pollock/). My work explored how language models guide reasoning through structured, interactive dialogue, with publications at ICSE and ITiCSE.
 
 I operate at the intersection of **software engineering, data systems, and applied AI**, with a focus on building systems that move beyond prototypes into reliable, production environments.
 
-I design systems that combine **structured data, constrained reasoning, and scalable architecture** to produce consistent, interpretable outcomes.
+I design systems that combine **structured data, constrained reasoning, and scalable architecture** to produce consistent, interpretable outcomes. -->
 
 
 <!-- version 4 -->
