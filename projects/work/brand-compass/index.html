@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Brand Compass — LLM Reasoning System for Analytical Decision Support | Matthew  Frazier</title>
+    <title>Brand Compass — Structured LLM Reasoning System for Brand Intelligence | Matthew  Frazier</title>
     <meta name="author" content="Matthew  Frazier">
-    <meta name="description" content="LLM-driven reasoning layer for generating consistent, decision-ready narratives from a hierarchical brand health scorecard">
+    <meta name="description" content="Structured reasoning system that converts hierarchical brand analytics into consistent, decision-ready narratives">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -107,8 +107,8 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Brand Compass — LLM Reasoning System for Analytical Decision Support</h1>
-            <p class="post-description">LLM-driven reasoning layer for generating consistent, decision-ready narratives from a hierarchical brand health scorecard</p>
+            <h1 class="post-title">Brand Compass — Structured LLM Reasoning System for Brand Intelligence</h1>
+            <p class="post-description">Structured reasoning system that converts hierarchical brand analytics into consistent, decision-ready narratives</p>
           </header>
 
           <article>
@@ -116,7 +116,11 @@
   <a href="/projects/" class="back-link">← Back to projects</a>
 </p>
 
-<p>Brand Compass is a <strong>production-facing LLM integration layer</strong> that generates structured, decision-ready narratives from a hierarchical brand health scorecard.</p>
+<p>This system converts hierarchical brand analytics into cohesive, decision-ready narratives using a constrained LLM reasoning layer.</p>
+
+<p>Standard analytics dashboards expose fragmented metrics across multiple views, requiring manual interpretation to form a coherent understanding of brand performance. This system enforces structured reasoning over weighted scorecard data, aligning insights across market, mental availability, physical availability, and perception.</p>
+
+<p>I designed and implemented the LLM reasoning layer that interprets structured analytical signals and generates consistent, cross-sectional narratives across the full dashboard.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -135,63 +139,55 @@
   </div>
 </div>
 <div class="caption">
-  Example of the Brand Compass interface, where structured scorecard sections and AI-generated insights work together to tell a cohesive brand story.
+  Structured scorecard inputs and LLM-generated outputs operating as a unified analytical system.
 </div>
 
-<p>The system sits on top of a multi-source analytics pipeline combining industry, client, and competitive data, organized into weighted sections spanning <strong>Market Snapshot, Mental Availability, Physical Availability, and Perception</strong>.</p>
-
-<p>I designed and implemented the <strong>LLM reasoning layer</strong> that translates these structured signals into <strong>cohesive, cross-sectional narratives</strong>, enabling clients to interpret complex performance data as a unified story rather than disconnected metrics.
-&lt;!– Brand Compass is an <strong>AI-assisted narrative layer</strong> built on top of a hierarchical brand health scorecard that evaluates a client’s position within its market and competitive landscape.</p>
-
-<p>The underlying scorecard was created using structured industry, client, and competitor data sources, with weighted sections spanning <strong>Market Snapshot, Mental Availability, Physical Availability, and Perception</strong>. Within each section, the dashboard presents charts, tables, and scores derived from multiple datasets and benchmarks.</p>
-
-<p>My contribution focused on designing how LLMs interpret that scorecard and the supporting raw data to generate <strong>cohesive, decision-ready summaries</strong> throughout the dashboard. –&gt;</p>
+<p>The system operates on top of a multi-source analytics pipeline combining industry, client, and competitive data, organized into weighted sections spanning <strong>Market Snapshot, Mental Availability, Physical Availability, and Perception</strong>.</p>
 
 <hr>
 
 <h2 style="color: #b85f29; margin-top: 40px;">What I Built</h2>
 
-<p>I built the <strong>LLM-driven reasoning layer</strong> that converts structured scorecard outputs into cohesive, decision-ready narratives.</p>
+<p>I built the reasoning layer that converts structured scorecard outputs into aligned, decision-ready narratives across the full analytical hierarchy.</p>
 
-<p>This included:</p>
+<p>This required:</p>
 
 <ul>
-  <li>Designing <strong>prompt architectures</strong> (ReAct, few-shot, chain-of-thought) to guide structured interpretation rather than freeform generation</li>
-  <li>Implementing logic to align <strong>chart-level signals with section-level and global summaries</strong>
-</li>
-  <li>Enforcing <strong>hierarchical consistency</strong>, ensuring insights reflect score weighting and relationships across the full dashboard</li>
+  <li>Designing <strong>prompt architectures</strong> (ReAct, few-shot, chain-of-thought) to enforce structured interpretation rather than freeform generation</li>
+  <li>Aligning <strong>chart-level signals with section-level and global summaries</strong>, ensuring consistency across multiple levels of abstraction</li>
+  <li>Enforcing <strong>hierarchical consistency</strong>, so insights reflect score weighting and relationships across the system</li>
   <li>Constraining model behavior toward <strong>grounded summarization</strong>, preventing unsupported inference from raw metrics</li>
   <li>Structuring outputs so independently generated insights <strong>reinforce a unified narrative</strong>, rather than behaving as isolated summaries</li>
 </ul>
 
-<p>This system transforms the LLM from a text generator into a <strong>controlled reasoning component operating over structured analytical data</strong>.</p>
+<p>The result is a system where the LLM operates as a <strong>controlled reasoning component</strong>, not a generative endpoint.</p>
 
 <hr>
 
 <h2 style="color: #b85f29; margin-top: 40px;">System Design</h2>
 
-<p>The system operates as a structured interpretation layer on top of a multi-source analytical framework.</p>
+<p>The architecture is designed as a structured interpretation layer on top of deterministic analytical inputs.</p>
 
 <ul>
   <li>
-<strong>Input</strong> → scorecard data composed of metrics, benchmarks, and weighted section scores</li>
+<strong>Input</strong> → weighted scorecard data composed of metrics, benchmarks, and derived signals</li>
   <li>
-<strong>Processing</strong> → LLM-guided reasoning constrained by hierarchical relationships and prompt structure</li>
+<strong>Processing</strong> → constrained LLM reasoning governed by hierarchical relationships and prompt structure</li>
   <li>
 <strong>Output</strong> → aligned narrative summaries across charts, sections, and the full dashboard</li>
 </ul>
 
-<p>A key design requirement was maintaining <strong>consistency across multiple levels of abstraction</strong>.</p>
+<p>The system enforces <strong>consistency across multiple levels of abstraction</strong>, a core requirement for decision-support systems.</p>
 
-<p>To achieve this, the system:</p>
+<p>This is achieved by:</p>
 
 <ul>
-  <li>Interprets <strong>raw metrics and derived scores together</strong>, rather than independently</li>
-  <li>Generates insights at both <strong>local (chart)</strong> and <strong>global (section)</strong> levels</li>
-  <li>Enforces <strong>cross-sectional alignment</strong>, ensuring outputs do not contradict one another</li>
+  <li>Interpreting <strong>raw metrics and derived scores together</strong>, rather than independently</li>
+  <li>Generating insights at both <strong>local (chart)</strong> and <strong>global (section)</strong> levels</li>
+  <li>Enforcing <strong>cross-sectional alignment</strong>, ensuring outputs do not contradict one another</li>
 </ul>
 
-<p>Unlike generic summarization systems, this architecture treats the LLM as part of a <strong>deterministic analytical workflow</strong>, where structure, constraints, and input design govern output quality.</p>
+<p>Unlike generic summarization pipelines, the LLM operates within a <strong>structured analytical workflow</strong>, where input design and constraints determine output quality.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -210,111 +206,41 @@
   </div>
 </div>
 <div class="caption">
-  A multi-layered system that transforms diverse analytics signals into a unified brand narrative. Structured scorecard hierarchies enable the LLM to interpret relationships across market dynamics, mindshare, distribution, and perception, producing coherent, insight-driven summaries grounded in data.
+  Structured analytics pipeline with constrained reasoning producing aligned, multi-level narratives.
 </div>
-
-<!-- ---
-
-<h2 style="color: #b85f29; margin-top: 40px;">LLM Integration Layer</h2>
-
-The core challenge was not generating text, but ensuring that generated insights remained **faithful to structured data and consistent across multiple levels of abstraction**.
-
-I designed the system to:
-
-- Interpret **raw metrics and derived scores together**, rather than independently
-- Generate insights at both **local (chart)** and **global (section)** levels
-- Maintain **narrative alignment across the full dashboard**, preventing contradictions between outputs
-
-This transforms the LLM from a generative tool into a **controlled reasoning component within a larger analytical system**. -->
 
 <hr>
 
 <h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
 
-<p>This system combines:</p>
+<p>The system is built around:</p>
 
 <ul>
   <li>Structured LLM reasoning over multi-source analytical data</li>
-  <li>Hierarchical interpretation of weighted business metrics across multiple levels of abstraction</li>
-  <li>Cross-panel narrative alignment in multi-view analytical dashboards</li>
+  <li>Hierarchical interpretation of weighted business metrics</li>
+  <li>Cross-panel narrative alignment across multi-view dashboards</li>
   <li>Prompt-constrained generation for consistent, decision-ready outputs</li>
 </ul>
 
-<p>It reflects a focus on <strong>controlled reasoning over structured data</strong>, where LLMs operate as interpretation layers within analytical systems rather than standalone generators.</p>
+<p>It reflects a design approach centered on <strong>controlled reasoning over structured data</strong>, where LLMs function as interpretation layers within production analytics systems.</p>
 
 <hr>
 
 <h2 style="color: #b85f29; margin-top: 40px;">Outcome</h2>
 
-<p>Brand Compass demonstrated both the potential and limitations of integrating LLMs into structured analytics workflows.</p>
+<p>The system demonstrates how constrained reasoning enables LLMs to operate reliably within structured analytics environments.</p>
 
-<p>While the system successfully generated <strong>cohesive, decision-ready narratives</strong>, it also exposed key challenges in controlling numerical reasoning and maintaining strict alignment with underlying data.</p>
+<p>It produces <strong>cohesive, decision-ready narratives</strong>, while exposing key challenges in numerical alignment and strict adherence to underlying data.</p>
 
-<p>This work informed later designs that prioritize <strong>structured inputs, constrained reasoning, and verifiable outputs</strong> for production-grade AI systems.</p>
+<p>These constraints informed subsequent system designs that prioritize:</p>
 
-<!-- <h2 style="color: #b85f29; margin-top: 40px;">What I Built</h2>
+<ul>
+  <li>structured inputs</li>
+  <li>constrained reasoning</li>
+  <li>verifiable outputs</li>
+</ul>
 
-I designed the prompt architecture and reasoning strategy that enabled the LLM to turn structured scorecard outputs into clear, client-facing narratives.
-
-This included:
-
-- **Prompt frameworks** using **ReAct, few-shot, and chain-of-thought reasoning**
-- Guidance for interpreting both **section-level scores** and **chart-level supporting visuals**
-- Logic for generating summaries that reflect the **hierarchical weighting and structure** of the scorecard
-- Prompt constraints to encourage **coherent storytelling across the full dashboard**, so individual insights reinforced rather than contradicted one another
-
----
-
-<h2 style="color: #b85f29; margin-top: 40px;">System Context</h2>
-
-The scorecard integrates multiple data sources across brand, competitive, and market analysis, including survey, media, sentiment, and advertising datasets.
-
-These inputs are organized into four primary sections:
-
-- **Market Snapshot**
-- **Mental Availability**
-- **Physical Availability**
-- **Perception**
-
-Each section contains its own metrics, visuals, and weighted score, and the LLM-generated summaries must interpret those signals in context while maintaining consistency with the broader brand story.
-
----
-
-<h2 style="color: #b85f29; margin-top: 40px;">My Contribution</h2>
-
-I did **not** create the underlying weighted score calculations or the mathematical framework behind the brand health model.
-
-My role was to design the **LLM integration layer** that translated those structured outputs into useful written insights.
-
-More specifically, I:
-
-- Positioned prompts to interpret scorecard data and raw supporting data together
-- Designed prompt patterns that guided the model toward **summary generation rather than unsupported freeform analysis**
-- Structured the system so the model could generate insights for both **individual charts** and **higher-level section summaries**
-- Focused on maintaining a **cohesive narrative across the dashboard**, ensuring multiple generated insights aligned into a unified brand story
-
-This work sat at the intersection of **prompt engineering, applied AI, and decision-support UX**.
-
----
-
-<h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
-
-This project reflects my interest in building AI systems that sit on top of structured analytical frameworks rather than replacing them.
-
-It combines:
-
-- LLM prompt design
-- narrative consistency across multi-panel dashboards
-- hierarchical interpretation of weighted business metrics
-- applied AI for decision-support systems
-
----
-
-<h2 style="color: #b85f29; margin-top: 40px;">Outcome</h2>
-
-Brand Compass explored how LLMs can enhance strategic analytics interfaces by turning structured scorecard outputs into more interpretable narratives.
-
-The project helped demonstrate both the promise and the limitations of using LLMs in this setting, especially when the goal is not just to summarize one metric, but to tell a **coherent story across an entire analytical dashboard**. -->
+<p>as requirements for production-grade AI systems.</p>
 
           </article>
 

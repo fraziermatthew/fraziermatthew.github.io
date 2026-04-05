@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CWE Agent — Multi-Agent System for Automated Vulnerability Injection and Evaluation | Matthew  Frazier</title>
+    <title>CWE Agent — Multi-Agent System for Vulnerability Injection and Evaluation | Matthew  Frazier</title>
     <meta name="author" content="Matthew  Frazier">
-    <meta name="description" content="Multi-agent AI pipeline for vulnerability injection, evaluation, and secure coding education">
+    <meta name="description" content="Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities to generate structured security learning outcomes">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -107,8 +107,8 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">CWE Agent — Multi-Agent System for Automated Vulnerability Injection and Evaluation</h1>
-            <p class="post-description">Multi-agent AI pipeline for vulnerability injection, evaluation, and secure coding education</p>
+            <h1 class="post-title">CWE Agent — Multi-Agent System for Vulnerability Injection and Evaluation</h1>
+            <p class="post-description">Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities to generate structured security learning outcomes</p>
           </header>
 
           <article>
@@ -116,54 +116,32 @@
   <a href="/projects/" class="back-link">← Back to projects</a>
 </p>
 
-<p>The CWE Vulnerability Injection System is a <strong>multi-agent AI system built with CrewAI</strong> that simulates how vulnerabilities emerge in real-world codebases and transforms them into structured learning experiences.</p>
+<p>This system injects, evaluates, and selects realistic software vulnerabilities in student code using a coordinated multi-agent reasoning pipeline.</p>
 
-<p>Traditional security education relies on isolated textbook examples, which fail to reflect how bugs are introduced and discovered in production systems. In practice, vulnerabilities emerge as side effects in existing code and must be identified through inspection and reasoning.</p>
+<p>Traditional security education relies on static examples that fail to reflect how vulnerabilities emerge in real codebases. In practice, weaknesses appear as side effects within existing systems and must be identified through contextual reasoning. This system simulates that process by generating multiple vulnerability variants, evaluating them across technical and pedagogical criteria, and selecting the most effective instance to surface.</p>
 
-<p>I built a system that bridges this gap by <strong>injecting realistic vulnerabilities into student code, evaluating multiple variants, and selecting the most educational instance to surface</strong>, using a coordinated set of specialized agents.</p>
-
-<!-- [Common Weakness Enumeration](https://cwe.mitre.org/) (CWE) is a community-developed, MITRE-sponsored list of software and hardware flaws that can lead to vulnerabilities. It acts as a standardized dictionary to identify, mitigate, and prevent security weaknesses. CWEs describe the root cause of a vulnerability (e.g., buffer overflow), unlike CVEs (Vulnerability) or CVSS (Severity), which identify specific, exploitable instances.
-
-The Common Weakness Enumeration (CWE) Educational Vulnerability Injection System is a **multi-agent AI pipeline** designed to support secure coding education by injecting, evaluating, ranking, and teaching software vulnerabilities in student-submitted code.
-
-Rather than treating vulnerability detection as a static analysis task, the system frames security learning as an **interactive educational workflow**. It uses contextual information from course materials and assignment prompts to generate vulnerability variants that are relevant to the student’s code, then evaluates which injected weakness would create the most meaningful learning opportunity. -->
+<p>I designed and implemented a multi-agent orchestration system using CrewAI that coordinates generation, evaluation, ranking, and learning outcome generation across a structured pipeline.</p>
 
 <hr>
 
 <h2 style="color: #b85f29; margin-top: 40px;">What I Built</h2>
 
-<p>I designed and implemented a <strong>multi-agent orchestration system using CrewAI</strong>, where each stage of the pipeline is handled by a specialized agent with distinct responsibilities.</p>
+<p>I built a multi-agent system where each stage of the pipeline performs a distinct role in generating, evaluating, and selecting high-signal vulnerabilities.</p>
 
-<p>This included:</p>
-
-<ul>
-  <li>
-<strong>CWE Injector Agent</strong> — introduces realistic vulnerability variants into high-signal regions of student code</li>
-  <li>
-<strong>CWE Evaluator Agent</strong> — uses LLM-as-judge to score each variant across naturalness, complexity, and pedagogical value</li>
-  <li>
-<strong>CWE Ranker Agent</strong> — applies weighted scoring logic to select the strongest candidate</li>
-  <li>
-<strong>Learning Outcome Agent</strong> — generates structured assessment questions using course and vulnerability context</li>
-</ul>
-
-<p>All prompts, evaluation logic, and scoring strategies are managed through <strong>Langfuse</strong>, enabling structured prompt versioning, experimentation, and traceability.
-&lt;!– &lt;h2 style="color: #b85f29; margin-top: 40px;"&gt;What I Built&lt;/h2&gt;</p>
-
-<p>I designed and implemented an end-to-end workflow composed of four coordinated agents:</p>
+<p>This includes:</p>
 
 <ul>
   <li>
-<strong>CWE Injector</strong> — introduces realistic vulnerability variants into student code</li>
+<strong>CWE Injector Agent</strong> — generates realistic vulnerability variants within high-signal regions of student code</li>
   <li>
-<strong>CWE Evaluator</strong> — scores each injected version across educational criteria</li>
+<strong>CWE Evaluator Agent</strong> — applies LLM-as-judge scoring across naturalness, complexity, and pedagogical value</li>
   <li>
-<strong>CWE Ranker</strong> — selects the strongest candidate using weighted scoring and rationale</li>
+<strong>CWE Ranker Agent</strong> — resolves the optimal candidate using weighted scoring and comparative reasoning</li>
   <li>
-<strong>Learning Outcome Generator</strong> — produces student-facing feedback and assessment artifacts</li>
+<strong>Learning Outcome Agent</strong> — produces structured assessment questions grounded in code, context, and vulnerability type</li>
 </ul>
 
-<p>The overall goal was to create a system that connects <strong>LLM reasoning, code transformation, and pedagogical evaluation</strong> in a single research pipeline. –&gt;</p>
+<p>All prompts, scoring logic, and evaluation strategies are managed through <strong>Langfuse</strong>, enabling versioning, experimentation, and traceability across the system.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -182,123 +160,65 @@ Rather than treating vulnerability detection as a static analysis task, the syst
   </div>
 </div>
 <div class="caption">
-  Orchestrates specialized agents to inject, evaluate, and surface high-value vulnerabilities, converting static code into interactive security learning scenarios.
+  Coordinated multi-agent pipeline that generates, evaluates, and selects vulnerabilities to produce structured learning outcomes.
 </div>
 
 <hr>
 
 <h2 style="color: #b85f29; margin-top: 40px;">System Design</h2>
 
-<p>The system is implemented as a staged <strong>agentic workflow</strong>, where each agent operates on shared context and passes structured outputs to the next stage:</p>
+<p>The architecture is implemented as a staged agentic workflow, where each agent operates on shared context and produces structured outputs consumed by downstream agents.</p>
 
 <ul>
   <li>
-<strong>Input Context</strong> → student code, assignment details, course materials, and curated CWE list</li>
+<strong>Input Context</strong> → student code, assignment specifications, course materials, and curated CWE mappings</li>
   <li>
-<strong>File Selection Heuristic</strong> → prioritizes high-signal files based on size and complexity</li>
+<strong>File Selection Heuristic</strong> → prioritizes high-signal files based on size, structure, and complexity</li>
   <li>
-<strong>Injection Agent</strong> → generates multiple vulnerability variants</li>
+<strong>Injection Stage</strong> → generates multiple candidate vulnerabilities</li>
   <li>
-<strong>Evaluation Agent</strong> → scores each variant using LLM-based judgment</li>
+<strong>Evaluation Stage</strong> → scores each candidate using structured LLM-based judgment</li>
   <li>
-<strong>Ranking Agent</strong> → resolves the optimal candidate using weighted scoring</li>
+<strong>Ranking Stage</strong> → selects the optimal candidate using weighted scoring and rationale</li>
   <li>
-<strong>Learning Agent</strong> → generates multi-choice and open-ended questions
-This architecture allows the system to behave as a <strong>coordinated reasoning pipeline</strong>, rather than a single-pass LLM workflow.
-&lt;!– &lt;h2 style="color: #b85f29; margin-top: 40px;"&gt;System Design&lt;/h2&gt;</li>
+<strong>Learning Stage</strong> → generates assessment artifacts aligned with course objectives</li>
 </ul>
 
-<p>The architecture is organized as a staged pipeline:</p>
-
-<ul>
-  <li>
-<strong>Input Layer</strong> → student code, course context, assignment context, and CWE metadata</li>
-  <li>
-<strong>Injection Layer</strong> → minimally modifies code to introduce a relevant 2024 Top 25 CWE</li>
-  <li>
-<strong>Evaluation Layer</strong> → scores each variant for relevance, pedagogical value, appropriateness, and naturalness</li>
-  <li>
-<strong>Ranking Layer</strong> → resolves the best candidate using weighted scoring and rationale</li>
-  <li>
-<strong>Learning Layer</strong> → generates structured educational feedback, including explanatory artifacts and assessment questions</li>
-</ul>
-
-<p>This design makes the system more than a vulnerability generator. It functions as an <strong>AI-assisted instructional framework</strong> for teaching secure software development. –&gt;</p>
+<p>The system behaves as a <strong>coordinated reasoning pipeline</strong>, where generation, evaluation, and selection are tightly coupled rather than executed independently.</p>
 
 <hr>
 
 <h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
 
-<p>This system combines:</p>
+<p>The system is built around:</p>
 
 <ul>
-  <li>Agentic orchestration using CrewAI for coordinated multi-step reasoning</li>
-  <li>LLM-as-judge evaluation patterns for structured scoring and comparative ranking</li>
+  <li>Agentic orchestration using CrewAI for multi-step, coordinated reasoning</li>
+  <li>LLM-as-judge evaluation patterns for structured scoring and comparative selection</li>
   <li>Prompt lifecycle management and observability using Langfuse</li>
   <li>Programmatic code transformation for controlled vulnerability injection</li>
   <li>Secure software engineering grounded in real-world CWE standards</li>
 </ul>
 
-<p>It reflects a focus on <strong>evaluation-driven AI systems</strong>, where generation, scoring, and selection are tightly coupled into a single pipeline.</p>
-
-<!-- <h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
-
-This project sits at the intersection of:
-
-- Applied AI and agentic workflows
-- Secure software engineering
-- Educational technology
-- Structured evaluation pipelines
-
-It reflects my interest in building systems that use AI not just to automate tasks, but to produce **context-aware educational value**. -->
+<p>It reflects a design approach centered on <strong>evaluation-driven AI systems</strong>, where generation alone is insufficient without structured scoring and selection.</p>
 
 <hr>
 
 <h2 style="color: #b85f29; margin-top: 40px;">Outcome</h2>
 
-<p>This system demonstrates how agentic AI can move beyond static analysis into <strong>context-aware learning and decision systems</strong>.</p>
+<p>The system demonstrates how agentic AI can move beyond static analysis into <strong>context-aware decision systems</strong>.</p>
 
-<p>By simulating how vulnerabilities emerge in real codebases and selecting the most educational instance to surface, the system transforms debugging from a reactive task into a structured learning process.</p>
+<p>By simulating how vulnerabilities emerge in real codebases and selecting the most valuable instance to surface, the system transforms security education into a structured reasoning process.</p>
 
-<p>Instead of simply identifying weaknesses, it enables:</p>
+<p>It enables:</p>
 
 <ul>
-  <li>prioritizing which vulnerability is most valuable to teach</li>
-  <li>generating explanations grounded in real code context</li>
-  <li>reinforcing understanding through targeted assessment</li>
+  <li>prioritization of high-impact vulnerabilities for learning</li>
+  <li>generation of explanations grounded in real code context</li>
+  <li>reinforcement through targeted assessment and evaluation</li>
 </ul>
 
-<p>This project reflects my focus on building <strong>AI systems that combine generation, evaluation, and ranking to produce high-signal, domain-specific outcomes</strong>.</p>
-
-<!-- The system demonstrates how multi-agent AI can be used to transform student code into a guided learning experience.
-
-Instead of only identifying weaknesses, it helps answer higher-level questions such as:
-
-- Which vulnerability is most educational in this context?
-- How should it be explained to the student?
-- What kind of follow-up assessment reinforces learning?
-
-This project showcases my work in combining **LLM systems, software engineering, and research-driven educational design** into a reproducible AI pipeline. -->
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
-    <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/cwe2.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="From Vulnerability Injection to Security Understanding" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-  </div>
-</div>
-<div class="caption">
-  Introduces realistic security flaws into student code and generates structured learning prompts, bridging the gap between theoretical concepts and real-world secure software development.
-</div>
+<p>This system reflects a broader pattern of building AI pipelines that combine <strong>generation, evaluation, and ranking</strong> to produce high-signal, domain-specific outcomes.</p>
 
           </article>
 
