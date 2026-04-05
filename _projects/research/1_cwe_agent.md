@@ -49,6 +49,15 @@ I designed and implemented an end-to-end workflow composed of four coordinated a
 
 The overall goal was to create a system that connects **LLM reasoning, code transformation, and pedagogical evaluation** in a single research pipeline. -->
 
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/cwe5.png" title="CWE Injection Pipeline" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Orchestrates specialized agents to inject, evaluate, and surface high-value vulnerabilities, converting static code into interactive security learning scenarios.
+</div>
+
 ---
 
 <h2 style="color: #b85f29; margin-top: 40px;">System Design</h2>
@@ -73,15 +82,6 @@ The architecture is organized as a staged pipeline:
 - **Learning Layer** → generates structured educational feedback, including explanatory artifacts and assessment questions
 
 This design makes the system more than a vulnerability generator. It functions as an **AI-assisted instructional framework** for teaching secure software development. -->
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.html path="assets/img/cwe.png" title="CWE Agent Pipeline" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-  Multi-agent pipeline for injecting, evaluating, ranking, and explaining educational software vulnerabilities.
-</div>
 
 ---
 
@@ -133,3 +133,12 @@ Instead of only identifying weaknesses, it helps answer higher-level questions s
 - What kind of follow-up assessment reinforces learning?
 
 This project showcases my work in combining **LLM systems, software engineering, and research-driven educational design** into a reproducible AI pipeline. -->
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/cwe2.png" title="From Vulnerability Injection to Security Understanding" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Introduces realistic security flaws into student code and generates structured learning prompts, bridging the gap between theoretical concepts and real-world secure software development.
+</div>

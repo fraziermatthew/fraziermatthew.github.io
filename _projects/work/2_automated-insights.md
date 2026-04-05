@@ -74,6 +74,15 @@ This separation ensures:
 
 The stats JSON also enables **human validation and debugging**, providing transparency into how insights are formed.
 
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/auto-insights3.png" title="Statistical Signal Pipeline and LLM-Governed Insight Generation" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  A constrained architecture that separates statistical computation from language model reasoning. Deterministic SQL-based signal generation produces fully structured inputs, enabling the LLM to perform controlled interpretation and generate consistent, data-grounded insights.
+</div>
+
 <!-- The system is structured as a layered pipeline:
 
 - **Data Layer** → campaign, supplier, channel, and audience performance data
@@ -150,3 +159,12 @@ This project represents a step toward **AI systems that not only interpret data,
 It is designed to generalize across objectives and clients, with the long-term vision of building a **library of reusable analytical frameworks and prompt patterns** that can scale insight generation across the organization.
 
 This project demonstrates how AI can be used not just to summarize data, but to **operationalize analytical reasoning into a reusable system**. -->
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/auto-insights6.png" title="From Statistical Signals to Structured Insight" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Transforms structured statistical signals into consistent, interpretable insights through controlled LLM reasoning and JSON-based output contracts.
+</div>
