@@ -4,22 +4,6 @@
 #     - name: Full Name
 #       value: Matthew Frazier
 
-- title: Education
-  type: time_table
-  contents:
-    - title: Ph.D., Computer and Information Sciences
-      institution: University of Delaware
-      year: 2018 - 2024
-      description:
-        - Advised by Lori Pollock
-        - Research in conversational agents and applied AI
-    - title: M.Sc., Computer Science (Cum Laude)
-      institution: West Chester University of Pennsylvania
-      year: 2016 - 2017
-    - title: B.Sc., Marketing
-      institution: West Chester University of Pennsylvania
-      year: 2010
-
 - title: Experience
   type: time_table
   contents:
@@ -77,3 +61,19 @@
     - year: 2022
       items:
         - Investigating User Perceptions of Conversational Agents for Software-related Exploratory Web Search (ICSE 2022)
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D., Computer and Information Sciences
+      institution: University of Delaware
+      year: 2018 - 2024
+      description:
+        - Advised by Lori Pollock
+        - Research in conversational agents and applied AI
+    - title: M.Sc., Computer Science (Cum Laude)
+      institution: West Chester University of Pennsylvania
+      year: 2016 - 2017
+    - title: B.Sc., Marketing
+      institution: West Chester University of Pennsylvania
+      year: 2010

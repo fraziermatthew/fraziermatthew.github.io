@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Selected systems and research at the intersection of AI, data, and software engineering.
+description: Selected systems spanning AI, data, and software engineering, with a focus on production-ready intelligence and structured reasoning..
 nav: true
 nav_order: 2
 display_categories: [work, research]
