@@ -68,7 +68,7 @@ To achieve this, the system:
 
 Unlike generic summarization systems, this architecture treats the LLM as part of a **deterministic analytical workflow**, where structure, constraints, and input design govern output quality.
 
----
+<!-- ---
 
 <h2 style="color: #b85f29; margin-top: 40px;">LLM Integration Layer</h2>
 
@@ -80,7 +80,7 @@ I designed the system to:
 - Generate insights at both **local (chart)** and **global (section)** levels
 - Maintain **narrative alignment across the full dashboard**, preventing contradictions between outputs
 
-This transforms the LLM from a generative tool into a **controlled reasoning component within a larger analytical system**.
+This transforms the LLM from a generative tool into a **controlled reasoning component within a larger analytical system**. -->
 
 ---
 
