@@ -58,6 +58,15 @@ The system operates as a structured interpretation layer on top of a multi-sourc
 - **Processing** → LLM-guided reasoning constrained by hierarchical relationships and prompt structure
 - **Output** → aligned narrative summaries across charts, sections, and the full dashboard
 
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/bc6.png" title="Hierarchical Scorecard and Narrative Generation System" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  A multi-layered system that transforms diverse analytics signals into a unified brand narrative. Structured scorecard hierarchies enable the LLM to interpret relationships across market dynamics, mindshare, distribution, and perception, producing coherent, insight-driven summaries grounded in data.
+</div>
+
 A key design requirement was maintaining **consistency across multiple levels of abstraction**.
 
 To achieve this, the system:
