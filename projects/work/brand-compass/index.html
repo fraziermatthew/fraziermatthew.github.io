@@ -118,15 +118,6 @@
 
 <p>Brand Compass is a <strong>production-facing LLM integration layer</strong> that generates structured, decision-ready narratives from a hierarchical brand health scorecard.</p>
 
-<p>The system sits on top of a multi-source analytics pipeline combining industry, client, and competitive data, organized into weighted sections spanning <strong>Market Snapshot, Mental Availability, Physical Availability, and Perception</strong>.</p>
-
-<p>I designed and implemented the <strong>LLM reasoning layer</strong> that translates these structured signals into <strong>cohesive, cross-sectional narratives</strong>, enabling clients to interpret complex performance data as a unified story rather than disconnected metrics.
-&lt;!– Brand Compass is an <strong>AI-assisted narrative layer</strong> built on top of a hierarchical brand health scorecard that evaluates a client’s position within its market and competitive landscape.</p>
-
-<p>The underlying scorecard was created using structured industry, client, and competitor data sources, with weighted sections spanning <strong>Market Snapshot, Mental Availability, Physical Availability, and Perception</strong>. Within each section, the dashboard presents charts, tables, and scores derived from multiple datasets and benchmarks.</p>
-
-<p>My contribution focused on designing how LLMs interpret that scorecard and the supporting raw data to generate <strong>cohesive, decision-ready summaries</strong> throughout the dashboard. –&gt;</p>
-
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
     <figure>
@@ -146,6 +137,15 @@
 <div class="caption">
   Example of the Brand Compass interface, where structured scorecard sections and AI-generated insights work together to tell a cohesive brand story.
 </div>
+
+<p>The system sits on top of a multi-source analytics pipeline combining industry, client, and competitive data, organized into weighted sections spanning <strong>Market Snapshot, Mental Availability, Physical Availability, and Perception</strong>.</p>
+
+<p>I designed and implemented the <strong>LLM reasoning layer</strong> that translates these structured signals into <strong>cohesive, cross-sectional narratives</strong>, enabling clients to interpret complex performance data as a unified story rather than disconnected metrics.
+&lt;!– Brand Compass is an <strong>AI-assisted narrative layer</strong> built on top of a hierarchical brand health scorecard that evaluates a client’s position within its market and competitive landscape.</p>
+
+<p>The underlying scorecard was created using structured industry, client, and competitor data sources, with weighted sections spanning <strong>Market Snapshot, Mental Availability, Physical Availability, and Perception</strong>. Within each section, the dashboard presents charts, tables, and scores derived from multiple datasets and benchmarks.</p>
+
+<p>My contribution focused on designing how LLMs interpret that scorecard and the supporting raw data to generate <strong>cohesive, decision-ready summaries</strong> throughout the dashboard. –&gt;</p>
 
 <hr>
 
@@ -181,6 +181,18 @@
 <strong>Output</strong> → aligned narrative summaries across charts, sections, and the full dashboard</li>
 </ul>
 
+<p>A key design requirement was maintaining <strong>consistency across multiple levels of abstraction</strong>.</p>
+
+<p>To achieve this, the system:</p>
+
+<ul>
+  <li>Interprets <strong>raw metrics and derived scores together</strong>, rather than independently</li>
+  <li>Generates insights at both <strong>local (chart)</strong> and <strong>global (section)</strong> levels</li>
+  <li>Enforces <strong>cross-sectional alignment</strong>, ensuring outputs do not contradict one another</li>
+</ul>
+
+<p>Unlike generic summarization systems, this architecture treats the LLM as part of a <strong>deterministic analytical workflow</strong>, where structure, constraints, and input design govern output quality.</p>
+
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
     <figure>
@@ -200,18 +212,6 @@
 <div class="caption">
   A multi-layered system that transforms diverse analytics signals into a unified brand narrative. Structured scorecard hierarchies enable the LLM to interpret relationships across market dynamics, mindshare, distribution, and perception, producing coherent, insight-driven summaries grounded in data.
 </div>
-
-<p>A key design requirement was maintaining <strong>consistency across multiple levels of abstraction</strong>.</p>
-
-<p>To achieve this, the system:</p>
-
-<ul>
-  <li>Interprets <strong>raw metrics and derived scores together</strong>, rather than independently</li>
-  <li>Generates insights at both <strong>local (chart)</strong> and <strong>global (section)</strong> levels</li>
-  <li>Enforces <strong>cross-sectional alignment</strong>, ensuring outputs do not contradict one another</li>
-</ul>
-
-<p>Unlike generic summarization systems, this architecture treats the LLM as part of a <strong>deterministic analytical workflow</strong>, where structure, constraints, and input design govern output quality.</p>
 
 <!-- ---
 
