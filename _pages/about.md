@@ -22,11 +22,11 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 <!-- version 7 -->
-I build production-grade AI systems that transform large-scale data into structured, decision-ready intelligence.
+I build production-grade AI systems for structured reasoning and decision intelligence.
 
 At Goodway Group, I design and operate distributed analytics and optimization systems operating high-throughput distributed optimization systems at scale, integrating multi-source data pipelines, event-driven architectures, and LLM-powered reasoning layers into production environments.
 
-My work focuses on **LLM-guided reasoning systems, data infrastructure, and agentic architectures**, where statistical signal generation and model inference are tightly coupled to produce consistent, interpretable outputs.
+My work centers on **LLM-guided reasoning systems, data infrastructure, and agentic architectures**, where statistical signal generation and model inference are tightly coupled to produce consistent, interpretable outputs.
 
 I earned my Ph.D. in Computer and Information Sciences from the University of Delaware, where I studied conversational agents and human-centered AI under <a href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE.
 

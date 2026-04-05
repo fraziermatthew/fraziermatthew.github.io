@@ -15,7 +15,7 @@
         - Designed and deployed distributed data pipelines and ETL systems (Airflow, MWAA, Argo, Redshift, Snowflake, S3) supporting large-scale marketing analytics and multi-source data ingestion
         - Architected integrations across 5+ external platforms (TTD, Google Ads, Meta, YouGov, Bing), enabling unified data processing and cross-platform analytics
         - Built event-driven systems (AWS Lambda, SNS, SQS FIFO, S3) to automate analytics workflows, replacing manual notebook-based processes with asynchronous, production-grade pipelines
-        - Designed AI-driven analytics capabilities within the GOES™ platform, transforming campaign data into structured signals (SQL fact tables, benchmarks, tradeoff logic) to enable LLM-based reasoning
+        - Architected AI-driven analytics capabilities within the GOES™ platform, transforming campaign data into structured signals (SQL fact tables, benchmark thresholds, tradeoff logic) to enable LLM-based reasoning and insight generation
         - Developed LLM-powered systems including RAG pipelines, streaming API integrations, and hierarchical insight generation (Brand Compass) using structured prompt engineering (CoT, ReAct, few-shot) and agentic workflows (CrewAI, LangChain, vector stores, Langfuse)
         - Operated across backend, data, and AI system layers, bridging infrastructure, analytics, and LLM-driven reasoning in production environments
 

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Automated Insights — Deterministic Analytics and LLM-Guided Insight Generation Pipeline"
-description: Deterministic analytics pipeline with structured signal generation and LLM-constrained insight production
+title: "Automated Insights — Deterministic Analytics System with Constrained LLM Interpretation"
+description: Structured analytics system that separates deterministic signal computation from LLM-based interpretation to produce consistent, decision-ready insights
 img: assets/img/auto-insights1.png
 importance: 2
 category: work
@@ -12,9 +12,11 @@ permalink: /projects/work/automated-insights/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-Built a scalable analytics system that transforms raw campaign data into structured signals and generates consistent, JSON-based insights using a constrained LLM reasoning layer.
+This system transforms raw campaign data into structured analytical signals and generates consistent, decision-ready insights using a constrained LLM interpretation layer.
 
-<!-- The Automated Insights System is a **production-oriented AI analytics pipeline** designed to generate structured, decision-ready insights from campaign performance data across **overall, channel, and audience dimensions**. -->
+Traditional analytics workflows either rely on manual analysis or delegate reasoning to LLMs operating over unstructured data, resulting in inconsistent and non-verifiable outputs. This system enforces a strict separation between deterministic computation and language-based interpretation, ensuring all metrics, benchmarks, and signals are computed upstream and the LLM operates only on validated inputs.
+
+I designed and implemented the end-to-end system, including SQL-based signal generation, structured data contracts, and the LLM reasoning layer that produces consistent, interpretable outputs.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -22,57 +24,45 @@ Built a scalable analytics system that transforms raw campaign data into structu
   </div>
 </div>
 <div class="caption">
-  End-to-end pipeline from campaign data to LLM-generated insights.
+  Deterministic signal generation feeding a constrained LLM interpretation layer for consistent insight production.
 </div>
 
-The system separates **deterministic data computation (SQL)** from **language-based interpretation (LLM)**, enabling reliable insight generation while maintaining flexibility for future autonomous extensions.
-
-<!-- Rather than relying on an LLM to infer meaning from raw data, the system separates **statistical reasoning from language generation**. Structured SQL pipelines compute all underlying facts, benchmarks, and signals, while the LLM is constrained to act as a controlled narrator that transforms those signals into clear, standardized insight outputs. -->
+The system operates as a layered analytical pipeline where structured statistical computation precedes and constrains all language generation.
 
 ---
 
 <h2 style="color: #b85f29; margin-top: 40px;">What I Built</h2>
 
-Designed and implemented an end-to-end pipeline that converts campaign performance data into structured, interpretable outputs.
+I built an end-to-end analytical system that converts campaign performance data into structured signals and enforces controlled LLM interpretation over those signals.
 
 This includes:
 
-- SQL pipelines that compute **benchmarks, distributions, and performance signals** across campaigns
-- A standardized **stats JSON schema** used as the sole input to the LLM
-- Prompting frameworks that guide the model to generate **structured, decision-ready outputs**
-- A fully JSON-based response format to ensure consistency and downstream usability
+- SQL pipelines that compute **benchmarks, distributions, and performance signals** across campaigns  
+- A standardized **stats JSON schema** that acts as the sole contract between computation and interpretation  
+- Prompting frameworks that constrain the model to generate **structured, decision-ready outputs**  
+- A fully JSON-based response format to ensure consistency, traceability, and downstream usability  
 
-The system produces insights deterministically at the data layer, while using the LLM strictly for interpretation.
-
-<!-- I designed and implemented the system end-to-end, including:
-
-- A **statistical signal framework** for identifying meaningful performance patterns using medians, deltas, percentiles, z-scores, and concentration metrics
-- A **multi-dimensional insight model** spanning campaign-level, channel-level, and audience-level analysis
-- A **prompt governance layer** that strictly controls how the LLM interprets and communicates insights
-- A **scheduled workflow pipeline** that generates insights weekly for newly completed campaigns
-- A **data and storage model** for managing prompts, generated insights, and feedback
-
-Although not part of the analytics team, I led the design and implementation in close collaboration with analytics leadership, iterating on outputs to ensure the system produced **client-relevant, high-value insights**. -->
+The system guarantees that all reasoning is grounded in precomputed signals, with the LLM restricted to **interpreting rather than deriving** analytical conclusions.
 
 ---
 
 <h2 style="color: #b85f29; margin-top: 40px;">System Design</h2>
 
-The architecture is intentionally split into two layers:
+The architecture is explicitly designed around separation of concerns:
 
-- **Computation Layer (SQL)**
-  Generates all metrics, benchmarks, and comparative signals in a deterministic and scalable manner
+- **Computation Layer (SQL)**  
+  Computes all metrics, benchmarks, and comparative signals deterministically and at scale  
 
-- **Interpretation Layer (LLM)**
-  Consumes structured JSON inputs and produces narrative insights without performing calculations
+- **Interpretation Layer (LLM)**  
+  Consumes structured JSON inputs and generates narrative insights without performing calculations  
 
-This separation ensures:
+This separation enforces:
 
-- no reliance on LLM numerical reasoning
-- consistent and reproducible outputs
-- controlled variability through prompt design
+- elimination of LLM-based numerical reasoning  
+- consistent and reproducible outputs  
+- controlled variability through prompt constraints  
 
-The stats JSON also enables **human validation and debugging**, providing transparency into how insights are formed.
+The structured JSON layer also enables **human validation, debugging, and system observability**, making insight generation transparent and auditable.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -80,85 +70,37 @@ The stats JSON also enables **human validation and debugging**, providing transp
   </div>
 </div>
 <div class="caption">
-  A constrained architecture that separates statistical computation from language model reasoning. Deterministic SQL-based signal generation produces fully structured inputs, enabling the LLM to perform controlled interpretation and generate consistent, data-grounded insights.
+  Separation of deterministic computation and constrained LLM reasoning ensures consistent, data-grounded outputs.
 </div>
-
-<!-- The system is structured as a layered pipeline:
-
-- **Data Layer** → campaign, supplier, channel, and audience performance data
-- **Analytics Layer** → computes structured statistical signals and benchmark comparisons
-- **Prompt Layer** → defines strict rules for allowed interpretations and narrative constraints
-- **Generation Layer** → produces concise insights grounded only in validated signals
-- **Execution Layer** → scheduled tasks generate insights weekly for completed campaigns
-- **Feedback Layer** → captures user feedback for continuous refinement
-
-This architecture ensures insights are driven by **deterministic statistical logic**, with AI used to standardize and communicate results rather than invent them. -->
-
-<!-- ---
-
-<h2 style="color: #b85f29; margin-top: 40px;">My Contribution</h2>
-
-I owned the system from initial concept through implementation and documentation.
-
-This included:
-
-- Designing the **analytical framework** used to determine when a signal is meaningful
-- Developing all **SQL pipelines and feature engineering logic**
-- Defining the **prompting strategy and behavioral constraints** for the LLM
-- Establishing the **contract between structured data outputs and generated language**
-- Creating documentation to train the analytics team on how to extend the framework
-- Translating the framework into a real-world client use case for awareness campaigns
-
-I also worked directly with analytics leadership to iterate on insight quality, ensuring outputs aligned with how analysts and clients interpret campaign performance. -->
 
 ---
 
 <h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
 
-This system combines:
+The system is built around:
 
-- Deterministic data pipelines using SQL for scalable signal and benchmark generation
-- Structured input schemas (JSON) for controlled LLM interaction
-- Prompt-constrained reasoning to ensure consistent, interpretable outputs
-- Architectural separation of computation and language-based interpretation
+- Deterministic data pipelines using SQL for scalable signal and benchmark generation  
+- Structured input schemas (JSON) enforcing strict contracts between system layers  
+- Prompt-constrained reasoning to ensure consistent and interpretable outputs  
+- Architectural separation of computation and language-based interpretation  
 
-It reflects a focus on **production-grade AI systems**, where reliability is achieved through structure, constraints, and clear separation of system responsibilities.
-
-<!-- This project sits at the intersection of:
-
-- Applied AI and prompt engineering
-- Analytics engineering and statistical feature design
-- Data pipelines and workflow automation
-- Human-in-the-loop feedback systems
-
-It reflects my focus on building systems where **AI generation is grounded in structured, explainable reasoning**. -->
+It reflects a design approach focused on **production-grade AI systems**, where reliability emerges from structure, constraints, and explicit system boundaries.
 
 ---
 
 <h2 style="color: #b85f29; margin-top: 40px;">Outcome</h2>
 
+The system enables scalable generation of consistent, interpretable insights across campaigns without relying on fragile LLM-based calculations.
 
-The system enables scalable generation of consistent, interpretable insights across campaigns without relying on fragile LLM calculations.
+It demonstrates that LLMs can operate reliably in production analytics systems when constrained by structured inputs and deterministic upstream computation.
 
-It demonstrates how structured inputs and constrained reasoning can make LLMs viable in production analytics systems.
+The architecture is designed for continued evolution toward:
 
-More importantly, the architecture is designed for future evolution toward:
+- LLM-assisted benchmark generation  
+- self-validating insight pipelines  
+- autonomous analytical systems  
 
-- LLM-generated benchmark creation
-- self-validating insight pipelines
-- fully autonomous analytics systems
-
-This project represents a step toward **AI systems that not only interpret data, but eventually own the full analytical lifecycle**.
-
-<!-- The system enables scalable, repeatable generation of campaign insights that are:
-
-- Consistent across campaigns and clients
-- Grounded in statistical evidence
-- Structured for decision-making
-
-It is designed to generalize across objectives and clients, with the long-term vision of building a **library of reusable analytical frameworks and prompt patterns** that can scale insight generation across the organization.
-
-This project demonstrates how AI can be used not just to summarize data, but to **operationalize analytical reasoning into a reusable system**. -->
+This system represents a step toward **AI systems that not only interpret data, but progressively take ownership of the analytical lifecycle**.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -166,5 +108,5 @@ This project demonstrates how AI can be used not just to summarize data, but to 
   </div>
 </div>
 <div class="caption">
-  Transforms structured statistical signals into consistent, interpretable insights through controlled LLM reasoning and JSON-based output contracts.
+  Structured signals transformed into consistent insights through constrained reasoning and explicit output contracts.
 </div>

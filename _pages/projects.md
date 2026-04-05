@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Production-grade systems spanning AI, data, and software engineering, focused on structured reasoning and scalable decision intelligence.
+description: Production-grade systems spanning AI, data, and distributed infrastructure, focused on structured reasoning and scalable decision intelligence.
 nav: true
 nav_order: 2
 display_categories: [work, research]

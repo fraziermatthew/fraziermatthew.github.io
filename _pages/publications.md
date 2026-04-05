@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 description: >
-  Research on LLM-guided reasoning, conversational agents, and human-centered AI, with publications at ICSE and ITiCSE.
+  Research informing the design of production AI systems grounded in structured reasoning and human-centered interaction, with publications at ICSE and ITiCSE.
 years: [2024, 2022]
 nav: true
 nav_order: 1
