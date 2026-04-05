@@ -912,5 +912,15 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     grid-column: none;
   }
 }
+.back-link {
+  font-size: 14px;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-bottom-color 0.15s ease;
+}
+.back-link:hover {
+  color: var(--global-hover-color);
+  border-bottom-color: var(--global-theme-color);
+}
 
 /*# sourceMappingURL=main.css.map */
