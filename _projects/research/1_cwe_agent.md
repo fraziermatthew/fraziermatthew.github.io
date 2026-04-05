@@ -96,6 +96,7 @@ This system combines:
 - Secure software engineering grounded in real-world CWE standards
 
 It reflects a focus on **evaluation-driven AI systems**, where generation, scoring, and selection are tightly coupled into a single pipeline.
+
 <!-- <h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
 
 This project sits at the intersection of:
