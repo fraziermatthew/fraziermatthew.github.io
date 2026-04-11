@@ -114,15 +114,31 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Resume <a href="/assets/pdf/Resume_3.19.26-swe.pdf" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>
-</h1>
+            <div class="cv-header-row d-flex flex-wrap align-items-baseline justify-content-between gap-3 mb-2">
+              <h1 class="post-title mb-0">Resume</h1>
+              <div class="cv-pdf-actions">
+                <a href="/assets/pdf/Resume_3.19.26-swe.pdf" download="Resume_3.19.26-swe.pdf" class="cv-pdf-link">Download Resume ↓</a>
+                <span class="cv-pdf-sep" aria-hidden="true">·</span>
+                <a href="/assets/pdf/Resume_3.19.26-swe.pdf" target="_blank" rel="noopener noreferrer" class="cv-pdf-link">View PDF →</a>
+              </div>
+            </div>
             <p class="post-description"></p>
           </header>
 
           <article>
+            <nav class="cv-toc" aria-label="On this page">
+              <div class="cv-toc-label">On this page</div>
+              <ul class="cv-toc-list">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#research-teaching">Research &amp; Teaching</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#education">Education</a></li>
+              </ul>
+            </nav>
+
             <div class="cv">
               
-                <div class="card mt-3 p-3">
+                <div class="card mt-3 p-3" id="experience">
                   <h3 class="card-title font-weight-medium">Experience</h3>
                   <div>
                   
@@ -309,7 +325,7 @@
                   </div>
                 </div>
               
-                <div class="card mt-3 p-3">
+                <div class="card mt-3 p-3" id="research-teaching">
                   <h3 class="card-title font-weight-medium">Research &amp; Teaching</h3>
                   <div>
                   
@@ -396,7 +412,7 @@
                   </div>
                 </div>
               
-                <div class="card mt-3 p-3">
+                <div class="card mt-3 p-3" id="publications">
                   <h3 class="card-title font-weight-medium">Publications</h3>
                   <div>
                   
@@ -463,7 +479,7 @@
                   </div>
                 </div>
               
-                <div class="card mt-3 p-3">
+                <div class="card mt-3 p-3" id="education">
                   <h3 class="card-title font-weight-medium">Education</h3>
                   <div>
                   
