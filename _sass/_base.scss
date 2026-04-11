@@ -134,6 +134,19 @@ blockquote {
   figure img.rounded {
     border-radius: 12px;
   }
+
+  img {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+// Bio / home layout only (`_layouts/about.html` → `.post.about-page`)
+.about-page .post-title {
+  margin-bottom: 10px;
 }
 
 .profile.float-right {
@@ -235,18 +248,44 @@ blockquote {
     }
   }
 
+  // .navbar-brand.social {
+  //   padding-bottom: 0;
+  //   padding-top: 0;
+  //   font-size: 1.7rem;
+
+  //   a {
+  //     i::before {
+  //       color: var(--global-text-color);
+  //       transition-property: all 0.2s ease-in-out;
+  //     }
+
+  //     &:hover {
+  //       i::before {
+  //         color: var(--global-theme-color);
+  //       }
+  //     }
+  //   }
+  // }
+
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
-    font-size: 1.7rem;
-
+    font-size: 1.55rem;
+  
     a {
+      margin-right: 0.35rem;
+      opacity: 0.78;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+  
       i::before {
         color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        transition: color 0.2s ease;
       }
-
+  
       &:hover {
+        opacity: 1;
+        transform: translateY(-1px);
+  
         i::before {
           color: var(--global-theme-color);
         }

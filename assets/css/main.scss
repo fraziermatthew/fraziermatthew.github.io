@@ -41,3 +41,36 @@ $secondary-color: #8c4720; // this is brownish
 .cv .card-title {
   color: $secondary-color;
 }
+
+// Floating back-to-top (see _includes/back_to_top.html)
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1050;
+  width: 42px;
+  height: 42px;
+  background-color: $secondary-color;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  user-select: none;
+
+  &.show {
+    opacity: 0.85;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
