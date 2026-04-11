@@ -1063,87 +1063,97 @@ a.inline-link:hover {
   border-bottom-color: var(--global-theme-color);
 }
 
+.post.teaching-page {
+  max-width: 720px;
+}
+.post.teaching-page a {
+  transition: all 0.18s ease;
+}
 .post.teaching-page strong {
   font-weight: 600;
 }
 .post.teaching-page h2 {
-  font-size: 2.2rem;
-  margin-top: 2.4rem;
-  margin-bottom: 1rem;
+  font-size: 2.15rem;
   line-height: 1.1;
+  margin-top: 3.2rem;
+  margin-bottom: 1.1rem;
 }
-.post.teaching-page h2 + p,
-.post.teaching-page h2 + ul,
-.post.teaching-page h2 + div {
-  margin-top: 0.6rem;
+.post.teaching-page h2:first-of-type {
+  margin-top: 2rem;
 }
 .post.teaching-page h3,
 .post.teaching-page h4 {
-  font-size: 1.55rem;
-  margin-top: 1.35rem;
-  margin-bottom: 0.7rem;
+  font-size: 1.7rem;
   line-height: 1.15;
+  margin-top: 1.6rem;
+  margin-bottom: 0.85rem;
 }
-.post.teaching-page h3 + .teaching-course,
-.post.teaching-page h3 + p,
-.post.teaching-page h4 + .teaching-course,
-.post.teaching-page h4 + p {
-  margin-top: 0.9rem;
-}
-.post.teaching-page .university-block {
-  margin-top: 0.9rem;
-}
-.post.teaching-page p,
-.post.teaching-page ul {
-  margin-bottom: 1rem;
+.post.teaching-page p {
+  margin-bottom: 1.1rem;
 }
 .post.teaching-page ul {
-  margin-top: 0.5rem;
+  margin-top: 0.65rem;
+  margin-bottom: 1.25rem;
 }
-.post.teaching-page .teaching-meta {
-  font-size: 0.97rem;
-  color: var(--global-text-color-light);
-}
-.post.teaching-page .research-link {
-  color: var(--global-theme-color);
-  text-decoration: none;
-  transition: color 0.2s ease, border-bottom-color 0.2s ease;
-  border-bottom: 1px solid transparent;
-}
-.post.teaching-page .research-link:hover {
-  color: var(--global-theme-color);
-  border-bottom-color: var(--global-theme-color);
+.post.teaching-page li {
+  margin-bottom: 0.2rem;
 }
 .post.teaching-page .teaching-course {
-  margin-bottom: 1.35rem;
-  line-height: 1.45;
+  margin-bottom: 1.6rem;
+  padding-left: 0.2rem;
+  padding-bottom: 0.4rem;
 }
-.post.teaching-page .teaching-course p,
-.post.teaching-page .teaching-course div {
-  line-height: 1.45;
+.post.teaching-page .teaching-course:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
-.post.teaching-page .teaching-course strong {
-  display: inline-block;
-  margin-bottom: 0.2rem;
+.post.teaching-page .teaching-course-title {
+  font-size: 1.05rem;
+  line-height: 1.3;
   font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
 }
-.post.teaching-page .teaching-course .meta,
-.post.teaching-page .teaching-course em {
-  font-size: 0.96rem;
-  color: var(--global-text-color-light);
+.post.teaching-page .teaching-course-title p {
+  margin: 0;
 }
-.post.teaching-page .teaching-course a {
+.post.teaching-page .teaching-course-title a {
   color: var(--global-text-color);
   text-decoration: none !important;
-  transition: color 0.2s ease, border-bottom-color 0.2s ease;
   border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
 }
-.post.teaching-page .teaching-course a:hover {
+.post.teaching-page .teaching-course-title a:hover {
   color: var(--global-theme-color);
   border-bottom-color: var(--global-theme-color);
 }
-.post.teaching-page .teaching-course + .teaching-course {
-  margin-top: 1.25rem;
+.post.teaching-page .teaching-course-meta {
+  font-size: 0.98rem;
+  line-height: 1.35;
+  color: var(--global-text-color-light);
+  opacity: 0.85;
+  margin-bottom: 0.08rem;
+}
+.post.teaching-page .teaching-course-meta:last-child {
+  margin-bottom: 0;
+}
+.post.teaching-page strong > a.research-link,
+.post.teaching-page a.research-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s ease;
+}
+.post.teaching-page strong > a.research-link:hover,
+.post.teaching-page a.research-link:hover {
+  border-bottom-color: var(--global-theme-color);
+}
+.post.teaching-page a.inline-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.post.teaching-page a.inline-link:hover {
+  text-decoration: underline !important;
 }
 
 .cv .card li {
