@@ -1101,6 +1101,8 @@ a.inline-link:hover {
 .post.about-page .desc {
   margin-bottom: 0;
   color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  max-width: 640px;
 }
 
 .post.teaching-page {
