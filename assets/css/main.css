@@ -1031,6 +1031,37 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   border-bottom-color: var(--global-theme-color);
 }
 
+a.inline-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.inline-link:hover {
+  text-decoration: underline !important;
+}
+
+.affiliation-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+.affiliation-link:hover {
+  opacity: 0.7;
+}
+
+.section-link {
+  color: var(--global-text-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.section-link:hover {
+  color: var(--global-text-color);
+  border-bottom-color: var(--global-theme-color);
+}
+
 .cv .card li {
   color: var(--global-text-color-light);
 }
