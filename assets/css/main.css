@@ -1082,8 +1082,8 @@ a.inline-link:hover {
   font-size: 2.15rem;
   line-height: 1.08;
   letter-spacing: -0.02em;
-  margin-top: 3.15rem;
-  margin-bottom: 1.1rem;
+  margin-top: 3.75rem;
+  margin-bottom: 1.25rem;
 }
 .post.teaching-page h2:first-of-type {
   margin-top: 0;
@@ -1109,29 +1109,31 @@ a.inline-link:hover {
   line-height: 1.5;
 }
 .post.teaching-page .teaching-course {
-  margin-bottom: 1.55rem;
+  margin-bottom: 1.35rem;
   padding-bottom: 0.6rem;
 }
 .post.teaching-page .teaching-course:not(:last-of-type) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.045);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
 }
 .post.teaching-page .teaching-course-title {
-  font-size: 1.04rem;
+  font-size: 1rem;
   line-height: 1.28;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-weight: 500;
+  letter-spacing: -0.005em;
   margin-bottom: 0.18rem;
 }
 .post.teaching-page .teaching-course-title p {
   margin: 0;
 }
 .post.teaching-page .teaching-course-title strong {
-  font-weight: 600;
+  font-weight: 500;
+  display: inline;
+  margin-bottom: 0;
 }
 .post.teaching-page .teaching-course-title a {
   color: var(--global-text-color);
   text-decoration: none !important;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   transition: color 0.18s ease, border-bottom-color 0.18s ease;
 }
 .post.teaching-page .teaching-course-title a:hover {
@@ -1139,10 +1141,10 @@ a.inline-link:hover {
   border-bottom-color: var(--global-theme-color);
 }
 .post.teaching-page .teaching-course-meta {
-  font-size: 0.98rem;
+  font-size: 0.96rem;
   line-height: 1.34;
   color: var(--global-text-color-light);
-  opacity: 0.9;
+  opacity: 0.72;
   margin-bottom: 0.04rem;
 }
 .post.teaching-page .teaching-course-meta:last-child {
@@ -1152,15 +1154,23 @@ a.inline-link:hover {
 .post.teaching-page h2 + ul {
   margin-top: 0.5rem;
 }
-.post.teaching-page p strong:only-child,
-.post.teaching-page strong:first-child {
+.post.teaching-page p strong:only-child {
   font-weight: 600;
 }
+.post.teaching-page strong:first-child {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
 .post.teaching-page .research-link {
+  font-weight: 500;
   color: var(--global-theme-color);
   text-decoration: none !important;
   border-bottom: 1px solid transparent;
   transition: border-bottom-color 0.18s ease, color 0.18s ease;
+}
+.post.teaching-page .research-link strong {
+  font-weight: 500;
 }
 .post.teaching-page .research-link:hover {
   color: var(--global-theme-color);
