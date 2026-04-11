@@ -117,12 +117,22 @@ blockquote {
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: var(--global-font-family);
+    font-size: 0.95rem;
+    opacity: 0.8;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    color: var(--global-text-color-light);
 
     p {
       display: inline-block;
       margin: 0;
     }
+  }
+
+  // About page profile photo when `image_circular: false` (uses `.rounded`, not `.rounded-circle`)
+  figure img.rounded {
+    border-radius: 12px;
   }
 }
 
