@@ -2,6 +2,12 @@
  * Content
  ******************************************************************************/
 
+// Keep layout width stable when the vertical scrollbar appears (e.g. long pages
+// like /publications/ vs short pages) — avoids the whole column “jumping” sideways.
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   padding-bottom: 70px;
   color: var(--global-text-color);
