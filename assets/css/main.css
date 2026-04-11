@@ -661,7 +661,15 @@ footer.sticky-bottom {
   border: 1px solid var(--global-theme-color);
 }
 .publications ol.bibliography li .title {
-  font-weight: bolder;
+  font-weight: 500;
+}
+.publications ol.bibliography li .title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.publications ol.bibliography li .title a:hover {
+  color: var(--global-theme-color);
 }
 .publications ol.bibliography li .author a {
   border-bottom: 1px dashed var(--global-theme-color);
