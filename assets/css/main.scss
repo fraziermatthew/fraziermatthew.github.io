@@ -74,6 +74,41 @@ a.inline-link:hover {
   }
 }
 
+// Teaching page (see _pages/teaching.md — `page_class: teaching-page`)
+.post.teaching-page {
+  h2 {
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-top: 1.4rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p,
+  ul,
+  ol {
+    margin-bottom: 1rem;
+  }
+
+  .teaching-course {
+    margin-bottom: 1.5rem;
+
+    a {
+      color: var(--global-text-color);
+      text-decoration: none !important;
+      transition: color 0.2s ease, border-bottom-color 0.2s ease;
+      border-bottom: 1px solid transparent;
+    }
+
+    a:hover {
+      color: var(--global-theme-color);
+      border-bottom-color: var(--global-theme-color);
+    }
+  }
+}
+
 // CV page: section headings use secondary accent (burnt orange; see $secondary-color above)
 .cv .card-title {
   // color: $secondary-color;
