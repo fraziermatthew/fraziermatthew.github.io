@@ -1063,6 +1063,33 @@ a.inline-link:hover {
   border-bottom-color: var(--global-theme-color);
 }
 
+.post.teaching-page h2 {
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+}
+.post.teaching-page h3 {
+  margin-top: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+.post.teaching-page p,
+.post.teaching-page ul,
+.post.teaching-page ol {
+  margin-bottom: 1rem;
+}
+.post.teaching-page .teaching-course {
+  margin-bottom: 1.5rem;
+}
+.post.teaching-page .teaching-course a {
+  color: var(--global-text-color);
+  text-decoration: none !important;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+.post.teaching-page .teaching-course a:hover {
+  color: var(--global-theme-color);
+  border-bottom-color: var(--global-theme-color);
+}
+
 .cv .card li {
   color: var(--global-text-color-light);
 }
