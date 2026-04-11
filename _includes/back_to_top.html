@@ -5,15 +5,23 @@
 <script type="text/javascript">
   (function () {
     var $btn = $("#back-to-top");
-    var threshold = 300;
+    // Fixed 300px works on long pages; on short pages (e.g. CV) max scroll may never reach 300,
+    // so scale threshold to ~20% of scrollable distance, capped at 300px.
+    function scrollThreshold() {
+      var maxScroll = $(document).height() - $(window).height();
+      if (maxScroll <= 0) {
+        return Infinity;
+      }
+      return Math.min(300, Math.max(1, maxScroll * 0.2));
+    }
     function toggle() {
-      if ($(window).scrollTop() > threshold) {
+      if ($(window).scrollTop() > scrollThreshold()) {
         $btn.addClass("show");
       } else {
         $btn.removeClass("show");
       }
     }
-    $(window).on("scroll", toggle);
+    $(window).on("scroll resize", toggle);
     toggle();
     $btn.on("click", function () {
       $("html, body").animate({ scrollTop: 0 }, 400);
