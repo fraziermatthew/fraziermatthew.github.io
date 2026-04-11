@@ -9,16 +9,12 @@ nav_order: 5
 page_class: teaching-page
 ---
 
-<!-- I teach computer science with a focus on developing structured problem-solving, debugging skills, and applied reasoning in real-world systems.
-
-My teaching emphasizes bridging theoretical concepts with practical engineering workflows. -->
-
 ## Approach
 
-I focus on developing structured problem-solving, debugging intuition, and real-world system thinking.
+I teach computer science with a focus on structured problem-solving, debugging intuition, and applied reasoning in real-world systems.
 
 My instruction emphasizes:
-- breaking down complex systems into reasoning steps
+- breaking down complex systems into **reasoning steps**
 - bridging theory with **production engineering** workflows
 - guiding students toward **independent problem-solving** rather than solution memorization
 
