@@ -1,0 +1,6 @@
+{%- comment -%}
+  Renders a YAML string as inline Markdown (e.g. **bold** → <strong>).
+  Kramdown wraps block content in <p>...</p>; strip so result can sit inside <span> or <td>.
+{%- endcomment -%}
+{%- assign _html = include.text | markdownify | strip -%}
+{{- _html | remove: '<p>' | remove: '</p>' -}}

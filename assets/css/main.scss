@@ -43,8 +43,14 @@ $secondary-color: #8c4720; // this is brownish
 }
 
 .cv .card li {
-  font-weight: 400;
-  line-height: 1.55;
+  // font-weight: 400;
+  // line-height: 1.55;
+  color: var(--global-text-color-light);
+}
+
+.cv .card li strong {
+  color: var(--global-text-color);
+  font-weight: 500;
 }
 
 // Floating back-to-top (see _includes/back_to_top.html)
