@@ -1023,8 +1023,9 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   border-bottom-color: var(--global-theme-color);
 }
 
-.cv .card-title {
-  color: #8c4720;
+.cv .card li {
+  font-weight: 400;
+  line-height: 1.55;
 }
 
 #back-to-top {
