@@ -457,7 +457,8 @@ footer.sticky-bottom {
 }
 .cv-toc .cv-toc-list {
   margin: 0;
-  padding-left: 1.15rem;
+  padding-left: 0;
+  list-style: none;
   font-size: 0.98rem;
 }
 .cv-toc .cv-toc-list li {
