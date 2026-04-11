@@ -14,7 +14,7 @@ profile:
     <p>University of Delaware</p>
     <br/>
     <p>Sr. Software Engineer</p>
-    <p>Goodway Group</p>
+    <a class="affiliation-link" href="https://www.goodwaygroup.com//">Goodway Group</a>
 
 news: false  # set to true to show news on this page
 selected_papers: true # includes a list of papers marked as "selected={true}"
