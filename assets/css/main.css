@@ -209,6 +209,16 @@ blockquote {
 .profile figure img.rounded {
   border-radius: 12px;
 }
+.profile img {
+  transition: transform 0.3s ease;
+}
+.profile img:hover {
+  transform: scale(1.02);
+}
+
+.about-page .post-title {
+  margin-bottom: 10px;
+}
 
 .profile.float-right {
   margin-left: 1rem;
@@ -290,11 +300,20 @@ blockquote {
 .navbar.navbar-light .navbar-brand.social {
   padding-bottom: 0;
   padding-top: 0;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
+}
+.navbar.navbar-light .navbar-brand.social a {
+  margin-right: 0.35rem;
+  opacity: 0.78;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 .navbar.navbar-light .navbar-brand.social a i::before {
   color: var(--global-text-color);
-  transition-property: all 0.2s ease-in-out;
+  transition: color 0.2s ease;
+}
+.navbar.navbar-light .navbar-brand.social a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
 }
 .navbar.navbar-light .navbar-brand.social a:hover i::before {
   color: var(--global-theme-color);
@@ -933,6 +952,36 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 
 .cv .card-title {
   color: #8c4720;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1050;
+  width: 42px;
+  height: 42px;
+  background-color: #8c4720;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  user-select: none;
+}
+#back-to-top.show {
+  opacity: 0.85;
+  visibility: visible;
+  pointer-events: auto;
+}
+#back-to-top:hover {
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 /*# sourceMappingURL=main.css.map */

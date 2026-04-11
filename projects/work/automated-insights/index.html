@@ -400,5 +400,34 @@ Consumes structured JSON inputs and generates narrative insights without perform
   }
 </script>
 
+    <!-- Back to top -->
+<div id="back-to-top" role="button" tabindex="0" aria-label="Back to top" title="Back to top">
+  ↑
+</div>
+<script type="text/javascript">
+  (function () {
+    var $btn = $("#back-to-top");
+    var threshold = 300;
+    function toggle() {
+      if ($(window).scrollTop() > threshold) {
+        $btn.addClass("show");
+      } else {
+        $btn.removeClass("show");
+      }
+    }
+    $(window).on("scroll", toggle);
+    toggle();
+    $btn.on("click", function () {
+      $("html, body").animate({ scrollTop: 0 }, 400);
+    });
+    $btn.on("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        $btn.trigger("click");
+      }
+    });
+  })();
+</script>
+
   </body>
 </html>
