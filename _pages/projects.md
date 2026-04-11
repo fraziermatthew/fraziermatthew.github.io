@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Projects
+title: projects
+heading: Projects
 permalink: /projects/
 description: Production-grade systems spanning AI, data, and distributed infrastructure, focused on structured reasoning and scalable decision intelligence.
 nav: true

@@ -1,7 +1,8 @@
 ---
 layout: page
 permalink: /publications/
-title: Publications
+title: publications
+heading: Publications
 description: >
   Research informing the design of production AI systems grounded in structured reasoning and human-centered interaction, with publications at ICSE and ITiCSE.
 years: [2024, 2022]

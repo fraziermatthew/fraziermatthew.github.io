@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Bio
+title: bio
 permalink: /
 subtitle: Designing production-grade AI systems for structured reasoning and decision intelligence
 
