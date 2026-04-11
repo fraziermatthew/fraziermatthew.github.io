@@ -287,11 +287,16 @@ blockquote {
 .navbar.navbar-light .navbar-brand {
   color: var(--global-text-color);
 }
-.navbar.navbar-light .navbar-brand.title {
+.navbar.navbar-light .navbar-brand.navbar-site-name {
+  color: var(--global-text-color);
   transition: color 0.2s ease;
 }
-.navbar.navbar-light .navbar-brand.title:hover {
-  color: var(--global-theme-color);
+.navbar.navbar-light .navbar-brand.navbar-site-name span {
+  color: inherit !important;
+  transition: color 0.2s ease;
+}
+.navbar.navbar-light .navbar-brand.navbar-site-name:hover, .navbar.navbar-light .navbar-brand.navbar-site-name:hover span {
+  color: var(--global-theme-color) !important;
 }
 .navbar.navbar-light .navbar-nav .nav-item .nav-link {
   color: var(--global-text-color);
