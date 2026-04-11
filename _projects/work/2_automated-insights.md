@@ -31,7 +31,7 @@ The system operates as a layered analytical pipeline where structured statistica
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">What I Built</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">What I Built</h2>
 
 I built an end-to-end analytical system that converts campaign performance data into structured signals and enforces controlled LLM interpretation over those signals.
 
@@ -46,7 +46,7 @@ The system guarantees that all reasoning is grounded in precomputed signals, wit
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">System Design</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">System Design</h2>
 
 The architecture is explicitly designed around separation of concerns:
 
@@ -75,7 +75,7 @@ The structured JSON layer also enables **human validation, debugging, and system
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">Technical Focus</h2>
 
 The system is built around:
 
@@ -88,7 +88,7 @@ It reflects a design approach focused on **production-grade AI systems**, where 
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">Outcome</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">Outcome</h2>
 
 The system enables scalable generation of consistent, interpretable insights across campaigns without relying on fragile LLM-based calculations.
 

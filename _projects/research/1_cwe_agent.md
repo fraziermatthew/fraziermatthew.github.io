@@ -20,7 +20,7 @@ I designed and implemented a multi-agent orchestration system using CrewAI that 
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">What I Built</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">What I Built</h2>
 
 I built a multi-agent system where each stage of the pipeline performs a distinct role in generating, evaluating, and selecting high-signal vulnerabilities.
 
@@ -44,7 +44,7 @@ All prompts, scoring logic, and evaluation strategies are managed through **Lang
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">System Design</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">System Design</h2>
 
 The architecture is implemented as a staged agentic workflow, where each agent operates on shared context and produces structured outputs consumed by downstream agents.
 
@@ -59,7 +59,7 @@ The system behaves as a **coordinated reasoning pipeline**, where generation, ev
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">Technical Focus</h2>
 
 The system is built around:
 
@@ -73,7 +73,7 @@ It reflects a design approach centered on **evaluation-driven AI systems**, wher
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">Outcome</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">Outcome</h2>
 
 The system demonstrates how agentic AI can move beyond static analysis into **context-aware decision systems**.
 

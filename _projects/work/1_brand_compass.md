@@ -31,7 +31,7 @@ The system operates on top of a multi-source analytics pipeline combining indust
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">What I Built</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">What I Built</h2>
 
 I built the reasoning layer that converts structured scorecard outputs into aligned, decision-ready narratives across the full analytical hierarchy.
 
@@ -47,7 +47,7 @@ The result is a system where the LLM operates as a **controlled reasoning compon
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">System Design</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">System Design</h2>
 
 The architecture is designed as a structured interpretation layer on top of deterministic analytical inputs.
 
@@ -76,7 +76,7 @@ Unlike generic summarization pipelines, the LLM operates within a **structured a
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">Technical Focus</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">Technical Focus</h2>
 
 The system is built around:
 
@@ -89,7 +89,7 @@ It reflects a design approach centered on **controlled reasoning over structured
 
 ---
 
-<h2 style="color: #b85f29; margin-top: 40px;">Outcome</h2>
+<h2 style="color: #8c4720; margin-top: 40px;">Outcome</h2>
 
 The system demonstrates how constrained reasoning enables LLMs to operate reliably within structured analytics environments.
 
