@@ -1086,20 +1086,26 @@ a.inline-link:hover {
   border-bottom-color: var(--global-theme-color);
 }
 
-.post.teaching-page {
-  max-width: 980px;
-}
-.post.teaching-page .post-header {
+.post.section-page .post-header,
+.post.about-page .post-header {
   margin-bottom: 2.75rem;
 }
-.post.teaching-page .post-title {
+.post.section-page .post-title,
+.post.about-page .post-title {
   margin-bottom: 0.55rem;
   line-height: 1.02;
 }
-.post.teaching-page .post-description {
+.post.section-page .post-description,
+.post.section-page .desc,
+.post.about-page .post-description,
+.post.about-page .desc {
   margin-bottom: 0;
   color: var(--global-text-color-light);
   font-size: 1rem;
+}
+
+.post.teaching-page {
+  max-width: 980px;
 }
 .post.teaching-page h2 {
   font-size: 2.15rem;
