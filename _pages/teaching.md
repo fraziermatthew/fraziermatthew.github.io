@@ -9,9 +9,9 @@ nav_order: 5
 page_class: teaching-page
 ---
 
-I teach computer science with a focus on developing structured problem-solving, debugging skills, and applied reasoning in real-world systems.
+<!-- I teach computer science with a focus on developing structured problem-solving, debugging skills, and applied reasoning in real-world systems.
 
-My teaching emphasizes bridging theoretical concepts with practical engineering workflows.
+My teaching emphasizes bridging theoretical concepts with practical engineering workflows. -->
 
 ## Approach
 
