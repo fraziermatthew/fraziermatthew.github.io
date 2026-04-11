@@ -16,7 +16,7 @@ I teach computer science by training how engineers think — through structured 
 My instruction emphasizes:
 - breaking complex systems into clear **reasoning steps**
 - connecting theory to **production engineering workflows**
-- guiding students toward **independent problem-solving** over memorization
+- guiding students toward **independent problem-solving** over rote memorization
 
 ## Courses Taught
 
