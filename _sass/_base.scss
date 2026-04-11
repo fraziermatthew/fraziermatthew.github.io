@@ -230,6 +230,15 @@ blockquote {
     color: var(--global-text-color);
   }
 
+  // Name / site title link (non–home pages only; home uses `.navbar-brand.social`)
+  .navbar-brand.title {
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
 
