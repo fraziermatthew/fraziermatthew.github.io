@@ -76,16 +76,29 @@ a.inline-link:hover {
 
 // Teaching page (see _pages/teaching.md — `page_class: teaching-page`)
 .post.teaching-page {
-  h2 {
-    font-size: 2.25rem;
-    margin-top: 2.2rem;
-    margin-bottom: 1rem;
+  strong {
+    font-weight: 600;
   }
 
-  h3 {
+  h2 {
+    font-size: 2.2rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+
+    + p,
+    + ul,
+    + div {
+      margin-top: 0.6rem;
+    }
+  }
+
+  h3,
+  h4 {
     font-size: 1.55rem;
-    margin-top: 1.25rem;
+    margin-top: 1.35rem;
     margin-bottom: 0.7rem;
+    line-height: 1.15;
 
     + .teaching-course,
     + p {
@@ -98,13 +111,33 @@ a.inline-link:hover {
   }
 
   p,
-  ul,
-  ol {
+  ul {
     margin-bottom: 1rem;
   }
 
+  ul {
+    margin-top: 0.5rem;
+  }
+
+  .teaching-meta {
+    font-size: 0.97rem;
+    color: var(--global-text-color-light);
+  }
+
+  .research-link {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-bottom-color: var(--global-theme-color);
+    }
+  }
+
   .teaching-course {
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.35rem;
     line-height: 1.45;
 
     p,
@@ -112,8 +145,9 @@ a.inline-link:hover {
       line-height: 1.45;
     }
 
-    strong,
-    b {
+    strong {
+      display: inline-block;
+      margin-bottom: 0.2rem;
       font-weight: 600;
     }
 
