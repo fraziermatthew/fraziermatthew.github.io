@@ -9,8 +9,9 @@ $max-content-width: {{ site.max_width }};
 // Theme overrides (must come before @import "variables" — those files use !default).
 // $secondary-color: light-mode accent & links (--global-theme-color / --global-hover-color).
 // Previous default (al-folio purple), if you want to switch back: #B509AC
-// $secondary-color: #b85f29; // this was the previous $purple-color
-$secondary-color: #b85f29;
+// $secondary-color: #600e08; // this is the $purple-color
+$secondary-color: #b85f29; // this is the burnt orange color
+// $secondary-color: #600e08; // this is crimson red
 // Dark mode accent still comes from $cyan-color in _sass/_themes.scss:
 // $cyan-color: #2698BA;
 

@@ -18,8 +18,9 @@ $green-color-dark:    #009f06 !default;
 $green-color-light:   #ddffdd !default;
 $green-color-bright:  #11D68B !default;
 // Light-mode accent / links (see _themes.scss --global-theme-color). Al-folio originally used purple #B509AC.
-// $secondary-color:     #B509AC !default; // this was the previous purple color
-$secondary-color:     #b85f29 !default;
+// $secondary-color:     #B509AC !default; // this is purple color
+$secondary-color:     #b85f29 !default; // this is burnt orange color
+// $secondary-color:     #600e08 !default; // this is crimson color
 $light-secondary-color: lighten($secondary-color, 25%);
 $pink-color:          #f92080 !default;
 $pink-color-light:    #ffdddd !default;
