@@ -6,7 +6,7 @@ heading: Teaching
 description: Teaching and instructional experience
 nav: true
 nav_order: 5
-page_class: teaching-page
+page_class: teaching-page section-page
 ---
 
 ## Approach

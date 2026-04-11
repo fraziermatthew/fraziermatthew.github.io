@@ -99,11 +99,10 @@ a.inline-link:hover {
   }
 }
 
-// Teaching page (see _pages/teaching.md — `page_class: teaching-page`)
-.post.teaching-page {
-  max-width: 980px;
-
-  // page title + description
+// Top-level section pages: shared page header, title, and description (not teaching-only body typography)
+// (bio = `.about-page`; publications / projects / teaching = `page_class: section-page`; resume = cv `.section-page`)
+.post.section-page,
+.post.about-page {
   .post-header {
     margin-bottom: 2.75rem;
   }
@@ -113,11 +112,17 @@ a.inline-link:hover {
     line-height: 1.02;
   }
 
-  .post-description {
+  .post-description,
+  .desc {
     margin-bottom: 0;
     color: var(--global-text-color-light);
     font-size: 1rem;
   }
+}
+
+// Teaching page (see _pages/teaching.md — `page_class: teaching-page section-page`)
+.post.teaching-page {
+  max-width: 980px;
 
   // section hierarchy
   h2 {

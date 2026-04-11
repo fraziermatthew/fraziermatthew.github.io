@@ -7,7 +7,7 @@ layout: default
 {%- endif -%}
 {%- assign cv_section_count = site.data.cv | size -%}
 <!-- _layouts/cv.html -->
-        <div class="post">
+        <div class="post section-page">
 
           <header class="post-header">
             <div class="cv-header-row d-flex flex-wrap align-items-baseline justify-content-between gap-3 mb-2">
@@ -20,7 +20,9 @@ layout: default
               </div>
               {%- endif %}
             </div>
+            {%- if page.description %}
             <p class="post-description">{{ page.description }}</p>
+            {%- endif %}
           </header>
 
           <article>

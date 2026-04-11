@@ -8,6 +8,7 @@ description: >
 years: [2024, 2022]
 nav: true
 nav_order: 1
+page_class: section-page
 ---
 <div style="text-align: right"> <small>*equal contribution</small> </div>
 <!-- _pages/publications.md -->
