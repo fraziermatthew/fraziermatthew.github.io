@@ -13,6 +13,15 @@ I teach computer science with a focus on developing structured problem-solving, 
 
 My teaching emphasizes bridging theoretical concepts with practical engineering workflows.
 
+## Teaching Approach
+
+I focus on developing structured problem-solving, debugging intuition, and real-world system thinking.
+
+My instruction emphasizes:
+- breaking down complex systems into reasoning steps
+- bridging theory with production engineering workflows
+- guiding students toward **independent problem-solving** rather than solution memorization
+
 ## Courses Taught
 
 ### University of Delaware
@@ -47,30 +56,19 @@ Teaching Assistant · Spring '20 · Dr. Debra Yarrington
 Teaching Assistant · Fall '17 · Dr. Si Chen
 </div>
 
-## Teaching Approach
+## Responsibilities
 
-I focus on developing structured problem-solving, debugging intuition, and real-world system thinking.
-
-My instruction emphasizes:
-- breaking down complex systems into reasoning steps
-- bridging theory with production engineering workflows
-- guiding students toward **independent problem-solving** rather than solution memorization
-
-## Instructor Responsibilities
-
-Core responsibilities included:
+**Instructor**
 - Designed and delivered lectures, assignments, and course materials
 - Led full classroom instruction and course direction
 - Developed original projects with evaluation frameworks
 
-## Teaching Assistant Responsibilities
-
-Core responsibilities included:
+**Teaching Assistant**
 - Led lab sessions and reinforced lecture material
 - Mentored students in programming and data structures
 - Provided detailed feedback through grading and office hours
 
-## Research Experience
+## Research
 
 **[Software Analysis and Compilation Lab (SAC)](https://sites.udel.edu/se-research/)**  
 University of Delaware · Research Assistant · 2021–2024  
