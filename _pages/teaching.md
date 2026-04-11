@@ -22,41 +22,46 @@ My instruction emphasizes:
 
 ### University of Delaware
 
-<div class="teaching-course" markdown="1">
-<div class="teaching-course-title" markdown="1">
-**[Introduction to Computer Science II](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682087&print)** (CISC 181)
+<div class="teaching-course">
+<div class="teaching-course-title">
+  <a href="https://catalog.udel.edu/preview_course.php?catoid=94&coid=682087&print"><strong>Introduction to Computer Science II</strong></a>
+  <span class="course-code">(CISC 181)</span>
 </div>
 <div class="teaching-course-meta">Instructor · Summer ’20, ’21</div>
 <div class="teaching-course-meta">Teaching Assistant · Spring ’21, ’23 · Instr. Katie Wassil</div>
 </div>
 
-<div class="teaching-course" markdown="1">
-<div class="teaching-course-title" markdown="1">
-**[Computers, Ethics and Society](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682115&print)** (CISC 355)
+<div class="teaching-course">
+<div class="teaching-course-title">
+  <a href="https://catalog.udel.edu/preview_course.php?catoid=94&coid=682115&print"><strong>Computers, Ethics and Society</strong></a>
+  <span class="course-code">(CISC 355)</span>
 </div>
 <div class="teaching-course-meta">Instructor · Summer ’22</div>
 <div class="teaching-course-meta">Teaching Assistant · 2019–2021 · Dr. T. Gregory Lynch</div>
 </div>
 
-<div class="teaching-course" markdown="1">
-<div class="teaching-course-title" markdown="1">
-**[General Computer Science for Engineers](https://catalog.udel.edu/preview_course_nopop.php?catoid=94&coid=682085&print)** (CISC 106)
+<div class="teaching-course">
+<div class="teaching-course-title">
+  <a href="https://catalog.udel.edu/preview_course_nopop.php?catoid=94&coid=682085&print"><strong>General Computer Science for Engineers</strong></a>
+  <span class="course-code">(CISC 106)</span>
 </div>
 <div class="teaching-course-meta">Teaching Assistant · 2018–2020 · Instr. Katie Wassil</div>
 </div>
 
-<div class="teaching-course" markdown="1">
-<div class="teaching-course-title" markdown="1">
-**[Data Structures](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682088&print)** (CISC 220)
+<div class="teaching-course">
+<div class="teaching-course-title">
+  <a href="https://catalog.udel.edu/preview_course.php?catoid=94&coid=682088&print"><strong>Data Structures</strong></a>
+  <span class="course-code">(CISC 220)</span>
 </div>
 <div class="teaching-course-meta">Teaching Assistant · Spring ’20 · Dr. Debra Yarrington</div>
 </div>
 
 ### West Chester University
 
-<div class="teaching-course" markdown="1">
-<div class="teaching-course-title" markdown="1">
-**[Advanced Topics in Security](https://www.cs.wcupa.edu/SCHEN/csc497_/syllabus/syllabus.pdf)** (CSC 495 / CSC 583)
+<div class="teaching-course">
+<div class="teaching-course-title">
+  <a href="https://www.cs.wcupa.edu/SCHEN/csc497_/syllabus/syllabus.pdf"><strong>Advanced Topics in Security</strong></a>
+  <span class="course-code">(CSC 495 / CSC 583)</span>
 </div>
 <div class="teaching-course-meta">Teaching Assistant · Fall ’17 · Dr. Si Chen</div>
 </div>

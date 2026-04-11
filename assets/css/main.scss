@@ -150,17 +150,6 @@ a.inline-link:hover {
     word-break: normal;
     overflow-wrap: normal;
 
-    p {
-      margin: 0; // Kramdown wraps title in <p>; avoid global p spacing here
-    }
-
-    // stay inline with catalog code; overrides strong:first-child block layout below
-    strong {
-      font-weight: 500;
-      display: inline;
-      margin-bottom: 0;
-    }
-
     a {
       color: var(--global-text-color);
       text-decoration: none !important;
@@ -171,6 +160,18 @@ a.inline-link:hover {
     a:hover {
       color: var(--global-theme-color);
       border-bottom-color: var(--global-theme-color);
+    }
+
+    a strong {
+      font-weight: 600;
+    }
+
+    .course-code {
+      display: inline;
+      white-space: nowrap;
+      font-weight: 500;
+      color: var(--global-text-color);
+      margin-left: 0.2rem;
     }
   }
 
