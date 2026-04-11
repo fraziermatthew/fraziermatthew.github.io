@@ -76,92 +76,74 @@ a.inline-link:hover {
 
 // Teaching page (see _pages/teaching.md — `page_class: teaching-page`)
 .post.teaching-page {
+  max-width: 720px; // tighter reading width
+
+  a {
+    transition: all 0.18s ease;
+  }
+
   strong {
     font-weight: 600;
   }
 
   h2 {
-    font-size: 2.2rem;
-    margin-top: 2.4rem;
-    margin-bottom: 1rem;
+    font-size: 2.15rem;
     line-height: 1.1;
+    margin-top: 3.2rem;
+    margin-bottom: 1.1rem;
 
-    + p,
-    + ul,
-    + div {
-      margin-top: 0.6rem;
+    &:first-of-type {
+      margin-top: 2rem;
     }
   }
 
   h3,
   h4 {
-    font-size: 1.55rem;
-    margin-top: 1.35rem;
-    margin-bottom: 0.7rem;
+    font-size: 1.7rem;
     line-height: 1.15;
-
-    + .teaching-course,
-    + p {
-      margin-top: 0.9rem;
-    }
+    margin-top: 1.6rem;
+    margin-bottom: 0.85rem;
   }
 
-  .university-block {
-    margin-top: 0.9rem;
-  }
-
-  p,
-  ul {
-    margin-bottom: 1rem;
+  p {
+    margin-bottom: 1.1rem;
   }
 
   ul {
-    margin-top: 0.5rem;
+    margin-top: 0.65rem;
+    margin-bottom: 1.25rem;
   }
 
-  .teaching-meta {
-    font-size: 0.97rem;
-    color: var(--global-text-color-light);
-  }
-
-  .research-link {
-    color: var(--global-theme-color);
-    text-decoration: none;
-    transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    border-bottom: 1px solid transparent;
-
-    &:hover {
-      color: var(--global-theme-color);
-      border-bottom-color: var(--global-theme-color);
-    }
+  li {
+    margin-bottom: 0.2rem;
   }
 
   .teaching-course {
-    margin-bottom: 1.35rem;
-    line-height: 1.45;
+    margin-bottom: 1.6rem;
+    padding-left: 0.2rem; // subtle alignment tightening
+    padding-bottom: 0.4rem;
 
-    p,
-    div {
-      line-height: 1.45;
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
     }
+  }
 
-    strong {
-      display: inline-block;
-      margin-bottom: 0.2rem;
-      font-weight: 600;
-    }
+  .teaching-course-title {
+    font-size: 1.05rem;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.25rem;
 
-    .meta,
-    em {
-      font-size: 0.96rem;
-      color: var(--global-text-color-light);
+    p {
+      margin: 0;
     }
 
     a {
       color: var(--global-text-color);
       text-decoration: none !important;
-      transition: color 0.2s ease, border-bottom-color 0.2s ease;
       border-bottom: 1px solid transparent;
+      transition: color 0.2s ease, border-bottom-color 0.2s ease;
     }
 
     a:hover {
@@ -170,8 +152,39 @@ a.inline-link:hover {
     }
   }
 
-  .teaching-course + .teaching-course {
-    margin-top: 1.25rem;
+  .teaching-course-meta {
+    font-size: 0.98rem;
+    line-height: 1.35;
+    color: var(--global-text-color-light);
+    opacity: 0.85;
+    margin-bottom: 0.08rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  strong > a.research-link,
+  a.research-link {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+  }
+
+  strong > a.research-link:hover,
+  a.research-link:hover {
+    border-bottom-color: var(--global-theme-color);
+  }
+
+  a.inline-link {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a.inline-link:hover {
+    text-decoration: underline !important; // MDB sets a:hover { text-decoration: none }
   }
 }
 
