@@ -99,8 +99,8 @@ a.inline-link:hover {
     font-size: 2.15rem;
     line-height: 1.08;
     letter-spacing: -0.02em;
-    margin-top: 3.15rem;
-    margin-bottom: 1.1rem;
+    margin-top: 3.75rem;
+    margin-bottom: 1.25rem;
 
     &:first-of-type {
       margin-top: 0;
@@ -133,33 +133,36 @@ a.inline-link:hover {
 
   // course blocks
   .teaching-course {
-    margin-bottom: 1.55rem;
+    margin-bottom: 1.35rem;
     padding-bottom: 0.6rem;
 
     &:not(:last-of-type) {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.045);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
     }
   }
 
   .teaching-course-title {
-    font-size: 1.04rem;
+    font-size: 1rem;
     line-height: 1.28;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    font-weight: 500;
+    letter-spacing: -0.005em;
     margin-bottom: 0.18rem;
 
     p {
       margin: 0; // Kramdown wraps title in <p>; avoid global p spacing here
     }
 
+    // stay inline with catalog code; overrides strong:first-child block layout below
     strong {
-      font-weight: 600;
+      font-weight: 500;
+      display: inline;
+      margin-bottom: 0;
     }
 
     a {
       color: var(--global-text-color);
       text-decoration: none !important;
-      border-bottom: 1px solid transparent;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
       transition: color 0.18s ease, border-bottom-color 0.18s ease;
     }
 
@@ -170,10 +173,10 @@ a.inline-link:hover {
   }
 
   .teaching-course-meta {
-    font-size: 0.98rem;
+    font-size: 0.96rem;
     line-height: 1.34;
     color: var(--global-text-color-light);
-    opacity: 0.9;
+    opacity: 0.72;
     margin-bottom: 0.04rem;
 
     &:last-child {
@@ -187,17 +190,27 @@ a.inline-link:hover {
     margin-top: 0.5rem;
   }
 
-  p strong:only-child,
+  p strong:only-child {
+    font-weight: 600;
+  }
+
   strong:first-child {
     font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
   }
 
   // research block
   .research-link {
+    font-weight: 500;
     color: var(--global-theme-color);
     text-decoration: none !important;
     border-bottom: 1px solid transparent;
     transition: border-bottom-color 0.18s ease, color 0.18s ease;
+
+    strong {
+      font-weight: 500;
+    }
   }
 
   .research-link:hover {

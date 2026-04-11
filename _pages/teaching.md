@@ -52,7 +52,7 @@ My instruction emphasizes:
 <div class="teaching-course-meta">Teaching Assistant · Spring ’20 · Dr. Debra Yarrington</div>
 </div>
 
-### West Chester University
+### West Chester University of Pennsylvania
 
 <div class="teaching-course" markdown="1">
 <div class="teaching-course-title" markdown="1">
