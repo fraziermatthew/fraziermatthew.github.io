@@ -2,7 +2,7 @@
 layout: about
 title: bio
 permalink: /
-subtitle: Designing production-grade AI systems for structured reasoning and decision intelligence
+subtitle: Systems | AI | Data Infrastructure # Designing production-grade AI systems for structured reasoning and decision intelligence
 
 profile:
   align: right
