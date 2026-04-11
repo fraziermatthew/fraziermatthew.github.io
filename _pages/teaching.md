@@ -13,7 +13,7 @@ I teach computer science with a focus on developing structured problem-solving, 
 
 My teaching emphasizes bridging theoretical concepts with practical engineering workflows.
 
-## Teaching Approach
+## Approach
 
 I focus on developing structured problem-solving, debugging intuition, and real-world system thinking.
 
@@ -27,15 +27,15 @@ My instruction emphasizes:
 ### University of Delaware
 
 <div class="teaching-course" markdown="1">
-**[Introduction to Computer Science II](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682087&print)** (CISC 181)
-Instructor · Summer '20, '21  
+**[Introduction to Computer Science II](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682087&print)** (CISC 181)<br />
+Instructor · Summer '20, '21<br />
 Teaching Assistant · Spring '21, '23 · Instr. Katie Wassil
 </div>
 
 <div class="teaching-course" markdown="1">
 **[Computers, Ethics and Society](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682115&print)** (CISC 355)
-Instructor · Summer '22
 
+Instructor · Summer '22
 Teaching Assistant · 2019–2021 · Dr. T. Gregory Lynch
 </div>
 
@@ -46,6 +46,7 @@ Teaching Assistant · 2018–2020 · Instr. Katie Wassil
 
 <div class="teaching-course" markdown="1">
 **[Data Structures](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682088&print)** (CISC 220)
+
 Teaching Assistant · Spring '20 · Dr. Debra Yarrington
 </div>
 
@@ -53,6 +54,7 @@ Teaching Assistant · Spring '20 · Dr. Debra Yarrington
 
 <div class="teaching-course" markdown="1">
 **[Advanced Topics in Security](https://www.cs.wcupa.edu/SCHEN/csc497_/syllabus/syllabus.pdf)** (CSC 495 / CSC 583)
+
 Teaching Assistant · Fall '17 · Dr. Si Chen
 </div>
 
@@ -70,8 +72,8 @@ Teaching Assistant · Fall '17 · Dr. Si Chen
 
 ## Research
 
-**[Software Analysis and Compilation Lab (SAC)](https://sites.udel.edu/se-research/)**  
-University of Delaware · Research Assistant · 2021–2024  
+**[Software Analysis and Compilation Lab (SAC)](https://sites.udel.edu/se-research/)**
+University of Delaware · Research Assistant · 2021–2024
 Advisor: Lori Pollock
 
 - Conducted research on conversational agents for software engineering and CS education
