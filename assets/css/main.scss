@@ -76,7 +76,7 @@ a.inline-link:hover {
 
 // Teaching page (see _pages/teaching.md — `page_class: teaching-page`)
 .post.teaching-page {
-  max-width: 860px;
+  max-width: 980px;
 
   // page title + description
   .post-header {
@@ -192,38 +192,69 @@ a.inline-link:hover {
     margin-top: 0.5rem;
   }
 
-  p strong:only-child {
-    font-weight: 600;
-  }
-
-  strong:first-child {
+  p > strong:only-child {
     font-weight: 600;
     display: block;
     margin-bottom: 0.25rem;
   }
 
+  // p strong:only-child {
+  //   font-weight: 600;
+  // }
+
+  // strong:first-child {
+  //   font-weight: 600;
+    // display: block;
+    // margin-bottom: 0.25rem;
+  // }
+
   // research block
-  .research-link {
-    font-weight: 500;
+  .research-link,
+  .research-link:visited {
     color: var(--global-text-color);
     text-decoration: none !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.18);
     transition: color 0.18s ease, border-bottom-color 0.18s ease;
-
-    &:visited {
-      color: var(--global-text-color);
-    }
-
-    &:hover,
-    &:focus {
-      color: var(--global-theme-color);
-      border-bottom-color: var(--global-theme-color);
-    }
-
-    strong {
-      font-weight: 500;
-    }
   }
+
+  .research-link strong,
+  .research-link:visited strong {
+    color: var(--global-text-color);
+    font-weight: 600;
+    transition: color 0.18s ease;
+  }
+
+  .research-link:hover,
+  .research-link:focus {
+    color: var(--global-theme-color);
+    border-bottom-color: var(--global-theme-color);
+  }
+
+  .research-link:hover strong,
+  .research-link:focus strong {
+    color: var(--global-theme-color);
+  }
+  // .research-link {
+  //   font-weight: 500;
+  //   color: var(--global-text-color);
+  //   text-decoration: none !important;
+  //   border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  //   transition: color 0.18s ease, border-bottom-color 0.18s ease;
+
+  //   &:visited {
+  //     color: var(--global-text-color);
+  //   }
+
+  //   &:hover,
+  //   &:focus {
+  //     color: var(--global-theme-color);
+  //     border-bottom-color: var(--global-theme-color);
+  //   }
+
+  //   strong {
+  //     font-weight: 500;
+  //   }
+  // }
 
   a.inline-link {
     color: var(--global-theme-color);
