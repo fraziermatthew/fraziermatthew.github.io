@@ -195,11 +195,19 @@ blockquote {
 .profile .address {
   margin-bottom: 5px;
   margin-top: 5px;
-  font-family: monospace;
+  font-family: var(--global-font-family);
+  font-size: 0.95rem;
+  opacity: 0.8;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  color: var(--global-text-color-light);
 }
 .profile .address p {
   display: inline-block;
   margin: 0;
+}
+.profile figure img.rounded {
+  border-radius: 12px;
 }
 
 .profile.float-right {
