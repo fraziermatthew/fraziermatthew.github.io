@@ -1198,6 +1198,7 @@ a.inline-link:hover {
 .post.teaching-page .research-advisor a.inline-link {
   font-weight: 500;
   opacity: 1;
+  color: var(--global-theme-color);
 }
 .post.teaching-page .research-link,
 .post.teaching-page .research-link:visited {
