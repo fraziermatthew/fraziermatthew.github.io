@@ -1063,38 +1063,68 @@ a.inline-link:hover {
   border-bottom-color: var(--global-theme-color);
 }
 
-.post.teaching-page h2 {
-  font-size: 2.25rem;
-  margin-top: 2.2rem;
-  margin-bottom: 1rem;
+.post.teaching-page strong {
+  font-weight: 600;
 }
-.post.teaching-page h3 {
+.post.teaching-page h2 {
+  font-size: 2.2rem;
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+.post.teaching-page h2 + p,
+.post.teaching-page h2 + ul,
+.post.teaching-page h2 + div {
+  margin-top: 0.6rem;
+}
+.post.teaching-page h3,
+.post.teaching-page h4 {
   font-size: 1.55rem;
-  margin-top: 1.25rem;
+  margin-top: 1.35rem;
   margin-bottom: 0.7rem;
+  line-height: 1.15;
 }
 .post.teaching-page h3 + .teaching-course,
-.post.teaching-page h3 + p {
+.post.teaching-page h3 + p,
+.post.teaching-page h4 + .teaching-course,
+.post.teaching-page h4 + p {
   margin-top: 0.9rem;
 }
 .post.teaching-page .university-block {
   margin-top: 0.9rem;
 }
 .post.teaching-page p,
-.post.teaching-page ul,
-.post.teaching-page ol {
+.post.teaching-page ul {
   margin-bottom: 1rem;
 }
+.post.teaching-page ul {
+  margin-top: 0.5rem;
+}
+.post.teaching-page .teaching-meta {
+  font-size: 0.97rem;
+  color: var(--global-text-color-light);
+}
+.post.teaching-page .research-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+.post.teaching-page .research-link:hover {
+  color: var(--global-theme-color);
+  border-bottom-color: var(--global-theme-color);
+}
 .post.teaching-page .teaching-course {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.35rem;
   line-height: 1.45;
 }
 .post.teaching-page .teaching-course p,
 .post.teaching-page .teaching-course div {
   line-height: 1.45;
 }
-.post.teaching-page .teaching-course strong,
-.post.teaching-page .teaching-course b {
+.post.teaching-page .teaching-course strong {
+  display: inline-block;
+  margin-bottom: 0.2rem;
   font-weight: 600;
 }
 .post.teaching-page .teaching-course .meta,
