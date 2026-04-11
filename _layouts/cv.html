@@ -1,18 +1,43 @@
 ---
 layout: default
 ---
+{%- assign cv_pdf_url = nil -%}
+{%- if page.cv_pdf -%}
+  {%- assign cv_pdf_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url -%}
+{%- endif -%}
+{%- assign cv_section_count = site.data.cv | size -%}
 <!-- _layouts/cv.html -->
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
+            <div class="cv-header-row d-flex flex-wrap align-items-baseline justify-content-between gap-3 mb-2">
+              <h1 class="post-title mb-0">{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h1>
+              {%- if page.cv_pdf and cv_pdf_url %}
+              <div class="cv-pdf-actions">
+                <a href="{{ cv_pdf_url }}" download="{{ page.cv_pdf }}" class="cv-pdf-link">Download Resume ↓</a>
+                <span class="cv-pdf-sep" aria-hidden="true">·</span>
+                <a href="{{ cv_pdf_url }}" target="_blank" rel="noopener noreferrer" class="cv-pdf-link">View PDF →</a>
+              </div>
+              {%- endif %}
+            </div>
             <p class="post-description">{{ page.description }}</p>
           </header>
 
           <article>
+            {%- if cv_section_count > 0 %}
+            <nav class="cv-toc" aria-label="On this page">
+              <div class="cv-toc-label">On this page</div>
+              <ul class="cv-toc-list">
+                {%- for entry in site.data.cv %}
+                <li><a href="#{{ entry.title | slugify }}">{{ entry.title }}</a></li>
+                {%- endfor %}
+              </ul>
+            </nav>
+            {%- endif %}
+
             <div class="cv">
               {% for entry in site.data.cv %}
-                <div class="card mt-3 p-3">
+                <div class="card mt-3 p-3" id="{{ entry.title | slugify }}">
                   <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
                   <div>
                   {% if entry.type == "list" %}

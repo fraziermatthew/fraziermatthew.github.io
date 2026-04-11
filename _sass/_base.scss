@@ -418,7 +418,69 @@ footer.sticky-bottom {
   font-size: 0.9rem;
 }
 
-// CV
+// CV (see _layouts/cv.html)
+
+.cv-header-row {
+  width: 100%;
+}
+
+.cv-pdf-actions {
+  font-size: 0.875rem;
+  white-space: nowrap;
+
+  .cv-pdf-link {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: underline;
+    }
+  }
+
+  .cv-pdf-sep {
+    color: var(--global-text-color-light);
+    margin: 0 0.35rem;
+  }
+}
+
+.cv-toc {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  background-color: var(--global-card-bg-color);
+
+  .cv-toc-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .cv-toc-list {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+      transition: color 0.15s ease;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
 
 .cv {
   margin-bottom: 40px;
@@ -426,6 +488,7 @@ footer.sticky-bottom {
   .card {
     background-color: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
+    scroll-margin-top: 72px;
 
     .list-group-item {
       background-color: inherit;
