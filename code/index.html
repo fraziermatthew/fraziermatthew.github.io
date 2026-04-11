@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>code | Matthew  Frazier</title>
+    <title>Code | Matthew  Frazier</title>
     <meta name="author" content="Matthew  Frazier">
     <meta name="description" content="Senior Software Engineer specializing in AI systems, LLM-driven reasoning, and scalable data platforms. Focused on building production-grade systems that transform structured data into decision intelligence.
 ">
@@ -31,7 +31,7 @@
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="shortcut icon" href="/assets/img//assets/img/mf-monogram-favicon.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="https://fraziermatthew.github.io/code/">
@@ -69,22 +69,22 @@
 
               <!-- About -->
               <li class="nav-item ">
-                <a class="nav-link" href="/">bio</a>
+                <a class="nav-link" href="/">Bio</a>
               </li>
               
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
+                <a class="nav-link" href="/publications/">Publications</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/projects/">projects</a>
+                <a class="nav-link" href="/projects/">Projects</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/resume/">resume</a>
+                <a class="nav-link" href="/resume/">Resume</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/teaching/">teaching</a>
+                <a class="nav-link" href="/teaching/">Teaching</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -114,7 +114,7 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">code</h1>
+            <h1 class="post-title">Code</h1>
             <p class="post-description"></p>
           </header>
 
@@ -328,15 +328,23 @@
 <script type="text/javascript">
   (function () {
     var $btn = $("#back-to-top");
-    var threshold = 300;
+    // Fixed 300px works on long pages; on short pages (e.g. CV) max scroll may never reach 300,
+    // so scale threshold to ~20% of scrollable distance, capped at 300px.
+    function scrollThreshold() {
+      var maxScroll = $(document).height() - $(window).height();
+      if (maxScroll <= 0) {
+        return Infinity;
+      }
+      return Math.min(300, Math.max(1, maxScroll * 0.2));
+    }
     function toggle() {
-      if ($(window).scrollTop() > threshold) {
+      if ($(window).scrollTop() > scrollThreshold()) {
         $btn.addClass("show");
       } else {
         $btn.removeClass("show");
       }
     }
-    $(window).on("scroll", toggle);
+    $(window).on("scroll resize", toggle);
     toggle();
     $btn.on("click", function () {
       $("html, body").animate({ scrollTop: 0 }, 400);
