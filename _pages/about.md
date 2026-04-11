@@ -2,29 +2,31 @@
 layout: about
 title: bio
 permalink: /
-subtitle: Systems | AI | Data Infrastructure # Designing production-grade AI systems for structured reasoning and decision intelligence
+subtitle: Senior Software Engineer @ Goodway Group · AI & Data Systems<br />Computational Research @ University of Delaware
+# Senior Software Engineer · AI & Data Systems · Computational Research # Designing production-grade AI systems for structured reasoning and decision intelligence
 
 profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  address: >
-    <a class="affiliation-link" href="https://sites.udel.edu/se-research/">SAC Lab</a>
-    <p>PhD, Computer Science</p>
-    <p>University of Delaware</p>
-    <br/>
-    <p>Sr. Software Engineer</p>
-    <a class="affiliation-link" href="https://www.goodwaygroup.com//">Goodway Group</a>
+  # address: >
+  #   <a class="affiliation-link" href="https://sites.udel.edu/se-research/">SAC Lab</a>
+  #   <p>PhD, Computer Science</p>
+  #   <p>University of Delaware</p>
+  #   <br/>
+  #   <p>Sr. Software Engineer</p>
 
 news: false  # set to true to show news on this page
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
+<!-- <a class="affiliation-link" href="https://www.goodwaygroup.com/">Goodway Group</a> -->
+
 <!-- version 7 -->
 I build production-grade AI systems for structured reasoning and decision intelligence.
 
-At Goodway Group, I design and operate distributed analytics and optimization systems operating high-throughput distributed optimization systems at scale, integrating multi-source data pipelines, event-driven architectures, and LLM-powered reasoning layers into production environments.
+At <a class="inline-link" href="https://www.goodwaygroup.com/">Goodway Group</a>, I design and operate distributed analytics and optimization systems operating high-throughput distributed optimization systems at scale, integrating multi-source data pipelines, event-driven architectures, and LLM-powered reasoning layers into production environments.
 
 My work centers on **LLM-guided reasoning systems, data infrastructure, and agentic architectures**, where statistical signal generation and model inference are tightly coupled to produce consistent, interpretable outputs.
 
