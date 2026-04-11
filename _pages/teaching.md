@@ -12,57 +12,53 @@ I teach computer science with a focus on developing structured problem-solving, 
 
 My teaching emphasizes bridging theoretical concepts with practical engineering workflows.
 
+## Teaching Experience
 ### University of Delaware
 
-##### *"Introduction to Computer Science II"* (CISC 181)
-- Instructor, Summer '20
-- Instructor, Summer '21
-- Prof. Katie Wassil, Spring '21 (TA)
-- Prof. Katie Wassil, Spring '23 (TA)
+**[Introduction to Computer Science II](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682087&print) (CISC 181)**
+Instructor · Summer '20, '21
+Teaching Assistant · Spring '21, '23 · Instr. Katie Wassil
 
-##### *"Computers, Ethics and Society"* (CISC 355)
-- Instructor, Summer '22
-- Prof. T. Greg Lynch, Spring '19 (TA)
-- Prof. T. Greg Lynch, Fall '19 (TA)
-- Prof. T. Greg Lynch, Winter '20 (TA)
-- Prof. T. Greg Lynch, Spring '20 (TA)
-- Prof. T. Greg Lynch, Fall '20 (TA)
-- Prof. T. Greg Lynch, Winter '21 (TA)
-- Prof. T. Greg Lynch, Spring '21 (TA)
+**[Computers, Ethics and Society (CISC 355)](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682115&print)**
+Instructor · Summer '22
+Teaching Assistant · 2019–2021 · Dr. T. Gregory Lynch
 
-##### *"General Computer Science for Engineers"* (CISC 106)
-- Prof. Katie Wassil, Fall '18 (TA)
-- Prof. Katie Wassil, Spring '19 (TA)
-- Prof. Katie Wassil, Fall '19 (TA)
-- Prof. Katie Wassil, Fall '20 (TA)
+**[General Computer Science for Engineers (CISC 106)](https://catalog.udel.edu/preview_course_nopop.php?catoid=94&coid=682085&print)**
+Teaching Assistant · 2018–2020 · Instr. Katie Wassil
 
-##### *"[Data Structures](https://www.eecis.udel.edu/~yarringt/CISC220/)"* (CISC 220)
-- Prof. Debra Yarrington, Spring '20 (TA)
+**[Data Structures (CISC 220)](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682088&print)**
+Teaching Assistant · Spring '20 · Dr. Debra Yarrington
 
----
+### West Chester University
+**[Advanced Topics in Security (CSC 495 / CSC 583)](https://www.cs.wcupa.edu/SCHEN/csc497_/syllabus/syllabus.pdf)**
+Teaching Assistant · Fall '17 · Dr. Si Chen
 
-### West Chester University of Pennsylvania
+### Teaching Philosophy / Approach
 
-##### *"Topics in Security"* (CISC 583)
-- Prof. Si Chen, Fall '17 (TA)
+I focus on developing structured problem-solving, debugging intuition, and real-world system thinking.
 
----
+My instruction emphasizes:
+- breaking down complex systems into reasoning steps
+- bridging theory with production engineering workflows
+- guiding students toward independent problem-solving rather than solution memorization
 
-### Responsibilities Included
+### Instructor Responsibilities
 
-- Designed and delivered lectures, assignments, and course materials (Instructor - CISC 181 and CISC 355) emphasizing debugging, system thinking, and applied software engineering practices
-- Created original final projects for CISC 181, including full specifications and evaluation criteria
-- Led classroom instruction, student engagement, and course direction as primary instructor
-- Ran lab sessions for CISC 106, guiding students through weekly programming assignments and reinforcing lecture material
-- Held office hours across multiple courses to support conceptual understanding and problem solving
-- Graded assignments, exams, and projects with detailed, actionable feedback
-- Mentored students across programming, data structures, and ethics-focused coursework
+- Designed and delivered lectures, assignments, and course materials
+- Led full classroom instruction and course direction
+- Developed original projects with evaluation frameworks
 
----
+### Teaching Assistant Responsibilities
+
+- Led lab sessions and reinforced lecture material
+- Mentored students in programming and data structures
+- Provided detailed feedback through grading and office hours
 
 ### Research Experience
 
-##### *Software Analysis and Compilation Lab (SAC), University of Delaware*
-- Research Assistant, Fall '21 – Spring '24
-- Advisor: Prof. Lori Pollock
-- Conducted research on conversational agents for software engineering and computer science education, leading to peer-reviewed publications at ICSE and ITiCSE
+**Software Analysis and Compilation Lab (SAC), University of Delaware**
+Research Assistant · 2021–2024
+Advisor: Lori Pollock
+
+- Conducted research on conversational agents for software engineering and CS education
+- Published at ICSE and ITiCSE
