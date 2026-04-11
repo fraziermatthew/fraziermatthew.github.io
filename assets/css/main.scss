@@ -37,6 +37,42 @@ $secondary-color: #8c4720; // this is brownish
   }
 }
 
+// About page: specific inline citation links (see _pages/about.md)
+a.inline-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.inline-link:hover {
+  text-decoration: underline !important; // MDB sets a:hover { text-decoration: none }
+}
+
+// About profile address: SAC Lab link (see _pages/about.md profile.address)
+.affiliation-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// About page: section heading links (e.g. Selected Publications — see _layouts/about.html)
+.section-link {
+  color: var(--global-text-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    color: var(--global-text-color);
+    border-bottom-color: var(--global-theme-color);
+  }
+}
+
 // CV page: section headings use secondary accent (burnt orange; see $secondary-color above)
 .cv .card-title {
   // color: $secondary-color;

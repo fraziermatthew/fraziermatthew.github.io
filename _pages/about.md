@@ -9,7 +9,7 @@ profile:
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
   address: >
-    <a href="https://sites.udel.edu/se-research/">SAC Lab</a>
+    <a class="affiliation-link" href="https://sites.udel.edu/se-research/">SAC Lab</a>
     <p>PhD, Computer Science</p>
     <p>University of Delaware</p>
     <br/>
@@ -28,7 +28,7 @@ At Goodway Group, I design and operate distributed analytics and optimization sy
 
 My work centers on **LLM-guided reasoning systems, data infrastructure, and agentic architectures**, where statistical signal generation and model inference are tightly coupled to produce consistent, interpretable outputs.
 
-I earned my Ph.D. in Computer and Information Sciences from the University of Delaware, where I studied conversational agents and human-centered AI under <a href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE.
+I earned my Ph.D. in Computer and Information Sciences from the University of Delaware, where I studied conversational agents and human-centered AI under <a class="inline-link" href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE.
 
 I design systems where **data, reasoning, and infrastructure operate as a unified layer**, enabling scalable decision-making beyond prototype AI solutions.
 
