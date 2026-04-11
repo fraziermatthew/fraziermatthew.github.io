@@ -22,9 +22,9 @@ My instruction emphasizes:
 - bridging theory with production engineering workflows
 - guiding students toward **independent problem-solving** rather than solution memorization
 
-### Courses Taught
+## Courses Taught
 
-#### University of Delaware
+### University of Delaware
 
 <div class="teaching-course" markdown="1">
 **[Introduction to Computer Science II](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682087&print)** (CISC 181)<br />
@@ -67,7 +67,7 @@ Teaching Assistant · Fall '17 · Dr. Si Chen
 - Mentored students in programming and data structures
 - Provided detailed feedback through grading and office hours
 
-## Research
+## Research Experience
 
 <p>
   <strong><a href="https://sites.udel.edu/se-research/">Software Analysis and Compilation Lab (SAC)</a></strong><br />
