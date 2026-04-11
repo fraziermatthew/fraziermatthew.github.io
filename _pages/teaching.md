@@ -18,32 +18,32 @@ My teaching emphasizes bridging theoretical concepts with practical engineering 
 ### University of Delaware
 
 <div class="teaching-course" markdown="1">
-**[Introduction to Computer Science II](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682087&print)** (CISC 181)  
+**[Introduction to Computer Science II](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682087&print)** (CISC 181)
 Instructor · Summer '20, '21  
 Teaching Assistant · Spring '21, '23 · Instr. Katie Wassil
 </div>
 
 <div class="teaching-course" markdown="1">
-**[Computers, Ethics and Society (CISC 355)](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682115&print)**  
+**[Computers, Ethics and Society](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682115&print)** (CISC 355)
 Instructor · Summer '22
 
 Teaching Assistant · 2019–2021 · Dr. T. Gregory Lynch
 </div>
 
 <div class="teaching-course" markdown="1">
-**[General Computer Science for Engineers (CISC 106)](https://catalog.udel.edu/preview_course_nopop.php?catoid=94&coid=682085&print)**  
+**[General Computer Science for Engineers](https://catalog.udel.edu/preview_course_nopop.php?catoid=94&coid=682085&print)** (CISC 106)
 Teaching Assistant · 2018–2020 · Instr. Katie Wassil
 </div>
 
 <div class="teaching-course" markdown="1">
-**[Data Structures (CISC 220)](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682088&print)**  
+**[Data Structures](https://catalog.udel.edu/preview_course.php?catoid=94&coid=682088&print)** (CISC 220)
 Teaching Assistant · Spring '20 · Dr. Debra Yarrington
 </div>
 
 ### West Chester University
 
 <div class="teaching-course" markdown="1">
-**[Advanced Topics in Security (CSC 495 / CSC 583)](https://www.cs.wcupa.edu/SCHEN/csc497_/syllabus/syllabus.pdf)**  
+**[Advanced Topics in Security](https://www.cs.wcupa.edu/SCHEN/csc497_/syllabus/syllabus.pdf)** (CSC 495 / CSC 583)
 Teaching Assistant · Fall '17 · Dr. Si Chen
 </div>
 
