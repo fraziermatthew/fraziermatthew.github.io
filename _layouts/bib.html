@@ -28,8 +28,31 @@
 
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-8">
+        {%- comment -%} Link title to publisher/DOI/HTML when available (see BibTeX url, html, doi, …) {%- endcomment -%}
+        {%- assign pub_title_url = nil -%}
+        {%- if entry.html != blank -%}
+          {%- assign pub_title_url = entry.html -%}
+        {%- elsif entry.url != blank -%}
+          {%- assign pub_title_url = entry.url -%}
+        {%- elsif entry.website != blank -%}
+          {%- assign pub_title_url = entry.website -%}
+        {%- elsif entry.doi != blank -%}
+          {%- if entry.doi contains '://' -%}
+            {%- assign pub_title_url = entry.doi -%}
+          {%- else -%}
+            {%- assign pub_title_url = entry.doi | prepend: 'https://doi.org/' -%}
+          {%- endif -%}
+        {%- elsif entry.arxiv != blank -%}
+          {%- assign pub_title_url = 'https://arxiv.org/abs/' | append: entry.arxiv -%}
+        {%- endif -%}
         <!-- Title -->
-        <div class="title">{{entry.title}}</div>
+        <div class="title">
+          {%- if pub_title_url -%}
+          <a href="{{ pub_title_url }}" target="_blank" rel="noopener noreferrer">{{ entry.title }}</a>
+          {%- else -%}
+          {{ entry.title }}
+          {%- endif -%}
+        </div>
         <!-- Author -->
         <div class="author">
         {% assign author_array_size = entry.author_array | size %}
