@@ -23,6 +23,31 @@ $secondary-color: #8c4720; // this is brownish
   "distill"
 ;
 
+// Global scrollbar (Chrome, Safari, Edge)
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.035);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.28);
+}
+
+// Firefox
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.035);
+}
+
 // Project pages: "← Back to projects" link
 // MDB (mdb.min.css) sets a:hover { text-decoration: none }, which overrides normal underlines — use a bottom border instead.
 .back-link {
