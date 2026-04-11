@@ -1124,14 +1124,6 @@ a.inline-link:hover {
   word-break: normal;
   overflow-wrap: normal;
 }
-.post.teaching-page .teaching-course-title p {
-  margin: 0;
-}
-.post.teaching-page .teaching-course-title strong {
-  font-weight: 500;
-  display: inline;
-  margin-bottom: 0;
-}
 .post.teaching-page .teaching-course-title a {
   color: var(--global-text-color);
   text-decoration: none !important;
@@ -1141,6 +1133,16 @@ a.inline-link:hover {
 .post.teaching-page .teaching-course-title a:hover {
   color: var(--global-theme-color);
   border-bottom-color: var(--global-theme-color);
+}
+.post.teaching-page .teaching-course-title a strong {
+  font-weight: 600;
+}
+.post.teaching-page .teaching-course-title .course-code {
+  display: inline;
+  white-space: nowrap;
+  font-weight: 500;
+  color: var(--global-text-color);
+  margin-left: 0.2rem;
 }
 .post.teaching-page .teaching-course-meta {
   font-size: 0.96rem;
