@@ -39,7 +39,12 @@ $secondary-color: #8c4720; // this is brownish
 
 // CV page: section headings use secondary accent (burnt orange; see $secondary-color above)
 .cv .card-title {
-  color: $secondary-color;
+  // color: $secondary-color;
+}
+
+.cv .card li {
+  font-weight: 400;
+  line-height: 1.55;
 }
 
 // Floating back-to-top (see _includes/back_to_top.html)

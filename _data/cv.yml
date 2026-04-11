@@ -11,11 +11,11 @@
       institution: Goodway Group
       year: 2021 - Present
       description:
-        - Improved production stability of RealValue™, a high-throughput distributed optimization system processing 40M+ impression-level decisions daily, by re-architecting validation logic and error handling (Datadog, Rollbar), reducing production errors by 90%
+        - Improved production stability of **RealValue™**, a high-throughput distributed optimization system processing **40M+** impression-level decisions daily, by re-architecting validation logic and error handling (Datadog, Rollbar), reducing production errors by **90%**
         - Designed and deployed distributed data pipelines and ETL systems (Airflow, MWAA, Argo, Redshift, Snowflake, S3) supporting large-scale marketing analytics and multi-source data ingestion
-        - Architected integrations across 5+ external platforms (TTD, Google Ads, Meta, YouGov, Bing), enabling unified data processing and cross-platform analytics
+        - Architected integrations across **5+** external platforms (TTD, Google Ads, Meta, YouGov, Bing), enabling unified data processing and cross-platform analytics
         - Built event-driven systems (AWS Lambda, SNS, SQS FIFO, S3) to automate analytics workflows, replacing manual notebook-based processes with asynchronous, production-grade pipelines
-        - Architected AI-driven analytics capabilities within the GOES™ platform, transforming campaign data into structured signals (SQL fact tables, benchmark thresholds, tradeoff logic) to enable LLM-based reasoning and insight generation
+        - Architected AI-driven analytics capabilities within the **GOES™** platform, transforming campaign data into structured signals (SQL fact tables, benchmark thresholds, tradeoff logic) to enable LLM-based reasoning and insight generation
         - Developed LLM-powered systems including RAG pipelines, streaming API integrations, and hierarchical insight generation (Brand Compass) using structured prompt engineering (CoT, ReAct, few-shot) and agentic workflows (CrewAI, LangChain, vector stores, Langfuse)
         - Operated across backend, data, and AI system layers, bridging infrastructure, analytics, and LLM-driven reasoning in production environments
 
@@ -30,14 +30,30 @@
       institution: Goodway Group
       year: 2014 - 2018
       description:
-        - Built COLT, a web-based automation system for campaign production, reducing creative turnaround time by ~80% (10–12 days to ~2 days) and enabling scalable execution across multi-location clients (e.g., Chevrolet)
+        - Built COLT, a web-based automation system for campaign production, reducing creative turnaround time by **~80% (10-12 days to ~2 days)** and enabling scalable execution across multi-location clients (e.g., Chevrolet)
         - Managed execution and reporting of large-scale programmatic campaigns across platforms including TTD, Google Ads, YouTube, and Meta
 
     - title: Senior SEO Strategist
       institution: IONOS (1&1 Internet)
       year: 2012 - 2014
       description:
-        - Led SEO and SEM strategy for 300+ websites using A/B testing, keyword analysis, and user behavior analytics (CTR, engagement), improving organic traffic across US, UK, and Canadian markets
+        - Led SEO and SEM strategy for **300+** websites using A/B testing, keyword analysis, and user behavior analytics (CTR, engagement), improving organic traffic across US, UK, and Canadian markets
+
+- title: Technical Systems & Capabilities
+  type: map
+  contents:
+    - name: AI & LLM Systems
+      value: LLM reasoning systems, prompt engineering (CoT, ReAct, few-shot), RAG pipelines, agentic workflows (CrewAI, LangChain), evaluation frameworks, vector databases, Langfuse
+    - name: Data & Analytics Engineering
+      value: SQL, data modeling, statistical signal generation, benchmarking frameworks, ETL pipelines, Airflow, MWAA, Argo, Redshift, Snowflake
+    - name: Distributed Systems & Infrastructure
+      value: AWS (Lambda, S3, SNS, SQS), event-driven architectures, asynchronous pipelines, high-throughput systems, system reliability, observability (Datadog, Rollbar)
+    - name: Backend & APIs
+      value: Python, Node.js, FastAPI, REST APIs, GraphQL, streaming APIs, microservices architecture
+    - name: Experimentation & Optimization
+      value: A/B testing, performance analysis, CTR/VCR optimization, campaign analytics, decision systems
+    - name: Tools & Platforms
+      value: Git, Docker, Kubernetes (foundational), Tableau, programmatic platforms (TTD, Google Ads, Meta, YouTube)
 
 - title: Research & Teaching
   type: time_table
@@ -47,7 +63,7 @@
       year: 2018 - 2024
       description:
         - Conducted research on conversational agents and LLM-guided reasoning in computer science education, designing systems that guide user reasoning through structured interaction (RAG, CoT, few-shot), resulting in publications at ICSE and ITiCSE
-        - Designed and implemented AI-based learning systems focused on reasoning support rather than direct answer generation
+        - Designed and implemented AI-based learning systems focused on Socratic reasoning support rather than direct answer generation
         - Taught undergraduate computer science courses (programming, data structures, ethics), emphasizing debugging, system thinking, and applied problem-solving
 
     - title: Graduate Assistant & Researcher
