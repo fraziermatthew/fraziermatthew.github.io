@@ -2,7 +2,8 @@
 layout: about
 title: bio
 permalink: /
-subtitle: Senior Software Engineer @ Goodway Group · AI & Data Systems<br />Computational Research @ University of Delaware
+subtitle: Sr. Software Engineer | AI & Data Systems @ Goodway Group · CompSci Edu Research @ University of Delaware
+# Senior Software Engineer @ Goodway Group · AI & Data Systems<br />Computational Research @ University of Delaware
 # Senior Software Engineer · AI & Data Systems · Computational Research # Designing production-grade AI systems for structured reasoning and decision intelligence
 
 profile:
@@ -30,7 +31,7 @@ At <a class="inline-link" href="https://www.goodwaygroup.com/">Goodway Group</a>
 
 My work centers on **LLM-guided reasoning systems, data infrastructure, and agentic architectures**, where statistical signal generation and model inference are tightly coupled to produce consistent, interpretable outputs.
 
-I earned my Ph.D. in Computer and Information Sciences from the University of Delaware, where I studied conversational agents and human-centered AI under <a class="inline-link" href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE.
+I earned my Ph.D. in Computer and Information Sciences from the University of Delaware, as a member of the <a class="affiliation-link" href="https://sites.udel.edu/se-research/">Software Analysis and Compilation (SAC) Lab</a>. I studied conversational agents and human-centered AI under <a class="inline-link" href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE.
 
 I design systems where **data, reasoning, and infrastructure operate as a unified layer**, enabling scalable decision-making beyond prototype AI solutions.
 
