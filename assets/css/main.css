@@ -66,6 +66,10 @@ html[data-theme=dark] .repo-img-dark {
 /******************************************************************************
  * Content
  ******************************************************************************/
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   padding-bottom: 70px;
   color: var(--global-text-color);
