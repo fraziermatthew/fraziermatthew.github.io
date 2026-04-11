@@ -14,9 +14,9 @@ page_class: teaching-page
 I teach computer science by training how engineers think — through structured problem-solving, debugging intuition, and applied reasoning in real-world systems.
 
 My instruction emphasizes:
-- breaking down complex systems into **reasoning steps**
-- connecting theory to **production engineering** workflows
-- guiding students toward **independent problem-solving** rather than solution memorization
+- breaking complex systems into clear **reasoning steps**
+- connecting theory to **production engineering workflows**
+- guiding students toward **independent problem-solving**, not solution memorization
 
 ## Courses Taught
 
@@ -83,7 +83,8 @@ My instruction emphasizes:
 <p markdown="1">
   <a class="research-link" href="https://sites.udel.edu/se-research/"><strong>Software Analysis and Compilation Lab (SAC)</strong></a><br />
   <span class="teaching-course-meta">University of Delaware · Research Assistant · 2021–2024</span><br />
-  Advisor: [Lori Pollock](https://www.eecis.udel.edu/~pollock/){: .inline-link}
+  <span class="research-advisor">Advisor: [Lori Pollock](https://www.eecis.udel.edu/~pollock/){: .inline-link}</span>
+
 </p>
 
 - conducted research on conversational agents for software engineering and computer science education
