@@ -220,6 +220,25 @@ blockquote {
 }
 
 .navbar.navbar-light {
+  // One vertical center line: brand, toggler, collapsed nav (title + links + icons + theme)
+  > .container {
+    align-items: center;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .navbar-nav > .nav-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+  }
+
   a {
     &:hover {
       text-decoration: none;
@@ -228,6 +247,8 @@ blockquote {
 
   .navbar-brand {
     color: var(--global-text-color);
+    display: flex;
+    align-items: center;
   }
 
   // Site name (always visible; social icons live in `.navbar-nav-social`).
@@ -286,18 +307,28 @@ blockquote {
 
   // Navbar social icons (right side: after page links, before theme toggle — see _includes/header.html)
   .navbar-brand.social,
-  .navbar-nav .navbar-social-icons {
+  .navbar-nav .navbar-social-icons,
+  .navbar-nav .navbar-icons {
     padding-bottom: 0;
     padding-top: 0;
     font-size: 1.55rem;
+    line-height: 1;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 
     a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       margin-right: 0.35rem;
+      line-height: 1;
       opacity: 0.78;
       transition: opacity 0.2s ease, transform 0.2s ease;
+
+      i {
+        line-height: 1;
+      }
 
       i::before {
         color: var(--global-text-color);
@@ -365,10 +396,21 @@ blockquote {
 }
 
 #light-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
+  line-height: 1;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+
+  i {
+    line-height: 1;
+    display: block;
+  }
 
   &:hover {
     color: var(--global-hover-color);
