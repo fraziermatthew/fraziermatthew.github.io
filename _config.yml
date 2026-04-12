@@ -266,7 +266,8 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: type
+  # Publications page uses explicit `{% bibliography -q @phdthesis %}` / `@inproceedings` sections; keep grouping off here.
+  group_by: none
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview]

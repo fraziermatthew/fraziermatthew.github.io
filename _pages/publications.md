@@ -5,7 +5,6 @@ title: publications
 heading: Publications
 description: >
   Research informing the design of production AI systems grounded in structured reasoning and human-centered interaction, with publications at ICSE and ITiCSE.
-years: [2024, 2022]
 nav: true
 nav_order: 1
 page_class: section-page
@@ -14,10 +13,11 @@ page_class: section-page
 <!-- _pages/publications.md -->
 <div class="publications">
 
-{%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
-{% endfor %}
+  <h2 class="category">Dissertation</h2>
+  {% bibliography -f papers -q @phdthesis %}
+
+  <h2 class="category">Conference Articles</h2>
+  {% bibliography -f papers -q @inproceedings %}
 
 </div>
 

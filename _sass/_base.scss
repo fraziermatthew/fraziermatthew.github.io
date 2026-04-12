@@ -797,6 +797,24 @@ footer.sticky-bottom {
     text-align: right;
   }
 
+  // Type-based section headers (pair with `{% bibliography -q @phdthesis %}` / `@inproceedings` in publications.md)
+  h2.category {
+    color: var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
+    opacity: 0.65;
+    font-weight: 500;
+    font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+    letter-spacing: 0.02em;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
   ol.bibliography {
     list-style: none;
     padding: 0;
