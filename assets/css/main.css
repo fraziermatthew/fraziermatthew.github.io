@@ -1165,6 +1165,9 @@ a.inline-link:hover {
   font-size: 0.95rem;
 }
 
+.post.about-page .post-title {
+  font-size: 2.65rem;
+}
 .post.about-page .desc:has(.subtitle) {
   font-size: inherit;
   color: inherit;
