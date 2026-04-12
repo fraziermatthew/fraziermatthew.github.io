@@ -2,19 +2,21 @@
 layout: about
 title: bio
 permalink: /
-subtitle: <div class="subtitle">
-  <div class="subtitle-primary">
-    Senior Software Engineer @ 
-    <a href="https://www.goodwaygroup.com" class="subtitle-link">Goodway Group</a>
-    · AI & Data Systems
-  </div>
+# Use a YAML literal block (|) so multi-line HTML + URLs with ":" parse correctly.
+subtitle: |
+  <div class="subtitle">
+    <div class="subtitle-primary">
+      Senior Software Engineer @
+      <a href="https://www.goodwaygroup.com" class="subtitle-link">Goodway Group</a>
+      · AI & Data Systems
+    </div>
 
-  <div class="subtitle-secondary">
-    Research @ 
-    <a href="https://sites.udel.edu/se-research/" class="subtitle-link">University of Delaware</a>
-    · Computer Science Education
+    <div class="subtitle-secondary">
+      Research @
+      <a href="https://sites.udel.edu/se-research/" class="subtitle-link">University of Delaware</a>
+      · Computer Science Education
+    </div>
   </div>
-</div>
 #  Sr. Software Engineer | AI & Data Systems @ Goodway Group · CompSci Edu Research @ University of Delaware
 # Senior Software Engineer · AI & Data Systems · Computational Research # Designing production-grade AI systems for structured reasoning and decision intelligence
 
