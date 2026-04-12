@@ -230,7 +230,7 @@ blockquote {
     color: var(--global-text-color);
   }
 
-  // Site name link (non–home pages only; home uses `.navbar-brand.social`).
+  // Site name (always visible; social icons live in `.navbar-nav-social`).
   // Avoid class `title` — MDB `.title` can style children differently. Force one color for the whole name.
   .navbar-brand.navbar-site-name {
     color: var(--global-text-color);
@@ -284,30 +284,43 @@ blockquote {
   //   }
   // }
 
-  .navbar-brand.social {
+  // Navbar social icons (right side: after page links, before theme toggle — see _includes/header.html)
+  .navbar-brand.social,
+  .navbar-nav .navbar-social-icons {
     padding-bottom: 0;
     padding-top: 0;
     font-size: 1.55rem;
-  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
     a {
       margin-right: 0.35rem;
       opacity: 0.78;
       transition: opacity 0.2s ease, transform 0.2s ease;
-  
+
       i::before {
         color: var(--global-text-color);
         transition: color 0.2s ease;
       }
-  
+
       &:hover {
         opacity: 1;
         transform: translateY(-1px);
-  
+
         i::before {
           color: var(--global-theme-color);
         }
       }
     }
+  }
+
+  .navbar-nav-social {
+    margin-left: 0.75rem;
+  }
+
+  .navbar-nav .toggle-container {
+    margin-left: 0.65rem;
   }
 }
 

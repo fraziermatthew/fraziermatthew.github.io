@@ -4,7 +4,6 @@
       <!-- Nav Bar -->
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
         <div class="container">
-          {% if page.permalink != '/' -%}
           <a class="navbar-brand navbar-site-name font-weight-lighter" href="{{ site.baseurl }}/">
             {%- if site.title == "blank" -%}
               {%- if site.first_name -%}
@@ -20,12 +19,6 @@
               {{- site.title -}}
             {%- endif -%}
           </a>
-          {%- elsif site.enable_navbar_social -%}
-          <!-- Social Icons -->
-          <div class="navbar-brand social">
-            {% include social.html %}
-          </div>
-          {% endif %}
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -94,10 +87,17 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+              {%- if site.enable_navbar_social %}
+              <li class="nav-item d-flex align-items-center navbar-nav-social">
+                <div class="navbar-social-icons" role="navigation" aria-label="Social links">
+                  {% include social.html %}
+                </div>
+              </li>
+              {%- endif %}
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
-              <li class="toggle-container">
+              <li class="nav-item d-flex align-items-center toggle-container">
                 <button id="light-toggle" title="Change theme">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
