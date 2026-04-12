@@ -830,8 +830,12 @@ footer.sticky-bottom {
       }
 
       .abbr {
-        height: 2rem;
         margin-bottom: 0.5rem;
+
+        // Badge-only column (thesis, etc.); with `.preview` also present, do not fix height or thumbnails clip
+        &:not(.preview) {
+          height: 2rem;
+        }
 
         abbr {
           display: inline-block;
