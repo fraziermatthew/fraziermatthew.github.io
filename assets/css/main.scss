@@ -110,7 +110,7 @@ a.inline-link:hover {
   .post-title {
     margin-bottom: 0.55rem;
     line-height: 1.02;
-    // font-size: 1.06em;
+    // Don’t use em/% on font-size here: they’re relative to the *parent* (~1rem), not the h1’s usual ~2.5rem — see bio-only rule below.
   }
 
   .post-description,
@@ -124,6 +124,11 @@ a.inline-link:hover {
 
 // About page: two-line subtitle (see _pages/about.md — `subtitle` HTML with .subtitle / .subtitle-primary / .subtitle-secondary)
 .post.about-page {
+  // Home h1: ~5% larger than Bootstrap/MDB default h1 (2.5rem). `em` on font-size uses parent size, not heading size.
+  .post-title {
+    font-size: calc(2.5rem * 1.06);
+  }
+
   .desc:has(.subtitle) {
     font-size: inherit;
     color: inherit;
