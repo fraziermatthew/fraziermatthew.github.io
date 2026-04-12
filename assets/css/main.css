@@ -1498,6 +1498,10 @@ a.inline-link:hover {
   }
 }
 
+.cv .card h3.card-title {
+  font-weight: 500;
+}
+
 .cv .card li {
   color: var(--global-text-color-light);
 }
@@ -1505,6 +1509,36 @@ a.inline-link:hover {
 .cv .card li strong {
   color: var(--global-text-color);
   font-weight: 500;
+}
+
+.cv .cv-section-footer {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.cv .cv-section-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cv .cv-section-footer a::after {
+  content: "→";
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.cv .cv-section-footer a:hover {
+  opacity: 0.75;
+}
+
+.cv .cv-section-footer a:hover::after {
+  transform: translateX(3px);
 }
 
 #back-to-top {
