@@ -24,6 +24,12 @@ profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
+  # Literal block (|) keeps line breaks; safe if you add mailto: links later
+  address: |
+    <div class="profile-contact">
+      <div class="profile-contact-label">Contact</div>
+      <div class="profile-contact-email">matthew[at]udel[dot]edu</div>
+    </div>
   # address: >
   #   <a class="affiliation-link" href="https://sites.udel.edu/se-research/">SAC Lab</a>
   #   <p>PhD, Computer Science</p>
@@ -75,4 +81,4 @@ I design systems where <strong>data, reasoning, and infrastructure operate as a 
 </p> -->
 
 <!-- CONTACT LINE  -->
-**Contact**: matthew[at]udel[dot]edu
+<!-- **Contact**: matthew[at]udel[dot]edu -->

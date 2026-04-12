@@ -191,6 +191,26 @@ a.inline-link:hover {
   .bio p:last-of-type {
     margin-top: 1.4rem;
   }
+
+  /* Profile column: contact under photo (see _pages/about.md profile.address) */
+  .profile-contact {
+    margin-top: 1.1rem;
+  }
+
+  .profile-contact-label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--global-text-color);
+    margin-bottom: 0.22rem;
+  }
+
+  .profile-contact-email {
+    font-size: 0.98rem;
+    line-height: 1.45;
+    color: var(--global-text-color-light);
+  }
 }
 
 // Teaching page (see _pages/teaching.md — `page_class: teaching-page section-page`)
