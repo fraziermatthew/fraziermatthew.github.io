@@ -739,6 +739,9 @@ footer.sticky-bottom {
 .publications h2.category:first-of-type {
   margin-top: 0;
 }
+.publications h2.category:not(:first-of-type) {
+  margin-top: 2.5rem;
+}
 .publications ol.bibliography {
   list-style: none;
   padding: 0;
