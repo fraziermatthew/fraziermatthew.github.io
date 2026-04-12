@@ -82,7 +82,7 @@ My instruction emphasizes:
 
 <p markdown="1">
   <a class="research-link" href="https://sites.udel.edu/se-research/"><strong>Software Analysis and Compilation Lab (SAC)</strong></a><br />
-  <span class="teaching-course-meta">University of Delaware · Research Assistant · 2021–2024</span><br />
+  <span class="teaching-course-meta">Research Assistant · University of Delaware · 2021–2024</span><br />
   <span class="research-advisor">Advisor: [Lori Pollock](https://www.eecis.udel.edu/~pollock/){: .inline-link}</span>
 
 </p>
