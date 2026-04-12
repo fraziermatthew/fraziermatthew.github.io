@@ -1137,6 +1137,11 @@ a.inline-link:hover {
   color: var(--global-theme-color);
   border-bottom-color: var(--global-theme-color);
 }
+.post.about-page .bio p:first-of-type {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 1.2rem;
+}
 
 .post.teaching-page {
   max-width: 980px;
