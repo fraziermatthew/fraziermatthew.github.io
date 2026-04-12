@@ -9,14 +9,16 @@ layout: default
 <!-- _layouts/cv.html -->
         <div class="post section-page">
 
+          <div class="cv">
           <header class="post-header">
             <div class="cv-header-row d-flex flex-wrap align-items-baseline justify-content-between gap-3 mb-2">
               <h1>Experience</h1>
               <!-- <h1 class="post-title mb-0">{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h1> -->
               {%- if page.cv_pdf and cv_pdf_url %}
-              <div class="cv-pdf-actions">
+              <div class="cv-pdf-actions cv-header-links">
                 <a href="{{ cv_pdf_url }}" download="{{ page.cv_pdf }}" class="cv-pdf-link">Download CV ↓</a>
-                <span class="cv-pdf-sep" aria-hidden="true">·</span>
+                <span class="cv-pdf-sep" aria-hidden="true"> </span>
+                <!-- <span class="cv-pdf-sep" aria-hidden="true">·</span> -->
                 <a href="{{ cv_pdf_url }}" target="_blank" rel="noopener noreferrer" class="cv-pdf-link">View PDF →</a>
               </div>
               {%- endif %}
@@ -38,9 +40,8 @@ layout: default
             </nav>
             {%- endif %}
 
-            <div class="cv">
               {% for entry in site.data.cv %}
-                <div class="card mt-3 p-3" id="{{ entry.title | slugify }}">
+                <div class="card mt-3 p-3{% if entry.card_class %} {{ entry.card_class }}{% endif %}" id="{{ entry.title | slugify }}">
                   <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
                   <div>
                   {% if entry.type == "list" %}
@@ -59,7 +60,7 @@ layout: default
                   </div>
                 </div>
               {% endfor %}
-              </div>
           </article>
+          </div>
 
         </div>

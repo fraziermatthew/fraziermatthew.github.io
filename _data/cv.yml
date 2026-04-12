@@ -39,29 +39,63 @@
       description:
         - <strong>Led</strong> SEO and SEM strategy for **300+** websites using A/B testing, keyword analysis, and user behavior analytics (CTR, engagement), improving organic traffic across US, UK, and Canadian markets
 
+# - title: Technical Systems & Capabilities
+#   type: map
+#   contents:
+#     - name: AI & LLM Systems
+#       value: LLM reasoning systems, prompt engineering (CoT, ReAct, few-shot), RAG pipelines, agentic workflows (CrewAI, LangChain), evaluation frameworks, vector databases, Langfuse
+#     - name: Data & Analytics Engineering
+#       value: SQL, data modeling, statistical signal generation, benchmarking frameworks, ETL pipelines, Airflow, MWAA, Argo, Redshift, Snowflake
+#     - name: Distributed Systems & Infrastructure
+#       value: AWS (Lambda, S3, SNS, SQS), event-driven architectures, asynchronous pipelines, high-throughput systems, system reliability, observability (Datadog, Rollbar)
+#     - name: Backend & APIs
+#       value: Python, Node.js, FastAPI, REST APIs, GraphQL, streaming APIs, microservices architecture
+#     - name: Experimentation & Optimization
+#       value: A/B testing, performance analysis, CTR/VCR optimization, campaign analytics, decision systems
+#     - name: Tools & Platforms
+#       value: Git, Docker, Kubernetes (foundational), Tableau, programmatic platforms (TTD, Google Ads, Meta, YouTube)
+
 - title: Technical Systems & Capabilities
   type: skills_grid
   contents:
     - heading: AI & LLM Systems
       items:
-        - "LLM reasoning, prompt engineering (CoT, ReAct, few-shot), RAG pipelines, agentic workflows (CrewAI, LangChain), evaluation frameworks, vector databases, Langfuse"
+        # - "LLM reasoning, prompt engineering (CoT, ReAct, few-shot), RAG pipelines, agentic workflows (CrewAI, LangChain), evaluation frameworks, vector databases, Langfuse"
+        - "LLM reasoning, prompt engineering (CoT, ReAct, few-shot)"
+        - "RAG pipelines, agentic workflows (CrewAI, LangChain)"
+        - "Evaluation frameworks, vector databases, Langfuse"
     - heading: Data & Analytics Engineering
       items:
-        - "SQL, data modeling, statistical signal generation, ETL/ELT pipelines, Airflow, MWAA, Argo, Redshift, Snowflake"
+        # - "SQL, data modeling, statistical signal generation, ETL/ELT pipelines, Airflow, MWAA, Argo, Redshift, Snowflake"
+        - "SQL, NoSQL, data modeling, ETL/ELT pipelines"
+        - "Airflow, MWAA, Argo, Redshift, Snowflake"
+        - "Statistical signal generation, benchmarking frameworks"
     - heading: Distributed Systems & Infrastructure
       items:
-        - "AWS (Lambda, S3, SNS, SQS), event-driven systems, asynchronous pipelines, high-throughput processing, system reliability, Datadog, Rollbar"
+        # - "AWS (Lambda, S3, SNS, SQS), event-driven systems, asynchronous pipelines, high-throughput processing, system reliability, Datadog, Rollbar"
+        - "AWS (Lambda, S3, SNS, SQS), event-driven architectures"
+        - "Asynchronous pipelines, high-throughput systems"
+        - "System reliability, observability (Datadog, Rollbar)"
     - heading: Backend & APIs
       items:
-        - "Python, Node.js, FastAPI, REST, GraphQL, streaming APIs, microservices"
+        # - "Python, Node.js, FastAPI, REST, GraphQL, streaming APIs, microservices"
+        - "Python, Node.js, FastAPI"
+        - "REST, GraphQL, streaming APIs"
+        - "Microservices architecture"
     - heading: Experimentation & Optimization
       items:
-        - "A/B testing, performance analysis, CTR/VCR optimization, campaign analytics, decision systems"
+        # - "A/B testing, performance analysis, CTR/VCR optimization, campaign analytics, decision systems"
+        - "A/B testing, performance analysis"
+        - "CTR/VCR optimization, campaign analytics"
+        - "Decision systems, measurement frameworks"
     - heading: Tools & Platforms
       items:
-        - "Git, Docker, Kubernetes (foundational), Tableau, TTD, Google Ads, Meta, YouTube"
+        # - "Git, Docker, Kubernetes (foundational), Tableau, TTD, Google Ads, Meta, YouTube"
+        - "Git, Docker, Kubernetes"
+        - "Visualization, Plotly, HighCharts"
+        - "TTD, Google Ads, Meta, YouTube"
 
-- title: Research & Teaching
+- title: Academic Experience
   type: time_table
   contents:
     - title: PhD Researcher & Instructor
@@ -80,6 +114,7 @@
         - <strong>Developed</strong> computer vision system for parking availability detection using Python and OpenCV
 
 - title: Selected Publications
+  card_class: publications
   type: time_table
   footer_link: /publications/
   footer_link_label: "View all →"
