@@ -1502,6 +1502,10 @@ a.inline-link:hover {
   font-weight: 500;
 }
 
+.cv .card h6 {
+  font-weight: 500;
+}
+
 .cv .card li {
   color: var(--global-text-color-light);
 }
