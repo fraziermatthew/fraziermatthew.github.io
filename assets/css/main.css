@@ -1172,6 +1172,25 @@ a.inline-link:hover {
 .post.about-page .bio p:last-of-type {
   margin-top: 1.4rem;
 }
+.post.about-page {
+  /* Profile column: contact under photo (see _pages/about.md profile.address) */
+}
+.post.about-page .profile-contact {
+  margin-top: 1.1rem;
+}
+.post.about-page .profile-contact-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--global-text-color);
+  margin-bottom: 0.22rem;
+}
+.post.about-page .profile-contact-email {
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: var(--global-text-color-light);
+}
 
 .post.teaching-page {
   max-width: 980px;
