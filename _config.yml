@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Matthew
 middle_name:
 last_name: Frazier
-email: matthew@udel.edu
+email: # matthew@udel.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Senior Software Engineer specializing in AI systems, LLM-driven reasoning, and scalable data platforms. Focused on building production-grade systems that transform structured data into decision intelligence.
 footer_text: > # Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -71,11 +71,11 @@ twitter_username: # wregss
 linkedin_username: matthewrfrazier
 scholar_userid: BxnFsQIAAAAJ
 semanticscholar_id: # your Semantic Scholar ID
-orcid_id: 0000-0002-9491-3278
+orcid_id: # 0000-0002-9491-3278
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
-research_gate_profile: Matthew-Frazier-6
+research_gate_profile: # Matthew-Frazier-6
 blogger_url: # your blogger URL
 work_url: # work page URL
 keybase_username: # your keybase user name
@@ -245,7 +245,7 @@ jekyll-archives:
 scholar:
 
   last_name: [Frazier]
-  first_name: [Matthew, R.]
+  first_name: [Matthew]
 
   style: apa
   locale: en
