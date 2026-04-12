@@ -501,15 +501,14 @@ footer.sticky-bottom {
   margin: 0 0.4rem;
 }
 
-.cv-toc {
+.cv-toc.on-this-page {
   margin-bottom: 1.25rem;
   padding: 0.85rem 1.1rem;
+  border-radius: 10px;
   background: rgba(0, 0, 0, 0.02);
   border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
-  background-color: var(--global-card-bg-color);
 }
-.cv-toc .cv-toc-label {
+.cv-toc.on-this-page .cv-toc-label {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -517,22 +516,27 @@ footer.sticky-bottom {
   color: var(--global-text-color-light);
   margin-bottom: 0.45rem;
 }
-.cv-toc .cv-toc-list {
+.cv-toc.on-this-page .cv-toc-list {
   margin: 0;
   padding-left: 0;
   list-style: none;
   font-size: 0.98rem;
 }
-.cv-toc .cv-toc-list li {
+.cv-toc.on-this-page .cv-toc-list li {
   margin-bottom: 0.2rem;
 }
-.cv-toc .cv-toc-list a {
+.cv-toc.on-this-page .cv-toc-list a {
   color: var(--global-text-color);
   text-decoration: none;
   transition: color 0.15s ease;
 }
-.cv-toc .cv-toc-list a:hover {
+.cv-toc.on-this-page .cv-toc-list a:hover {
   color: var(--global-theme-color);
+}
+
+html[data-theme=dark] .cv-toc.on-this-page {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cv {
