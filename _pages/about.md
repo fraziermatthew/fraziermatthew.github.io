@@ -1,6 +1,6 @@
 ---
 layout: about
-title: bio
+title: about
 permalink: /
 # Use a YAML literal block (|) so multi-line HTML + URLs with ":" parse correctly.
 subtitle: |
