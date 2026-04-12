@@ -5,7 +5,7 @@ title: publications
 heading: Publications
 description: >
   Research informing the design of production AI systems grounded in structured reasoning and human-centered interaction, with publications at ICSE and ITiCSE.
-years: [2024, 2022]
+# years: [2024, 2022]
 nav: true
 nav_order: 1
 page_class: section-page
