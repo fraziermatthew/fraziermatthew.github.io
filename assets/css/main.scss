@@ -196,20 +196,27 @@ a.inline-link:hover {
   .profile-contact {
     margin-top: 1.1rem;
   }
-
+  
   .profile-contact-label {
-    font-size: 0.88rem;
+    display: block;
+    font-size: 0.78rem;
     font-weight: 600;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-transform: none;
     color: var(--global-text-color);
-    margin-bottom: 0.22rem;
+    margin: 0 0 0.2rem 0;
   }
-
+  
   .profile-contact-email {
-    font-size: 0.98rem;
-    line-height: 1.45;
+    display: block;
+    font-size: 0.94rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
     color: var(--global-text-color-light);
+    opacity: 0.9;
+    line-height: 1.45;
+    margin: 0;
   }
 }
 
