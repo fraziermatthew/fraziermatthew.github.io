@@ -38,7 +38,7 @@ profile:
   #   <p>Sr. Software Engineer</p>
 
 news: false  # set to true to show news on this page
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
