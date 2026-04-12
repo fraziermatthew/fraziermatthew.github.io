@@ -11,7 +11,8 @@ layout: default
 
           <header class="post-header">
             <div class="cv-header-row d-flex flex-wrap align-items-baseline justify-content-between gap-3 mb-2">
-              <h1 class="post-title mb-0">{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h1>
+              <h1>Experience</h1>
+              <!-- <h1 class="post-title mb-0">{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h1> -->
               {%- if page.cv_pdf and cv_pdf_url %}
               <div class="cv-pdf-actions">
                 <a href="{{ cv_pdf_url }}" download="{{ page.cv_pdf }}" class="cv-pdf-link">Download CV ↓</a>

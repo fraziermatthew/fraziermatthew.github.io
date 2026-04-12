@@ -4,7 +4,7 @@
 #     - name: Full Name
 #       value: Matthew Frazier
 
-- title: Experience
+- title: Professional Experience
   type: time_table
   contents:
     - title: Senior Software Engineer (Data Science, Scaled Media Solutions)
@@ -72,8 +72,10 @@
       description:
         - Developed computer vision system for parking availability detection using Python and OpenCV
 
-- title: Publications
+- title: Selected Publications
   type: time_table
+  footer_link: /publications/
+  footer_link_label: "View all →"
   contents:
     - year: 2024
       items:

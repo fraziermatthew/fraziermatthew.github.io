@@ -57,3 +57,8 @@
       </li>
     {% endfor %}
     </ul>
+{%- if entry.footer_link %}
+    <p class="cv-section-footer mt-3 mb-0 text-right">
+      <a href="{{ entry.footer_link | relative_url }}">{% if entry.footer_link_label %}{{ entry.footer_link_label }}{% else %}View all →{% endif %}</a>
+    </p>
+{%- endif %}
