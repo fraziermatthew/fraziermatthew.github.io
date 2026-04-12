@@ -307,10 +307,12 @@ blockquote {
 .navbar.navbar-light .navbar-brand.navbar-site-name {
   color: var(--global-text-color);
   transition: color 0.2s ease;
+  font-weight: 600;
 }
 .navbar.navbar-light .navbar-brand.navbar-site-name span {
   color: inherit !important;
   transition: color 0.2s ease;
+  font-weight: inherit;
 }
 .navbar.navbar-light .navbar-brand.navbar-site-name:hover, .navbar.navbar-light .navbar-brand.navbar-site-name:hover span {
   color: var(--global-theme-color) !important;
