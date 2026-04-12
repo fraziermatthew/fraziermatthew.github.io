@@ -747,7 +747,8 @@ footer.sticky-bottom {
 .publications ol.bibliography li {
   margin-bottom: 1rem;
 }
-.publications ol.bibliography li .preview {
+.publications ol.bibliography li .preview,
+.publications ol.bibliography li .abbr {
   width: 100%;
   min-width: 80px;
   max-width: 200px;
@@ -755,11 +756,11 @@ footer.sticky-bottom {
 .publications ol.bibliography li .abbr {
   margin-bottom: 0.5rem;
 }
-.publications ol.bibliography li .abbr:not(.preview) {
-  height: 2rem;
-}
 .publications ol.bibliography li .abbr abbr {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
   background-color: var(--global-theme-color);
   padding-left: 1rem;
   padding-right: 1rem;
