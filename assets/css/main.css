@@ -379,6 +379,29 @@ blockquote {
 .navbar.navbar-light .navbar-nav .toggle-container {
   margin-left: 0.65rem;
 }
+.navbar.navbar-light #light-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  color: var(--global-text-color);
+  line-height: 1;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+}
+.navbar.navbar-light #light-toggle i.fa-moon,
+.navbar.navbar-light #light-toggle i.fa-sun {
+  padding: 0 !important;
+  margin: 0;
+  line-height: 1;
+  vertical-align: middle;
+}
+.navbar.navbar-light #light-toggle:hover {
+  color: var(--global-hover-color);
+}
 
 .navbar-toggler .icon-bar {
   display: block;
@@ -409,26 +432,6 @@ blockquote {
 }
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
-}
-
-#light-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border: 0;
-  background-color: inherit;
-  color: var(--global-text-color);
-  line-height: 1;
-  min-width: 2.25rem;
-  min-height: 2.25rem;
-}
-#light-toggle i {
-  line-height: 1;
-  display: block;
-}
-#light-toggle:hover {
-  color: var(--global-hover-color);
 }
 
 .social {
