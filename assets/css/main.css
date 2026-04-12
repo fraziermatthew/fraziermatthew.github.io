@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*******************************************************************************
  * Variables used throughout the theme.
  * To adjust anything, simply edit the variables below and rebuild the theme.
@@ -1108,9 +1109,16 @@ a.inline-link:hover {
   font-size: inherit;
   color: inherit;
 }
-.post.about-page .subtitle {
-  margin-top: 0.4rem;
-  margin-bottom: 1.2rem;
+.post.about-page {
+  /* TITLE → SUBTITLE + SUBTITLE → HOOK: outer .desc carries vertical rhythm */
+}
+.post.about-page .post-header .desc {
+  margin-top: 0.35rem;
+  margin-bottom: 1.25rem;
+}
+.post.about-page .post-header .desc .subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .post.about-page .subtitle-primary {
   font-size: 1rem;
@@ -1137,10 +1145,32 @@ a.inline-link:hover {
   color: var(--global-theme-color);
   border-bottom-color: var(--global-theme-color);
 }
+.post.about-page {
+  /* SUBTITLE → HOOK */
+}
 .post.about-page .bio p:first-of-type {
   font-size: 1.05rem;
   line-height: 1.65;
-  margin-bottom: 1.2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1.35rem;
+}
+.post.about-page {
+  /* BODY PARAGRAPH RHYTHM */
+}
+.post.about-page .bio p {
+  margin-bottom: 1.15rem;
+}
+.post.about-page {
+  /* FINAL SIGNATURE (philosophy) — second-to-last <p> when Contact is last */
+}
+.post.about-page .bio p:nth-last-of-type(2) {
+  margin-top: 1.25rem;
+}
+.post.about-page {
+  /* CONTACT LINE — last <p> in .bio */
+}
+.post.about-page .bio p:last-of-type {
+  margin-top: 1.4rem;
 }
 
 .post.teaching-page {
