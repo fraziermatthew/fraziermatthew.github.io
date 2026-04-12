@@ -36,6 +36,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
+<!-- body paragraph -->
 <p>
 I build systems that turn complex data into reliable decisions through structured AI reasoning.
 </p>
@@ -48,6 +49,7 @@ At <a class="affiliation-link" href="https://www.goodwaygroup.com/">Goodway Grou
 I earned my Ph.D. in Computer and Information Sciences from the University of Delaware as a member of the <a class="affiliation-link" href="https://sites.udel.edu/se-research/">Software Analysis and Compilation (SAC) Lab</a>, where I studied conversational agents and human-centered AI under <a class="inline-link" href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE.
 </p>
 
+<!-- FINAL SIGNATURE PARAGRAPH (your philosophy line) -->
 <p>
 I design systems where <strong>data, reasoning, and infrastructure operate as a unified layer</strong>, enabling scalable decision-making beyond prototype AI.
 </p>
@@ -72,4 +74,5 @@ I earned my Ph.D. in Computer and Information Sciences from the University of De
 I design systems where <strong>data, reasoning, and infrastructure operate as a unified layer</strong>, enabling scalable decision-making beyond prototype AI.
 </p> -->
 
-**Reach me**: matthew[at]udel[dot]edu
+<!-- CONTACT LINE  -->
+**Contact**: matthew[at]udel[dot]edu

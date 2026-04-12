@@ -128,9 +128,15 @@ a.inline-link:hover {
     color: inherit;
   }
 
-  .subtitle {
-    margin-top: 0.4rem;
-    margin-bottom: 1.2rem;
+  /* TITLE → SUBTITLE + SUBTITLE → HOOK: outer .desc carries vertical rhythm */
+  .post-header .desc {
+    margin-top: 0.35rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .post-header .desc .subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .subtitle-primary {
@@ -163,10 +169,27 @@ a.inline-link:hover {
   }
 
   // Main bio copy (see _layouts/about.html `.clearfix.bio` + _pages/about.md)
+  /* SUBTITLE → HOOK */
   .bio p:first-of-type {
     font-size: 1.05rem;
     line-height: 1.65;
-    margin-bottom: 1.2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1.35rem;
+  }
+
+  /* BODY PARAGRAPH RHYTHM */
+  .bio p {
+    margin-bottom: 1.15rem;
+  }
+
+  /* FINAL SIGNATURE (philosophy) — second-to-last <p> when Contact is last */
+  .bio p:nth-last-of-type(2) {
+    margin-top: 1.25rem;
+  }
+
+  /* CONTACT LINE — last <p> in .bio */
+  .bio p:last-of-type {
+    margin-top: 1.4rem;
   }
 }
 
