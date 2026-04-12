@@ -480,6 +480,45 @@ a.inline-link:hover {
   font-weight: 500;
 }
 
+// Technical Systems & Capabilities — skills_grid (see _includes/cv/skills_grid.html)
+.cv .card .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 3rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cv .card .skill-block {
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    padding-left: 1rem;
+    margin: 0;
+  }
+
+  li {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+    line-height: 1.6;
+    margin-bottom: 0.25rem;
+  }
+
+  li::marker {
+    color: var(--global-divider-color);
+  }
+}
+
 .cv .card h6 {
   font-weight: 500;
 }

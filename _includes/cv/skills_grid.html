@@ -1,0 +1,12 @@
+<div class="skills-grid">
+  {% for block in entry.contents %}
+    <div class="skill-block">
+      <h4>{{ block.heading }}</h4>
+      <ul>
+        {% for item in block.items %}
+          <li>{% include cv/md_inline.html text=item %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>
