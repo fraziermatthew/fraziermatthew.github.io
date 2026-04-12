@@ -161,6 +161,13 @@ a.inline-link:hover {
     color: var(--global-theme-color);
     border-bottom-color: var(--global-theme-color);
   }
+
+  // Main bio copy (see _layouts/about.html `.clearfix.bio` + _pages/about.md)
+  .bio p:first-of-type {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin-bottom: 1.2rem;
+  }
 }
 
 // Teaching page (see _pages/teaching.md — `page_class: teaching-page section-page`)
