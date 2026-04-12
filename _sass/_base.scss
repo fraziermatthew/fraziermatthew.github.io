@@ -823,7 +823,9 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
-      .preview {
+      // Left column: thesis rows only have `.abbr`; conference rows have `.abbr.preview` — same width cap for alignment
+      .preview,
+      .abbr {
         width: 100%;
         min-width: 80px;
         max-width: 200px;
@@ -832,13 +834,11 @@ footer.sticky-bottom {
       .abbr {
         margin-bottom: 0.5rem;
 
-        // Badge-only column (thesis, etc.); with `.preview` also present, do not fix height or thumbnails clip
-        &:not(.preview) {
-          height: 2rem;
-        }
-
         abbr {
-          display: inline-block;
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          text-align: center;
           background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
