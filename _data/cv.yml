@@ -61,39 +61,39 @@
     - heading: AI & LLM Systems
       items:
         # - "LLM reasoning, prompt engineering (CoT, ReAct, few-shot), RAG pipelines, agentic workflows (CrewAI, LangChain), evaluation frameworks, vector databases, Langfuse"
-        - "Prompt engineering (CoT, ReAct, few-shot)"
-        - "RAG, agentic AI (CrewAI, LangChain)"
-        - "LLM-as-a-Judge, observability, Langfuse"
+          - "LLM reasoning, prompt engineering (CoT, ReAct)"
+          - "RAG pipelines, agentic workflows"
+          - "Vector databases, evaluation, Langfuse"
     - heading: Data & Analytics Engineering
       items:
         # - "SQL, data modeling, statistical signal generation, ETL/ELT pipelines, Airflow, MWAA, Argo, Redshift, Snowflake"
-        - "SQL, NoSQL, data modeling, ETL/ELT pipelines"
-        - "Airflow, MWAA, Argo, Redshift, Snowflake"
-        - "Statistical signal generation, benchmarking"
+          - "SQL, data modeling, ETL/ELT"
+          - "Airflow, MWAA, Argo"
+          - "Redshift, Snowflake"
     - heading: Distributed Systems & Infrastructure
       items:
         # - "AWS (Lambda, S3, SNS, SQS), event-driven systems, asynchronous pipelines, high-throughput processing, system reliability, Datadog, Rollbar"
-        - "AWS (Lambda, S3, SNS, SQS), event-driven design"
-        - "Asynchronous high-throughput systems"
-        - "System reliability (Datadog, Rollbar)"
+          - "AWS (Lambda, S3, SNS, SQS)"
+          - "Event-driven, async pipelines"
+          - "Reliability, observability (Datadog, Rollbar)"
     - heading: Backend & APIs
       items:
         # - "Python, Node.js, FastAPI, REST, GraphQL, streaming APIs, microservices"
-        - "Python, Node.js, FastAPI"
-        - "REST, GraphQL, streaming APIs"
-        - "Microservices architecture"
+          - "Python, Node.js, FastAPI"
+          - "REST, GraphQL"
+          - "Microservices"
     - heading: Experimentation & Optimization
       items:
         # - "A/B testing, performance analysis, CTR/VCR optimization, campaign analytics, decision systems"
-        - "A/B testing, performance analysis"
-        - "CTR/VCR optimization, campaign analytics"
-        - "Decision systems, measurement frameworks"
+          - "A/B testing, performance analysis"
+          - "CTR/VCR optimization"
+          - "Decision systems"
     - heading: Tools & Platforms
       items:
         # - "Git, Docker, Kubernetes (foundational), Tableau, TTD, Google Ads, Meta, YouTube"
-        - "Git, Docker, Kubernetes"
-        - "Visualization, Plotly, HighCharts"
-        - "TTD, Google Ads, Meta, YouTube"
+          - "Git, Docker, Kubernetes"
+          - "Tableau, visualization"
+          - "TTD, Google Ads, Meta"
 
 - title: Academic Experience
   type: time_table
@@ -137,7 +137,7 @@
       year: 2018 - 2024
       description:
         - Advised by Lori Pollock
-        - Research in conversational agents and applied AI
+        - Research in conversational agents, applied AI
     - title: M.Sc., Computer Science (Cum Laude)
       institution: West Chester University of Pennsylvania
       year: 2016 - 2017
