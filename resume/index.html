@@ -122,13 +122,15 @@
       <!-- _layouts/cv.html -->
         <div class="post section-page">
 
+          <div class="cv">
           <header class="post-header">
             <div class="cv-header-row d-flex flex-wrap align-items-baseline justify-content-between gap-3 mb-2">
               <h1>Experience</h1>
               <!-- <h1 class="post-title mb-0">Resume</h1> -->
-              <div class="cv-pdf-actions">
+              <div class="cv-pdf-actions cv-header-links">
                 <a href="/assets/pdf/Resume_3.19.26-swe.pdf" download="Resume_3.19.26-swe.pdf" class="cv-pdf-link">Download CV ↓</a>
-                <span class="cv-pdf-sep" aria-hidden="true">·</span>
+                <span class="cv-pdf-sep" aria-hidden="true"> </span>
+                <!-- <span class="cv-pdf-sep" aria-hidden="true">·</span> -->
                 <a href="/assets/pdf/Resume_3.19.26-swe.pdf" target="_blank" rel="noopener noreferrer" class="cv-pdf-link">View PDF →</a>
               </div>
             </div>
@@ -140,13 +142,12 @@
               <ul class="cv-toc-list">
                 <li><a href="#professional-experience">Professional Experience</a></li>
                 <li><a href="#technical-systems-capabilities">Technical Systems &amp; Capabilities</a></li>
-                <li><a href="#research-teaching">Research &amp; Teaching</a></li>
+                <li><a href="#academic-experience">Academic Experience</a></li>
                 <li><a href="#selected-publications">Selected Publications</a></li>
                 <li><a href="#education">Education</a></li>
               </ul>
             </nav>
 
-            <div class="cv">
               
                 <div class="card mt-3 p-3" id="professional-experience">
                   <h3 class="card-title font-weight-medium">Professional Experience</h3>
@@ -362,7 +363,11 @@
       <h4>AI &amp; LLM Systems</h4>
       <ul>
         
-          <li>LLM reasoning, prompt engineering (CoT, ReAct, few-shot), RAG pipelines, agentic workflows (CrewAI, LangChain), evaluation frameworks, vector databases, Langfuse</li>
+          <li>LLM reasoning, prompt engineering (CoT, ReAct, few-shot)</li>
+        
+          <li>RAG pipelines, agentic workflows (CrewAI, LangChain)</li>
+        
+          <li>Evaluation frameworks, vector databases, Langfuse</li>
         
       </ul>
     </div>
@@ -371,7 +376,11 @@
       <h4>Data &amp; Analytics Engineering</h4>
       <ul>
         
-          <li>SQL, data modeling, statistical signal generation, ETL/ELT pipelines, Airflow, MWAA, Argo, Redshift, Snowflake</li>
+          <li>SQL, NoSQL, data modeling, ETL/ELT pipelines</li>
+        
+          <li>Airflow, MWAA, Argo, Redshift, Snowflake</li>
+        
+          <li>Statistical signal generation, benchmarking frameworks</li>
         
       </ul>
     </div>
@@ -380,7 +389,11 @@
       <h4>Distributed Systems &amp; Infrastructure</h4>
       <ul>
         
-          <li>AWS (Lambda, S3, SNS, SQS), event-driven systems, asynchronous pipelines, high-throughput processing, system reliability, Datadog, Rollbar</li>
+          <li>AWS (Lambda, S3, SNS, SQS), event-driven architectures</li>
+        
+          <li>Asynchronous pipelines, high-throughput systems</li>
+        
+          <li>System reliability, observability (Datadog, Rollbar)</li>
         
       </ul>
     </div>
@@ -389,7 +402,11 @@
       <h4>Backend &amp; APIs</h4>
       <ul>
         
-          <li>Python, Node.js, FastAPI, REST, GraphQL, streaming APIs, microservices</li>
+          <li>Python, Node.js, FastAPI</li>
+        
+          <li>REST, GraphQL, streaming APIs</li>
+        
+          <li>Microservices architecture</li>
         
       </ul>
     </div>
@@ -398,7 +415,11 @@
       <h4>Experimentation &amp; Optimization</h4>
       <ul>
         
-          <li>A/B testing, performance analysis, CTR/VCR optimization, campaign analytics, decision systems</li>
+          <li>A/B testing, performance analysis</li>
+        
+          <li>CTR/VCR optimization, campaign analytics</li>
+        
+          <li>Decision systems, measurement frameworks</li>
         
       </ul>
     </div>
@@ -407,7 +428,11 @@
       <h4>Tools &amp; Platforms</h4>
       <ul>
         
-          <li>Git, Docker, Kubernetes (foundational), Tableau, TTD, Google Ads, Meta, YouTube</li>
+          <li>Git, Docker, Kubernetes</li>
+        
+          <li>Visualization, Plotly, HighCharts</li>
+        
+          <li>TTD, Google Ads, Meta, YouTube</li>
         
       </ul>
     </div>
@@ -418,8 +443,8 @@
                   </div>
                 </div>
               
-                <div class="card mt-3 p-3" id="research-teaching">
-                  <h3 class="card-title font-weight-medium">Research &amp; Teaching</h3>
+                <div class="card mt-3 p-3" id="academic-experience">
+                  <h3 class="card-title font-weight-medium">Academic Experience</h3>
                   <div>
                   
                    <ul class="card-text font-weight-light list-group list-group-flush">
@@ -518,7 +543,7 @@
                   </div>
                 </div>
               
-                <div class="card mt-3 p-3" id="selected-publications">
+                <div class="card mt-3 p-3 publications" id="selected-publications">
                   <h3 class="card-title font-weight-medium">Selected Publications</h3>
                   <div>
                   
@@ -703,8 +728,8 @@
                   </div>
                 </div>
               
-              </div>
           </article>
+          </div>
 
         </div>
 

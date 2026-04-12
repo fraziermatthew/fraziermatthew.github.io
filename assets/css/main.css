@@ -1530,10 +1530,6 @@ html[data-theme=dark] .cv .card {
   max-width: 720px;
 }
 
-.cv .item ul.items li {
-  margin-bottom: 0.5rem;
-}
-
 .cv .item ul.items li strong {
   font-weight: 600;
 }
@@ -1582,7 +1578,7 @@ html[data-theme=dark] .cv .card {
   font-size: 0.95rem;
   color: #666;
   line-height: 1.65;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
 }
 .cv .card .skill-block li:last-child {
   margin-bottom: 0;
@@ -1597,6 +1593,27 @@ html[data-theme=dark] .cv .card {
 
 .cv .card li {
   color: var(--global-text-color-light);
+}
+
+.cv .card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.cv .card ul {
+  margin-top: 0.5rem;
+}
+
+.cv .cv-header-links {
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.cv .publications a:hover {
+  color: #111;
+}
+
+html[data-theme=dark] .cv .publications a:hover {
+  color: var(--global-text-color);
 }
 
 .cv .card li strong {
