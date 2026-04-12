@@ -2,8 +2,20 @@
 layout: about
 title: bio
 permalink: /
-subtitle: Sr. Software Engineer | AI & Data Systems @ Goodway Group · CompSci Edu Research @ University of Delaware
-# Senior Software Engineer @ Goodway Group · AI & Data Systems<br />Computational Research @ University of Delaware
+subtitle: <div class="subtitle">
+  <div class="subtitle-primary">
+    Senior Software Engineer @ 
+    <a href="https://www.goodwaygroup.com" class="subtitle-link">Goodway Group</a>
+    · AI & Data Systems
+  </div>
+
+  <div class="subtitle-secondary">
+    Research @ 
+    <a href="https://sites.udel.edu/se-research/" class="subtitle-link">University of Delaware</a>
+    · Computer Science Education
+  </div>
+</div>
+#  Sr. Software Engineer | AI & Data Systems @ Goodway Group · CompSci Edu Research @ University of Delaware
 # Senior Software Engineer · AI & Data Systems · Computational Research # Designing production-grade AI systems for structured reasoning and decision intelligence
 
 profile:
@@ -27,7 +39,7 @@ social: false  # includes social icons at the bottom of the page
 <!-- version 7 -->
 I build production-grade AI systems for structured reasoning and decision intelligence.
 
-At <a class="inline-link" href="https://www.goodwaygroup.com/">Goodway Group</a>, I design and operate distributed analytics and optimization systems operating high-throughput distributed optimization systems at scale, integrating multi-source data pipelines, event-driven architectures, and LLM-powered reasoning layers into production environments.
+At <a class="affiliation-link" href="https://www.goodwaygroup.com/">Goodway Group</a>, I design and operate distributed analytics and optimization systems operating high-throughput distributed optimization systems at scale, integrating multi-source data pipelines, event-driven architectures, and LLM-powered reasoning layers into production environments.
 
 My work centers on **LLM-guided reasoning systems, data infrastructure, and agentic architectures**, where statistical signal generation and model inference are tightly coupled to produce consistent, interpretable outputs.
 
