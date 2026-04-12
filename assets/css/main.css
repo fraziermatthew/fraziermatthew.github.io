@@ -1104,6 +1104,43 @@ a.inline-link:hover {
   font-size: 0.95rem;
 }
 
+.post.about-page .desc:has(.subtitle) {
+  font-size: inherit;
+  color: inherit;
+}
+.post.about-page .subtitle {
+  margin-top: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+.post.about-page .subtitle-primary {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--global-text-color);
+  line-height: 1.35;
+}
+.post.about-page .subtitle-secondary {
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: var(--global-text-color);
+  opacity: 0.72;
+  line-height: 1.35;
+  margin-top: 0.15rem;
+}
+.post.about-page .subtitle-link {
+  color: var(--global-text-color);
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  transition: color 0.18s ease, border-bottom-color 0.18s ease;
+}
+.post.about-page .subtitle-link:hover, .post.about-page .subtitle-link:focus {
+  color: var(--global-theme-color);
+  border-bottom-color: var(--global-theme-color);
+}
+.post.about-page .subtitle-primary .subtitle-link,
+.post.about-page .subtitle-secondary .subtitle-link {
+  font-weight: 500;
+}
+
 .post.teaching-page {
   max-width: 980px;
 }
