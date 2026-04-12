@@ -353,6 +353,34 @@ blockquote {
   .navbar-nav .toggle-container {
     margin-left: 0.65rem;
   }
+
+  // Theme toggle: flex center only — do NOT set `display` on `i` (breaks _themes.scss show/hide for .fa-moon / .fa-sun)
+  #light-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    color: var(--global-text-color);
+    line-height: 1;
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+
+    // Undo :root / [data-theme] padding offsets from _themes.scss so the icon centers in the nav row
+    i.fa-moon,
+    i.fa-sun {
+      padding: 0 !important;
+      margin: 0;
+      line-height: 1;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
 }
 
 .navbar-toggler {
@@ -392,28 +420,6 @@ blockquote {
 
   .bottom-bar {
     transform: rotate(0);
-  }
-}
-
-#light-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border: 0;
-  background-color: inherit;
-  color: var(--global-text-color);
-  line-height: 1;
-  min-width: 2.25rem;
-  min-height: 2.25rem;
-
-  i {
-    line-height: 1;
-    display: block;
-  }
-
-  &:hover {
-    color: var(--global-hover-color);
   }
 }
 
