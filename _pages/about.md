@@ -45,7 +45,11 @@ At <a class="affiliation-link" href="https://www.goodwaygroup.com/">Goodway Grou
 </p>
 
 <p>
-I earned my Ph.D. in Computer and Information Sciences from the University of Delaware as a member of the <a class="affiliation-link" href="https://sites.udel.edu/se-research/">Software Analysis and Compilation (SAC) Lab</a>, where I studied conversational agents and human-centered AI under <a class="inline-link" href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE. I design systems where <strong>data, reasoning, and infrastructure operate as a unified layer</strong>, enabling scalable decision-making beyond prototype AI.
+I earned my Ph.D. in Computer and Information Sciences from the University of Delaware as a member of the <a class="affiliation-link" href="https://sites.udel.edu/se-research/">Software Analysis and Compilation (SAC) Lab</a>, where I studied conversational agents and human-centered AI under <a class="inline-link" href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE.
+</p>
+
+<p>
+I design systems where <strong>data, reasoning, and infrastructure operate as a unified layer</strong>, enabling scalable decision-making beyond prototype AI.
 </p>
 
 <!-- <p>
