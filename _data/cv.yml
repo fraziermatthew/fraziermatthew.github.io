@@ -82,7 +82,7 @@
 - title: Selected Publications
   type: time_table
   footer_link: /publications/
-  footer_link_label: "View all"
+  footer_link_label: "View all publications →"
   contents:
     - year: 2024
       items:

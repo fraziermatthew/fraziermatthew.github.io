@@ -512,14 +512,12 @@ footer.sticky-bottom {
   }
 }
 
-.cv-toc {
+.cv-toc.on-this-page {
   margin-bottom: 1.25rem;
   padding: 0.85rem 1.1rem;
-  background: rgba(0,0,0,0.02);
-  border: 1px solid rgba(0,0,0,0.06);
-  // border: 1px solid var(--global-divider-color);
   border-radius: 10px;
-  background-color: var(--global-card-bg-color);
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.06);
 
   .cv-toc-label {
     font-size: 0.72rem;
@@ -550,6 +548,11 @@ footer.sticky-bottom {
       }
     }
   }
+}
+
+html[data-theme='dark'] .cv-toc.on-this-page {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cv {
