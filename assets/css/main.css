@@ -313,26 +313,40 @@ blockquote {
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link:hover {
   color: var(--global-hover-color);
 }
-.navbar.navbar-light .navbar-brand.social {
+.navbar.navbar-light .navbar-brand.social,
+.navbar.navbar-light .navbar-nav .navbar-social-icons {
   padding-bottom: 0;
   padding-top: 0;
   font-size: 1.55rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.navbar.navbar-light .navbar-brand.social a {
+.navbar.navbar-light .navbar-brand.social a,
+.navbar.navbar-light .navbar-nav .navbar-social-icons a {
   margin-right: 0.35rem;
   opacity: 0.78;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
-.navbar.navbar-light .navbar-brand.social a i::before {
+.navbar.navbar-light .navbar-brand.social a i::before,
+.navbar.navbar-light .navbar-nav .navbar-social-icons a i::before {
   color: var(--global-text-color);
   transition: color 0.2s ease;
 }
-.navbar.navbar-light .navbar-brand.social a:hover {
+.navbar.navbar-light .navbar-brand.social a:hover,
+.navbar.navbar-light .navbar-nav .navbar-social-icons a:hover {
   opacity: 1;
   transform: translateY(-1px);
 }
-.navbar.navbar-light .navbar-brand.social a:hover i::before {
+.navbar.navbar-light .navbar-brand.social a:hover i::before,
+.navbar.navbar-light .navbar-nav .navbar-social-icons a:hover i::before {
   color: var(--global-theme-color);
+}
+.navbar.navbar-light .navbar-nav-social {
+  margin-left: 0.75rem;
+}
+.navbar.navbar-light .navbar-nav .toggle-container {
+  margin-left: 0.65rem;
 }
 
 .navbar-toggler .icon-bar {
