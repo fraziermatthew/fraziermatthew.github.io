@@ -194,22 +194,24 @@ a.inline-link:hover {
 
   /* Profile column: contact under photo (see profile.address or profile_contact_obfuscated.html) */
   .profile-contact {
-    margin-top: 1.2rem;
+    margin-top: 1.4rem;
   }
   
   .profile-contact-label {
-    font-size: 0.88rem;
+    font-size: 0.92rem;
     font-weight: 600;
     color: var(--global-text-color);
-    opacity: 0.9;
-    margin-bottom: 0.2rem;
+    opacity: 0.95;
+    margin-bottom: 0.25rem;
   }
   
   .profile-contact-email {
-    font-size: 0.94rem;
-    font-weight: 400;
-    color: var(--global-text-color);
-    opacity: 0.85;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--global-theme-color);
+    opacity: 0.95;
+    text-decoration: none;
   }
 
   /* Injected by profile_contact_obfuscated.html */
@@ -227,6 +229,7 @@ a.inline-link:hover {
   .profile-contact-email-link:focus {
     color: var(--global-theme-color);
     opacity: 1;
+    text-decoration: underline !important;
   }
 }
 
