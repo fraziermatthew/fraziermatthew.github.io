@@ -28,7 +28,9 @@ profile:
   address: |
     <div class="profile-contact">
       <div class="profile-contact-label">Contact</div>
-      <div class="profile-contact-email">matthew[at]udel[dot]edu</div>
+      <a href="mailto:matthew@udel.edu" class="profile-contact-email">
+        matthew@udel.edu
+      </a>
     </div>
   # address: >
   #   <a class="affiliation-link" href="https://sites.udel.edu/se-research/">SAC Lab</a>
