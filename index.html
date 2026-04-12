@@ -162,10 +162,18 @@
             <div class="address">
               <div class="profile-contact">
   <div class="profile-contact-label">Contact</div>
-  <a href="mailto:matthew@udel.edu" class="profile-contact-email">
-    matthew@udel.edu
-  </a>
+  <span id="profile-email-slot" class="profile-contact-email" aria-label="Email address"></span>
 </div>
+<script>
+(function () {
+  var user = "matthew";
+  var domain = "udel.edu";
+  var email = user + '@' + domain;
+  var el = document.getElementById('profile-email-slot');
+  if (!el) return;
+  el.innerHTML = '<a href="mailto:' + email + '" class="profile-contact-email-link">' + email + '</a>';
+})();
+</script>
 
             </div>
           </div>
