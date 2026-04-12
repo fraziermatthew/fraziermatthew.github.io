@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
+permalink: /education/
+title: education
 heading: Teaching
 description: Teaching and instructional experience
 nav: true
