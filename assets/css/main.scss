@@ -475,6 +475,52 @@ a.inline-link:hover {
   }
 }
 
+// CV / Resume page
+.cv .card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+html[data-theme='dark'] .cv .card {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+}
+
+.cv a,
+.cv button,
+.cv .btn {
+  transition: all 0.2s ease;
+}
+
+.cv a {
+  text-decoration: none;
+}
+
+.cv a:hover {
+  text-decoration: underline;
+}
+
+// Professional Experience & similar — narrative column
+.cv .item {
+  max-width: 720px;
+}
+
+.cv .item ul.items li {
+  margin-bottom: 0.5rem;
+}
+
+.cv .item ul.items li strong {
+  font-weight: 600;
+}
+
+.cv .highlight-role {
+  border-left: 3px solid var(--global-theme-color);
+  padding-left: 12px;
+}
+
+.cv .education-item:not(:first-child) {
+  opacity: 0.85;
+}
+
 // CV page: section card headings (h3.card-title)
 .cv .card h3.card-title {
   font-weight: 500;
@@ -484,10 +530,11 @@ a.inline-link:hover {
 .cv .card .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem 3rem;
+  gap: 2.25rem 3rem;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 1.75rem 0;
   }
 }
 
@@ -498,8 +545,9 @@ a.inline-link:hover {
   h4 {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--global-text-color);
-    margin-bottom: 0.5rem;
+    color: #111;
+    margin: 0 0 0.65rem 0;
+    line-height: 1.3;
   }
 
   ul {
@@ -509,13 +557,17 @@ a.inline-link:hover {
 
   li {
     font-size: 0.95rem;
-    color: var(--global-text-color-light);
-    line-height: 1.6;
-    margin-bottom: 0.25rem;
+    color: #666;
+    line-height: 1.65;
+    margin-bottom: 0.35rem;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
   }
 
   li::marker {
-    color: var(--global-divider-color);
+    color: #b8b8b8;
   }
 }
 
@@ -535,7 +587,9 @@ a.inline-link:hover {
 }
 
 .cv .cv-section-footer {
-  margin-top: 0.75rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
   font-size: 0.9rem;
 }
 
@@ -544,26 +598,12 @@ a.inline-link:hover {
   align-items: center;
   gap: 0.35rem;
   letter-spacing: 0.01em;
-
   font-weight: 500;
   color: var(--global-theme-color);
-
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.cv .cv-section-footer a::after {
-  content: "→";
-  font-size: 0.9rem;
-  transition: transform 0.2s ease;
 }
 
 .cv .cv-section-footer a:hover {
-  opacity: 0.75;
-}
-
-.cv .cv-section-footer a:hover::after {
-  transform: translateX(3px);
+  opacity: 0.85;
 }
 
 // Floating back-to-top (see _includes/back_to_top.html)

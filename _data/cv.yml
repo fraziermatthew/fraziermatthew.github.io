@@ -11,7 +11,7 @@
       institution: Goodway Group
       year: 2021 - Present
       description:
-        - Improved production stability of **RealValue™**, a high-throughput distributed optimization system processing **40M+** impression-level decisions daily, by re-architecting validation logic and error handling (Datadog, Rollbar), reducing production errors by **90%**
+        - <strong>Improved</strong> production stability of **RealValue™**, a high-throughput distributed optimization system processing **40M+** impression-level decisions daily, by re-architecting validation logic and error handling (Datadog, Rollbar), reducing production errors by **90%**
         - Designed and deployed distributed data pipelines and ETL systems (Airflow, MWAA, Argo, Redshift, Snowflake, S3) supporting large-scale marketing analytics and multi-source data ingestion
         - Architected integrations across **5+** external platforms (TTD, Google Ads, Meta, YouGov, Bing), enabling unified data processing and cross-platform analytics
         - Built event-driven systems (AWS Lambda, SNS, SQS FIFO, S3) to automate analytics workflows, replacing manual notebook-based processes with asynchronous, production-grade pipelines
@@ -65,6 +65,7 @@
   type: time_table
   contents:
     - title: PhD Researcher & Instructor
+      highlight_role: true
       institution: University of Delaware
       year: 2018 - 2024
       description:
@@ -85,13 +86,16 @@
   contents:
     - year: 2024
       items:
-        - Customizing ChatGPT to Help Computer Science Principles Students Learn Through Conversation (ITiCSE 2024)
+        - text: "Customizing ChatGPT to Help Computer Science Principles Students Learn Through Conversation (ITiCSE 2024)"
+          pub_key: "10.1145/3649217.3653570"
     - year: 2022
       items:
-        - Investigating User Perceptions of Conversational Agents for Software-related Exploratory Web Search (ICSE 2022)
+        - text: "Investigating User Perceptions of Conversational Agents for Software-related Exploratory Web Search (ICSE 2022)"
+          pub_key: "10.1145/3510455.3512778"
 
 - title: Education
   type: time_table
+  education_section: true
   contents:
     - title: Ph.D., Computer and Information Sciences
       institution: University of Delaware

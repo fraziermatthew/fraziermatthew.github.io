@@ -515,7 +515,9 @@ footer.sticky-bottom {
 .cv-toc {
   margin-bottom: 1.25rem;
   padding: 0.85rem 1.1rem;
-  border: 1px solid var(--global-divider-color);
+  background: rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.06);
+  // border: 1px solid var(--global-divider-color);
   border-radius: 10px;
   background-color: var(--global-card-bg-color);
 

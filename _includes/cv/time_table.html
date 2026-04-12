@@ -1,6 +1,6 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
     {% for content in entry.contents %}
-      <li class="list-group-item">
+      <li class="list-group-item{% if entry.education_section %} education-item{% endif %}">
         <div class="row">
           {% if content.year %}
             <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
@@ -10,6 +10,10 @@
             </div>
           {% endif %}
           <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            {% if content.highlight_role %}
+            <div class="highlight-role">
+            {% endif %}
             {% if content.title %}
             <h6 class="title font-weight-bold ml-1 ml-md-4">{{content.title}}</h6>
             {% endif %}
@@ -38,13 +42,17 @@
               <ul class="items">
                 {% for item in content.items %}
                   <li>
-                    {% if item.contents %}
+                    {% if item.pub_key and item.text %}
+                      <a href="{{ '/publications/' | relative_url }}#{{ item.pub_key | replace: '/', '%2F' }}">{% include cv/md_inline.html text=item.text %}</a>
+                    {% elsif item.contents %}
                       <span class="item-title">{{ item.title }}</span>
                       <ul class="subitems">
                       {% for subitem in item.contents %}
                         <li><span class="subitem">{% include cv/md_inline.html text=subitem %}</span></li>
                       {% endfor %}
                       </ul>
+                    {% elsif item.text %}
+                      <span class="item">{% include cv/md_inline.html text=item.text %}</span>
                     {% else %}
                       <span class="item">{% include cv/md_inline.html text=item %}</span>
                     {% endif %}
@@ -52,13 +60,17 @@
                 {% endfor %}
               </ul>
             {% endif %}
+            {% if content.highlight_role %}
+            </div>
+            {% endif %}
+            </div>
           </div>
         </div>
       </li>
     {% endfor %}
     </ul>
 {%- if entry.footer_link %}
-    <p class="cv-section-footer mt-3 mb-0 text-right">
+    <div class="cv-section-footer">
       <a href="{{ entry.footer_link | relative_url }}">{% if entry.footer_link_label %}{{ entry.footer_link_label }}{% else %}View all →{% endif %}</a>
-    </p>
+    </div>
 {%- endif %}
