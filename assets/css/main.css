@@ -1502,6 +1502,41 @@ a.inline-link:hover {
   font-weight: 500;
 }
 
+.cv .card .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 3rem;
+}
+@media (max-width: 768px) {
+  .cv .card .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cv .card .skill-block {
+  display: flex;
+  flex-direction: column;
+}
+.cv .card .skill-block h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  margin-bottom: 0.5rem;
+}
+.cv .card .skill-block ul {
+  padding-left: 1rem;
+  margin: 0;
+}
+.cv .card .skill-block li {
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+  line-height: 1.6;
+  margin-bottom: 0.25rem;
+}
+.cv .card .skill-block li::marker {
+  color: var(--global-divider-color);
+}
+
 .cv .card h6 {
   font-weight: 500;
 }
