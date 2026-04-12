@@ -9,7 +9,7 @@ nav: true
 nav_order: 1
 page_class: section-page
 ---
-<div style="text-align: right"> <small>*equal contribution</small> </div>
+<!-- <div style="text-align: right"> <small>*equal contribution</small> </div> -->
 <!-- _pages/publications.md -->
 <div class="publications">
 
