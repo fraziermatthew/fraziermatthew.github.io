@@ -24,14 +24,10 @@ profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  # Literal block (|) keeps line breaks; safe if you add mailto: links later
-  address: |
-    <div class="profile-contact">
-      <div class="profile-contact-label">Contact</div>
-      <a href="mailto:matthew@udel.edu" class="profile-contact-email">
-        matthew@udel.edu
-      </a>
-    </div>
+  # JS-built mailto (no address in static HTML) — see _includes/profile_contact_obfuscated.html
+  obfuscate_email: true
+  email_user: matthew
+  email_domain: udel.edu
   # address: >
   #   <a class="affiliation-link" href="https://sites.udel.edu/se-research/">SAC Lab</a>
   #   <p>PhD, Computer Science</p>

@@ -1,0 +1,16 @@
+{%- assign _email_user = include.user | default: page.profile.email_user | default: 'matthew' -%}
+{%- assign _email_domain = include.domain | default: page.profile.email_domain | default: 'udel.edu' -%}
+<div class="profile-contact">
+  <div class="profile-contact-label">Contact</div>
+  <span id="profile-email-slot" class="profile-contact-email" aria-label="Email address"></span>
+</div>
+<script>
+(function () {
+  var user = {{ _email_user | jsonify }};
+  var domain = {{ _email_domain | jsonify }};
+  var email = user + '@' + domain;
+  var el = document.getElementById('profile-email-slot');
+  if (!el) return;
+  el.innerHTML = '<a href="mailto:' + email + '" class="profile-contact-email-link">' + email + '</a>';
+})();
+</script>

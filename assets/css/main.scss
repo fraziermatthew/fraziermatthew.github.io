@@ -192,7 +192,7 @@ a.inline-link:hover {
     margin-top: 1.4rem;
   }
 
-  /* Profile column: contact under photo (see _pages/about.md profile.address) */
+  /* Profile column: contact under photo (see profile.address or profile_contact_obfuscated.html) */
   .profile-contact {
     margin-top: 1.2rem;
   }
@@ -210,6 +210,23 @@ a.inline-link:hover {
     font-weight: 400;
     color: var(--global-text-color);
     opacity: 0.85;
+  }
+
+  /* Injected by profile_contact_obfuscated.html */
+  .profile-contact-email-link {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    opacity: inherit;
+    text-decoration: none !important;
+    border-bottom: none;
+    transition: color 0.18s ease, opacity 0.18s ease;
+  }
+
+  .profile-contact-email-link:hover,
+  .profile-contact-email-link:focus {
+    color: var(--global-theme-color);
+    opacity: 1;
   }
 }
 
