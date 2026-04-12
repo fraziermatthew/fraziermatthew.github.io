@@ -282,11 +282,27 @@ blockquote {
   background-color: var(--global-bg-color);
 }
 
+.navbar.navbar-light > .container {
+  align-items: center;
+}
+.navbar.navbar-light .navbar-nav {
+  align-items: center;
+}
+.navbar.navbar-light .navbar-nav > .nav-item {
+  display: flex;
+  align-items: center;
+}
+.navbar.navbar-light .navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+}
 .navbar.navbar-light a:hover {
   text-decoration: none;
 }
 .navbar.navbar-light .navbar-brand {
   color: var(--global-text-color);
+  display: flex;
+  align-items: center;
 }
 .navbar.navbar-light .navbar-brand.navbar-site-name {
   color: var(--global-text-color);
@@ -314,32 +330,47 @@ blockquote {
   color: var(--global-hover-color);
 }
 .navbar.navbar-light .navbar-brand.social,
-.navbar.navbar-light .navbar-nav .navbar-social-icons {
+.navbar.navbar-light .navbar-nav .navbar-social-icons,
+.navbar.navbar-light .navbar-nav .navbar-icons {
   padding-bottom: 0;
   padding-top: 0;
   font-size: 1.55rem;
+  line-height: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 .navbar.navbar-light .navbar-brand.social a,
-.navbar.navbar-light .navbar-nav .navbar-social-icons a {
+.navbar.navbar-light .navbar-nav .navbar-social-icons a,
+.navbar.navbar-light .navbar-nav .navbar-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 0.35rem;
+  line-height: 1;
   opacity: 0.78;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
+.navbar.navbar-light .navbar-brand.social a i,
+.navbar.navbar-light .navbar-nav .navbar-social-icons a i,
+.navbar.navbar-light .navbar-nav .navbar-icons a i {
+  line-height: 1;
+}
 .navbar.navbar-light .navbar-brand.social a i::before,
-.navbar.navbar-light .navbar-nav .navbar-social-icons a i::before {
+.navbar.navbar-light .navbar-nav .navbar-social-icons a i::before,
+.navbar.navbar-light .navbar-nav .navbar-icons a i::before {
   color: var(--global-text-color);
   transition: color 0.2s ease;
 }
 .navbar.navbar-light .navbar-brand.social a:hover,
-.navbar.navbar-light .navbar-nav .navbar-social-icons a:hover {
+.navbar.navbar-light .navbar-nav .navbar-social-icons a:hover,
+.navbar.navbar-light .navbar-nav .navbar-icons a:hover {
   opacity: 1;
   transform: translateY(-1px);
 }
 .navbar.navbar-light .navbar-brand.social a:hover i::before,
-.navbar.navbar-light .navbar-nav .navbar-social-icons a:hover i::before {
+.navbar.navbar-light .navbar-nav .navbar-social-icons a:hover i::before,
+.navbar.navbar-light .navbar-nav .navbar-icons a:hover i::before {
   color: var(--global-theme-color);
 }
 .navbar.navbar-light .navbar-nav-social {
@@ -381,10 +412,20 @@ blockquote {
 }
 
 #light-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
+  line-height: 1;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+}
+#light-toggle i {
+  line-height: 1;
+  display: block;
 }
 #light-toggle:hover {
   color: var(--global-hover-color);
@@ -1109,7 +1150,6 @@ a.inline-link:hover {
 .post.about-page .post-title {
   margin-bottom: 0.55rem;
   line-height: 1.02;
-  font-size: 1.06em;
 }
 .post.section-page .post-description,
 .post.section-page .desc,
