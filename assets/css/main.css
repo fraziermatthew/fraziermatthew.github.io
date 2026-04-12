@@ -334,7 +334,7 @@ blockquote {
 .navbar.navbar-light .navbar-nav .navbar-icons {
   padding-bottom: 0;
   padding-top: 0;
-  font-size: 1.55rem;
+  font-size: 1.45rem;
   line-height: 1;
   display: flex;
   flex-wrap: wrap;
@@ -346,7 +346,7 @@ blockquote {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 0.35rem;
+  margin-right: 0.5rem;
   line-height: 1;
   opacity: 0.78;
   transition: opacity 0.2s ease, transform 0.2s ease;
@@ -374,7 +374,7 @@ blockquote {
   color: var(--global-theme-color);
 }
 .navbar.navbar-light .navbar-nav-social {
-  margin-left: 0.75rem;
+  margin-left: 1rem;
 }
 .navbar.navbar-light .navbar-nav .toggle-container {
   margin-left: 0.65rem;
