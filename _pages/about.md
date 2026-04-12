@@ -41,6 +41,18 @@ I build systems that turn complex data into reliable decisions through structure
 </p>
 
 <p>
+At <a class="affiliation-link" href="https://www.goodwaygroup.com/">Goodway Group</a>, I design and operate distributed analytics and optimization systems at scale, integrating multi-source data pipelines, event-driven architectures, and LLM-powered reasoning into production. My work focuses on <strong>LLM-guided reasoning systems, data infrastructure, and agentic architectures</strong>, where statistical signal generation and model inference are tightly coupled to produce consistent, interpretable outputs.
+</p>
+
+<p>
+I earned my Ph.D. in Computer and Information Sciences from the University of Delaware as a member of the <a class="affiliation-link" href="https://sites.udel.edu/se-research/">Software Analysis and Compilation (SAC) Lab</a>, where I studied conversational agents and human-centered AI under <a class="inline-link" href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE. I design systems where <strong>data, reasoning, and infrastructure operate as a unified layer</strong>, enabling scalable decision-making beyond prototype AI.
+</p>
+
+<!-- <p>
+I build systems that turn complex data into reliable decisions through structured AI reasoning.
+</p>
+
+<p>
 At <a class="affiliation-link" href="https://www.goodwaygroup.com/">Goodway Group</a>, I design and operate distributed analytics and optimization systems at scale, integrating multi-source data pipelines, event-driven architectures, and LLM-powered reasoning into production.
 </p>
 
@@ -54,19 +66,6 @@ I earned my Ph.D. in Computer and Information Sciences from the University of De
 
 <p>
 I design systems where <strong>data, reasoning, and infrastructure operate as a unified layer</strong>, enabling scalable decision-making beyond prototype AI.
-</p>
-
-<!-- <a class="affiliation-link" href="https://www.goodwaygroup.com/">Goodway Group</a> -->
-
-<!-- version 7 -->
-<!-- I build production-grade AI systems for structured reasoning and decision intelligence.
-
-At <a class="affiliation-link" href="https://www.goodwaygroup.com/">Goodway Group</a>, I design and operate distributed analytics and optimization systems operating high-throughput distributed optimization systems at scale, integrating multi-source data pipelines, event-driven architectures, and LLM-powered reasoning layers into production environments.
-
-My work centers on **LLM-guided reasoning systems, data infrastructure, and agentic architectures**, where statistical signal generation and model inference are tightly coupled to produce consistent, interpretable outputs.
-
-I earned my Ph.D. in Computer and Information Sciences from the University of Delaware, as a member of the <a class="affiliation-link" href="https://sites.udel.edu/se-research/">Software Analysis and Compilation (SAC) Lab</a>. I studied conversational agents and human-centered AI under <a class="inline-link" href="https://www.eecis.udel.edu/~pollock/">Lori Pollock</a>, with publications at ICSE and ITiCSE.
-
-I design systems where **data, reasoning, and infrastructure operate as a unified layer**, enabling scalable decision-making beyond prototype AI solutions. -->
+</p> -->
 
 **Reach me**: matthew[at]udel[dot]edu
