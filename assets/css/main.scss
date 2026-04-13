@@ -577,10 +577,15 @@ html[data-theme='dark'] .cv .card {
   }
 }
 
+// Do not set horizontal padding here: Bootstrap already applies `padding-left: 2.25rem` on
+// `.custom-switch` (the wrapper). Extra padding on the label duplicates that offset, shifts the
+// layout box vs the painted track (`::before { left: -2.25rem }`), and skews flex `gap` on the
+// “Academic CV” side.
 .cv .cv-resume-switch-input-label {
   margin-bottom: 0;
-  padding-left: 2.25rem;
+  padding-left: 0;
   padding-right: 0;
+  vertical-align: middle;
   cursor: pointer;
 }
 
