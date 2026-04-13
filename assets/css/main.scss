@@ -290,13 +290,18 @@ a.inline-link:hover {
 
   // course blocks
   .teaching-course {
-    margin-bottom: 1.35rem;
+    margin-bottom: 1.25rem;
     padding-bottom: 0.6rem;
 
     &:not(:last-of-type) {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
+
 
   .teaching-course-title {
     font-size: 1.02rem;
@@ -337,7 +342,7 @@ a.inline-link:hover {
     font-size: 0.96rem;
     line-height: 1.34;
     color: var(--global-text-color-light);
-    opacity: 0.72;
+    opacity: 0.7;
     font-weight: 400;
     margin-bottom: 0.04rem;
 
@@ -350,7 +355,7 @@ a.inline-link:hover {
     font-size: 0.92rem;
     line-height: 1.3;
     color: var(--global-text-color-light);
-    opacity: 0.8;
+    opacity: 0.85;
     font-weight: 400;
     font-style: italic;
     margin-top: 0.08rem;
