@@ -504,22 +504,23 @@ a.inline-link:hover {
 
 // Resume body: mode shift on toggle (see cv_resume_toggle.js)
 $resume-panel-shift-ms: 180ms;
+$resume-panel-shift-ease: cubic-bezier(0.4, 0, 0.2, 1);
 
 .cv article .resume-panel {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity $resume-panel-shift-ms ease, transform $resume-panel-shift-ms ease;
+  transform $resume-panel-shift-ms $resume-panel-shift-ease;
 }
 
 .cv article .resume-panel.resume-panel--exit {
   opacity: 0;
-  transform: translateY(4px);
+  transform: translateY(2px);
   pointer-events: none;
 }
 
 .cv article .resume-panel.resume-panel--enter {
   opacity: 0;
-  transform: translateY(4px);
+  transform: translateY(2px);
   transition: none;
 }
 
