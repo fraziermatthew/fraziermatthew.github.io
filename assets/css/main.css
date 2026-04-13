@@ -1529,18 +1529,18 @@ a.inline-link:hover {
 .cv article .resume-panel {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 180ms ease, transform 180ms ease;
+  transition: opacity 180ms cubic-bezier(0.4, 0, 0.2, 1), transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cv article .resume-panel.resume-panel--exit {
   opacity: 0;
-  transform: translateY(4px);
+  transform: translateY(2px);
   pointer-events: none;
 }
 
 .cv article .resume-panel.resume-panel--enter {
   opacity: 0;
-  transform: translateY(4px);
+  transform: translateY(2px);
   transition: none;
 }
 
@@ -1663,6 +1663,89 @@ html[data-theme=dark] .cv .card {
   cursor: pointer;
 }
 
+.cv .cv-resume-switch-custom-wrap {
+  flex: 0 0 auto;
+  display: inline-block;
+  width: fit-content;
+  max-width: fit-content;
+  vertical-align: middle;
+}
+
+.cv .cv-resume-switch-custom {
+  --cv-rs-track-h: calc(1rem - 3px);
+  --cv-rs-knob-h: calc((1rem - 4px) * 0.8125);
+  --cv-rs-track-w: calc(1.75rem * 0.8125);
+  --cv-rs-travel: calc(var(--cv-rs-track-w) - var(--cv-rs-knob-h) - 4px);
+  position: relative;
+  line-height: 0;
+}
+
+.cv .cv-resume-switch-custom-ui {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.cv .cv-resume-switch-custom-track {
+  position: relative;
+  display: block;
+  width: var(--cv-rs-track-w);
+  height: var(--cv-rs-track-h);
+  border-radius: 0.5rem;
+  border: 1px solid #adb5bd;
+  background-color: #fff;
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cv .cv-resume-switch-custom-thumb {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  width: var(--cv-rs-knob-h);
+  height: var(--cv-rs-knob-h);
+  border-radius: 50%;
+  background-color: #adb5bd;
+  transform: translateY(-50%);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.cv .cv-resume-switch-custom-input:checked + .cv-resume-switch-custom-ui .cv-resume-switch-custom-track {
+  background-color: #8c4720;
+  border-color: #8c4720;
+}
+
+.cv .cv-resume-switch-custom-input:checked + .cv-resume-switch-custom-ui .cv-resume-switch-custom-thumb {
+  background-color: #fff;
+  transform: translateY(-50%) translateX(var(--cv-rs-travel));
+}
+
+.cv .cv-resume-switch-custom-input:focus-visible + .cv-resume-switch-custom-ui .cv-resume-switch-custom-track {
+  border-color: rgba(200, 158, 117, 0.65);
+  box-shadow: 0 0 0 2px rgba(200, 158, 117, 0.55), 0 0 0 5px rgba(200, 158, 117, 0.18);
+}
+
+.cv .cv-resume-switch-custom-input:checked:focus-visible + .cv-resume-switch-custom-ui .cv-resume-switch-custom-track {
+  border-color: #8c4720;
+  box-shadow: 0 0 0 2px rgba(200, 158, 117, 0.55), 0 0 0 5px rgba(200, 158, 117, 0.18);
+}
+
+html[data-theme=dark] .cv .cv-resume-switch-custom-track {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+html[data-theme=dark] .cv .cv-resume-switch-custom-input:checked + .cv-resume-switch-custom-ui .cv-resume-switch-custom-track {
+  background-color: #8c4720;
+  border-color: #8c4720;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv .cv-resume-switch-custom-track,
+  .cv .cv-resume-switch-custom-thumb {
+    transition: none;
+  }
+}
 .cv .cv-pdf-actions--with-toggle {
   margin-left: 0.15rem;
 }
