@@ -42,7 +42,10 @@
               <ul class="items">
                 {% for item in content.items %}
                   <li>
-                    {% if item.pub_key and item.text %}
+                    {% if item.pub_key and item.text and item.venue %}
+                      <a href="{{ '/publications/' | relative_url }}#{{ item.pub_key | replace: '/', '%2F' }}">{% include cv/md_inline.html text=item.text %}</a>
+                      <span class="pub-venue">{% include cv/md_inline.html text=item.venue %}</span>
+                    {% elsif item.pub_key and item.text %}
                       <a href="{{ '/publications/' | relative_url }}#{{ item.pub_key | replace: '/', '%2F' }}">{% include cv/md_inline.html text=item.text %}</a>
                     {% elsif item.contents %}
                       <span class="item-title">{{ item.title }}</span>

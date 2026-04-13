@@ -12,15 +12,13 @@
   contents:
     - year: 2024
       items:
-        - text: |
-            Customizing ChatGPT to Help Computer Science Principles Students Learn Through Conversation
-            <br /><span class="pub-venue">ITiCSE 2024</span>
+        - text: "Customizing ChatGPT to Help Computer Science Principles Students Learn Through Conversation"
+          venue: "ITiCSE 2024"
           pub_key: "10.1145/3649217.3653570"
     - year: 2022
       items:
-        - text: |
-            Investigating User Perceptions of Conversational Agents for Software-related Exploratory Web Search
-            <br /><span class="pub-venue">ICSE 2022</span>
+        - text: "Investigating User Perceptions of Conversational Agents for Software-related Exploratory Web Search"
+          venue: "ICSE 2022"
           pub_key: "10.1145/3510455.3512778"
 
 - title: Academic Experience
