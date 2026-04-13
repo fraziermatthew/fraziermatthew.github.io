@@ -83,15 +83,22 @@
     }
   }
 
+  function syncUrlToView(academic, stripHash) {
+    var canonical = academic ? 'academic' : 'industry';
+    var current = getParamView();
+    if (current !== canonical) {
+      setQueryParam(academic, !!stripHash);
+    }
+  }
+
   function init() {
     var academic = resolveInitialAcademic();
     applyPanels(academic);
     persistStorage(academic);
 
-    // Hash implies industry vs academic but URL has no ?view= — add it so the link is shareable as-is
-    if (getParamView() === null && inferViewFromHash() !== null) {
-      setQueryParam(academic);
-    }
+    // Keep ?view= aligned with the resolved panel (param, hash, or localStorage). Otherwise returning
+    // from another page restores academic via storage but the bar stays /resume/ with no query.
+    syncUrlToView(academic, false);
 
     scrollToHash();
   }
@@ -108,6 +115,7 @@
     var academic = resolveInitialAcademic();
     applyPanels(academic);
     persistStorage(academic);
+    syncUrlToView(academic, false);
     scrollToHash();
   });
 
