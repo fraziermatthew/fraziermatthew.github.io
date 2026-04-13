@@ -1,0 +1,146 @@
+# - title: General Information
+#   type: map
+#   contents:
+#     - name: Full Name
+#       value: Matthew Frazier
+
+- title: Academic Experience
+  type: time_table
+  contents:
+    - title: PhD Researcher & Instructor
+      highlight_role: true
+      institution: University of Delaware
+      year: 2018 - 2024
+      description:
+        - <strong>Conducted</strong> research on conversational agents and LLM-guided reasoning in computer science education, designing systems that guide user reasoning through structured interaction (RAG, CoT, few-shot), resulting in publications at ICSE and ITiCSE
+        - <strong>Designed and implemented</strong> AI-based learning systems focused on Socratic reasoning support rather than direct answer generation
+        - <strong>Taught</strong> undergraduate computer science courses (programming, data structures, ethics), emphasizing debugging, system thinking, and applied problem-solving
+
+    - title: Graduate Assistant & Researcher
+      institution: West Chester University of Pennsylvania
+      year: 2016 - 2017
+      description:
+        - <strong>Developed</strong> computer vision system for parking availability detection using Python and OpenCV
+
+- title: Selected Publications
+  card_class: publications
+  type: time_table
+  footer_link: /publications/
+  footer_link_label: "View all →"
+  contents:
+    - year: 2024
+      items:
+        - text: "Customizing ChatGPT to Help Computer Science Principles Students Learn Through Conversation (ITiCSE 2024)"
+          pub_key: "10.1145/3649217.3653570"
+    - year: 2022
+      items:
+        - text: "Investigating User Perceptions of Conversational Agents for Software-related Exploratory Web Search (ICSE 2022)"
+          pub_key: "10.1145/3510455.3512778"
+
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: Senior Software Engineer (Data Science, Scaled Media Solutions)
+      institution: Goodway Group
+      year: 2021 - Present
+      description:
+        - <strong>Improved</strong> stability of **RealValue™ (40M+ daily decisions)** by re-architecting validation and error handling, reducing production errors by **90%**
+        - <strong>Designed and deployed</strong> distributed data pipelines and ETL systems (Airflow, MWAA, Argo, Redshift, Snowflake, S3) supporting large-scale marketing analytics and multi-source data ingestion
+        - <strong>Architected</strong> integrations across **5+** external platforms (TTD, Google Ads, Meta, YouGov, Bing), enabling unified data processing and cross-platform analytics
+        - <strong>Built</strong> event-driven systems (AWS Lambda, SNS, SQS FIFO, S3) to automate analytics workflows, replacing manual notebook-based processes with asynchronous, production-grade pipelines
+        - <strong>Architected</strong> AI-driven analytics capabilities within the **GOES™** platform, transforming campaign data into structured signals (SQL fact tables, benchmark thresholds, tradeoff logic) to enable LLM-based reasoning and insight generation
+        - <strong>Developed</strong> LLM-powered systems including RAG pipelines, streaming API integrations, and hierarchical insight generation (Brand Compass) using structured prompt engineering (CoT, ReAct, few-shot) and agentic workflows (CrewAI, LangChain, vector stores, Langfuse)
+        - <strong>Operated</strong> across backend, data, and AI system layers, bridging infrastructure, analytics, and LLM-driven reasoning in production environments
+
+    - title: Senior Technical Operations Engineer (Business Intelligence)
+      institution: Goodway Group
+      year: 2018 - 2021
+      description:
+        - <strong>Owned</strong> reliability, integrity, and availability of analytics infrastructure (Airflow, Redshift, S3, Tableau) supporting production reporting systems under strict data freshness SLAs
+        - <strong>Led</strong> organization-wide incident response, root cause analysis, and postmortem processes, implementing preventative monitoring and reducing recurring data pipeline failures
+
+    - title: Principal Campaign Operations Engineer
+      institution: Goodway Group
+      year: 2014 - 2018
+      description:
+        - <strong>Built</strong> COLT, a web-based automation system for campaign production, reducing creative turnaround time by **~80% (10-12 days to ~2 days)** and enabling scalable execution across multi-location clients (e.g., Chevrolet)
+        - <strong>Managed</strong> execution and reporting of large-scale programmatic campaigns across platforms including TTD, Google Ads, YouTube, and Meta
+
+    - title: Senior SEO Strategist
+      institution: IONOS (1&1 Internet)
+      year: 2012 - 2014
+      description:
+        - <strong>Led</strong> SEO and SEM strategy for **300+** websites using A/B testing, keyword analysis, and user behavior analytics (CTR, engagement), improving organic traffic across US, UK, and Canadian markets
+
+# - title: Technical Systems & Capabilities
+#   type: map
+#   contents:
+#     - name: AI & LLM Systems
+#       value: LLM reasoning systems, prompt engineering (CoT, ReAct, few-shot), RAG pipelines, agentic workflows (CrewAI, LangChain), evaluation frameworks, vector databases, Langfuse
+#     - name: Data & Analytics Engineering
+#       value: SQL, data modeling, statistical signal generation, benchmarking frameworks, ETL pipelines, Airflow, MWAA, Argo, Redshift, Snowflake
+#     - name: Distributed Systems & Infrastructure
+#       value: AWS (Lambda, S3, SNS, SQS), event-driven architectures, asynchronous pipelines, high-throughput systems, system reliability, observability (Datadog, Rollbar)
+#     - name: Backend & APIs
+#       value: Python, Node.js, FastAPI, REST APIs, GraphQL, streaming APIs, microservices architecture
+#     - name: Experimentation & Optimization
+#       value: A/B testing, performance analysis, CTR/VCR optimization, campaign analytics, decision systems
+#     - name: Tools & Platforms
+#       value: Git, Docker, Kubernetes (foundational), Tableau, programmatic platforms (TTD, Google Ads, Meta, YouTube)
+
+- title: Technical Systems & Capabilities
+  type: skills_grid
+  contents:
+    - heading: AI & LLM Systems
+      items:
+        # - "LLM reasoning, prompt engineering (CoT, ReAct, few-shot), RAG pipelines, agentic workflows (CrewAI, LangChain), evaluation frameworks, vector databases, Langfuse"
+          - "LLM reasoning, prompt engineering (CoT, ReAct)"
+          - "RAG pipelines, agentic workflows"
+          - "Vector databases, evaluation, Langfuse"
+    - heading: Data & Analytics Engineering
+      items:
+        # - "SQL, data modeling, statistical signal generation, ETL/ELT pipelines, Airflow, MWAA, Argo, Redshift, Snowflake"
+          - "SQL, data modeling, ETL/ELT"
+          - "Airflow, MWAA, Argo"
+          - "Redshift, Snowflake"
+    - heading: Distributed Systems & Infrastructure
+      items:
+        # - "AWS (Lambda, S3, SNS, SQS), event-driven systems, asynchronous pipelines, high-throughput processing, system reliability, Datadog, Rollbar"
+          - "AWS (Lambda, S3, SNS, SQS)"
+          - "Event-driven, async pipelines"
+          - "Reliability, observability (Datadog, Rollbar)"
+    - heading: Backend & APIs
+      items:
+        # - "Python, Node.js, FastAPI, REST, GraphQL, streaming APIs, microservices"
+          - "Python, Node.js, FastAPI"
+          - "REST, GraphQL"
+          - "Microservices"
+    - heading: Experimentation & Optimization
+      items:
+        # - "A/B testing, performance analysis, CTR/VCR optimization, campaign analytics, decision systems"
+          - "A/B testing, performance analysis"
+          - "CTR/VCR optimization"
+          - "Decision systems"
+    - heading: Tools & Platforms
+      items:
+        # - "Git, Docker, Kubernetes (foundational), Tableau, TTD, Google Ads, Meta, YouTube"
+          - "Git, Docker, Kubernetes"
+          - "Tableau, visualization"
+          - "TTD, Google Ads, Meta"
+
+- title: Education
+  type: time_table
+  education_section: true
+  contents:
+    - title: Ph.D., Computer and Information Sciences
+      institution: University of Delaware
+      year: 2018 - 2024
+      description:
+        - Advised by Lori Pollock
+        - Research in conversational agents, applied AI
+    - title: M.Sc., Computer Science (Cum Laude)
+      institution: West Chester University of Pennsylvania
+      year: 2016 - 2017
+    - title: B.Sc., Marketing
+      institution: West Chester University of Pennsylvania
+      year: 2010

@@ -506,6 +506,61 @@ html[data-theme='dark'] .cv .card {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 }
 
+// Resume header: H1 (left) vs. switch + PDFs (right)
+.cv .cv-header-row--resume {
+  width: 100%;
+  row-gap: 0.75rem;
+  column-gap: 2rem;
+}
+
+.cv .cv-header-title {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.cv .cv-header-right-controls {
+  flex: 0 1 auto;
+  margin-left: auto;
+  justify-content: flex-end;
+  align-items: baseline;
+  column-gap: 0.65rem;
+  row-gap: 0.5rem;
+  max-width: 100%;
+}
+
+.cv .cv-resume-switch-group {
+  column-gap: 0.35rem;
+}
+
+.cv .cv-resume-switch-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+.cv .cv-resume-switch-input-label {
+  padding-left: 2.25rem;
+  cursor: pointer;
+}
+
+.cv .cv-pdf-actions--with-toggle {
+  margin-left: 0.15rem;
+}
+
+@media (max-width: 576px) {
+  .cv .cv-header-row--resume {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .cv .cv-header-right-controls {
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
 .cv a,
 .cv button,
 .cv .btn {

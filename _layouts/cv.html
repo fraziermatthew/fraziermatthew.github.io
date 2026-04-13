@@ -1,27 +1,55 @@
 ---
 layout: default
 ---
-{%- assign cv_pdf_url = nil -%}
+{%- assign cv_pdf_url_industry = nil -%}
+{%- assign cv_pdf_url_academic = nil -%}
 {%- if page.cv_pdf -%}
-  {%- assign cv_pdf_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url -%}
+  {%- assign cv_pdf_url_industry = page.cv_pdf | prepend: 'assets/pdf/' | relative_url -%}
 {%- endif -%}
-{%- assign cv_section_count = site.data.cv | size -%}
+{%- if page.cv_pdf_academic -%}
+  {%- assign cv_pdf_url_academic = page.cv_pdf_academic | prepend: 'assets/pdf/' | relative_url -%}
+{%- endif -%}
+{%- assign cv_section_count_industry = site.data.cv | size -%}
+{%- assign cv_section_count_academic = site.data.academic | size -%}
+{%- assign show_academic_toggle = false -%}
+{%- if cv_section_count_academic > 0 and page.cv_pdf_academic and cv_pdf_url_academic -%}
+  {%- assign show_academic_toggle = true -%}
+{%- endif -%}
 <!-- _layouts/cv.html -->
         <div class="post section-page">
 
           <div class="cv">
           <header class="post-header">
-            <div class="cv-header-row d-flex flex-wrap align-items-baseline justify-content-between gap-3 mb-2">
-              <h1>Experience</h1>
-              <!-- <h1 class="post-title mb-0">{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}</h1> -->
-              {%- if page.cv_pdf and cv_pdf_url %}
-              <div class="cv-pdf-actions cv-header-links">
-                <a href="{{ cv_pdf_url }}" download="{{ page.cv_pdf }}" class="cv-pdf-link">Download CV ↓</a>
-                <span class="cv-pdf-sep" aria-hidden="true"> </span>
-                <!-- <span class="cv-pdf-sep" aria-hidden="true">·</span> -->
-                <a href="{{ cv_pdf_url }}" target="_blank" rel="noopener noreferrer" class="cv-pdf-link">View PDF →</a>
+            <div class="cv-header-row cv-header-row--resume d-flex flex-wrap align-items-baseline justify-content-between mb-2">
+              <h1 class="mb-0 cv-header-title">Experience</h1>
+              <div class="d-flex flex-wrap align-items-baseline cv-header-right-controls">
+                {%- if show_academic_toggle %}
+                <div class="cv-resume-switch-group d-flex align-items-center flex-shrink-0">
+                  <span class="cv-resume-switch-label" id="cv-label-industry">Industry Resume</span>
+                  <div class="custom-control custom-switch mx-2 mb-0">
+                    <input type="checkbox" class="custom-control-input" id="cvResumeModeSwitch" aria-labelledby="cv-label-industry cv-label-academic" autocomplete="off">
+                    <label class="custom-control-label cv-resume-switch-input-label" for="cvResumeModeSwitch"><span class="sr-only">Show Academic CV instead of Industry Resume</span></label>
+                  </div>
+                  <span class="cv-resume-switch-label" id="cv-label-academic">Academic CV</span>
+                </div>
+                {%- endif %}
+                {%- if page.cv_pdf and cv_pdf_url_industry %}
+                <div class="cv-pdf-actions cv-header-links d-flex align-items-baseline flex-shrink-0{% if show_academic_toggle %} cv-pdf-actions--with-toggle{% endif %}">
+                  <span class="cv-pdf-group cv-pdf-group--industry">
+                    <a href="{{ cv_pdf_url_industry }}" download="{{ page.cv_pdf }}" class="cv-pdf-link">Download CV ↓</a>
+                    <span class="cv-pdf-sep" aria-hidden="true"> </span>
+                    <a href="{{ cv_pdf_url_industry }}" target="_blank" rel="noopener noreferrer" class="cv-pdf-link">View PDF →</a>
+                  </span>
+                  {%- if show_academic_toggle %}
+                  <span class="cv-pdf-group cv-pdf-group--academic d-none">
+                    <a href="{{ cv_pdf_url_academic }}" download="{{ page.cv_pdf_academic }}" class="cv-pdf-link">Download CV ↓</a>
+                    <span class="cv-pdf-sep" aria-hidden="true"> </span>
+                    <a href="{{ cv_pdf_url_academic }}" target="_blank" rel="noopener noreferrer" class="cv-pdf-link">View PDF →</a>
+                  </span>
+                  {%- endif %}
+                </div>
+                {%- endif %}
               </div>
-              {%- endif %}
             </div>
             {%- if page.description %}
             <p class="post-description">{{ page.description }}</p>
@@ -29,38 +57,39 @@ layout: default
           </header>
 
           <article>
-            {%- if cv_section_count > 0 %}
-            <nav class="cv-toc on-this-page" aria-label="On this page">
+            <div class="resume-panel resume-panel--industry" data-resume-panel="industry">
+            {%- if cv_section_count_industry > 0 %}
+            <nav class="cv-toc on-this-page" aria-label="On this page — Industry resume">
               <div class="cv-toc-label">On this page</div>
               <ul class="cv-toc-list">
                 {%- for entry in site.data.cv %}
-                <li><a href="#{{ entry.title | slugify }}">{{ entry.title }}</a></li>
+                <li><a href="#cv-industry-{{ entry.title | slugify }}">{{ entry.title }}</a></li>
                 {%- endfor %}
               </ul>
             </nav>
             {%- endif %}
+            {% include cv/render_cv_cards.html entries=site.data.cv id_prefix='cv-industry' %}
+            </div>
 
-              {% for entry in site.data.cv %}
-                <div class="card mt-3 p-3{% if entry.card_class %} {{ entry.card_class }}{% endif %}" id="{{ entry.title | slugify }}">
-                  <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-                  <div>
-                  {% if entry.type == "list" %}
-                    {% include cv/list.html %}
-                  {% elsif entry.type == "map" %}
-                    {% include cv/map.html %}
-                  {% elsif entry.type == "skills_grid" %}
-                    {% include cv/skills_grid.html %}
-                  {% elsif entry.type == "nested_list" %}
-                    {% include cv/nested_list.html %}
-                  {% elsif entry.type == "time_table" %}
-                   {% include cv/time_table.html %}
-                  {% else %}
-                    {{ entry.contents }}
-                  {% endif %}
-                  </div>
-                </div>
-              {% endfor %}
+            {%- if show_academic_toggle %}
+            <div class="resume-panel resume-panel--academic d-none" data-resume-panel="academic">
+            {%- if cv_section_count_academic > 0 %}
+            <nav class="cv-toc on-this-page" aria-label="On this page — Academic CV">
+              <div class="cv-toc-label">On this page</div>
+              <ul class="cv-toc-list">
+                {%- for entry in site.data.academic %}
+                <li><a href="#cv-academic-{{ entry.title | slugify }}">{{ entry.title }}</a></li>
+                {%- endfor %}
+              </ul>
+            </nav>
+            {%- endif %}
+            {% include cv/render_cv_cards.html entries=site.data.academic id_prefix='cv-academic' %}
+            </div>
+            {%- endif %}
           </article>
           </div>
 
         </div>
+        {%- if show_academic_toggle %}
+        <script src="{{ '/assets/js/cv_resume_toggle.js' | relative_url }}" defer></script>
+        {%- endif %}
