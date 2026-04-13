@@ -613,6 +613,31 @@ html[data-theme='dark'] .cv .card {
   vertical-align: middle;
   padding-right: 0;
 
+  // Slightly smaller than stock Bootstrap switch: track height −3px; width/knob/padding scale (~13/16).
+  $resume-switch-scale: 0.8125;
+
+  padding-left: calc(2.25rem * #{$resume-switch-scale});
+  min-height: calc(1.5rem - 4px);
+
+  .custom-control-label::before {
+    left: calc(-2.25rem * #{$resume-switch-scale});
+    width: calc(1.75rem * #{$resume-switch-scale});
+    height: calc(1rem - 3px);
+    border-radius: 0.5rem;
+  }
+
+  .custom-control-label::after {
+    top: calc((0.25rem + 2px) * #{$resume-switch-scale});
+    left: calc(-2.25rem * #{$resume-switch-scale} + 2px);
+    width: calc((1rem - 4px) * #{$resume-switch-scale});
+    height: calc((1rem - 4px) * #{$resume-switch-scale});
+    border-radius: 0.5rem;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(calc(0.75rem * #{$resume-switch-scale}));
+  }
+
   // Checked “on” track uses site accent ($secondary-color / #8c4720)
   .custom-control-input:checked ~ .custom-control-label::before {
     background-color: $secondary-color;
