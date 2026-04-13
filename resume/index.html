@@ -124,32 +124,46 @@
 
           <div class="cv">
           <header class="post-header">
-            <div class="cv-header-row d-flex flex-wrap align-items-baseline justify-content-between gap-3 mb-2">
-              <h1>Experience</h1>
-              <!-- <h1 class="post-title mb-0">Resume</h1> -->
-              <div class="cv-pdf-actions cv-header-links">
-                <a href="/assets/pdf/Resume_3.19.26-swe.pdf" download="Resume_3.19.26-swe.pdf" class="cv-pdf-link">Download CV ↓</a>
-                <span class="cv-pdf-sep" aria-hidden="true"> </span>
-                <!-- <span class="cv-pdf-sep" aria-hidden="true">·</span> -->
-                <a href="/assets/pdf/Resume_3.19.26-swe.pdf" target="_blank" rel="noopener noreferrer" class="cv-pdf-link">View PDF →</a>
+            <div class="cv-header-row cv-header-row--resume d-flex flex-wrap align-items-baseline justify-content-between mb-2">
+              <h1 class="mb-0 cv-header-title">Experience</h1>
+              <div class="d-flex flex-wrap align-items-baseline cv-header-right-controls">
+                <div class="cv-resume-switch-group d-flex align-items-center flex-shrink-0">
+                  <span class="cv-resume-switch-label" id="cv-label-industry">Industry Resume</span>
+                  <div class="custom-control custom-switch mx-2 mb-0">
+                    <input type="checkbox" class="custom-control-input" id="cvResumeModeSwitch" aria-labelledby="cv-label-industry cv-label-academic" autocomplete="off">
+                    <label class="custom-control-label cv-resume-switch-input-label" for="cvResumeModeSwitch"><span class="sr-only">Show Academic CV instead of Industry Resume</span></label>
+                  </div>
+                  <span class="cv-resume-switch-label" id="cv-label-academic">Academic CV</span>
+                </div>
+                <div class="cv-pdf-actions cv-header-links d-flex align-items-baseline flex-shrink-0 cv-pdf-actions--with-toggle">
+                  <span class="cv-pdf-group cv-pdf-group--industry">
+                    <a href="/assets/pdf/Resume_3.19.26-swe.pdf" download="Resume_3.19.26-swe.pdf" class="cv-pdf-link">Download CV ↓</a>
+                    <span class="cv-pdf-sep" aria-hidden="true"> </span>
+                    <a href="/assets/pdf/Resume_3.19.26-swe.pdf" target="_blank" rel="noopener noreferrer" class="cv-pdf-link">View PDF →</a>
+                  </span>
+                  <span class="cv-pdf-group cv-pdf-group--academic d-none">
+                    <a href="/assets/pdf/Resume_3.19.26-research.pdf" download="Resume_3.19.26-research.pdf" class="cv-pdf-link">Download CV ↓</a>
+                    <span class="cv-pdf-sep" aria-hidden="true"> </span>
+                    <a href="/assets/pdf/Resume_3.19.26-research.pdf" target="_blank" rel="noopener noreferrer" class="cv-pdf-link">View PDF →</a>
+                  </span>
+                </div>
               </div>
             </div>
           </header>
 
           <article>
-            <nav class="cv-toc on-this-page" aria-label="On this page">
+            <div class="resume-panel resume-panel--industry" data-resume-panel="industry">
+            <nav class="cv-toc on-this-page" aria-label="On this page — Industry resume">
               <div class="cv-toc-label">On this page</div>
               <ul class="cv-toc-list">
-                <li><a href="#professional-experience">Professional Experience</a></li>
-                <li><a href="#technical-systems-capabilities">Technical Systems &amp; Capabilities</a></li>
-                <li><a href="#academic-experience">Academic Experience</a></li>
-                <li><a href="#selected-publications">Selected Publications</a></li>
-                <li><a href="#education">Education</a></li>
+                <li><a href="#cv-industry-professional-experience">Professional Experience</a></li>
+                <li><a href="#cv-industry-technical-systems-capabilities">Technical Systems &amp; Capabilities</a></li>
+                <li><a href="#cv-industry-academic-experience">Academic Experience</a></li>
+                <li><a href="#cv-industry-selected-publications">Selected Publications</a></li>
+                <li><a href="#cv-industry-education">Education</a></li>
               </ul>
             </nav>
-
-              
-                <div class="card mt-3 p-3" id="professional-experience">
+            <div class="card mt-3 p-3" id="cv-industry-professional-experience">
                   <h3 class="card-title font-weight-medium">Professional Experience</h3>
                   <div>
                   
@@ -352,8 +366,7 @@
                   
                   </div>
                 </div>
-              
-                <div class="card mt-3 p-3" id="technical-systems-capabilities">
+<div class="card mt-3 p-3" id="cv-industry-technical-systems-capabilities">
                   <h3 class="card-title font-weight-medium">Technical Systems &amp; Capabilities</h3>
                   <div>
                   
@@ -442,8 +455,7 @@
                   
                   </div>
                 </div>
-              
-                <div class="card mt-3 p-3" id="academic-experience">
+<div class="card mt-3 p-3" id="cv-industry-academic-experience">
                   <h3 class="card-title font-weight-medium">Academic Experience</h3>
                   <div>
                   
@@ -542,8 +554,7 @@
                   
                   </div>
                 </div>
-              
-                <div class="card mt-3 p-3 publications" id="selected-publications">
+<div class="card mt-3 p-3 publications" id="cv-industry-selected-publications">
                   <h3 class="card-title font-weight-medium">Selected Publications</h3>
                   <div>
                   
@@ -621,8 +632,7 @@
                   
                   </div>
                 </div>
-              
-                <div class="card mt-3 p-3" id="education">
+<div class="card mt-3 p-3" id="cv-industry-education">
                   <h3 class="card-title font-weight-medium">Education</h3>
                   <div>
                   
@@ -727,11 +737,598 @@
                   
                   </div>
                 </div>
-              
+            </div>
+            <div class="resume-panel resume-panel--academic d-none" data-resume-panel="academic">
+            <nav class="cv-toc on-this-page" aria-label="On this page — Academic CV">
+              <div class="cv-toc-label">On this page</div>
+              <ul class="cv-toc-list">
+                <li><a href="#cv-academic-academic-experience">Academic Experience</a></li>
+                <li><a href="#cv-academic-selected-publications">Selected Publications</a></li>
+                <li><a href="#cv-academic-professional-experience">Professional Experience</a></li>
+                <li><a href="#cv-academic-technical-systems-capabilities">Technical Systems &amp; Capabilities</a></li>
+                <li><a href="#cv-academic-education">Education</a></li>
+              </ul>
+            </nav>
+            <div class="card mt-3 p-3" id="cv-academic-academic-experience">
+                  <h3 class="card-title font-weight-medium">Academic Experience</h3>
+                  <div>
+                  
+                   <ul class="card-text font-weight-light list-group list-group-flush">
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2018 - 2024
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            <div class="highlight-role">
+            
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">PhD Researcher &amp; Instructor</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">University of Delaware</h6>
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item"><strong>Conducted</strong> research on conversational agents and LLM-guided reasoning in computer science education, designing systems that guide user reasoning through structured interaction (RAG, CoT, few-shot), resulting in publications at ICSE and ITiCSE</span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item"><strong>Designed and implemented</strong> AI-based learning systems focused on Socratic reasoning support rather than direct answer generation</span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item"><strong>Taught</strong> undergraduate computer science courses (programming, data structures, ethics), emphasizing debugging, system thinking, and applied problem-solving</span>
+                    
+                  </li>
+                
+              </ul>
+            
+            
+            
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2016 - 2017
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">Graduate Assistant &amp; Researcher</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">West Chester University of Pennsylvania</h6>
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item"><strong>Developed</strong> computer vision system for parking availability detection using Python and OpenCV</span>
+                    
+                  </li>
+                
+              </ul>
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+    </ul>
+
+                  
+                  </div>
+                </div>
+<div class="card mt-3 p-3 publications" id="cv-academic-selected-publications">
+                  <h3 class="card-title font-weight-medium">Selected Publications</h3>
+                  <div>
+                  
+                   <ul class="card-text font-weight-light list-group list-group-flush">
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2024
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <a href="/publications/#10.1145%2F3649217.3653570">Customizing ChatGPT to Help Computer Science Principles Students Learn Through Conversation (ITiCSE 2024)</a>
+                    
+                  </li>
+                
+              </ul>
+            
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2022
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            
+            
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <a href="/publications/#10.1145%2F3510455.3512778">Investigating User Perceptions of Conversational Agents for Software-related Exploratory Web Search (ICSE 2022)</a>
+                    
+                  </li>
+                
+              </ul>
+            
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+    </ul>
+    <div class="cv-section-footer">
+      <a href="/publications/">View all →</a>
+    </div>
+
+                  
+                  </div>
+                </div>
+<div class="card mt-3 p-3" id="cv-academic-professional-experience">
+                  <h3 class="card-title font-weight-medium">Professional Experience</h3>
+                  <div>
+                  
+                   <ul class="card-text font-weight-light list-group list-group-flush">
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2021 - Present
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">Senior Software Engineer (Data Science, Scaled Media Solutions)</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Goodway Group</h6>
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item"><strong>Improved</strong> stability of <strong>RealValue™ (40M+ daily decisions)</strong> by re-architecting validation and error handling, reducing production errors by <strong>90%</strong></span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item"><strong>Designed and deployed</strong> distributed data pipelines and ETL systems (Airflow, MWAA, Argo, Redshift, Snowflake, S3) supporting large-scale marketing analytics and multi-source data ingestion</span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item"><strong>Architected</strong> integrations across <strong>5+</strong> external platforms (TTD, Google Ads, Meta, YouGov, Bing), enabling unified data processing and cross-platform analytics</span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item"><strong>Built</strong> event-driven systems (AWS Lambda, SNS, SQS FIFO, S3) to automate analytics workflows, replacing manual notebook-based processes with asynchronous, production-grade pipelines</span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item"><strong>Architected</strong> AI-driven analytics capabilities within the <strong>GOES™</strong> platform, transforming campaign data into structured signals (SQL fact tables, benchmark thresholds, tradeoff logic) to enable LLM-based reasoning and insight generation</span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item"><strong>Developed</strong> LLM-powered systems including RAG pipelines, streaming API integrations, and hierarchical insight generation (Brand Compass) using structured prompt engineering (CoT, ReAct, few-shot) and agentic workflows (CrewAI, LangChain, vector stores, Langfuse)</span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item"><strong>Operated</strong> across backend, data, and AI system layers, bridging infrastructure, analytics, and LLM-driven reasoning in production environments</span>
+                    
+                  </li>
+                
+              </ul>
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2018 - 2021
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">Senior Technical Operations Engineer (Business Intelligence)</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Goodway Group</h6>
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item"><strong>Owned</strong> reliability, integrity, and availability of analytics infrastructure (Airflow, Redshift, S3, Tableau) supporting production reporting systems under strict data freshness SLAs</span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item"><strong>Led</strong> organization-wide incident response, root cause analysis, and postmortem processes, implementing preventative monitoring and reducing recurring data pipeline failures</span>
+                    
+                  </li>
+                
+              </ul>
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2014 - 2018
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">Principal Campaign Operations Engineer</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">Goodway Group</h6>
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item"><strong>Built</strong> COLT, a web-based automation system for campaign production, reducing creative turnaround time by <strong>~80% (10-12 days to ~2 days)</strong> and enabling scalable execution across multi-location clients (e.g., Chevrolet)</span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item"><strong>Managed</strong> execution and reporting of large-scale programmatic campaigns across platforms including TTD, Google Ads, YouTube, and Meta</span>
+                    
+                  </li>
+                
+              </ul>
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2012 - 2014
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">Senior SEO Strategist</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">IONOS (1&amp;1 Internet)</h6>
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item"><strong>Led</strong> SEO and SEM strategy for <strong>300+</strong> websites using A/B testing, keyword analysis, and user behavior analytics (CTR, engagement), improving organic traffic across US, UK, and Canadian markets</span>
+                    
+                  </li>
+                
+              </ul>
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+    </ul>
+
+                  
+                  </div>
+                </div>
+<div class="card mt-3 p-3" id="cv-academic-technical-systems-capabilities">
+                  <h3 class="card-title font-weight-medium">Technical Systems &amp; Capabilities</h3>
+                  <div>
+                  
+                    <div class="skills-grid">
+  
+    <div class="skill-block">
+      <h4>AI &amp; LLM Systems</h4>
+      <ul>
+        
+          <li>LLM reasoning, prompt engineering (CoT, ReAct)</li>
+        
+          <li>RAG pipelines, agentic workflows</li>
+        
+          <li>Vector databases, evaluation, Langfuse</li>
+        
+      </ul>
+    </div>
+  
+    <div class="skill-block">
+      <h4>Data &amp; Analytics Engineering</h4>
+      <ul>
+        
+          <li>SQL, data modeling, ETL/ELT</li>
+        
+          <li>Airflow, MWAA, Argo</li>
+        
+          <li>Redshift, Snowflake</li>
+        
+      </ul>
+    </div>
+  
+    <div class="skill-block">
+      <h4>Distributed Systems &amp; Infrastructure</h4>
+      <ul>
+        
+          <li>AWS (Lambda, S3, SNS, SQS)</li>
+        
+          <li>Event-driven, async pipelines</li>
+        
+          <li>Reliability, observability (Datadog, Rollbar)</li>
+        
+      </ul>
+    </div>
+  
+    <div class="skill-block">
+      <h4>Backend &amp; APIs</h4>
+      <ul>
+        
+          <li>Python, Node.js, FastAPI</li>
+        
+          <li>REST, GraphQL</li>
+        
+          <li>Microservices</li>
+        
+      </ul>
+    </div>
+  
+    <div class="skill-block">
+      <h4>Experimentation &amp; Optimization</h4>
+      <ul>
+        
+          <li>A/B testing, performance analysis</li>
+        
+          <li>CTR/VCR optimization</li>
+        
+          <li>Decision systems</li>
+        
+      </ul>
+    </div>
+  
+    <div class="skill-block">
+      <h4>Tools &amp; Platforms</h4>
+      <ul>
+        
+          <li>Git, Docker, Kubernetes</li>
+        
+          <li>Tableau, visualization</li>
+        
+          <li>TTD, Google Ads, Meta</li>
+        
+      </ul>
+    </div>
+  
+</div>
+
+                  
+                  </div>
+                </div>
+<div class="card mt-3 p-3" id="cv-academic-education">
+                  <h3 class="card-title font-weight-medium">Education</h3>
+                  <div>
+                  
+                   <ul class="card-text font-weight-light list-group list-group-flush">
+    
+      <li class="list-group-item education-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2018 - 2024
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">Ph.D., Computer and Information Sciences</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">University of Delaware</h6>
+            
+            
+              <ul class="items">
+                
+                  <li>
+                    
+                      <span class="item">Advised by Lori Pollock</span>
+                    
+                  </li>
+                
+                  <li>
+                    
+                      <span class="item">Research in conversational agents, applied AI</span>
+                    
+                  </li>
+                
+              </ul>
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item education-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2016 - 2017
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">M.Sc., Computer Science (Cum Laude)</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">West Chester University of Pennsylvania</h6>
+            
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+      <li class="list-group-item education-item">
+        <div class="row">
+          
+            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
+              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
+                2010
+              </span>
+            </div>
+          
+          <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+            <div class="item">
+            
+            
+            <h6 class="title font-weight-bold ml-1 ml-md-4">B.Sc., Marketing</h6>
+            
+            
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">West Chester University of Pennsylvania</h6>
+            
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      </li>
+    
+    </ul>
+
+                  
+                  </div>
+                </div>
+            </div>
           </article>
           </div>
 
         </div>
+        <script src="/assets/js/cv_resume_toggle.js" defer></script>
 
     </div>
 
