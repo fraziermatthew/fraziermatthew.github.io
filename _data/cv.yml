@@ -61,9 +61,15 @@
     - heading: AI & LLM Systems
       items:
         # - "LLM reasoning, prompt engineering (CoT, ReAct, few-shot), RAG pipelines, agentic workflows (CrewAI, LangChain), evaluation frameworks, vector databases, Langfuse"
-          - "LLM reasoning, prompt engineering (CoT, ReAct)"
-          - "RAG pipelines, agentic workflows"
-          - "Vector databases, evaluation, Langfuse"
+          - "Prompt engineering (CoT, ReAct)"
+          - "RAG, agentic pipelines"
+          - "Observability, evaluation"
+    # - heading: AI & LLM Systems
+    #   items:
+    #     # - "LLM reasoning, prompt engineering (CoT, ReAct, few-shot), RAG pipelines, agentic workflows (CrewAI, LangChain), evaluation frameworks, vector databases, Langfuse"
+    #       - "LLM reasoning, prompt engineering (CoT, ReAct)"
+    #       - "RAG pipelines, agentic workflows"
+    #       - "Vector databases, evaluation, Langfuse"
     - heading: Data & Analytics Engineering
       items:
         # - "SQL, data modeling, statistical signal generation, ETL/ELT pipelines, Airflow, MWAA, Argo, Redshift, Snowflake"
@@ -75,7 +81,7 @@
         # - "AWS (Lambda, S3, SNS, SQS), event-driven systems, asynchronous pipelines, high-throughput processing, system reliability, Datadog, Rollbar"
           - "AWS (Lambda, S3, SNS, SQS)"
           - "Event-driven, async pipelines"
-          - "Reliability, observability (Datadog, Rollbar)"
+          - "Reliability (Datadog, Rollbar)"
     - heading: Backend & APIs
       items:
         # - "Python, Node.js, FastAPI, REST, GraphQL, streaming APIs, microservices"
@@ -85,14 +91,14 @@
     - heading: Experimentation & Optimization
       items:
         # - "A/B testing, performance analysis, CTR/VCR optimization, campaign analytics, decision systems"
-          - "A/B testing, performance analysis"
-          - "CTR/VCR optimization"
+          - "A/B testing"
+          - "Performance analysis"
           - "Decision systems"
     - heading: Tools & Platforms
       items:
         # - "Git, Docker, Kubernetes (foundational), Tableau, TTD, Google Ads, Meta, YouTube"
           - "Git, Docker, Kubernetes"
-          - "Tableau, visualization"
+          - "Sigma, HighCharts"
           - "TTD, Google Ads, Meta"
 
 - title: Academic Experience
