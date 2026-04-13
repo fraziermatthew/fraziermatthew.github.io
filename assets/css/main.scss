@@ -509,7 +509,9 @@ $resume-panel-shift-ease: cubic-bezier(0.4, 0, 0.2, 1);
 .cv article .resume-panel {
   opacity: 1;
   transform: translateY(0);
-  transform $resume-panel-shift-ms $resume-panel-shift-ease;
+  transition:
+    opacity $resume-panel-shift-ms $resume-panel-shift-ease,
+    transform $resume-panel-shift-ms $resume-panel-shift-ease;
 }
 
 .cv article .resume-panel.resume-panel--exit {
@@ -678,6 +680,107 @@ html[data-theme='dark'] .cv .card {
   padding-left: 0;
   padding-right: 0;
   cursor: pointer;
+}
+
+// ---------------------------------------------------------------------------
+// Custom resume switch (active markup in _layouts/cv.html). Same dimensions & accent as the
+// Bootstrap block above; predictable flex width for even label spacing. Revert = use commented
+// Bootstrap HTML and hide/disable these rules if needed.
+// ---------------------------------------------------------------------------
+$cv-custom-switch-scale: 0.8125;
+
+.cv .cv-resume-switch-custom-wrap {
+  flex: 0 0 auto;
+  display: inline-block;
+  width: fit-content;
+  max-width: fit-content;
+  vertical-align: middle;
+}
+
+.cv .cv-resume-switch-custom {
+  --cv-rs-track-h: calc(1rem - 3px);
+  --cv-rs-knob-h: calc((1rem - 4px) * #{$cv-custom-switch-scale});
+  --cv-rs-track-w: calc(1.75rem * #{$cv-custom-switch-scale});
+  --cv-rs-travel: calc(var(--cv-rs-track-w) - var(--cv-rs-knob-h) - 4px);
+
+  position: relative;
+  line-height: 0;
+}
+
+.cv .cv-resume-switch-custom-ui {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.cv .cv-resume-switch-custom-track {
+  position: relative;
+  display: block;
+  width: var(--cv-rs-track-w);
+  height: var(--cv-rs-track-h);
+  border-radius: 0.5rem;
+  border: 1px solid #adb5bd;
+  background-color: #fff;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.cv .cv-resume-switch-custom-thumb {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  width: var(--cv-rs-knob-h);
+  height: var(--cv-rs-knob-h);
+  border-radius: 50%;
+  background-color: #adb5bd;
+  transform: translateY(-50%);
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.cv .cv-resume-switch-custom-input:checked + .cv-resume-switch-custom-ui .cv-resume-switch-custom-track {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.cv .cv-resume-switch-custom-input:checked + .cv-resume-switch-custom-ui .cv-resume-switch-custom-thumb {
+  background-color: #fff;
+  transform: translateY(-50%) translateX(var(--cv-rs-travel));
+}
+
+$cv-custom-switch-focus-ring:
+  0 0 0 2px rgba(200, 158, 117, 0.55),
+  0 0 0 5px rgba(200, 158, 117, 0.18);
+
+.cv .cv-resume-switch-custom-input:focus-visible + .cv-resume-switch-custom-ui .cv-resume-switch-custom-track {
+  border-color: rgba(200, 158, 117, 0.65);
+  box-shadow: $cv-custom-switch-focus-ring;
+}
+
+.cv .cv-resume-switch-custom-input:checked:focus-visible + .cv-resume-switch-custom-ui .cv-resume-switch-custom-track {
+  border-color: $secondary-color;
+  box-shadow: $cv-custom-switch-focus-ring;
+}
+
+html[data-theme='dark'] .cv .cv-resume-switch-custom-track {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+html[data-theme='dark'] .cv .cv-resume-switch-custom-input:checked + .cv-resume-switch-custom-ui .cv-resume-switch-custom-track {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv .cv-resume-switch-custom-track,
+  .cv .cv-resume-switch-custom-thumb {
+    transition: none;
+  }
 }
 
 .cv .cv-pdf-actions--with-toggle {

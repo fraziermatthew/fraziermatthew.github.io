@@ -27,9 +27,24 @@ layout: default
                 {%- if show_academic_toggle %}
                 <div class="cv-resume-switch-group d-flex align-items-center flex-shrink-0">
                   <span class="cv-resume-switch-label" id="cv-label-industry">Industry Resume</span>
-                  <div class="custom-control custom-switch mb-0 cv-resume-switch-control">
-                    <input type="checkbox" class="custom-control-input" id="cvResumeModeSwitch" aria-labelledby="cv-label-industry cv-label-academic" autocomplete="off">
-                    <label class="custom-control-label cv-resume-switch-input-label" for="cvResumeModeSwitch"><span class="sr-only">Show Academic CV instead of Industry Resume</span></label>
+                  {%- comment -%}
+                    Bootstrap switch (revert): swap this block back in place of the custom switch below.
+                    Remove or comment out the <div class="cv-resume-switch-custom-wrap">…</div> block.
+                    <div class="custom-control custom-switch mb-0 cv-resume-switch-control">
+                      <input type="checkbox" class="custom-control-input" id="cvResumeModeSwitch" aria-labelledby="cv-label-industry cv-label-academic" autocomplete="off">
+                      <label class="custom-control-label cv-resume-switch-input-label" for="cvResumeModeSwitch"><span class="sr-only">Show Academic CV instead of Industry Resume</span></label>
+                    </div>
+                  {%- endcomment -%}
+                  <div class="cv-resume-switch-custom-wrap">
+                    <div class="cv-resume-switch-custom">
+                      <input type="checkbox" class="cv-resume-switch-custom-input sr-only" id="cvResumeModeSwitch" aria-labelledby="cv-label-industry cv-label-academic" autocomplete="off" />
+                      <label class="cv-resume-switch-custom-ui" for="cvResumeModeSwitch">
+                        <span class="sr-only">Show Academic CV instead of Industry Resume</span>
+                        <span class="cv-resume-switch-custom-track" aria-hidden="true">
+                          <span class="cv-resume-switch-custom-thumb"></span>
+                        </span>
+                      </label>
+                    </div>
                   </div>
                   <span class="cv-resume-switch-label" id="cv-label-academic">Academic CV</span>
                 </div>
