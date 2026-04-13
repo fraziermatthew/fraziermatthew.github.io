@@ -1794,13 +1794,14 @@ html[data-theme=dark] .cv .cv-resume-switch-custom-input:checked + .cv-resume-sw
 .cv .card.publications .item > ul.items {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 1.25rem;
-  list-style-type: circle;
-  list-style-position: outside;
+  padding-left: 0;
+  list-style: none;
 }
 
-.cv .card.publications .item > ul.items > li::marker {
-  color: var(--global-text-color-light);
+.cv .card.publications .item > ul.items > li {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .cv .card.publications .list-group-item > .row {
@@ -1918,8 +1919,16 @@ html[data-theme=dark] .cv .publications a:hover {
   color: var(--global-theme-color);
 }
 
+.cv .cv-section-footer a.view-all {
+  transition: transform 0.15s ease;
+}
+
 .cv .cv-section-footer a:hover {
   opacity: 0.85;
+}
+
+.cv .cv-section-footer a.view-all:hover {
+  transform: translateX(2px);
 }
 
 #back-to-top {
