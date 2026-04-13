@@ -1402,14 +1402,15 @@ a.inline-link:hover {
   color: var(--global-text-color);
   text-decoration: none !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  transition: color 0.18s ease, border-bottom-color 0.18s ease;
+  transition: color 0.18s ease, border-bottom-color 0.18s ease, text-decoration-color 0.18s ease;
+  font-weight: 700;
 }
 .post.teaching-page .teaching-course-title a:hover {
   color: var(--global-theme-color);
   border-bottom-color: var(--global-theme-color);
 }
 .post.teaching-page .teaching-course-title a strong {
-  font-weight: 600;
+  font-weight: inherit;
 }
 .post.teaching-page .teaching-course-title .course-code {
   display: inline;
@@ -1452,7 +1453,7 @@ a.inline-link:hover {
   font-size: 0.9rem;
   line-height: 1.34;
   color: var(--global-text-color);
-  opacity: 0.6;
+  opacity: 0.68;
   margin-top: 0.18rem;
 }
 .post.teaching-page .research-advisor a.inline-link {
