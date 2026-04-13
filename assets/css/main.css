@@ -1552,8 +1552,8 @@ html[data-theme=dark] .cv .card {
 }
 
 .cv .cv-resume-switch-group {
-  display: grid;
-  grid-template-columns: auto max-content auto;
+  display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   column-gap: 0.5rem;
   width: max-content;
@@ -1565,17 +1565,15 @@ html[data-theme=dark] .cv .card {
   font-weight: 500;
   color: var(--global-text-color-light);
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 .cv .cv-resume-switch-slot {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: max-content;
-  max-width: max-content;
-  min-width: 0;
-  padding: 3px;
-  box-sizing: content-box;
+  flex: 0 0 auto;
+  line-height: 0;
 }
 
 .cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch {
@@ -1587,6 +1585,8 @@ html[data-theme=dark] .cv .card {
   max-width: max-content !important;
   min-width: unset;
   margin-bottom: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #8c4720;
