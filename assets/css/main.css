@@ -1678,6 +1678,11 @@ html[data-theme=dark] .cv .card {
   --cv-rs-travel: calc(var(--cv-rs-track-w) - var(--cv-rs-knob-h) - 4px);
   position: relative;
   line-height: 0;
+  border-radius: 0.55rem;
+}
+
+.cv .cv-resume-switch-custom-input:focus {
+  outline: none;
 }
 
 .cv .cv-resume-switch-custom-ui {
@@ -1720,12 +1725,12 @@ html[data-theme=dark] .cv .card {
   transform: translateY(-50%) translateX(var(--cv-rs-travel));
 }
 
-.cv .cv-resume-switch-custom-input:focus-visible + .cv-resume-switch-custom-ui .cv-resume-switch-custom-track {
+.cv .cv-resume-switch-custom:focus-within .cv-resume-switch-custom-track {
   border-color: rgba(200, 158, 117, 0.65);
   box-shadow: 0 0 0 2px rgba(200, 158, 117, 0.55), 0 0 0 5px rgba(200, 158, 117, 0.18);
 }
 
-.cv .cv-resume-switch-custom-input:checked:focus-visible + .cv-resume-switch-custom-ui .cv-resume-switch-custom-track {
+.cv .cv-resume-switch-custom:has(#cvResumeModeSwitch:checked):focus-within .cv-resume-switch-custom-track {
   border-color: #8c4720;
   box-shadow: 0 0 0 2px rgba(200, 158, 117, 0.55), 0 0 0 5px rgba(200, 158, 117, 0.18);
 }
