@@ -1782,12 +1782,12 @@ html[data-theme=dark] .cv .cv-resume-switch-custom-input:checked + .cv-resume-sw
 
 .pub-venue {
   display: block;
-  margin-top: 0.1rem;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #8c4720;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--global-theme-color);
   opacity: 0.9;
-  letter-spacing: 0.04em;
 }
 
 .cv .item {
