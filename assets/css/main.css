@@ -1776,13 +1776,13 @@ html[data-theme=dark] .cv .cv-resume-switch-custom-input:checked + .cv-resume-sw
 }
 
 .pub-venue {
-  display: inline-block;
-  margin-top: 0.2rem;
-  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #8c4720;
-  opacity: 0.85;
-  letter-spacing: 0.02em;
+  opacity: 0.9;
+  letter-spacing: 0.04em;
 }
 
 .cv .item {
