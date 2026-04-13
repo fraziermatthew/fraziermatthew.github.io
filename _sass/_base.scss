@@ -458,6 +458,7 @@ blockquote {
 // Footer
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
+  border-top: 2px solid $secondary-color !important;
   font-size: 0.75rem;
 
   .container {
@@ -477,7 +478,8 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid var(--global-divider-color);
+  // border-top: 1px solid var(--global-divider-color); // original footer
+  border-top: 2px solid $secondary-color !important;
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
