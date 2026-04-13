@@ -1619,20 +1619,24 @@ html[data-theme=dark] .cv .card {
   max-width: fit-content;
   vertical-align: middle;
   padding-right: 0;
+  --rs-track-h: calc(1rem - 3px);
+  --rs-knob-h: calc((1rem - 4px) * 0.8125);
+  --rs-track-w: calc(1.75rem * 0.8125);
   padding-left: calc(2.25rem * 0.8125);
   min-height: calc(1.5rem - 4px);
 }
 .cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-label::before {
+  top: 0.25rem;
   left: calc(-2.25rem * 0.8125);
-  width: calc(1.75rem * 0.8125);
-  height: calc(1rem - 3px);
+  width: var(--rs-track-w);
+  height: var(--rs-track-h);
   border-radius: 0.5rem;
 }
 .cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-label::after {
-  top: calc((0.25rem + 2px) * 0.8125);
+  top: calc(0.25rem + (var(--rs-track-h) - var(--rs-knob-h)) / 2);
   left: calc(-2.25rem * 0.8125 + 2px);
-  width: calc((1rem - 4px) * 0.8125);
-  height: calc((1rem - 4px) * 0.8125);
+  width: var(--rs-knob-h);
+  height: var(--rs-knob-h);
   border-radius: 0.5rem;
 }
 .cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
