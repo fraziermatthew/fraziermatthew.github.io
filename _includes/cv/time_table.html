@@ -74,6 +74,6 @@
     </ul>
 {%- if entry.footer_link %}
     <div class="cv-section-footer">
-      <a href="{{ entry.footer_link | relative_url }}">{% if entry.footer_link_label %}{{ entry.footer_link_label }}{% else %}View all →{% endif %}</a>
+      <a class="view-all" href="{{ entry.footer_link | relative_url }}">{% if entry.footer_link_label %}{{ entry.footer_link_label }}{% else %}View all →{% endif %}</a>
     </div>
 {%- endif %}

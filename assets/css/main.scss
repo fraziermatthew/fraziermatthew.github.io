@@ -834,18 +834,18 @@ html[data-theme='dark'] .cv .cv-resume-switch-custom-input:checked + .cv-resume-
 }
 
 // Selected Publications (card_class: publications): align year badge with first line of the entry.
-// The global `.cv .card ul { margin-top }` was nudging the whole list down — zero only that here.
-// Keep normal list markers; do not use list-style: none.
+// Zero the global `.cv .card ul { margin-top }` nudge; no bullets (list-style: none) for this card only.
 .cv .card.publications .item > ul.items {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 1.25rem;
-  list-style-type: circle; // match other CV lists (e.g. Academic Experience — open bullets)
-  list-style-position: outside;
+  padding-left: 0;
+  list-style: none;
 }
 
-.cv .card.publications .item > ul.items > li::marker {
-  color: var(--global-text-color-light);
+.cv .card.publications .item > ul.items > li {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .cv .card.publications .list-group-item > .row {
@@ -972,8 +972,16 @@ html[data-theme='dark'] .cv .publications a:hover {
   color: var(--global-theme-color);
 }
 
+.cv .cv-section-footer a.view-all {
+  transition: transform 0.15s ease;
+}
+
 .cv .cv-section-footer a:hover {
   opacity: 0.85;
+}
+
+.cv .cv-section-footer a.view-all:hover {
+  transform: translateX(2px);
 }
 
 // Floating back-to-top (see _includes/back_to_top.html)
