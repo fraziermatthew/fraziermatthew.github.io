@@ -1552,7 +1552,7 @@ html[data-theme=dark] .cv .card {
 }
 
 .cv .cv-resume-switch-group {
-  column-gap: 0.35rem;
+  column-gap: 0.45rem;
 }
 
 .cv .cv-resume-switch-label {
@@ -1562,8 +1562,31 @@ html[data-theme=dark] .cv .card {
   white-space: nowrap;
 }
 
+.cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch {
+  flex: 0 0 auto;
+  width: 2.75rem;
+  max-width: 2.75rem;
+  min-width: 2.75rem;
+  padding-left: 0;
+  margin-bottom: 0 !important;
+}
+.cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #8c4720;
+  border-color: #8c4720;
+}
+.cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-input:focus ~ .custom-control-label::before {
+  border-color: rgba(200, 158, 117, 0.65);
+  box-shadow: 0 0 0 2px rgba(200, 158, 117, 0.55), 0 0 0 5px rgba(200, 158, 117, 0.18);
+}
+.cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-input:checked:focus ~ .custom-control-label::before {
+  background-color: #8c4720;
+  border-color: #8c4720;
+  box-shadow: 0 0 0 2px rgba(200, 158, 117, 0.55), 0 0 0 5px rgba(200, 158, 117, 0.18);
+}
+
 .cv .cv-resume-switch-input-label {
   padding-left: 2.25rem;
+  margin-bottom: 0;
   cursor: pointer;
 }
 
