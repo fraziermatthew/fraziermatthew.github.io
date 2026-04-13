@@ -1563,6 +1563,23 @@ html[data-theme=dark] .cv .card {
   font-weight: 500;
   color: var(--global-text-color-light);
   white-space: nowrap;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+.cv .cv-resume-switch-group:has(#cvResumeModeSwitch:not(:checked)) #cv-label-industry {
+  color: var(--global-text-color);
+  opacity: 1;
+}
+.cv .cv-resume-switch-group:has(#cvResumeModeSwitch:not(:checked)) #cv-label-academic {
+  opacity: 0.6;
+}
+
+.cv .cv-resume-switch-group:has(#cvResumeModeSwitch:checked) #cv-label-industry {
+  opacity: 0.6;
+}
+.cv .cv-resume-switch-group:has(#cvResumeModeSwitch:checked) #cv-label-academic {
+  color: var(--global-text-color);
+  opacity: 1;
 }
 
 .cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch {
