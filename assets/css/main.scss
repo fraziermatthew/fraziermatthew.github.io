@@ -876,7 +876,7 @@ html[data-theme='dark'] .cv .cv-resume-switch-custom-input:checked + .cv-resume-
 }
 
 // Technical Systems & Capabilities — skills_grid (see _includes/cv/skills_grid.html)
-// Layout uses the same list-group → row → [75px | col-10] shell as time_table.html so spacing matches other cards.
+// list-group-item + .item matches card padding / body width; do not wrap in row + col-10 (that aligns with degree text, not the badge column).
 .cv .card .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -909,7 +909,7 @@ html[data-theme='dark'] .cv .cv-resume-switch-custom-input:checked + .cv-resume-
   margin: 0 0 0.58rem 0;
 }
 
-// Outside markers sit left of the content box and visually hug the card title; inside keeps markers in the col-10 column.
+// Outside markers sit left of the content box and visually hug the card title; inside keeps markers aligned in the list column.
 .cv .card .skill-block ul {
   margin: 0;
   padding-left: 0;
