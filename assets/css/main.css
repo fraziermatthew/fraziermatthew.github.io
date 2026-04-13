@@ -1619,6 +1619,24 @@ html[data-theme=dark] .cv .card {
   max-width: fit-content;
   vertical-align: middle;
   padding-right: 0;
+  padding-left: calc(2.25rem * 0.8125);
+  min-height: calc(1.5rem - 4px);
+}
+.cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-label::before {
+  left: calc(-2.25rem * 0.8125);
+  width: calc(1.75rem * 0.8125);
+  height: calc(1rem - 3px);
+  border-radius: 0.5rem;
+}
+.cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-label::after {
+  top: calc((0.25rem + 2px) * 0.8125);
+  left: calc(-2.25rem * 0.8125 + 2px);
+  width: calc((1rem - 4px) * 0.8125);
+  height: calc((1rem - 4px) * 0.8125);
+  border-radius: 0.5rem;
+}
+.cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(calc(0.75rem * 0.8125));
 }
 .cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #8c4720;
