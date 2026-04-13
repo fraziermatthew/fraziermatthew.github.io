@@ -5,10 +5,16 @@
 
   var STORAGE_KEY = 'cvResumeView';
   var PARAM = 'view';
+  var PANEL_MS = 150;
   var industryPanels = document.querySelectorAll('.resume-panel--industry');
   var academicPanels = document.querySelectorAll('.resume-panel--academic');
+  var industryPanel = industryPanels[0];
+  var academicPanel = academicPanels[0];
   var industryPdf = document.querySelectorAll('.cv-pdf-group--industry');
   var academicPdf = document.querySelectorAll('.cv-pdf-group--academic');
+  var switchGroup = document.querySelector('.cv-resume-switch-group');
+
+  var busy = false;
 
   function getParamView() {
     var params = new URLSearchParams(window.location.search);
@@ -33,20 +39,35 @@
     history.replaceState(null, '', newUrl);
   }
 
-  function applyPanels(academic) {
-    sw.checked = academic;
-    industryPanels.forEach(function (el) {
-      el.classList.toggle('d-none', academic);
-    });
-    academicPanels.forEach(function (el) {
-      el.classList.toggle('d-none', !academic);
-    });
+  function setPdfVisibility(academic) {
     industryPdf.forEach(function (el) {
       el.classList.toggle('d-none', academic);
     });
     academicPdf.forEach(function (el) {
       el.classList.toggle('d-none', !academic);
     });
+  }
+
+  /** Instant show/hide — init, popstate, reduced motion, or fallback */
+  function applyPanelsInstant(academic) {
+    sw.checked = academic;
+    industryPanels.forEach(function (el) {
+      el.classList.toggle('d-none', academic);
+      el.classList.remove('resume-panel--exit', 'resume-panel--enter');
+    });
+    academicPanels.forEach(function (el) {
+      el.classList.toggle('d-none', !academic);
+      el.classList.remove('resume-panel--exit', 'resume-panel--enter');
+    });
+    setPdfVisibility(academic);
+  }
+
+  function prefersReducedMotion() {
+    try {
+      return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    } catch (e) {
+      return false;
+    }
   }
 
   function persistStorage(academic) {
@@ -91,13 +112,80 @@
     }
   }
 
+  function transitionPropOk(name) {
+    return name === 'opacity' || name === 'transform';
+  }
+
+  function runPanelSwap(academic) {
+    var outgoing = academic ? industryPanel : academicPanel;
+    var incoming = academic ? academicPanel : industryPanel;
+    if (!outgoing || !incoming) {
+      applyPanelsInstant(academic);
+      return;
+    }
+
+    busy = true;
+    if (switchGroup) switchGroup.classList.add('cv-resume-switch-group--busy');
+
+    outgoing.classList.add('resume-panel--exit');
+
+    var outgoingComplete = false;
+
+    function afterOutgoing() {
+      if (outgoingComplete) return;
+      outgoingComplete = true;
+      outgoing.removeEventListener('transitionend', onOutgoingEnd);
+      clearTimeout(outgoingFallback);
+
+      outgoing.classList.add('d-none');
+      outgoing.classList.remove('resume-panel--exit');
+
+      setPdfVisibility(academic);
+
+      incoming.classList.remove('d-none');
+      incoming.classList.add('resume-panel--enter');
+      window.requestAnimationFrame(function () {
+        window.requestAnimationFrame(function () {
+          incoming.classList.remove('resume-panel--enter');
+        });
+      });
+
+      var incomingDone = false;
+
+      function release() {
+        if (incomingDone) return;
+        incomingDone = true;
+        incoming.removeEventListener('transitionend', onIncomingEnd);
+        clearTimeout(incomingFallback);
+        busy = false;
+        if (switchGroup) switchGroup.classList.remove('cv-resume-switch-group--busy');
+      }
+
+      function onIncomingEnd(e) {
+        if (e.target !== incoming) return;
+        if (!transitionPropOk(e.propertyName)) return;
+        release();
+      }
+
+      var incomingFallback = setTimeout(release, PANEL_MS + 80);
+      incoming.addEventListener('transitionend', onIncomingEnd);
+    }
+
+    function onOutgoingEnd(e) {
+      if (e.target !== outgoing) return;
+      if (!transitionPropOk(e.propertyName)) return;
+      afterOutgoing();
+    }
+
+    var outgoingFallback = setTimeout(afterOutgoing, PANEL_MS + 80);
+    outgoing.addEventListener('transitionend', onOutgoingEnd);
+  }
+
   function init() {
     var academic = resolveInitialAcademic();
-    applyPanels(academic);
+    applyPanelsInstant(academic);
     persistStorage(academic);
 
-    // Keep ?view= aligned with the resolved panel (param, hash, or localStorage). Otherwise returning
-    // from another page restores academic via storage but the bar stays /resume/ with no query.
     syncUrlToView(academic, false);
 
     scrollToHash();
@@ -105,15 +193,25 @@
 
   sw.addEventListener('change', function () {
     var academic = sw.checked;
-    applyPanels(academic);
     persistStorage(academic);
-    // Dropping the hash avoids carrying a section anchor from the other resume’s IDs.
     setQueryParam(academic, true);
+
+    if (prefersReducedMotion()) {
+      applyPanelsInstant(academic);
+      return;
+    }
+
+    if (busy) {
+      sw.checked = !academic;
+      return;
+    }
+
+    runPanelSwap(academic);
   });
 
   window.addEventListener('popstate', function () {
     var academic = resolveInitialAcademic();
-    applyPanels(academic);
+    applyPanelsInstant(academic);
     persistStorage(academic);
     syncUrlToView(academic, false);
     scrollToHash();
