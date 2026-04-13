@@ -614,23 +614,30 @@ html[data-theme='dark'] .cv .card {
   padding-right: 0;
 
   // Slightly smaller than stock Bootstrap switch: track height −3px; width/knob/padding scale (~13/16).
+  // Knob `top` must be track-top + (track − knob)/2 — do not scale Bootstrap’s `calc(.25rem + 2px)` or the
+  // knob rides high in a shorter track.
   $resume-switch-scale: 0.8125;
+
+  --rs-track-h: calc(1rem - 3px);
+  --rs-knob-h: calc((1rem - 4px) * #{$resume-switch-scale});
+  --rs-track-w: calc(1.75rem * #{$resume-switch-scale});
 
   padding-left: calc(2.25rem * #{$resume-switch-scale});
   min-height: calc(1.5rem - 4px);
 
   .custom-control-label::before {
+    top: 0.25rem;
     left: calc(-2.25rem * #{$resume-switch-scale});
-    width: calc(1.75rem * #{$resume-switch-scale});
-    height: calc(1rem - 3px);
+    width: var(--rs-track-w);
+    height: var(--rs-track-h);
     border-radius: 0.5rem;
   }
 
   .custom-control-label::after {
-    top: calc((0.25rem + 2px) * #{$resume-switch-scale});
+    top: calc(0.25rem + (var(--rs-track-h) - var(--rs-knob-h)) / 2);
     left: calc(-2.25rem * #{$resume-switch-scale} + 2px);
-    width: calc((1rem - 4px) * #{$resume-switch-scale});
-    height: calc((1rem - 4px) * #{$resume-switch-scale});
+    width: var(--rs-knob-h);
+    height: var(--rs-knob-h);
     border-radius: 0.5rem;
   }
 
