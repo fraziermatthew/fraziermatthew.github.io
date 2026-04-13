@@ -875,13 +875,8 @@ html[data-theme='dark'] .cv .cv-resume-switch-custom-input:checked + .cv-resume-
   font-weight: 500;
 }
 
-// Horizontal offset of the year badge column from the card body edge (h3-aligned) in time_table rows.
-// Bootstrap 4 `.list-group-item` uses 1.25rem padding-x; skills lists use the same value so bullets share that anchor.
-$cv-time-table-badge-inset: 1.25rem;
-
 // Technical Systems & Capabilities — skills_grid (see _includes/cv/skills_grid.html)
-// Do not pad the whole grid: headings stay flush with the card title like other sections; only the lists are
-// inset so open bullets line up with the badge column (same inset as `.list-group-item` padding-left).
+// Layout uses the same list-group → row → [75px | col-10] shell as time_table.html so spacing matches other cards.
 .cv .card .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -893,6 +888,11 @@ $cv-time-table-badge-inset: 1.25rem;
     column-gap: 0;
     row-gap: 1.5rem;
   }
+}
+
+// Single list-group row: avoid extra bottom gap from `.cv .card ul li { margin-bottom }` on the outer li.
+.cv .card .cv-skills-list-group > .cv-skills-list-item {
+  margin-bottom: 0;
 }
 
 .cv .card .skill-block {
@@ -909,10 +909,9 @@ $cv-time-table-badge-inset: 1.25rem;
   margin: 0 0 0.58rem 0;
 }
 
-// Outside markers sit left of the content box and visually hug the card title; inside keeps the marker on the badge anchor.
+// Outside markers sit left of the content box and visually hug the card title; inside keeps markers in the col-10 column.
 .cv .card .skill-block ul {
   margin: 0;
-  margin-left: $cv-time-table-badge-inset;
   padding-left: 0;
   list-style-type: circle;
   list-style-position: inside;

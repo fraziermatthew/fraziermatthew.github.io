@@ -1,12 +1,24 @@
-<div class="skills-grid">
-  {% for block in entry.contents %}
-    <div class="skill-block">
-      <h4>{{ block.heading }}</h4>
-      <ul>
-        {% for item in block.items %}
-          <li>{% include cv/md_inline.html text=item %}</li>
-        {% endfor %}
-      </ul>
+<ul class="card-text font-weight-light list-group list-group-flush cv-skills-list-group">
+  <li class="list-group-item cv-skills-list-item border-0">
+    <div class="row">
+      {%- comment -%} Same first column as time_table year badge (75px); empty spacer so skills align with other CV rows. {%- endcomment -%}
+      <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;" aria-hidden="true">&nbsp;</div>
+      <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
+        <div class="item">
+          <div class="skills-grid">
+            {% for block in entry.contents %}
+              <div class="skill-block">
+                <h4>{{ block.heading }}</h4>
+                <ul>
+                  {% for item in block.items %}
+                    <li>{% include cv/md_inline.html text=item %}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
-  {% endfor %}
-</div>
+  </li>
+</ul>
