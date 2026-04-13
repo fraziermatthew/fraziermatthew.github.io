@@ -4,7 +4,7 @@
 #     - name: Full Name
 #       value: Matthew Frazier
 
-- title: Professional Experience
+- title: Industry Experience
   type: time_table
   contents:
     - title: Senior Software Engineer (Data Science, Scaled Media Solutions)
