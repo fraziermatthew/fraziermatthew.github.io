@@ -1843,6 +1843,10 @@ html[data-theme=dark] .cv .cv-resume-switch-custom-input:checked + .cv-resume-sw
   }
 }
 
+.cv .card .cv-skills-list-group > .cv-skills-list-item {
+  margin-bottom: 0;
+}
+
 .cv .card .skill-block {
   display: flex;
   flex-direction: column;
@@ -1859,7 +1863,6 @@ html[data-theme=dark] .cv .cv-resume-switch-custom-input:checked + .cv-resume-sw
 
 .cv .card .skill-block ul {
   margin: 0;
-  margin-left: 1.25rem;
   padding-left: 0;
   list-style-type: circle;
   list-style-position: inside;
