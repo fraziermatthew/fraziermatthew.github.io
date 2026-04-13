@@ -3,7 +3,7 @@ layout: page
 permalink: /education/
 title: education
 heading: Teaching
-description: Teaching and instructional experience
+description: Teaching experience focused on developing structured reasoning, system thinking, and applied engineering skills.
 nav: true
 nav_order: 5
 page_class: teaching-page section-page
@@ -29,6 +29,7 @@ My instruction emphasizes:
 </div>
 <div class="teaching-course-meta">Instructor · Summer ’20, ’21</div>
 <div class="teaching-course-meta">Teaching Assistant · Spring ’21, ’23 · Instr. Katie Wassil</div>
+<div class="teaching-course-signal">(Problem decomposition, algorithmic thinking, structured reasoning)</div>
 </div>
 
 <div class="teaching-course">
@@ -38,6 +39,7 @@ My instruction emphasizes:
 </div>
 <div class="teaching-course-meta">Instructor · Summer ’22</div>
 <div class="teaching-course-meta">Teaching Assistant · 2019–2021 · Dr. T. Gregory Lynch</div>
+<div class="teaching-course-signal">(System impact, ethical decision-making, responsible AI)</div>
 </div>
 
 <div class="teaching-course">
@@ -46,6 +48,7 @@ My instruction emphasizes:
   <span class="course-code">(CISC 106)</span>
 </div>
 <div class="teaching-course-meta">Teaching Assistant · 2018–2020 · Instr. Katie Wassil</div>
+<div class="teaching-course-signal">(Engineering fundamentals, debugging, applied problem-solving)</div>
 </div>
 
 <div class="teaching-course">
@@ -54,6 +57,7 @@ My instruction emphasizes:
   <span class="course-code">(CISC 220)</span>
 </div>
 <div class="teaching-course-meta">Teaching Assistant · Spring ’20 · Dr. Debra Yarrington</div>
+<div class="teaching-course-signal">(Data modeling, algorithm efficiency, system design foundations)</div>
 </div>
 
 ### West Chester University
@@ -64,6 +68,7 @@ My instruction emphasizes:
   <span class="course-code">(CSC 495 / CSC 583)</span>
 </div>
 <div class="teaching-course-meta">Teaching Assistant · Fall ’17 · Dr. Si Chen</div>
+<div class="teaching-course-signal">(Security analysis, vulnerability modeling, adversarial thinking)</div>
 </div>
 
 ## Responsibilities
@@ -82,10 +87,11 @@ My instruction emphasizes:
 
 <p markdown="1">
   <a class="research-link" href="https://sites.udel.edu/se-research/"><strong>Software Analysis and Compilation Lab (SAC)</strong></a><br />
-  <span class="teaching-course-meta">Research Assistant · University of Delaware · 2021–2024</span><br />
+  <span class="teaching-course-meta">Research Assistant · 2021–2024 · University of Delaware</span><br />
   <span class="research-advisor">Advisor: [Lori Pollock](https://www.eecis.udel.edu/~pollock/){: .inline-link}</span>
 
 </p>
 
-- conducted research on conversational agents for software engineering and computer science education
-- published at ICSE and ITiCSE
+- Conducted research on conversational agents for supporting structured problem-solving in computer science education
+- Investigated LLM-guided reasoning approaches (CoT, few-shot, RAG) for guiding user interaction and learning
+- Published peer-reviewed work at ICSE and ITiCSE, demonstrating effectiveness in controlled educational settings and informing the design of structured AI systems
