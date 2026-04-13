@@ -26,9 +26,11 @@ layout: default
                 {%- if show_academic_toggle %}
                 <div class="cv-resume-switch-group d-flex align-items-center flex-shrink-0">
                   <span class="cv-resume-switch-label" id="cv-label-industry">Industry Resume</span>
-                  <div class="custom-control custom-switch cv-resume-switch-control mb-0">
-                    <input type="checkbox" class="custom-control-input" id="cvResumeModeSwitch" aria-labelledby="cv-label-industry cv-label-academic" autocomplete="off">
-                    <label class="custom-control-label cv-resume-switch-input-label" for="cvResumeModeSwitch"><span class="sr-only">Show Academic CV instead of Industry Resume</span></label>
+                  <div class="cv-resume-switch-slot">
+                    <div class="custom-control custom-switch cv-resume-switch-control mb-0">
+                      <input type="checkbox" class="custom-control-input" id="cvResumeModeSwitch" aria-labelledby="cv-label-industry cv-label-academic" autocomplete="off">
+                      <label class="custom-control-label cv-resume-switch-input-label" for="cvResumeModeSwitch"><span class="sr-only">Show Academic CV instead of Industry Resume</span></label>
+                    </div>
                   </div>
                   <span class="cv-resume-switch-label" id="cv-label-academic">Academic CV</span>
                 </div>
