@@ -15,6 +15,7 @@ layout: default
 {%- if cv_section_count_academic > 0 and page.cv_pdf_academic and cv_pdf_url_academic -%}
   {%- assign show_academic_toggle = true -%}
 {%- endif -%}
+{%- assign resume_page_url = page.url | relative_url -%}
 <!-- _layouts/cv.html -->
         <div class="post section-page">
 
@@ -65,7 +66,7 @@ layout: default
               <div class="cv-toc-label">On this page</div>
               <ul class="cv-toc-list">
                 {%- for entry in site.data.cv %}
-                <li><a href="#cv-industry-{{ entry.title | slugify }}">{{ entry.title }}</a></li>
+                <li><a href="{{ resume_page_url }}?view=industry#cv-industry-{{ entry.title | slugify }}">{{ entry.title }}</a></li>
                 {%- endfor %}
               </ul>
             </nav>
@@ -80,7 +81,7 @@ layout: default
               <div class="cv-toc-label">On this page</div>
               <ul class="cv-toc-list">
                 {%- for entry in site.data.academic %}
-                <li><a href="#cv-academic-{{ entry.title | slugify }}">{{ entry.title }}</a></li>
+                <li><a href="{{ resume_page_url }}?view=academic#cv-academic-{{ entry.title | slugify }}">{{ entry.title }}</a></li>
                 {%- endfor %}
               </ul>
             </nav>
