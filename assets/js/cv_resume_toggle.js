@@ -24,11 +24,11 @@
     return null;
   }
 
-  function setQueryParam(academic) {
+  function setQueryParam(academic, stripHash) {
     var params = new URLSearchParams(window.location.search);
     params.set(PARAM, academic ? 'academic' : 'industry');
     var qs = params.toString();
-    var hash = window.location.hash || '';
+    var hash = stripHash ? '' : window.location.hash || '';
     var newUrl = window.location.pathname + '?' + qs + hash;
     history.replaceState(null, '', newUrl);
   }
@@ -100,7 +100,8 @@
     var academic = sw.checked;
     applyPanels(academic);
     persistStorage(academic);
-    setQueryParam(academic);
+    // Dropping the hash avoids carrying a section anchor from the other resume’s IDs.
+    setQueryParam(academic, true);
   });
 
   window.addEventListener('popstate', function () {
