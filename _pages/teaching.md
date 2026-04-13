@@ -29,7 +29,7 @@ My instruction emphasizes:
 </div>
 <div class="teaching-course-meta">Instructor · Summer ’20, ’21</div>
 <div class="teaching-course-meta">Teaching Assistant · Spring ’21, ’23 · Instr. Katie Wassil</div>
-<div class="teaching-course-signal">(Problem decomposition, algorithmic thinking, structured reasoning)</div>
+<div class="teaching-course-signal">(Problem decomposition, algorithm design, structured reasoning)</div>
 </div>
 
 <div class="teaching-course">
@@ -39,7 +39,7 @@ My instruction emphasizes:
 </div>
 <div class="teaching-course-meta">Instructor · Summer ’22</div>
 <div class="teaching-course-meta">Teaching Assistant · 2019–2021 · Dr. T. Gregory Lynch</div>
-<div class="teaching-course-signal">(System impact, ethical decision-making, responsible AI)</div>
+<div class="teaching-course-signal">(System impact, ethical reasoning, responsible AI)</div>
 </div>
 
 <div class="teaching-course">
@@ -48,7 +48,7 @@ My instruction emphasizes:
   <span class="course-code">(CISC 106)</span>
 </div>
 <div class="teaching-course-meta">Teaching Assistant · 2018–2020 · Instr. Katie Wassil</div>
-<div class="teaching-course-signal">(Engineering fundamentals, debugging, applied problem-solving)</div>
+<div class="teaching-course-signal">(Programming fundamentals, debugging strategies, applied problem-solving)</div>
 </div>
 
 <div class="teaching-course">
@@ -57,7 +57,7 @@ My instruction emphasizes:
   <span class="course-code">(CISC 220)</span>
 </div>
 <div class="teaching-course-meta">Teaching Assistant · Spring ’20 · Dr. Debra Yarrington</div>
-<div class="teaching-course-signal">(Data modeling, algorithm efficiency, system design foundations)</div>
+<div class="teaching-course-signal">(Data modeling, algorithm efficiency, system design)</div>
 </div>
 
 ### West Chester University
@@ -68,7 +68,7 @@ My instruction emphasizes:
   <span class="course-code">(CSC 495 / CSC 583)</span>
 </div>
 <div class="teaching-course-meta">Teaching Assistant · Fall ’17 · Dr. Si Chen</div>
-<div class="teaching-course-signal">(Security analysis, vulnerability modeling, adversarial thinking)</div>
+<div class="teaching-course-signal">(Vulnerability analysis, threat modeling, adversarial thinking)</div>
 </div>
 
 ## Responsibilities
