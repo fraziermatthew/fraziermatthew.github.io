@@ -257,6 +257,7 @@ blockquote {
   box-shadow: none;
   border-bottom: 1px solid #8c4720;
   background-color: var(--global-bg-color);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
 }
 
 .navbar .dropdown-menu {
@@ -1840,30 +1841,50 @@ html[data-theme=dark] .cv .cv-resume-switch-custom-input:checked + .cv-resume-sw
   }
 }
 
+.cv .card .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 3rem;
+  row-gap: 1.9rem;
+}
+@media (max-width: 768px) {
+  .cv .card .skills-grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 1.5rem;
+  }
+}
+
 .cv .card .skill-block {
   display: flex;
   flex-direction: column;
+  align-self: start;
 }
+
 .cv .card .skill-block h4 {
   font-size: 1rem;
   font-weight: 600;
   color: #111;
-  margin: 0 0 0.65rem 0;
-  line-height: 1.3;
+  line-height: 1.28;
+  margin: 0 0 0.58rem 0;
 }
+
 .cv .card .skill-block ul {
-  padding-left: 1rem;
   margin: 0;
+  padding-left: 1rem;
 }
+
 .cv .card .skill-block li {
   font-size: 0.95rem;
   color: #666;
-  line-height: 1.65;
-  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  margin-bottom: 0.34rem;
 }
+
 .cv .card .skill-block li:last-child {
   margin-bottom: 0;
 }
+
 .cv .card .skill-block li::marker {
   color: #b8b8b8;
 }
