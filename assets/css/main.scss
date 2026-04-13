@@ -528,10 +528,14 @@ html[data-theme='dark'] .cv .card {
   max-width: 100%;
 }
 
-// Tight row: [ Industry ] [ switch ] [ Academic ] — do not stretch the control to full width
+// Grid so gap Industry↔switch equals switch↔Academic (flex was stretching the middle column).
 .cv .cv-resume-switch-group {
-  column-gap: 0.35rem;
+  display: grid;
+  grid-template-columns: auto max-content auto;
   align-items: center;
+  column-gap: 0.5rem;
+  width: max-content;
+  max-width: 100%;
 }
 
 .cv .cv-resume-switch-label {
@@ -539,25 +543,30 @@ html[data-theme='dark'] .cv .card {
   font-weight: 500;
   color: var(--global-text-color-light);
   white-space: nowrap;
-  flex: 0 0 auto;
 }
 
-// Room for layered focus ring without overlapping the text labels
+// Middle column hugs the real switch width (not a full-width flex item).
 .cv .cv-resume-switch-slot {
-  flex: 0 0 auto;
   display: flex;
   align-items: center;
-  padding: 2px 4px;
+  justify-content: center;
+  width: max-content;
+  max-width: max-content;
+  min-width: 0;
+  padding: 3px;
+  box-sizing: content-box;
 }
 
 // Let Bootstrap/MDB size the switch; restoring left padding fixes overlap with “Industry Resume”
 // (padding-left: 0 made the track draw over the previous flex item).
 .cv .cv-resume-switch-group .cv-resume-switch-control.custom-switch {
   position: relative;
+  display: inline-flex !important;
+  align-items: center;
   flex: 0 0 auto;
-  width: auto !important;
-  max-width: none !important;
-  min-width: 0;
+  width: max-content !important;
+  max-width: max-content !important;
+  min-width: unset;
   margin-bottom: 0 !important;
 
   // Checked “on” track uses site accent ($secondary-color / #8c4720)
@@ -585,7 +594,11 @@ html[data-theme='dark'] .cv .card {
 
 .cv .cv-resume-switch-input-label {
   margin-bottom: 0;
+  padding-right: 0;
   cursor: pointer;
+  // Avoid an invisible wide label box past the track (adds space before “Academic CV”).
+  width: max-content;
+  max-width: max-content;
 }
 
 .cv .cv-pdf-actions--with-toggle {
