@@ -840,7 +840,7 @@ html[data-theme='dark'] .cv .cv-resume-switch-custom-input:checked + .cv-resume-
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 1.25rem;
-  list-style-type: disc;
+  list-style-type: circle; // match other CV lists (e.g. Academic Experience — open bullets)
   list-style-position: outside;
 }
 
