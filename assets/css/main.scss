@@ -502,6 +502,41 @@ a.inline-link:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
+// Resume body: mode shift on toggle (see cv_resume_toggle.js)
+$resume-panel-shift-ms: 150ms;
+
+.cv article .resume-panel {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity $resume-panel-shift-ms ease, transform $resume-panel-shift-ms ease;
+}
+
+.cv article .resume-panel.resume-panel--exit {
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+}
+
+.cv article .resume-panel.resume-panel--enter {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv article .resume-panel {
+    transition: none;
+  }
+
+  .cv article .resume-panel.resume-panel--enter {
+    transition: none;
+  }
+}
+
+.cv .cv-resume-switch-group--busy {
+  pointer-events: none;
+}
+
 html[data-theme='dark'] .cv .card {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 }
