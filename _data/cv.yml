@@ -11,7 +11,7 @@
       institution: Goodway Group
       year: 2021 - Present
       description:
-        - <strong>Improved</strong> production stability of **RealValue™**, a high-throughput distributed optimization system processing **40M+** impression-level decisions daily, by re-architecting validation logic and error handling (Datadog, Rollbar), reducing production errors by **90%**
+        - <strong>Improved</strong> stability of **RealValue™ (40M+ daily decisions)** by re-architecting validation and error handling, reducing production errors by **90%**
         - <strong>Designed and deployed</strong> distributed data pipelines and ETL systems (Airflow, MWAA, Argo, Redshift, Snowflake, S3) supporting large-scale marketing analytics and multi-source data ingestion
         - <strong>Architected</strong> integrations across **5+** external platforms (TTD, Google Ads, Meta, YouGov, Bing), enabling unified data processing and cross-platform analytics
         - <strong>Built</strong> event-driven systems (AWS Lambda, SNS, SQS FIFO, S3) to automate analytics workflows, replacing manual notebook-based processes with asynchronous, production-grade pipelines
