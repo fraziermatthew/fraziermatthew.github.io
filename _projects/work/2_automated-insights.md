@@ -14,21 +14,26 @@ permalink: /projects/work/automated-insights/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-**Marketing analytics relies on subjective interpretation**—analysts manually surface “insights” from campaign performance with little consistency or repeatability.
+**Most marketing insights are not reproducible.  
+They depend on who is analyzing the data.**
 
-This system formalizes what counts as an insight by pairing deterministic statistical benchmarking with constrained LLM reasoning for scalable, explainable campaign intelligence.
+Analysts manually interpret campaign performance, often producing different conclusions from the same inputs.
+
+This system formalizes what counts as an insight by separating deterministic signal computation from constrained LLM interpretation.
 
 <h2>Overview</h2>
 
-This system addresses the challenge of generating actionable insights from historical marketing campaign data.
+This system generates actionable insights from historical marketing campaign data by using a client’s own performance as the benchmark.
 
-<p class="highlight">Your own campaign history becomes the benchmark—deviations and opportunities surface against what already worked.</p>
+<p class="highlight">Computation owns the signals; the model interprets them—insights remain traceable end to end.</p>
 
-Unlike systems focused on external or competitive data, this framework operates on a client’s own campaign history, identifying meaningful deviations, trends, and opportunities relative to historical performance benchmarks.
+Instead of relying on external comparisons, the system evaluates campaigns relative to historical baselines, surfacing meaningful deviations, trends, and opportunities.
 
-I designed and implemented an end-to-end analytical pipeline that defines, detects, and interprets insights by combining deterministic statistical signals with structured LLM reasoning.
+I designed and implemented an end-to-end analytical pipeline that defines, detects, and interprets insights through deterministic statistical signals paired with structured LLM reasoning.
 
-The result is a system that transforms subjective analytical workflows into a repeatable, scalable process.
+The result is a repeatable system that replaces subjective analysis with consistent, data-grounded outputs.
+
+---
 
 <h2>Role</h2>
 
@@ -55,41 +60,41 @@ The system operates as a layered analytical pipeline where structured statistica
 
 I designed a system that formalizes insight generation by combining statistical benchmarking with structured LLM interpretation.
 
-<p class="highlight">Deterministic signals are computed first; the LLM interprets structured JSON—never free-handing the math.</p>
+<p class="highlight">Deterministic signals are computed first; the LLM interprets structured inputs—never performing the analysis itself.</p>
 
 This included:
 
-- Defining what constitutes an **“insight”** by identifying meaningful deviations from historical campaign performance  
+- Defining what constitutes an **“insight”** through measurable deviations from historical campaign performance  
 - Building a benchmarking framework comparing active campaigns against historical medians across key metrics  
 - Detecting anomalies and statistically significant variations in campaign performance  
-- Designing prompt architectures that guide the model to interpret signals within campaign context and marketing objectives  
+- Designing prompt architectures that enforce context-aware interpretation aligned with campaign objectives  
 - Structuring a **stats JSON schema** as the sole contract between computation and interpretation layers  
-- Enforcing fully structured outputs to ensure consistency, traceability, and downstream usability  
-- Automating weekly pipelines to generate insights for newly completed campaigns  
+- Enforcing structured outputs to ensure consistency, traceability, and downstream usability  
+- Automating recurring pipelines to generate insights for newly completed campaigns  
 
-The system ensures that all reasoning is grounded in precomputed signals, with the LLM restricted to **interpreting rather than deriving** analytical conclusions.
+The system ensures all reasoning is grounded in precomputed signals, with the LLM restricted to **interpretation rather than computation**.
 
 ---
 
 <h2>System Design</h2>
 
-The architecture is explicitly designed around separation of concerns:
+The architecture is built around a strict separation of concerns:
 
 - **Computation Layer (SQL)**  
-  Computes all metrics, benchmarks, and comparative signals deterministically and at scale  
+  Computes all metrics, benchmarks, and comparative signals deterministically  
 
 - **Interpretation Layer (LLM)**  
-  Consumes structured JSON inputs and generates narrative insights without performing calculations  
+  Consumes structured inputs and generates narrative insights without performing calculations  
+
+<p class="highlight">Reliability comes from structure, not from the model.</p>
 
 This separation enforces:
 
-- elimination of LLM-based numerical reasoning  
+- elimination of LLM-driven numerical reasoning  
 - consistent and reproducible outputs  
 - controlled variability through prompt constraints  
 
-The structured JSON layer enables **human validation, debugging, and observability**, making insight generation transparent and auditable.
-
-<p class="highlight">Computation owns the numbers; the model owns the narrative—outputs stay traceable end to end.</p>
+The structured JSON layer provides **observability, validation, and debuggability**, making insight generation transparent and auditable.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -104,23 +109,19 @@ The structured JSON layer enables **human validation, debugging, and observabili
 
 <h2>Technical Constraints</h2>
 
-A key challenge was balancing automation with explainability.
+A key challenge was replicating human judgment while maintaining consistency and explainability.
 
-Insight generation is inherently subjective, relying on human intuition to determine what is meaningful versus noise. Replicating this required careful constraint of model behavior.
+Insight generation is inherently subjective, requiring systems to distinguish meaningful signals from noise.
 
-Challenges included:
-
-- Ensuring outputs remain explainable to analysts and clients  
-- Preventing over-interpretation of weak or statistically insignificant signals  
-- Aligning generated insights with campaign objectives rather than generic observations  
+Early iterations revealed risks of over-interpretation and inconsistent reasoning when model outputs were insufficiently constrained.
 
 To address this:
 
-- Statistical signals were **pre-filtered before reaching the model**  
-- Prompts were structured to enforce **context-aware reasoning**  
-- Outputs were constrained to reflect **interpretable relationships between metrics**  
+- Statistical signals were **filtered and validated before reaching the model**  
+- Prompts were structured to enforce **context-aware interpretation tied to campaign objectives**  
+- Outputs were constrained to reflect **explicit relationships between metrics**  
 
-This ensured that insights remained both actionable and defensible in real-world use.
+This ensured insights remained both actionable and defensible in production use.
 
 ---
 
@@ -128,27 +129,27 @@ This ensured that insights remained both actionable and defensible in real-world
 
 The system is built around:
 
-- Formalizing subjective analytical processes into deterministic frameworks  
+- Formalizing subjective analytical workflows into deterministic frameworks  
 - Statistical benchmarking and anomaly detection across campaign histories  
-- Structured LLM reasoning constrained by business and analytical context  
-- Automated insight generation pipelines for recurring campaign cycles  
+- Structured LLM reasoning constrained by analytical and business context  
+- Automated pipelines for recurring insight generation  
 
-It represents a shift from manual interpretation toward **scalable, system-driven analytics**.
+At its core, the system demonstrates how **controlled reasoning over structured data** enables scalable, consistent analytics.
 
 ---
 
 <h2>Outcome</h2>
 
-The system reduced the need for manual post-campaign analysis by automatically generating insights aligned with campaign objectives.
+The system replaces manual post-campaign analysis with automated, structured insight generation.
 
-Impact included:
+Instead of relying on individual interpretation, teams receive consistent outputs grounded in historical performance.
 
-- Reduced analyst time required to identify campaign insights  
+- Reduced analyst effort required to identify campaign insights  
 - Improved consistency in how insights are defined and communicated  
 - Enabled scalable insight generation across recurring campaign cycles  
-- Received strong internal validation, with analytics leadership endorsing output quality  
+- Validated internally, with analytics leadership endorsing output quality  
 
-The system established a foundation for scaling automated insight generation across clients and marketing objectives.
+The result is a foundation for **scalable, data-grounded insight generation across clients and marketing workflows**.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">

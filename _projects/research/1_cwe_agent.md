@@ -14,19 +14,27 @@ permalink: /projects/research/cwe-agent/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-**Security education leans on static examples**, so students rarely see how vulnerabilities emerge in real code.
+**Most security education is disconnected from how vulnerabilities actually appear in code.**
 
-This system injects, evaluates, and ranks vulnerabilities directly within student-submitted code—yielding personalized, context-aware learning grounded in each student’s own implementation.
+Students learn CWE concepts in isolation, without seeing how they emerge in their own implementations.
+
+This system embeds vulnerabilities directly into student-submitted code, then evaluates and selects the most educational examples through a structured multi-agent pipeline.
+
+---
 
 <h2>Overview</h2>
 
-Traditional approaches to teaching secure coding rely on isolated examples that fail to reflect how vulnerabilities appear in real systems.
+This system transforms abstract secure coding concepts into personalized, code-level learning experiences.
 
-<p class="highlight">Abstract CWE concepts land in the exact lines students wrote—not a toy repo.</p>
+<p class="highlight">Vulnerabilities are injected into the exact code students wrote—not into prebuilt examples.</p>
 
-I designed and implemented an end-to-end multi-agent pipeline that injects realistic vulnerabilities into student code, evaluates their educational value, and generates structured learning artifacts tailored to the student’s own implementation.
+Instead of relying on static exercises, the system operates on real student submissions, generating context-aware vulnerabilities aligned with assignment objectives and implementation details.
 
-The system transforms abstract security concepts into **contextualized learning experiences grounded in the student’s own codebase**.
+I designed and implemented an end-to-end multi-agent pipeline that injects vulnerabilities, evaluates their educational value, and generates structured learning artifacts grounded in the student’s own code.
+
+The result is a repeatable system that converts theoretical security concepts into **contextualized, experiential learning**.
+
+---
 
 <h2>Role</h2>
 
@@ -34,24 +42,24 @@ The system transforms abstract security concepts into **contextualized learning 
 - Designed and implemented the full multi-agent pipeline  
 - Defined evaluation criteria for ranking educational value of vulnerabilities  
 - Built all agents, orchestration logic, and data pipelines  
-- Collaborated with research team on study design and student evaluation  
+- Collaborated with research team on study design and classroom deployment  
 
 ---
 
 <h2>What I Built</h2>
 
-I developed a multi-agent system that simulates the lifecycle of vulnerability discovery and analysis within student code.
+I developed a multi-agent system that formalizes vulnerability generation, evaluation, and selection within student code.
 
-<p class="highlight">This pipeline turns live student code into personalized, evaluation-driven security exercises—not canned examples.</p>
+<p class="highlight">Generation alone is not enough—the system evaluates and selects what is most educational.</p>
 
-This includes:
+This included:
 
-- **CWE Injector Agent** — generates realistic vulnerability variants within high-signal regions of student code while preserving structural and educational relevance  
-- **CWE Evaluator Agent** — applies LLM-as-judge scoring across naturalness, complexity, and pedagogical value  
-- **CWE Ranker Agent** — resolves the optimal candidate using weighted scoring and comparative reasoning  
-- **Learning Outcome Agent** — produces structured assessment questions grounded in code, context, and vulnerability type  
+- **CWE Injector Agent** — inserts realistic vulnerabilities into high-signal regions of student code while preserving structural integrity  
+- **CWE Evaluator Agent** — scores candidates across realism, complexity, and pedagogical value using LLM-as-judge evaluation  
+- **CWE Ranker Agent** — selects the optimal vulnerability using weighted scoring and comparative reasoning  
+- **Learning Outcome Agent** — generates structured assessment questions grounded in the injected vulnerability and code context  
 
-All prompts, scoring logic, and evaluation strategies are managed through **Langfuse**, enabling versioning, experimentation, and traceability across the system.
+All prompts, scoring logic, and evaluation workflows are managed through **Langfuse**, enabling versioning, experimentation, and traceability across the system.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -66,42 +74,42 @@ All prompts, scoring logic, and evaluation strategies are managed through **Lang
 
 <h2>System Design</h2>
 
-The architecture is implemented as a staged agentic workflow, where each agent operates on shared context and produces structured outputs consumed by downstream agents.
+The architecture is implemented as a staged agentic workflow with explicit separation between generation, evaluation, and selection.
 
 - **Input Context** → student code, assignment specifications, course materials, and curated CWE mappings  
-- **Injection Stage** → generation of multiple candidate vulnerabilities  
-- **Evaluation Stage** → scoring using defined pedagogical criteria  
-- **Ranking Stage** → selection of the optimal candidate using weighted scoring and rationale  
-- **Learning Stage** → generation of educational artifacts aligned with course objectives  
+- **Injection Stage** → generation of multiple vulnerability candidates  
+- **Evaluation Stage** → scoring using defined pedagogical and technical criteria  
+- **Ranking Stage** → selection of the optimal candidate through weighted comparison  
+- **Learning Stage** → generation of structured educational artifacts aligned with course objectives  
 
-Each stage produces structured outputs that feed into the next, enabling reproducibility and systematic evaluation.
+<p class="highlight">Evaluation is the control mechanism—generation is only the first step.</p>
 
-The system behaves as a **coordinated reasoning pipeline**, where generation, evaluation, and selection are tightly coupled rather than executed independently.
+Each stage produces structured outputs consumed by downstream agents, ensuring reproducibility and consistent system behavior.
 
-<p class="highlight">Every handoff is structured—so experiments stay reproducible and traceable in Langfuse.</p>
+The system operates as a **coordinated reasoning pipeline**, where outputs are validated and refined through successive stages rather than accepted at generation time.
 
 ---
 
 <h2>Technical Constraints</h2>
 
-A key challenge was balancing realism with educational value.
+A key challenge was balancing technical realism with instructional clarity.
 
-Injecting vulnerabilities into student code required preserving original logic while introducing meaningful security weaknesses.
+Injected vulnerabilities needed to reflect real-world patterns while remaining understandable and relevant to the student’s implementation.
 
 Challenges included:
 
-- Ensuring injected vulnerabilities remain realistic and contextually appropriate  
-- Avoiding excessive code distortion that reduces educational clarity  
-- Designing evaluation criteria that reflect both technical correctness and pedagogical value  
+- Preserving original code structure while introducing meaningful vulnerabilities  
+- Avoiding distortions that reduce educational clarity  
+- Designing evaluation criteria that capture both correctness and pedagogical value  
 - Maintaining consistency across multiple agents operating on shared context  
 
 To address this:
 
 - Injection strategies were constrained to minimize structural disruption  
-- Evaluation criteria were weighted to prioritize educational relevance  
-- Structured outputs were enforced across all agents to ensure reproducibility  
+- Evaluation criteria were weighted toward **educational usefulness over novelty**  
+- Structured outputs were enforced across all agents to ensure consistency and traceability  
 
-This resulted in a system that balances **technical realism with instructional effectiveness**.
+This produced a system that maintains **realism without sacrificing instructional value**.
 
 ---
 
@@ -109,25 +117,26 @@ This resulted in a system that balances **technical realism with instructional e
 
 The system is built around:
 
-- Agentic AI system design with multi-stage orchestration  
-- Structured evaluation frameworks for ranking generated outputs  
+- Multi-agent orchestration for staged reasoning and decision-making  
+- Evaluation-driven AI systems where scoring governs selection  
 - Programmatic code transformation for controlled vulnerability injection  
-- LLM-based reasoning constrained by educational and contextual inputs  
+- Structured LLM reasoning constrained by educational and contextual inputs  
 
-It reflects a design approach centered on **evaluation-driven AI systems**, where generation alone is insufficient without structured scoring and selection.
+At its core, the project demonstrates how **evaluation-driven pipelines** produce more reliable and meaningful outcomes than generation alone.
 
 ---
 
 <h2>Outcome</h2>
 
-The system was evaluated in a classroom setting to assess its effectiveness in improving student understanding of secure coding practices.
+The system was evaluated in a classroom setting to assess its impact on student understanding of secure coding practices.
 
-Results showed:
+Instead of working with abstract examples, students engaged with vulnerabilities embedded in their own code.
 
-- Positive student perception, with participants reporting improved understanding of vulnerabilities in their own code  
-- Increased engagement due to personalized, context-aware examples  
-- No statistically significant quantitative improvement, highlighting the complexity of measuring learning outcomes  
+- Increased engagement through personalized, context-aware exercises  
+- Improved qualitative understanding of how vulnerabilities manifest in real implementations  
+- Strong positive feedback from students on relevance and clarity  
+- No statistically significant quantitative improvement, highlighting the difficulty of measuring learning outcomes in small samples  
 
-The project demonstrates the potential of agentic AI systems to enhance education by transforming abstract concepts into **personalized, experiential learning**.
+The project demonstrates how agentic AI systems can transform security education by making concepts **experiential, contextual, and student-specific**.
 
-It also highlights the importance of combining qualitative and quantitative evaluation when assessing educational technologies.
+It also reinforces the importance of combining qualitative and quantitative evaluation when assessing educational systems.
