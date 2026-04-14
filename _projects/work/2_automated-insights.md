@@ -12,11 +12,27 @@ permalink: /projects/work/automated-insights/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-This system transforms raw campaign data into structured analytical signals and generates consistent, decision-ready insights using a constrained LLM interpretation layer.
+Marketing analytics relies heavily on subjective interpretation, where analysts manually identify “insights” from campaign performance with limited consistency and repeatability.
 
-Traditional analytics workflows either rely on manual analysis or delegate reasoning to LLMs operating over unstructured data, resulting in inconsistent and non-verifiable outputs. This system enforces a strict separation between deterministic computation and language-based interpretation, ensuring all metrics, benchmarks, and signals are computed upstream and the LLM operates only on validated inputs.
+This system formalizes what constitutes an insight by combining deterministic statistical benchmarking with constrained LLM reasoning, enabling scalable, explainable campaign intelligence.
 
-I designed and implemented the end-to-end system, including SQL-based signal generation, structured data contracts, and the LLM reasoning layer that produces consistent, interpretable outputs.
+<h2 style="color: #8c4720; margin-top: 40px;">Overview</h2>
+
+This system addresses the challenge of generating actionable insights from historical marketing campaign data.
+
+Unlike systems focused on external or competitive data, this framework operates on a client’s own campaign history, identifying meaningful deviations, trends, and opportunities relative to historical performance benchmarks.
+
+I designed and implemented an end-to-end analytical pipeline that defines, detects, and interprets insights by combining deterministic statistical signals with structured LLM reasoning.
+
+The result is a system that transforms subjective analytical workflows into a repeatable, scalable process.
+
+<h2 style="color: #8c4720; margin-top: 40px;">Role</h2>
+
+**Sole Engineer (Analytics Framework + LLM System Design)**  
+- Defined the analytical framework for identifying meaningful insights from campaign data  
+- Designed and implemented SQL-based benchmarking and anomaly detection logic  
+- Developed structured prompt systems to interpret signals within campaign context  
+- Built automated pipelines for recurring insight generation and delivery  
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -33,16 +49,19 @@ The system operates as a layered analytical pipeline where structured statistica
 
 <h2 style="color: #8c4720; margin-top: 40px;">What I Built</h2>
 
-I built an end-to-end analytical system that converts campaign performance data into structured signals and enforces controlled LLM interpretation over those signals.
+I designed a system that formalizes insight generation by combining statistical benchmarking with structured LLM interpretation.
 
-This includes:
+This included:
 
-- SQL pipelines that compute **benchmarks, distributions, and performance signals** across campaigns  
-- A standardized **stats JSON schema** that acts as the sole contract between computation and interpretation  
-- Prompting frameworks that constrain the model to generate **structured, decision-ready outputs**  
-- A fully JSON-based response format to ensure consistency, traceability, and downstream usability  
+- Defining what constitutes an **“insight”** by identifying meaningful deviations from historical campaign performance  
+- Building a benchmarking framework comparing active campaigns against historical medians across key metrics  
+- Detecting anomalies and statistically significant variations in campaign performance  
+- Designing prompt architectures that guide the model to interpret signals within campaign context and marketing objectives  
+- Structuring a **stats JSON schema** as the sole contract between computation and interpretation layers  
+- Enforcing fully structured outputs to ensure consistency, traceability, and downstream usability  
+- Automating weekly pipelines to generate insights for newly completed campaigns  
 
-The system guarantees that all reasoning is grounded in precomputed signals, with the LLM restricted to **interpreting rather than deriving** analytical conclusions.
+The system ensures that all reasoning is grounded in precomputed signals, with the LLM restricted to **interpreting rather than deriving** analytical conclusions.
 
 ---
 
@@ -62,7 +81,7 @@ This separation enforces:
 - consistent and reproducible outputs  
 - controlled variability through prompt constraints  
 
-The structured JSON layer also enables **human validation, debugging, and system observability**, making insight generation transparent and auditable.
+The structured JSON layer enables **human validation, debugging, and observability**, making insight generation transparent and auditable.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -75,32 +94,53 @@ The structured JSON layer also enables **human validation, debugging, and system
 
 ---
 
+<h2 style="color: #8c4720; margin-top: 40px;">Technical Constraints</h2>
+
+A key challenge was balancing automation with explainability.
+
+Insight generation is inherently subjective, relying on human intuition to determine what is meaningful versus noise. Replicating this required careful constraint of model behavior.
+
+Challenges included:
+
+- Ensuring outputs remain explainable to analysts and clients  
+- Preventing over-interpretation of weak or statistically insignificant signals  
+- Aligning generated insights with campaign objectives rather than generic observations  
+
+To address this:
+
+- Statistical signals were **pre-filtered before reaching the model**  
+- Prompts were structured to enforce **context-aware reasoning**  
+- Outputs were constrained to reflect **interpretable relationships between metrics**  
+
+This ensured that insights remained both actionable and defensible in real-world use.
+
+---
+
 <h2 style="color: #8c4720; margin-top: 40px;">Technical Focus</h2>
 
 The system is built around:
 
-- Deterministic data pipelines using SQL for scalable signal and benchmark generation  
-- Structured input schemas (JSON) enforcing strict contracts between system layers  
-- Prompt-constrained reasoning to ensure consistent and interpretable outputs  
-- Architectural separation of computation and language-based interpretation  
+- Formalizing subjective analytical processes into deterministic frameworks  
+- Statistical benchmarking and anomaly detection across campaign histories  
+- Structured LLM reasoning constrained by business and analytical context  
+- Automated insight generation pipelines for recurring campaign cycles  
 
-It reflects a design approach focused on **production-grade AI systems**, where reliability emerges from structure, constraints, and explicit system boundaries.
+It represents a shift from manual interpretation toward **scalable, system-driven analytics**.
 
 ---
 
 <h2 style="color: #8c4720; margin-top: 40px;">Outcome</h2>
 
-The system enables scalable generation of consistent, interpretable insights across campaigns without relying on fragile LLM-based calculations.
+The system reduced the need for manual post-campaign analysis by automatically generating insights aligned with campaign objectives.
 
-It demonstrates that LLMs can operate reliably in production analytics systems when constrained by structured inputs and deterministic upstream computation.
+Impact included:
 
-The architecture is designed for continued evolution toward:
+- Reduced analyst time required to identify campaign insights  
+- Improved consistency in how insights are defined and communicated  
+- Enabled scalable insight generation across recurring campaign cycles  
+- Received strong internal validation, with analytics leadership endorsing output quality  
 
-- LLM-assisted benchmark generation  
-- self-validating insight pipelines  
-- autonomous analytical systems  
-
-This system represents a step toward **AI systems that not only interpret data, but progressively take ownership of the analytical lifecycle**.
+The system established a foundation for scaling automated insight generation across clients and marketing objectives.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
