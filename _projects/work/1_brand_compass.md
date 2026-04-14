@@ -1,5 +1,119 @@
 ---
 layout: page
+title: "CWE Agent — Multi-Agent System for Vulnerability Injection and Evaluation"
+description: Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities to generate structured security learning outcomes
+img: assets/img/cwe.png
+importance: 1
+category: research
+permalink: /projects/research/cwe-agent/
+---
+
+<p style="margin-top: -10px; margin-bottom: 20px;">
+  <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
+</p>
+
+Security education relies heavily on static examples that fail to reflect how vulnerabilities emerge in real-world codebases.
+
+In practice, weaknesses appear as side effects within existing systems and must be identified through contextual reasoning rather than pattern recognition alone. This creates a gap between how vulnerabilities are taught and how they are encountered in production environments.
+
+This system addresses that gap by simulating vulnerability emergence through a structured, evaluation-driven multi-agent pipeline that generates, scores, and selects realistic weaknesses within student code.
+
+---
+
+**Role:** Lead Engineer (Agent Architecture & LLM Evaluation Design)  
+**Scope:** Multi-agent system design, prompt architecture, evaluation framework, orchestration pipeline  
+**Focus:** Constraining LLM generation through structured evaluation and selection
+
+---
+
+I designed and implemented a coordinated multi-agent system using CrewAI that transforms vulnerability generation into a controlled reasoning process rather than a single-pass output.
+
+---
+
+<h2 style="color: #8c4720; margin-top: 40px;">What I Built</h2>
+
+I built a multi-agent pipeline where each stage performs a distinct role in generating, evaluating, and selecting high-signal vulnerabilities.
+
+This includes:
+
+- **CWE Injector Agent** — generates realistic vulnerability variants within high-signal regions of student code, ensuring injections appear naturally within existing logic  
+- **CWE Evaluator Agent** — applies LLM-as-judge scoring across naturalness, complexity, and pedagogical value, preventing low-quality or artificial outputs  
+- **CWE Ranker Agent** — selects the optimal candidate using weighted scoring and comparative reasoning across multiple generated variants  
+- **Learning Outcome Agent** — produces structured assessment questions grounded in code context, vulnerability type, and instructional objectives  
+
+All prompts, scoring logic, and evaluation strategies are managed through **Langfuse**, enabling versioning, experimentation, and traceability across the full pipeline.
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/cwe5.png" title="CWE Injection Pipeline" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Coordinated multi-agent pipeline that generates, evaluates, and selects vulnerabilities to produce structured learning outcomes.
+</div>
+
+---
+
+<h2 style="color: #8c4720; margin-top: 40px;">System Design</h2>
+
+The architecture is implemented as a staged agentic workflow, where each agent operates on shared context and produces structured outputs consumed by downstream agents.
+
+- **Input Context** → student code, assignment specifications, course materials, and curated CWE mappings  
+- **File Selection Heuristic** → prioritizes high-signal files based on size, structure, and complexity  
+- **Injection Stage** → generates multiple candidate vulnerabilities within realistic code regions  
+- **Evaluation Stage** → scores each candidate using structured LLM-based judgment  
+- **Ranking Stage** → selects the optimal candidate using weighted scoring and comparative reasoning  
+- **Learning Stage** → generates assessment artifacts aligned with course objectives  
+
+The system functions as a **coordinated reasoning pipeline**, where generation, evaluation, and selection are tightly coupled rather than executed independently.
+
+---
+
+<h2 style="color: #8c4720; margin-top: 40px;">Technical Constraints</h2>
+
+A key challenge was ensuring that generated vulnerabilities remained both realistic and instructionally valuable.
+
+Naive generation approaches produced outputs that were either too obvious, syntactically unnatural, or disconnected from the surrounding code context.
+
+To address this:
+
+- Generation was constrained to **existing code structure**, preventing isolated or artificial insertions  
+- Evaluation was introduced as a **first-class system component**, not a post-processing step  
+- LLM-as-judge scoring enforced quality across multiple dimensions rather than relying on single-pass outputs  
+- Ranking logic ensured that only the most pedagogically valuable and technically realistic candidate was selected  
+
+This shifted the system from a generative pipeline into an **evaluation-driven decision system**, where output quality is determined through structured reasoning rather than raw generation.
+
+---
+
+<h2 style="color: #8c4720; margin-top: 40px;">Technical Focus</h2>
+
+The system is built around:
+
+- Agentic orchestration using CrewAI for multi-step, coordinated reasoning  
+- LLM-as-judge evaluation patterns for structured scoring and comparative selection  
+- Prompt lifecycle management and observability using Langfuse  
+- Programmatic code transformation for controlled vulnerability injection  
+- Secure software engineering grounded in real-world CWE standards  
+
+It reflects a design approach centered on **evaluation-driven AI systems**, where generation alone is insufficient without structured scoring and selection.
+
+---
+
+<h2 style="color: #8c4720; margin-top: 40px;">Outcome</h2>
+
+The system transforms vulnerability injection from a static content generation task into a structured reasoning workflow aligned with real-world software behavior.
+
+Impact includes:
+
+- Generation of vulnerabilities that more closely reflect how weaknesses emerge in real codebases  
+- Reduction in low-quality or artificial examples through evaluation-driven selection  
+- Improved alignment between generated vulnerabilities and instructional learning objectives  
+- Creation of a scalable pipeline for producing high-signal security exercises across diverse codebases  
+
+This system demonstrates a broader pattern for building AI applications that combine **generation, evaluation, and ranking** to produce reliable, domain-specific outputs.
+<!-- ---
+layout: page
 title: "Brand Compass — Structured LLM Reasoning System for Brand Intelligence"
 description: Structured reasoning system that converts hierarchical brand analytics into consistent, decision-ready narratives
 importance: 1
@@ -101,4 +215,4 @@ These constraints informed subsequent system designs that prioritize:
 - constrained reasoning  
 - verifiable outputs  
 
-as requirements for production-grade AI systems.
+as requirements for production-grade AI systems. -->
