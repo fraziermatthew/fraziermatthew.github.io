@@ -6,8 +6,8 @@
   if (!root) return;
 
   var article = root.querySelector('#project-detail-article');
-  var tocNav = root.querySelector('.project-detail-toc__nav');
-  var aside = root.querySelector('#project-detail-toc');
+  var tocNav = document.querySelector('#project-detail-toc .project-detail-toc__nav');
+  var aside = document.getElementById('project-detail-toc');
   if (!article || !tocNav || !aside) return;
 
   var headings = article.querySelectorAll('h2');
