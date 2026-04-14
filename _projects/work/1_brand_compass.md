@@ -1,5 +1,6 @@
 ---
 layout: page
+page_class: project-detail
 title: "Brand Compass — Structured LLM Reasoning System for Brand Intelligence"
 description: Structured reasoning system that converts hierarchical brand analytics into consistent, decision-ready narratives
 importance: 1
@@ -8,7 +9,7 @@ category: work
 permalink: /projects/work/brand-compass/
 ---
 
-<p style="margin-top: -10px; margin-bottom: 20px;">
+<p class="project-detail__nav">
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
@@ -16,7 +17,7 @@ Marketing teams lack a unified way to understand how a brand truly compares agai
 
 Brand Compass solves this by combining multi-source market intelligence into a deterministic scoring system, then layering structured LLM reasoning to generate consistent, decision-ready insights.
 
-<h2 style="color: #8c4720; margin-top: 40px;">Overview</h2>
+<h2>Overview</h2>
 
 Brand Compass is a competitive intelligence system that models how a company performs relative to its industry and direct competitors using publicly available data (YouGov, Meltwater, Vivvix, Google Insights) alongside client-provided inputs.
 
@@ -24,7 +25,7 @@ The system aggregates this data into a deterministic scoring framework across ke
 
 I led the development of the LLM reasoning layer that interprets these structured signals and generates aligned, context-aware insights directly within the analytics dashboard.
 
-<h2 style="color: #8c4720; margin-top: 40px;">Role</h2>
+<h2>Role</h2>
 
 **Lead Engineer (LLM Systems & Prompt Architecture)**  
 - Designed structured prompt frameworks governing LLM reasoning behavior  
@@ -44,7 +45,7 @@ The system operates on top of a multi-source analytics pipeline combining indust
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">What I Built</h2>
+<h2>What I Built</h2>
 
 I designed and implemented a structured LLM reasoning layer that transforms deterministic brand scorecard data into consistent, decision-ready narratives across a competitive analysis dashboard.
 
@@ -62,7 +63,7 @@ The result is a system where the LLM operates as a **controlled reasoning compon
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">System Design</h2>
+<h2>System Design</h2>
 
 The architecture is designed as a structured interpretation layer on top of deterministic analytical inputs.
 
@@ -91,7 +92,7 @@ Unlike generic summarization pipelines, the LLM operates within a **structured a
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">Technical Constraints</h2>
+<h2>Technical Constraints</h2>
 
 A key challenge was controlling LLM behavior when interpreting quantitative data.
 
@@ -107,7 +108,7 @@ This shifted the system from a generative model to a **controlled reasoning laye
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">Technical Focus</h2>
+<h2>Technical Focus</h2>
 
 The system is built around:
 
@@ -120,7 +121,7 @@ It reflects a design approach centered on **controlled reasoning over structured
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">Outcome</h2>
+<h2>Outcome</h2>
 
 The system enabled analysts and clients to identify competitive gaps and marketing opportunities without manually synthesizing fragmented data sources.
 

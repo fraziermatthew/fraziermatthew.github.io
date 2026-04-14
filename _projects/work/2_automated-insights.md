@@ -1,5 +1,6 @@
 ---
 layout: page
+page_class: project-detail
 title: "Automated Insights — Deterministic Analytics System with Constrained LLM Interpretation"
 description: Structured analytics system that separates deterministic signal computation from LLM-based interpretation to produce consistent, decision-ready insights
 img: assets/img/auto-insights1.png
@@ -8,7 +9,7 @@ category: work
 permalink: /projects/work/automated-insights/
 ---
 
-<p style="margin-top: -10px; margin-bottom: 20px;">
+<p class="project-detail__nav">
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
@@ -16,7 +17,7 @@ Marketing analytics relies heavily on subjective interpretation, where analysts 
 
 This system formalizes what constitutes an insight by combining deterministic statistical benchmarking with constrained LLM reasoning, enabling scalable, explainable campaign intelligence.
 
-<h2 style="color: #8c4720; margin-top: 40px;">Overview</h2>
+<h2>Overview</h2>
 
 This system addresses the challenge of generating actionable insights from historical marketing campaign data.
 
@@ -26,7 +27,7 @@ I designed and implemented an end-to-end analytical pipeline that defines, detec
 
 The result is a system that transforms subjective analytical workflows into a repeatable, scalable process.
 
-<h2 style="color: #8c4720; margin-top: 40px;">Role</h2>
+<h2>Role</h2>
 
 **Sole Engineer (Analytics Framework + LLM System Design)**  
 - Defined the analytical framework for identifying meaningful insights from campaign data  
@@ -47,7 +48,7 @@ The system operates as a layered analytical pipeline where structured statistica
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">What I Built</h2>
+<h2>What I Built</h2>
 
 I designed a system that formalizes insight generation by combining statistical benchmarking with structured LLM interpretation.
 
@@ -65,7 +66,7 @@ The system ensures that all reasoning is grounded in precomputed signals, with t
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">System Design</h2>
+<h2>System Design</h2>
 
 The architecture is explicitly designed around separation of concerns:
 
@@ -94,7 +95,7 @@ The structured JSON layer enables **human validation, debugging, and observabili
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">Technical Constraints</h2>
+<h2>Technical Constraints</h2>
 
 A key challenge was balancing automation with explainability.
 
@@ -116,7 +117,7 @@ This ensured that insights remained both actionable and defensible in real-world
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">Technical Focus</h2>
+<h2>Technical Focus</h2>
 
 The system is built around:
 
@@ -129,7 +130,7 @@ It represents a shift from manual interpretation toward **scalable, system-drive
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">Outcome</h2>
+<h2>Outcome</h2>
 
 The system reduced the need for manual post-campaign analysis by automatically generating insights aligned with campaign objectives.
 

@@ -1,5 +1,6 @@
 ---
 layout: page
+page_class: project-detail
 title: "CWE Agent — Multi-Agent System for Vulnerability Injection and Evaluation"
 description: Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities to generate structured security learning outcomes
 img: assets/img/cwe.png
@@ -8,7 +9,7 @@ category: research
 permalink: /projects/research/cwe-agent/
 ---
 
-<p style="margin-top: -10px; margin-bottom: 20px;">
+<p class="project-detail__nav">
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
@@ -16,7 +17,7 @@ Security education relies heavily on static examples, making it difficult for st
 
 This system introduces a multi-agent pipeline that injects, evaluates, and ranks vulnerabilities directly within student-submitted code, generating personalized, context-aware learning experiences.
 
-<h2 style="color: #8c4720; margin-top: 40px;">Overview</h2>
+<h2>Overview</h2>
 
 Traditional approaches to teaching secure coding rely on isolated examples that fail to reflect how vulnerabilities appear in real systems.
 
@@ -24,7 +25,7 @@ I designed and implemented an end-to-end multi-agent pipeline that injects reali
 
 The system transforms abstract security concepts into **contextualized learning experiences grounded in the student’s own codebase**.
 
-<h2 style="color: #8c4720; margin-top: 40px;">Role</h2>
+<h2>Role</h2>
 
 **Sole Engineer (System Design, Agent Architecture, Evaluation Framework)**  
 - Designed and implemented the full multi-agent pipeline  
@@ -34,7 +35,7 @@ The system transforms abstract security concepts into **contextualized learning 
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">What I Built</h2>
+<h2>What I Built</h2>
 
 I developed a multi-agent system that simulates the lifecycle of vulnerability discovery and analysis within student code.
 
@@ -58,7 +59,7 @@ All prompts, scoring logic, and evaluation strategies are managed through **Lang
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">System Design</h2>
+<h2>System Design</h2>
 
 The architecture is implemented as a staged agentic workflow, where each agent operates on shared context and produces structured outputs consumed by downstream agents.
 
@@ -74,7 +75,7 @@ The system behaves as a **coordinated reasoning pipeline**, where generation, ev
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">Technical Constraints</h2>
+<h2>Technical Constraints</h2>
 
 A key challenge was balancing realism with educational value.
 
@@ -97,7 +98,7 @@ This resulted in a system that balances **technical realism with instructional e
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">Technical Focus</h2>
+<h2>Technical Focus</h2>
 
 The system is built around:
 
@@ -110,7 +111,7 @@ It reflects a design approach centered on **evaluation-driven AI systems**, wher
 
 ---
 
-<h2 style="color: #8c4720; margin-top: 40px;">Outcome</h2>
+<h2>Outcome</h2>
 
 The system was evaluated in a classroom setting to assess its effectiveness in improving student understanding of secure coding practices.
 
