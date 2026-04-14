@@ -182,17 +182,39 @@ $publication-highlight-pad-x: 1.75rem;
     border: none !important;
   }
 
-  // publications2 only: match non-highlight rows to the inner x-origin of `.publication-entry--highlight`.
+  // `--aligned-cards` (main + publications2): on md+ screens, indent plain rows to match highlight inner edge.
+  // On small screens, see mobile block below — no indent, highlight chrome removed.
   &.publications--aligned-cards .publication-entry:not(.publication-entry--highlight) {
-    padding-left: calc(#{$publication-highlight-border-width} + #{$publication-highlight-pad-x});
-    padding-right: $publication-highlight-pad-x;
-    box-sizing: border-box;
+    @media (min-width: 577px) {
+      padding-left: calc(#{$publication-highlight-border-width} + #{$publication-highlight-pad-x});
+      padding-right: $publication-highlight-pad-x;
+      box-sizing: border-box;
+    }
   }
 }
 
 html[data-theme='dark'] .publications .publication-entry--highlight {
   background: rgba(200, 158, 117, 0.1);
   border-left-color: #c89e75;
+}
+
+// Hybrid: `--aligned-cards` is flush-left on small screens (match h2.category); strip highlight box so cards match.
+// Selected Publications on about/ stays `.publications` only — highlight styling unchanged there on all breakpoints.
+@media (max-width: 576px) {
+  .publications.publications--aligned-cards .publication-entry--highlight {
+    border: none !important;
+    border-left: none !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  // Beat `html[data-theme='dark'] .publications .publication-entry--highlight` on small screens for aligned layout.
+  html[data-theme='dark'] .publications.publications--aligned-cards .publication-entry--highlight {
+    background: transparent !important;
+    border-left-color: transparent !important;
+  }
 }
 
 // Individual project write-ups (_projects/** — `page_class: project-detail` in front matter)

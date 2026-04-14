@@ -11,7 +11,7 @@ page_class: section-page
 ---
 <!-- <div style="text-align: right"> <small>*equal contribution</small> </div> -->
 <!-- _pages/publications.md -->
-<div class="publications">
+<div class="publications publications--aligned-cards">
 
   <h2 class="category">Dissertation</h2>
   {% bibliography -f papers -q @phdthesis %}
