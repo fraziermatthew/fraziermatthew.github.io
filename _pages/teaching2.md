@@ -3,7 +3,7 @@ layout: page
 permalink: /education/teaching2/
 title: education
 heading: Teaching
-description: Alternate layout (Approach + poster image) — compare with the main Teaching page; not linked in nav.
+description: Teaching experience focused on developing structured reasoning, system thinking, and applied engineering skills.
 nav: false
 nav_order: 5
 page_class: teaching-page section-page
