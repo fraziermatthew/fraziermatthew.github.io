@@ -541,33 +541,66 @@ a.inline-link:hover {
     line-height: 1.5;
   }
 
-  // Approach + floated poster (see _pages/teaching2.md): H2 full width; image right, text wraps on the left.
+  // Approach + poster — grid (see _pages/teaching2.md): text column + image column; tighter rhythm than page defaults.
   .teaching-approach-with-media {
-    &::after {
-      content: "";
-      display: table;
-      clear: both;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(200px, min(340px, 44%));
+    column-gap: 1.35rem;
+    align-items: start;
+
+    .teaching-approach-text {
+      min-width: 0;
+
+      p {
+        margin-bottom: 0.65rem;
+        line-height: 1.5;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      ul {
+        margin-top: 0.35rem;
+        margin-bottom: 0;
+        padding-left: 1.25rem;
+      }
+
+      li {
+        margin-bottom: 0.1rem;
+        line-height: 1.45;
+      }
     }
-  }
 
-  .teaching-approach-figure {
-    float: right;
-    width: min(340px, 46%);
-    margin: 0 0 1rem 1.35rem;
+    .teaching-approach-figure {
+      margin: 0;
+      width: 100%;
 
-    img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: min(440px, 52vh);
+        object-fit: contain;
+        object-position: top center;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
     }
 
     @media (max-width: 576px) {
-      float: none;
-      width: 100%;
-      max-width: 360px;
-      margin: 0 auto 1.25rem;
+      grid-template-columns: 1fr;
+
+      .teaching-approach-figure {
+        order: -1;
+        max-width: 360px;
+        margin: 0 auto 0.75rem;
+      }
+
+      .teaching-approach-figure img {
+        max-height: none;
+      }
     }
   }
 
@@ -577,6 +610,11 @@ a.inline-link:hover {
     margin-top: 0.5rem;
     line-height: 1.35;
     text-align: center;
+  }
+
+  // Next section follows the grid without the default h2 top gap (2.6rem reads as a “second gap” after a tall image).
+  .teaching-approach-with-media + h2 {
+    margin-top: 1.45rem;
   }
 
   html[data-theme='dark'] & .teaching-approach-figure img {

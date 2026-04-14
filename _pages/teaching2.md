@@ -12,17 +12,19 @@ page_class: teaching-page section-page
 ## Approach
 
 <div class="teaching-approach-with-media" markdown="0">
+  <div class="teaching-approach-text">
+    <p>I teach computer science by training how engineers think — through structured problem-solving, debugging intuition, and applied reasoning in real-world systems.</p>
+    <p>My instruction emphasizes:</p>
+    <ul>
+      <li>Breaking complex systems into clear <strong>reasoning steps</strong></li>
+      <li>Connecting theory to <strong>production engineering workflows</strong></li>
+      <li>Guiding students toward <strong>independent problem-solving</strong> over rote memorization</li>
+    </ul>
+  </div>
   <figure class="teaching-approach-figure">
     <img src="{{ '/assets/img/fresh.png' | relative_url }}" alt="Presenting research at poster session" loading="lazy" />
     <figcaption class="teaching-approach-caption">Presenting research at poster session</figcaption>
   </figure>
-  <p>I teach computer science by training how engineers think — through structured problem-solving, debugging intuition, and applied reasoning in real-world systems.</p>
-  <p>My instruction emphasizes:</p>
-  <ul>
-    <li>Breaking complex systems into clear <strong>reasoning steps</strong></li>
-    <li>Connecting theory to <strong>production engineering workflows</strong></li>
-    <li>Guiding students toward <strong>independent problem-solving</strong> over rote memorization</li>
-  </ul>
 </div>
 
 ## Courses Taught
