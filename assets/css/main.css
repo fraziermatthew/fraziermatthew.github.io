@@ -1263,6 +1263,9 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   border-left-color: var(--global-theme-color);
 }
 
+.publications {
+  margin-bottom: 2.25rem;
+}
 .publications ol.bibliography > li {
   margin-bottom: 1.35rem;
 }
@@ -1274,10 +1277,14 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   padding: 1.5rem 1.75rem;
   box-sizing: border-box;
 }
+.publications ol.bibliography div.abstract.hidden,
+.publications ol.bibliography div.abstract.hidden.open {
+  border: none !important;
+}
 
 html[data-theme=dark] .publications .publication-entry--highlight {
-  background: rgba(140, 71, 32, 0.12);
-  border-left-color: #8c4720;
+  background: rgba(200, 158, 117, 0.1);
+  border-left-color: #c89e75;
 }
 
 .post.project-detail .post-header {
