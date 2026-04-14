@@ -1192,10 +1192,10 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 }
 .post.project-detail article h2 {
   position: relative;
-  color: var(--global-theme-color);
+  color: #8c4720;
   margin-top: 56px;
-  margin-bottom: 18px;
-  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.25;
@@ -1203,32 +1203,54 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 .post.project-detail article h2::after {
   content: "";
   display: block;
-  width: 40px;
+  width: 36px;
   height: 2px;
-  margin-top: 10px;
-  background-color: #e5d6c8;
+  margin-top: 8px;
+  background: #8c4720;
+  opacity: 0.6;
+}
+html[data-theme=dark] .post.project-detail article h2 {
+  color: var(--global-theme-color);
 }
 html[data-theme=dark] .post.project-detail article h2::after {
-  background-color: rgba(229, 214, 200, 0.28);
+  background: var(--global-theme-color);
+  opacity: 0.55;
+}
+.post.project-detail article .highlight {
+  font-weight: 500;
+  font-size: 1.05rem;
+  margin: 16px 0;
+  line-height: 1.55;
+  color: var(--global-text-color);
 }
 .post.project-detail article p {
   line-height: 1.7;
   margin-bottom: 16px;
 }
 .post.project-detail article li {
-  line-height: 1.7;
-}
-.post.project-detail article ul li {
   margin-bottom: 8px;
+  line-height: 1.6;
 }
 .post.project-detail article hr {
-  margin: 1.75rem 0;
+  margin: 2rem 0;
   border: 0;
   border-top: 1px solid var(--global-divider-color);
   opacity: 1;
 }
 .post.project-detail article ul {
   padding-left: 1.15rem;
+}
+.post.project-detail article figure {
+  margin: 32px 0;
+}
+.post.project-detail article .caption,
+.post.project-detail article figcaption.caption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 8px;
+}
+html[data-theme=dark] .post.project-detail article .caption, html[data-theme=dark] .post.project-detail article figcaption.caption {
+  color: var(--global-text-color-light);
 }
 
 a.inline-link {

@@ -131,13 +131,15 @@
   <a href="/projects/" class="back-link">← Back to projects</a>
 </p>
 
-<p>Marketing analytics relies heavily on subjective interpretation, where analysts manually identify “insights” from campaign performance with limited consistency and repeatability.</p>
+<p><strong>Marketing analytics relies on subjective interpretation</strong>—analysts manually surface “insights” from campaign performance with little consistency or repeatability.</p>
 
-<p>This system formalizes what constitutes an insight by combining deterministic statistical benchmarking with constrained LLM reasoning, enabling scalable, explainable campaign intelligence.</p>
+<p>This system formalizes what counts as an insight by pairing deterministic statistical benchmarking with constrained LLM reasoning for scalable, explainable campaign intelligence.</p>
 
 <h2>Overview</h2>
 
 <p>This system addresses the challenge of generating actionable insights from historical marketing campaign data.</p>
+
+<p class="highlight">Your own campaign history becomes the benchmark—deviations and opportunities surface against what already worked.</p>
 
 <p>Unlike systems focused on external or competitive data, this framework operates on a client’s own campaign history, identifying meaningful deviations, trends, and opportunities relative to historical performance benchmarks.</p>
 
@@ -183,6 +185,8 @@
 
 <p>I designed a system that formalizes insight generation by combining statistical benchmarking with structured LLM interpretation.</p>
 
+<p class="highlight">Deterministic signals are computed first; the LLM interprets structured JSON—never free-handing the math.</p>
+
 <p>This included:</p>
 
 <ul>
@@ -223,6 +227,8 @@ Consumes structured JSON inputs and generates narrative insights without perform
 </ul>
 
 <p>The structured JSON layer enables <strong>human validation, debugging, and observability</strong>, making insight generation transparent and auditable.</p>
+
+<p class="highlight">Computation owns the numbers; the model owns the narrative—outputs stay traceable end to end.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
