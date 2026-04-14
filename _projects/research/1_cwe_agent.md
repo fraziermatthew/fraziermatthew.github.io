@@ -12,21 +12,35 @@ permalink: /projects/research/cwe-agent/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-This system injects, evaluates, and selects realistic software vulnerabilities in student code using a coordinated multi-agent reasoning pipeline.
+Security education relies heavily on static examples, making it difficult for students to understand how vulnerabilities emerge in real code.
 
-Traditional security education relies on static examples that fail to reflect how vulnerabilities emerge in real codebases. In practice, weaknesses appear as side effects within existing systems and must be identified through contextual reasoning. This system simulates that process by generating multiple vulnerability variants, evaluating them across technical and pedagogical criteria, and selecting the most effective instance to surface.
+This system introduces a multi-agent pipeline that injects, evaluates, and ranks vulnerabilities directly within student-submitted code, generating personalized, context-aware learning experiences.
 
-I designed and implemented a multi-agent orchestration system using CrewAI that coordinates generation, evaluation, ranking, and learning outcome generation across a structured pipeline.
+<h2 style="color: #8c4720; margin-top: 40px;">Overview</h2>
+
+Traditional approaches to teaching secure coding rely on isolated examples that fail to reflect how vulnerabilities appear in real systems.
+
+I designed and implemented an end-to-end multi-agent pipeline that injects realistic vulnerabilities into student code, evaluates their educational value, and generates structured learning artifacts tailored to the student’s own implementation.
+
+The system transforms abstract security concepts into **contextualized learning experiences grounded in the student’s own codebase**.
+
+<h2 style="color: #8c4720; margin-top: 40px;">Role</h2>
+
+**Sole Engineer (System Design, Agent Architecture, Evaluation Framework)**  
+- Designed and implemented the full multi-agent pipeline  
+- Defined evaluation criteria for ranking educational value of vulnerabilities  
+- Built all agents, orchestration logic, and data pipelines  
+- Collaborated with research team on study design and student evaluation  
 
 ---
 
 <h2 style="color: #8c4720; margin-top: 40px;">What I Built</h2>
 
-I built a multi-agent system where each stage of the pipeline performs a distinct role in generating, evaluating, and selecting high-signal vulnerabilities.
+I developed a multi-agent system that simulates the lifecycle of vulnerability discovery and analysis within student code.
 
 This includes:
 
-- **CWE Injector Agent** — generates realistic vulnerability variants within high-signal regions of student code  
+- **CWE Injector Agent** — generates realistic vulnerability variants within high-signal regions of student code while preserving structural and educational relevance  
 - **CWE Evaluator Agent** — applies LLM-as-judge scoring across naturalness, complexity, and pedagogical value  
 - **CWE Ranker Agent** — resolves the optimal candidate using weighted scoring and comparative reasoning  
 - **Learning Outcome Agent** — produces structured assessment questions grounded in code, context, and vulnerability type  
@@ -49,13 +63,37 @@ All prompts, scoring logic, and evaluation strategies are managed through **Lang
 The architecture is implemented as a staged agentic workflow, where each agent operates on shared context and produces structured outputs consumed by downstream agents.
 
 - **Input Context** → student code, assignment specifications, course materials, and curated CWE mappings  
-- **File Selection Heuristic** → prioritizes high-signal files based on size, structure, and complexity  
-- **Injection Stage** → generates multiple candidate vulnerabilities  
-- **Evaluation Stage** → scores each candidate using structured LLM-based judgment  
-- **Ranking Stage** → selects the optimal candidate using weighted scoring and rationale  
-- **Learning Stage** → generates assessment artifacts aligned with course objectives  
+- **Injection Stage** → generation of multiple candidate vulnerabilities  
+- **Evaluation Stage** → scoring using defined pedagogical criteria  
+- **Ranking Stage** → selection of the optimal candidate using weighted scoring and rationale  
+- **Learning Stage** → generation of educational artifacts aligned with course objectives  
+
+Each stage produces structured outputs that feed into the next, enabling reproducibility and systematic evaluation.
 
 The system behaves as a **coordinated reasoning pipeline**, where generation, evaluation, and selection are tightly coupled rather than executed independently.
+
+---
+
+<h2 style="color: #8c4720; margin-top: 40px;">Technical Constraints</h2>
+
+A key challenge was balancing realism with educational value.
+
+Injecting vulnerabilities into student code required preserving original logic while introducing meaningful security weaknesses.
+
+Challenges included:
+
+- Ensuring injected vulnerabilities remain realistic and contextually appropriate  
+- Avoiding excessive code distortion that reduces educational clarity  
+- Designing evaluation criteria that reflect both technical correctness and pedagogical value  
+- Maintaining consistency across multiple agents operating on shared context  
+
+To address this:
+
+- Injection strategies were constrained to minimize structural disruption  
+- Evaluation criteria were weighted to prioritize educational relevance  
+- Structured outputs were enforced across all agents to ensure reproducibility  
+
+This resulted in a system that balances **technical realism with instructional effectiveness**.
 
 ---
 
@@ -63,11 +101,10 @@ The system behaves as a **coordinated reasoning pipeline**, where generation, ev
 
 The system is built around:
 
-- Agentic orchestration using CrewAI for multi-step, coordinated reasoning  
-- LLM-as-judge evaluation patterns for structured scoring and comparative selection  
-- Prompt lifecycle management and observability using Langfuse  
+- Agentic AI system design with multi-stage orchestration  
+- Structured evaluation frameworks for ranking generated outputs  
 - Programmatic code transformation for controlled vulnerability injection  
-- Secure software engineering grounded in real-world CWE standards  
+- LLM-based reasoning constrained by educational and contextual inputs  
 
 It reflects a design approach centered on **evaluation-driven AI systems**, where generation alone is insufficient without structured scoring and selection.
 
@@ -75,14 +112,14 @@ It reflects a design approach centered on **evaluation-driven AI systems**, wher
 
 <h2 style="color: #8c4720; margin-top: 40px;">Outcome</h2>
 
-The system demonstrates how agentic AI can move beyond static analysis into **context-aware decision systems**.
+The system was evaluated in a classroom setting to assess its effectiveness in improving student understanding of secure coding practices.
 
-By simulating how vulnerabilities emerge in real codebases and selecting the most valuable instance to surface, the system transforms security education into a structured reasoning process.
+Results showed:
 
-It enables:
+- Positive student perception, with participants reporting improved understanding of vulnerabilities in their own code  
+- Increased engagement due to personalized, context-aware examples  
+- No statistically significant quantitative improvement, highlighting the complexity of measuring learning outcomes  
 
-- prioritization of high-impact vulnerabilities for learning  
-- generation of explanations grounded in real code context  
-- reinforcement through targeted assessment and evaluation  
+The project demonstrates the potential of agentic AI systems to enhance education by transforming abstract concepts into **personalized, experiential learning**.
 
-This system reflects a broader pattern of building AI pipelines that combine **generation, evaluation, and ranking** to produce high-signal, domain-specific outcomes.
+It also highlights the importance of combining qualitative and quantitative evaluation when assessing educational technologies.
