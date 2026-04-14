@@ -93,5 +93,5 @@ My instruction emphasizes:
 </p>
 
 - Conducted research on conversational agents for supporting structured problem-solving in computer science education
-- Investigated LLM-guided reasoning approaches (CoT, few-shot, RAG) for guiding user interaction and learning
+- Investigated LLM-guided reasoning approaches (CoT, few-shot, RAG) for guiding user interaction and Socratic learning
 - Published peer-reviewed work at ICSE and ITiCSE, demonstrating effectiveness in controlled educational settings and informing the design of structured AI systems
