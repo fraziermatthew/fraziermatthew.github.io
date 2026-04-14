@@ -32,7 +32,7 @@ Instead of relying on static exercises, the system operates on real student subm
 
 I designed and implemented an end-to-end multi-agent pipeline that injects vulnerabilities, evaluates their educational value, and generates structured learning artifacts grounded in the student’s own code.
 
-The result is a repeatable system that turns theoretical security concepts into **contextualized, experiential learning**.
+The result is a system that turns theoretical security concepts into **contextualized, experiential learning**.
 
 ---
 

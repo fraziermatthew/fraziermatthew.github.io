@@ -65,7 +65,8 @@ I designed a system that formalizes insight generation by combining statistical 
 This included:
 
 - Defining what constitutes an **“insight”** through measurable deviations in historical campaign performance
-- Building a benchmarking framework that compares active campaigns against historical medians across key metrics
+- Designing a measurement and benchmarking framework that maps metrics to campaign objectives and evaluates performance against historical baselines
+<!-- - Building an analytical benchmarking and measurement framework that compares active campaigns against historical medians across key metrics -->
 - Detecting anomalies and statistically significant variations in campaign performance
 - Designing prompt architectures that enforce context-aware interpretation aligned with campaign objectives
 - Structuring a **stats JSON schema** as the sole contract between computation and interpretation layers
@@ -142,14 +143,14 @@ At its core, the system demonstrates how **controlled reasoning over structured 
 
 The system replaces manual post-campaign analysis with automated, structured insight generation.
 
-Instead of relying on individual interpretation, teams receive consistent outputs grounded in historical benchmarks.
+Instead of relying on individual interpretation, teams receive consistent outputs grounded in statistically derived benchmarks.
 
 - Reduced analyst effort required to identify campaign insights
 - Improved consistency in how insights are defined and communicated
 - Enabled scalable insight generation across recurring campaign cycles
 - Validated internally, with analytics leadership endorsing output quality
 
-The result is a scalable foundation for **data-grounded insight generation across clients and marketing workflows**.
+The result is a foundation for **data-grounded, scalable insight generation across clients and marketing workflows**.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">

@@ -15,7 +15,7 @@ permalink: /projects/work/brand-compass/
 </p>
 
 **Most marketing teams cannot reliably answer one question:
-How does our brand actually compare to competitors?**
+How does our brand actually compare to competitors and the broader market?**
 
 Data is fragmented across sources, metrics lack alignment, and interpretation is left to subjective analysis.
 
