@@ -16,23 +16,8 @@ layout: default
             {%- endif -%}
           </header>
 
-          {%- if page.page_class == 'project-detail' -%}
-          <div class="project-detail-body">
-          {%- endif -%}
-          <article id="project-detail-article">
+          <article{% if page.page_class == 'project-detail' %} id="project-detail-article"{% endif %}>
             {{ content }}
           </article>
-          {%- if page.page_class == 'project-detail' -%}
-          <aside class="project-detail-toc" id="project-detail-toc" aria-label="On this page">
-            <div class="project-detail-toc__inner">
-              <p class="project-detail-toc__title">On this page</p>
-              <nav class="project-detail-toc__nav"></nav>
-            </div>
-          </aside>
-          </div>
-          {%- endif -%}
 
         </div>
-{%- if page.page_class == 'project-detail' -%}
-        <script src="{{ '/assets/js/project-toc.js' | relative_url }}" defer></script>
-{%- endif -%}

@@ -16,9 +16,19 @@
     {%- include header.html %}
 
     <!-- Content -->
+    {%- if page.page_class == 'project-detail' -%}
+    <div class="project-detail-page-shell">
+      <div class="container mt-5">
+        {{ content }}
+      </div>
+      {% include project-detail-toc-aside.html %}
+    </div>
+    <script src="{{ '/assets/js/project-toc.js' | relative_url }}" defer></script>
+    {%- else -%}
     <div class="container mt-5">
       {{ content }}
     </div>
+    {%- endif -%}
 
     <!-- Footer -->
     {%- include footer.html %}
