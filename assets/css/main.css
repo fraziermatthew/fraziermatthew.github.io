@@ -1188,7 +1188,7 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 .post.project-detail article h2 {
   position: relative;
   color: #8c4720;
-  margin-top: 56px;
+  margin-top: 48px;
   margin-bottom: 12px;
   font-size: 1.6rem;
   font-weight: 700;
@@ -1212,15 +1212,24 @@ html[data-theme=dark] .post.project-detail article h2::after {
   opacity: 0.55;
 }
 .post.project-detail article .highlight {
-  font-weight: 500;
-  font-size: 1.05rem;
-  margin: 16px 0;
-  line-height: 1.55;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 28px 0;
+  color: #1a1a1a;
+  line-height: 1.5;
+  border-left: 3px solid #8c4720;
+  padding-left: 14px;
+}
+html[data-theme=dark] .post.project-detail article .highlight {
   color: var(--global-text-color);
+  border-left-color: var(--global-theme-color);
 }
 .post.project-detail article p {
   line-height: 1.7;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+}
+.post.project-detail article p + p {
+  margin-top: 12px;
 }
 .post.project-detail article li {
   margin-bottom: 8px;
