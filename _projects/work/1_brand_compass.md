@@ -14,11 +14,12 @@ permalink: /projects/work/brand-compass/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-**Marketing teams lack a unified way to understand how a brand truly compares against competitors** using fragmented public and proprietary data.
+**Most marketing teams cannot reliably answer one question:  
+How does our brand actually compare to competitors?**
 
-Without a clear benchmark, marketing decisions degrade into guesswork.
+Data is fragmented across sources, metrics lack alignment, and interpretation is left to subjective analysis.
 
-Brand Compass combines multi-source market intelligence into a deterministic scoring system, then layers structured LLM reasoning to produce consistent, decision-ready insights.
+Brand Compass solves this by enforcing structure at every layer—from raw signals to final insights.
 
 <h2>Overview</h2>
 
@@ -26,17 +27,21 @@ Brand Compass is a competitive intelligence system that models how a company per
 
 <p class="highlight">The LLM operates as a controlled reasoning component, not a generative endpoint.</p>
 
-The system aggregates these signals into a deterministic scoring framework across market dynamics, mental availability, physical availability, and brand perception.
+The system works because the model is constrained, not because it is powerful.
 
-Instead of leaving interpretation to disconnected dashboards or subjective analysis, Brand Compass turns competitive intelligence into one coherent story grounded in scorecards and aligned across every view.
+It aggregates these signals into a deterministic scoring framework across market dynamics, mental availability, physical availability, and brand perception.
+
+Instead of relying on disconnected dashboards or subjective interpretation, Brand Compass produces a single coherent view grounded in aligned scorecards.
+
+---
 
 <h2>Role</h2>
 
-I owned the design and implementation of the LLM reasoning layer, from prompt architecture to production integration within the GOES analytics platform.
+I owned the design and implementation of the LLM reasoning layer, from prompt architecture to production integration within the GOES™ analytics platform.
 
 **Lead Engineer (LLM Systems & Prompt Architecture)**  
 - Designed structured prompt frameworks governing LLM reasoning behavior  
-- Implemented the reasoning layer inside the GOES analytics platform  
+- Implemented the reasoning layer inside the GOES™ analytics platform  
 - Integrated insights directly alongside chart-level visualizations  
 
 <div class="row justify-content-sm-center">
@@ -48,7 +53,7 @@ I owned the design and implementation of the LLM reasoning layer, from prompt ar
   Example of structured scorecard inputs paired with aligned LLM-generated insights.
 </div>
 
-The broader system runs on a multi-source analytics pipeline combining industry, client, and competitive data, organized into weighted sections spanning **Market Snapshot, Mental Availability, Physical Availability, and Perception**.
+The system operates on a multi-source analytics pipeline combining industry, client, and competitive data, organized into weighted sections spanning **Market Snapshot, Mental Availability, Physical Availability, and Perception**.
 
 ---
 
@@ -60,12 +65,12 @@ I designed and implemented the structured reasoning layer that transforms determ
 
 This included:
 
-- Designing **prompt architectures** (ReAct, few-shot, structured CoT) that force interpretation to stay grounded in deterministic signals  
-- Aligning **chart-level insights with section-level and global summaries** so outputs remain consistent across levels of abstraction  
+- Designing **prompt architectures** (ReAct, few-shot, structured CoT) that enforce interpretation grounded in deterministic signals  
+- Aligning **chart-level insights with section-level and global summaries** to maintain consistency across levels of abstraction  
 - Enforcing **hierarchical reasoning** so narratives reflect weighted relationships between market, mindshare, and distribution signals  
 - Constraining model behavior toward **grounded summarization**, preventing unsupported inference and fabricated calculations  
-- Structuring outputs so independently generated insights **reinforce a unified narrative** rather than behaving as isolated summaries  
-- Integrating LLM-generated insights directly into the GOES UI through collapsible modal components  
+- Structuring outputs so independently generated insights **reinforce a unified narrative** rather than acting as isolated summaries  
+- Integrating LLM-generated insights directly into the GOES™ UI through collapsible modal components  
 - Supporting concurrent multi-user execution through queue-based Lambda orchestration  
 
 The result is a reasoning system that interprets structured analytical inputs reliably at production scale.
@@ -84,13 +89,13 @@ The architecture is built as a structured interpretation layer on top of determi
 
 This design enforces **consistency across multiple levels of abstraction**, which is essential for decision-support systems.
 
-It does that by:
+It achieves this by:
 
 - Interpreting **raw metrics and derived scores together** rather than independently  
 - Generating insights at both **local (chart)** and **global (section)** levels  
 - Enforcing **cross-sectional alignment** so outputs do not contradict one another  
 
-Unlike generic summarization pipelines, this workflow makes structure the source of reliability. The dashboard surfaces that directly through deterministic scorecards paired with constrained AI interpretation.
+Unlike generic summarization pipelines, this workflow makes structure the source of reliability.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -107,7 +112,7 @@ Unlike generic summarization pipelines, this workflow makes structure the source
 
 A key challenge was controlling LLM behavior when interpreting quantitative data.
 
-Early iterations revealed that the model introduced hallucinated calculations and rounding errors when exposed to raw inputs. That made direct generation unreliable without stronger guardrails.
+Early iterations revealed that the model introduced hallucinated calculations and rounding errors when exposed to raw inputs. This made direct generation unreliable without stronger guardrails.
 
 To address this:
 
@@ -115,7 +120,7 @@ To address this:
 - Prompts were explicitly designed to **prevent independent numerical reasoning**  
 - Output expectations were constrained to **interpretation rather than computation**  
 
-This moved the system away from open-ended generation and into **controlled reasoning over structured data**, significantly improving reliability.
+This shifted the system from open-ended generation to **controlled reasoning over structured data**, significantly improving reliability.
 
 ---
 
@@ -128,19 +133,19 @@ The system is built around:
 - Cross-panel narrative alignment across multi-view dashboards  
 - Prompt-constrained generation for consistent, decision-ready outputs  
 
-At its core, the project demonstrates how **controlled reasoning over structured data** can make LLM behavior more stable, explainable, and production-ready.
+At its core, the project demonstrates how **controlled reasoning over structured data** makes LLM behavior more stable, explainable, and production-ready.
 
 ---
 
 <h2>Outcome</h2>
 
-Brand Compass replaces manual, subjective competitive interpretation with a scalable, deterministic framework for insight generation.
+Brand Compass replaces subjective, manual competitive analysis with a deterministic system that produces consistent, aligned insight at scale.
 
-Impact included:
+Instead of interpreting dashboards, teams receive structured narratives that reflect the underlying data with enforced consistency.
 
-- Reducing multi-source analysis from hours of manual interpretation to structured, instantly interpretable outputs  
-- Enabling faster identification of advertising opportunities across competitors  
-- Introducing narrative consistency across multiple analytics views  
-- Scaling insight generation across multiple users through asynchronous API orchestration  
+- Reduced multi-source analysis from hours of manual interpretation to structured, instantly interpretable outputs  
+- Enabled faster identification of advertising opportunities across competitors  
+- Introduced narrative consistency across multiple analytics views  
+- Scaled insight generation across multiple users through asynchronous API orchestration  
 
 While early iterations still required validation, the system established a strong foundation for **data-grounded, AI-assisted competitive analysis in production environments**.
