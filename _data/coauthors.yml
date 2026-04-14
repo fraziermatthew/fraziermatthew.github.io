@@ -1,100 +1,112 @@
-"Bhatt":
-  - firstname: ["Gantavya", "G."]
-    url: https://sites.google.com/view/gbhatt/
+"Pollock":
+  - firstname: ["Lori"]
+    url: https://www.eecis.udel.edu/~pollock/
 
-"Cao":
-  - firstname: ["Qingqing", "Q."]
-    url: https://awk.ai/
+"Damevski":
+  - firstname: ["Kostadin"]
+    url: https://egr.vcu.edu/directory/kostadin.damevski/
+ 
+"Kumar":
+  - firstname: ["Shaayal"]
+    url: https://www.linkedin.com/in/shaayal-kumar/
 
-"Chen":
-  - firstname: ["Yi", "Y."]
-    url: https://www.deepneural.network/
+# "Bhatt":
+#   - firstname: ["Gantavya", "G."]
+#     url: https://sites.google.com/view/gbhatt/
+
+# "Cao":
+#   - firstname: ["Qingqing", "Q."]
+#     url: https://awk.ai/
+
+# "Chen":
+#   - firstname: ["Yi", "Y."]
+#     url: https://www.deepneural.network/
     
-  - firstname: ["Daiwei", "D."]
-    url: https://chendaiwei-99.github.io/
+#   - firstname: ["Daiwei", "D."]
+#     url: https://chendaiwei-99.github.io/
 
-"Fan":
-  - firstname: ["Alan", "A."]
-    url: https://www.linkedin.com/in/alan-fan/
+# "Fan":
+#   - firstname: ["Alan", "A."]
+#     url: https://www.linkedin.com/in/alan-fan/
 
-"Farhadi":
-  - firstname: ["Ali", "A."]
-    url: https://homes.cs.washington.edu/~ali/
+# "Farhadi":
+#   - firstname: ["Ali", "A."]
+#     url: https://homes.cs.washington.edu/~ali/
 
-"Howard-Snyder":
-  - firstname: ["William", "W."]
-    url: https://williamhowardsnyder.github.io/
+# "Howard-Snyder":
+#   - firstname: ["William", "W."]
+#     url: https://williamhowardsnyder.github.io/
 
-"Jain":
-  - firstname: ["Prateek", "P."]
-    url: http://www.prateekjain.org/
+# "Jain":
+#   - firstname: ["Prateek", "P."]
+#     url: http://www.prateekjain.org/
 
-"Kakade":
-  - firstname: ["Sham", "S."]
-    url: https://sham.seas.harvard.edu/
+# "Kakade":
+#   - firstname: ["Sham", "S."]
+#     url: https://sham.seas.harvard.edu/
 
-"Kim":
-  - firstname: ["Hyo Jin", "H.J."]
-    url: https://www.cs.unc.edu/~hyojin/
+# "Kim":
+#   - firstname: ["Hyo Jin", "H.J."]
+#     url: https://www.cs.unc.edu/~hyojin/
 
-"Korlakai Vinayak":
-  - firstname: ["Ramya", "R."]
-    url: https://ramyakv.github.io/
+# "Korlakai Vinayak":
+#   - firstname: ["Ramya", "R."]
+#     url: https://ramyakv.github.io/
 
-"Kulkarni":
-  - firstname: ["Muralidhar", "M."]
-    url: https://ece.nitk.ac.in/faculty/muralidhar-kulkarni
+# "Kulkarni":
+#   - firstname: ["Muralidhar", "M."]
+#     url: https://ece.nitk.ac.in/faculty/muralidhar-kulkarni
 
-"Kusupati":
-  - firstname: ["Aditya", "A."]
-    url: https://homes.cs.washington.edu/~kusupati/
+# "Kusupati":
+#   - firstname: ["Aditya", "A."]
+#     url: https://homes.cs.washington.edu/~kusupati/
 
-"Parihar":
-  - firstname: ["Rishubh", "R."]
-    url: https://rishubhpar.github.io/
+# "Parihar":
+#   - firstname: ["Rishubh", "R."]
+#     url: https://rishubhpar.github.io/
 
-"Ramanujan": 
-  - firstname: ["Vivek", "V."]
-    url: https://vkramanuj.github.io/
+# "Ramanujan": 
+#   - firstname: ["Vivek", "V."]
+#     url: https://vkramanuj.github.io/
 
-"Ranjit S":
-  - firstname: ["Sharan", "S."]
-    url: https://www.linkedin.com/in/sharan-ranjit/
+# "Ranjit S":
+#   - firstname: ["Sharan", "S."]
+#     url: https://www.linkedin.com/in/sharan-ranjit/
 
-"Sadhu":
-  - firstname: ["Arka", "A."]
-    url: https://theshadow29.github.io/
+# "Sadhu":
+#   - firstname: ["Arka", "A."]
+#     url: https://theshadow29.github.io/
 
-"Sinha":
-  - firstname: ["Aditya", "A."]
-    url: https://adityaasinha28.github.io/
+# "Sinha":
+#   - firstname: ["Aditya", "A."]
+#     url: https://adityaasinha28.github.io/
     
-"Wallingford":
-  - firstname: ["Matthew", "M."]
-    url: https://mattwallingford.github.io/
+# "Wallingford":
+#   - firstname: ["Matthew", "M."]
+#     url: https://mattwallingford.github.io/
 
-"Wang":
-  - firstname: ["Zhi", "Z."]
-    url: https://zwang.org/
+# "Wang":
+#   - firstname: ["Zhi", "Z."]
+#     url: https://zwang.org/
 
-"Lee":
-  - firstname: ["Yong Jae", "Y.J."]
-    url: https://pages.cs.wisc.edu/~yongjaelee/
+# "Lee":
+#   - firstname: ["Yong Jae", "Y.J."]
+#     url: https://pages.cs.wisc.edu/~yongjaelee/
 
-"Li":
-  - firstname: ["Yuliang", "Y."]
-    url: https://oi02lyl.github.io/
-  - firstname: ["Kejie", "K."]
-    url: https://likojack.github.io/kejieli/#/home
+# "Li":
+#   - firstname: ["Yuliang", "Y."]
+#     url: https://oi02lyl.github.io/
+#   - firstname: ["Kejie", "K."]
+#     url: https://likojack.github.io/kejieli/#/home
 
-"Nie":
-  - firstname: ["Zinnia", "Z."]
-    url: https://www.linkedin.com/in/zinnia-nie-468850224/
+# "Nie":
+#   - firstname: ["Zinnia", "Z."]
+#     url: https://www.linkedin.com/in/zinnia-nie-468850224/
 
-"Ramesh":
-  - firstname: ["Mahesh", "M."]
-    url: https://www.linkedin.com/in/mahesh-r-21a4981a4/
+# "Ramesh":
+#   - firstname: ["Mahesh", "M."]
+#     url: https://www.linkedin.com/in/mahesh-r-21a4981a4/
 
-"Yu":
-  - firstname: ["Zhuoran", "Z."]
-    url: https://www.zhuoranyu.com/
+# "Yu":
+#   - firstname: ["Zhuoran", "Z."]
+#     url: https://www.zhuoranyu.com/

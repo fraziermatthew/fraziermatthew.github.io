@@ -113,3 +113,4 @@ Publications page
 Projects page(s)
 
 - add another item to research
+- for the projects page, i know we said no horizontal, but another good example is Leandro A. Bugnon to consider based on his consulting page
