@@ -131,21 +131,26 @@
   <a href="/projects/" class="back-link">← Back to projects</a>
 </p>
 
-<p><strong>Marketing analytics relies on subjective interpretation</strong>—analysts manually surface “insights” from campaign performance with little consistency or repeatability.</p>
+<p><strong>Most marketing insights are not reproducible.<br>
+They depend on who is analyzing the data.</strong></p>
 
-<p>This system formalizes what counts as an insight by pairing deterministic statistical benchmarking with constrained LLM reasoning for scalable, explainable campaign intelligence.</p>
+<p>Analysts manually interpret campaign performance, often producing different conclusions from the same inputs.</p>
+
+<p>This system formalizes what counts as an insight by separating deterministic signal computation from constrained LLM interpretation.</p>
 
 <h2>Overview</h2>
 
-<p>This system addresses the challenge of generating actionable insights from historical marketing campaign data.</p>
+<p>This system generates actionable insights from historical marketing campaign data by using a client’s own performance as the benchmark.</p>
 
-<p class="highlight">Your own campaign history becomes the benchmark—deviations and opportunities surface against what already worked.</p>
+<p class="highlight">Computation owns the signals; the model interprets them—insights remain traceable end to end.</p>
 
-<p>Unlike systems focused on external or competitive data, this framework operates on a client’s own campaign history, identifying meaningful deviations, trends, and opportunities relative to historical performance benchmarks.</p>
+<p>Instead of relying on external comparisons, the system evaluates campaigns relative to historical baselines, surfacing meaningful deviations, trends, and opportunities.</p>
 
-<p>I designed and implemented an end-to-end analytical pipeline that defines, detects, and interprets insights by combining deterministic statistical signals with structured LLM reasoning.</p>
+<p>I designed and implemented an end-to-end analytical pipeline that defines, detects, and interprets insights through deterministic statistical signals paired with structured LLM reasoning.</p>
 
-<p>The result is a system that transforms subjective analytical workflows into a repeatable, scalable process.</p>
+<p>The result is a repeatable system that replaces subjective analysis with consistent, data-grounded outputs.</p>
+
+<hr>
 
 <h2>Role</h2>
 
@@ -185,50 +190,50 @@
 
 <p>I designed a system that formalizes insight generation by combining statistical benchmarking with structured LLM interpretation.</p>
 
-<p class="highlight">Deterministic signals are computed first; the LLM interprets structured JSON—never free-handing the math.</p>
+<p class="highlight">Deterministic signals are computed first; the LLM interprets structured inputs—never performing the analysis itself.</p>
 
 <p>This included:</p>
 
 <ul>
-  <li>Defining what constitutes an <strong>“insight”</strong> by identifying meaningful deviations from historical campaign performance</li>
+  <li>Defining what constitutes an <strong>“insight”</strong> through measurable deviations from historical campaign performance</li>
   <li>Building a benchmarking framework comparing active campaigns against historical medians across key metrics</li>
   <li>Detecting anomalies and statistically significant variations in campaign performance</li>
-  <li>Designing prompt architectures that guide the model to interpret signals within campaign context and marketing objectives</li>
+  <li>Designing prompt architectures that enforce context-aware interpretation aligned with campaign objectives</li>
   <li>Structuring a <strong>stats JSON schema</strong> as the sole contract between computation and interpretation layers</li>
-  <li>Enforcing fully structured outputs to ensure consistency, traceability, and downstream usability</li>
-  <li>Automating weekly pipelines to generate insights for newly completed campaigns</li>
+  <li>Enforcing structured outputs to ensure consistency, traceability, and downstream usability</li>
+  <li>Automating recurring pipelines to generate insights for newly completed campaigns</li>
 </ul>
 
-<p>The system ensures that all reasoning is grounded in precomputed signals, with the LLM restricted to <strong>interpreting rather than deriving</strong> analytical conclusions.</p>
+<p>The system ensures all reasoning is grounded in precomputed signals, with the LLM restricted to <strong>interpretation rather than computation</strong>.</p>
 
 <hr>
 
 <h2>System Design</h2>
 
-<p>The architecture is explicitly designed around separation of concerns:</p>
+<p>The architecture is built around a strict separation of concerns:</p>
 
 <ul>
   <li>
     <p><strong>Computation Layer (SQL)</strong><br>
-Computes all metrics, benchmarks, and comparative signals deterministically and at scale</p>
+Computes all metrics, benchmarks, and comparative signals deterministically</p>
   </li>
   <li>
     <p><strong>Interpretation Layer (LLM)</strong><br>
-Consumes structured JSON inputs and generates narrative insights without performing calculations</p>
+Consumes structured inputs and generates narrative insights without performing calculations</p>
   </li>
 </ul>
+
+<p class="highlight">Reliability comes from structure, not from the model.</p>
 
 <p>This separation enforces:</p>
 
 <ul>
-  <li>elimination of LLM-based numerical reasoning</li>
+  <li>elimination of LLM-driven numerical reasoning</li>
   <li>consistent and reproducible outputs</li>
   <li>controlled variability through prompt constraints</li>
 </ul>
 
-<p>The structured JSON layer enables <strong>human validation, debugging, and observability</strong>, making insight generation transparent and auditable.</p>
-
-<p class="highlight">Computation owns the numbers; the model owns the narrative—outputs stay traceable end to end.</p>
+<p>The structured JSON layer provides <strong>observability, validation, and debuggability</strong>, making insight generation transparent and auditable.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -254,30 +259,24 @@ Consumes structured JSON inputs and generates narrative insights without perform
 
 <h2>Technical Constraints</h2>
 
-<p>A key challenge was balancing automation with explainability.</p>
+<p>A key challenge was replicating human judgment while maintaining consistency and explainability.</p>
 
-<p>Insight generation is inherently subjective, relying on human intuition to determine what is meaningful versus noise. Replicating this required careful constraint of model behavior.</p>
+<p>Insight generation is inherently subjective, requiring systems to distinguish meaningful signals from noise.</p>
 
-<p>Challenges included:</p>
-
-<ul>
-  <li>Ensuring outputs remain explainable to analysts and clients</li>
-  <li>Preventing over-interpretation of weak or statistically insignificant signals</li>
-  <li>Aligning generated insights with campaign objectives rather than generic observations</li>
-</ul>
+<p>Early iterations revealed risks of over-interpretation and inconsistent reasoning when model outputs were insufficiently constrained.</p>
 
 <p>To address this:</p>
 
 <ul>
-  <li>Statistical signals were <strong>pre-filtered before reaching the model</strong>
+  <li>Statistical signals were <strong>filtered and validated before reaching the model</strong>
 </li>
-  <li>Prompts were structured to enforce <strong>context-aware reasoning</strong>
+  <li>Prompts were structured to enforce <strong>context-aware interpretation tied to campaign objectives</strong>
 </li>
-  <li>Outputs were constrained to reflect <strong>interpretable relationships between metrics</strong>
+  <li>Outputs were constrained to reflect <strong>explicit relationships between metrics</strong>
 </li>
 </ul>
 
-<p>This ensured that insights remained both actionable and defensible in real-world use.</p>
+<p>This ensured insights remained both actionable and defensible in production use.</p>
 
 <hr>
 
@@ -286,30 +285,30 @@ Consumes structured JSON inputs and generates narrative insights without perform
 <p>The system is built around:</p>
 
 <ul>
-  <li>Formalizing subjective analytical processes into deterministic frameworks</li>
+  <li>Formalizing subjective analytical workflows into deterministic frameworks</li>
   <li>Statistical benchmarking and anomaly detection across campaign histories</li>
-  <li>Structured LLM reasoning constrained by business and analytical context</li>
-  <li>Automated insight generation pipelines for recurring campaign cycles</li>
+  <li>Structured LLM reasoning constrained by analytical and business context</li>
+  <li>Automated pipelines for recurring insight generation</li>
 </ul>
 
-<p>It represents a shift from manual interpretation toward <strong>scalable, system-driven analytics</strong>.</p>
+<p>At its core, the system demonstrates how <strong>controlled reasoning over structured data</strong> enables scalable, consistent analytics.</p>
 
 <hr>
 
 <h2>Outcome</h2>
 
-<p>The system reduced the need for manual post-campaign analysis by automatically generating insights aligned with campaign objectives.</p>
+<p>The system replaces manual post-campaign analysis with automated, structured insight generation.</p>
 
-<p>Impact included:</p>
+<p>Instead of relying on individual interpretation, teams receive consistent outputs grounded in historical performance.</p>
 
 <ul>
-  <li>Reduced analyst time required to identify campaign insights</li>
+  <li>Reduced analyst effort required to identify campaign insights</li>
   <li>Improved consistency in how insights are defined and communicated</li>
   <li>Enabled scalable insight generation across recurring campaign cycles</li>
-  <li>Received strong internal validation, with analytics leadership endorsing output quality</li>
+  <li>Validated internally, with analytics leadership endorsing output quality</li>
 </ul>
 
-<p>The system established a foundation for scaling automated insight generation across clients and marketing objectives.</p>
+<p>The result is a foundation for <strong>scalable, data-grounded insight generation across clients and marketing workflows</strong>.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
