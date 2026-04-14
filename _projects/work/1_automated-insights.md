@@ -90,9 +90,9 @@ The architecture is built around a strict separation of concerns:
 
 This separation enforces:
 
-- elimination of LLM-driven numerical reasoning  
-- consistent and reproducible outputs  
-- controlled variability through prompt constraints  
+- Elimination of LLM-driven numerical reasoning  
+- Consistent and reproducible outputs  
+- Controlled variability through prompt constraints  
 
 The structured JSON layer provides **observability, validation, and debuggability**, making insight generation transparent and auditable.
 

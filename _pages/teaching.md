@@ -14,9 +14,9 @@ page_class: teaching-page section-page
 I teach computer science by training how engineers think — through structured problem-solving, debugging intuition, and applied reasoning in real-world systems.
 
 My instruction emphasizes:
-- breaking complex systems into clear **reasoning steps**
-- connecting theory to **production engineering workflows**
-- guiding students toward **independent problem-solving** over rote memorization
+- Breaking complex systems into clear **reasoning steps**
+- Connecting theory to **production engineering workflows**
+- Guiding students toward **independent problem-solving** over rote memorization
 
 ## Courses Taught
 
@@ -74,14 +74,14 @@ My instruction emphasizes:
 ## Responsibilities
 
 **Instructor**
-- designed and delivered lectures, assignments, and course materials
-- led classroom instruction and course direction
-- developed original projects and evaluation frameworks
+- Designed and delivered lectures, assignments, and course materials
+- Led classroom instruction and course direction
+- Developed original projects and evaluation frameworks
 
 **Teaching Assistant**
-- led lab sessions and reinforced lecture material
-- mentored students in programming and data structures
-- provided detailed feedback through grading and office hours
+- Led lab sessions and reinforced lecture material
+- Mentored students in programming and data structures
+- Provided detailed feedback through grading and office hours
 
 ## Research Experience
 
