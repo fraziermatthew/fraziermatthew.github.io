@@ -21,7 +21,7 @@
           venue: "ICSE"
           pub_key: "10.1145/3510455.3512778"
 
-- title: Academic Experience
+- title: Research Experience
   type: time_table
   contents:
     - title: Ph.D. Researcher
@@ -38,6 +38,24 @@
       year: 2016 - 2017
       description:
         - <strong>Developed</strong> a computer vision system for parking availability detection using Python and OpenCV, applying image processing techniques to real-world sensing problems
+
+- title: Education
+  type: time_table
+  education_section: true
+  contents:
+    - title: Ph.D., Computer and Information Sciences
+      institution: University of Delaware
+      year: 2018 - 2024
+      description:
+        - Advised by Lori Pollock
+        - '**Research focus:** conversational agents, LLM-guided reasoning, and AI-supported learning systems in computer science education'
+        - '**Methods:** Mixed-methods research, empirical evaluation, survey design (Qualtrics), qualitative analysis, experimental design, usability testing, and user interviews'
+    - title: M.Sc., Computer Science (Cum Laude)
+      institution: West Chester University of Pennsylvania
+      year: 2016 - 2017
+    - title: B.Sc., Marketing
+      institution: West Chester University of Pennsylvania
+      year: 2010
 
 - title: Teaching Experience
   type: time_table
@@ -140,21 +158,3 @@
           - "Git, Docker, Kubernetes"
           - "Sigma, HighCharts"
           - "TTD, Google Ads, Meta"
-
-- title: Education
-  type: time_table
-  education_section: true
-  contents:
-    - title: Ph.D., Computer and Information Sciences
-      institution: University of Delaware
-      year: 2018 - 2024
-      description:
-        - Advised by Lori Pollock
-        - '**Research focus:** conversational agents, LLM-guided reasoning, and AI-supported learning systems in computer science education'
-        - '**Methods:** Mixed-methods research, empirical evaluation, survey design (Qualtrics), qualitative analysis, experimental design, usability testing, and user interviews'
-    - title: M.Sc., Computer Science (Cum Laude)
-      institution: West Chester University of Pennsylvania
-      year: 2016 - 2017
-    - title: B.Sc., Marketing
-      institution: West Chester University of Pennsylvania
-      year: 2010
