@@ -1597,12 +1597,16 @@ a.inline-link:hover {
 .post.teaching-page .teaching-approach-with-media {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(200px, min(340px, 44%));
+  grid-template-rows: auto auto;
   column-gap: 1.35rem;
+  row-gap: 1rem;
   align-items: start;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 .post.teaching-page .teaching-approach-with-media .teaching-approach-text {
+  grid-column: 1;
+  grid-row: 1;
   min-width: 0;
 }
 .post.teaching-page .teaching-approach-with-media .teaching-approach-text p {
@@ -1622,6 +1626,8 @@ a.inline-link:hover {
   line-height: 1.45;
 }
 .post.teaching-page .teaching-approach-with-media .teaching-approach-figure {
+  grid-column: 2;
+  grid-row: 1/-1;
   margin: 0;
   width: 100%;
 }
@@ -1636,17 +1642,42 @@ a.inline-link:hover {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+.post.teaching-page .teaching-approach-with-media .teaching-courses-in-poster-grid {
+  grid-column: 1;
+  grid-row: 2;
+  min-width: 0;
+}
+.post.teaching-page .teaching-approach-with-media .teaching-courses-in-poster-grid h2#courses-taught {
+  margin-top: 0.35rem;
+  margin-bottom: 1rem;
+}
 @media (max-width: 576px) {
   .post.teaching-page .teaching-approach-with-media {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+  .post.teaching-page .teaching-approach-with-media .teaching-approach-text {
+    grid-column: 1;
+    grid-row: auto;
+    order: 2;
   }
   .post.teaching-page .teaching-approach-with-media .teaching-approach-figure {
+    grid-column: 1;
+    grid-row: auto;
     order: -1;
     max-width: 360px;
     margin: 0 auto 0.75rem;
   }
   .post.teaching-page .teaching-approach-with-media .teaching-approach-figure img {
     max-height: none;
+  }
+  .post.teaching-page .teaching-approach-with-media .teaching-courses-in-poster-grid {
+    grid-column: 1;
+    grid-row: auto;
+    order: 3;
+  }
+  .post.teaching-page .teaching-approach-with-media .teaching-courses-in-poster-grid h2#courses-taught {
+    margin-top: 1.75rem;
   }
 }
 .post.teaching-page .teaching-approach-caption {
@@ -1655,9 +1686,6 @@ a.inline-link:hover {
   margin-top: 0.5rem;
   line-height: 1.35;
   text-align: center;
-}
-.post.teaching-page article .teaching-approach-with-media ~ h2#courses-taught {
-  margin-top: 1rem !important;
 }
 html[data-theme=dark] .post.teaching-page .teaching-approach-figure img {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.42);
