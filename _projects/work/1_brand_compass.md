@@ -1,88 +1,109 @@
 ---
 layout: page
-title: "CWE Agent — Multi-Agent System for Vulnerability Injection and Evaluation"
-description: Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities to generate structured security learning outcomes
-img: assets/img/cwe.png
+title: "Brand Compass — Structured LLM Reasoning System for Brand Intelligence"
+description: Structured reasoning system that converts hierarchical brand analytics into consistent, decision-ready narratives
 importance: 1
-category: research
-permalink: /projects/research/cwe-agent/
+img: assets/img/bc2.png
+category: work
+permalink: /projects/work/brand-compass/
 ---
 
 <p style="margin-top: -10px; margin-bottom: 20px;">
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-Security education relies heavily on static examples that fail to reflect how vulnerabilities emerge in real-world codebases.
+Marketing teams lack a unified way to understand how a brand truly compares against competitors using fragmented public and proprietary data.
 
-In practice, weaknesses appear as side effects within existing systems and must be identified through contextual reasoning rather than pattern recognition alone. This creates a gap between how vulnerabilities are taught and how they are encountered in production environments.
+Brand Compass solves this by combining multi-source market intelligence into a deterministic scoring system, then layering structured LLM reasoning to generate consistent, decision-ready insights.
 
-This system addresses that gap by simulating vulnerability emergence through a structured, evaluation-driven multi-agent pipeline that generates, scores, and selects realistic weaknesses within student code.
+<h2 style="color: #8c4720; margin-top: 40px;">Overview</h2>
 
----
+Brand Compass is a competitive intelligence system that models how a company performs relative to its industry and direct competitors using publicly available data (YouGov, Meltwater, Vivvix, Google Insights) alongside client-provided inputs.
 
-**Role:** Lead Engineer (Agent Architecture & LLM Evaluation Design)  
-**Scope:** Multi-agent system design, prompt architecture, evaluation framework, orchestration pipeline  
-**Focus:** Constraining LLM generation through structured evaluation and selection
+The system aggregates this data into a deterministic scoring framework across key dimensions such as market dynamics, mental availability, physical availability, and brand perception.
 
----
+I led the development of the LLM reasoning layer that interprets these structured signals and generates aligned, context-aware insights directly within the analytics dashboard.
 
-I designed and implemented a coordinated multi-agent system using CrewAI that transforms vulnerability generation into a controlled reasoning process rather than a single-pass output.
+<h2 style="color: #8c4720; margin-top: 40px;">Role</h2>
+
+**Lead Engineer (LLM Systems & Prompt Architecture)**  
+- Designed structured prompt frameworks governing LLM reasoning behavior  
+- Implemented the reasoning layer integrated into the GOES analytics platform  
+- Owned UI integration of insights alongside chart-level visualizations  
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/brand-scorecard.png" title="Brand Compass Scorecard" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Structured scorecard inputs and LLM-generated outputs operating as a unified analytical system.
+</div>
+
+The system operates on top of a multi-source analytics pipeline combining industry, client, and competitive data, organized into weighted sections spanning **Market Snapshot, Mental Availability, Physical Availability, and Perception**.
 
 ---
 
 <h2 style="color: #8c4720; margin-top: 40px;">What I Built</h2>
 
-I built a multi-agent pipeline where each stage performs a distinct role in generating, evaluating, and selecting high-signal vulnerabilities.
+I designed and implemented a structured LLM reasoning layer that transforms deterministic brand scorecard data into consistent, decision-ready narratives across a competitive analysis dashboard.
 
-This includes:
+This included:
 
-- **CWE Injector Agent** — generates realistic vulnerability variants within high-signal regions of student code, ensuring injections appear naturally within existing logic  
-- **CWE Evaluator Agent** — applies LLM-as-judge scoring across naturalness, complexity, and pedagogical value, preventing low-quality or artificial outputs  
-- **CWE Ranker Agent** — selects the optimal candidate using weighted scoring and comparative reasoning across multiple generated variants  
-- **Learning Outcome Agent** — produces structured assessment questions grounded in code context, vulnerability type, and instructional objectives  
+- Designing **prompt architectures** (ReAct, few-shot, structured CoT) to enforce interpretation grounded in deterministic signals rather than freeform generation  
+- Aligning **chart-level signals with section-level and global summaries**, ensuring consistency across multiple levels of abstraction  
+- Enforcing **hierarchical reasoning**, so insights reflect weighted relationships between market, mindshare, and distribution signals  
+- Constraining model behavior toward **grounded summarization**, preventing unsupported inference or fabricated calculations  
+- Structuring outputs so independently generated insights **reinforce a unified narrative**, rather than behaving as isolated summaries  
+- Integrating LLM-generated insights directly into the GOES UI alongside visualizations using collapsible modal components  
+- Orchestrating large-scale API execution via queue-based Lambda workflows to support concurrent multi-user usage  
 
-All prompts, scoring logic, and evaluation strategies are managed through **Langfuse**, enabling versioning, experimentation, and traceability across the full pipeline.
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.html path="assets/img/cwe5.png" title="CWE Injection Pipeline" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-  Coordinated multi-agent pipeline that generates, evaluates, and selects vulnerabilities to produce structured learning outcomes.
-</div>
+The result is a system where the LLM operates as a **controlled reasoning component**, not a generative endpoint.
 
 ---
 
 <h2 style="color: #8c4720; margin-top: 40px;">System Design</h2>
 
-The architecture is implemented as a staged agentic workflow, where each agent operates on shared context and produces structured outputs consumed by downstream agents.
+The architecture is designed as a structured interpretation layer on top of deterministic analytical inputs.
 
-- **Input Context** → student code, assignment specifications, course materials, and curated CWE mappings  
-- **File Selection Heuristic** → prioritizes high-signal files based on size, structure, and complexity  
-- **Injection Stage** → generates multiple candidate vulnerabilities within realistic code regions  
-- **Evaluation Stage** → scores each candidate using structured LLM-based judgment  
-- **Ranking Stage** → selects the optimal candidate using weighted scoring and comparative reasoning  
-- **Learning Stage** → generates assessment artifacts aligned with course objectives  
+- **Input** → weighted scorecard data composed of metrics, benchmarks, and derived signals  
+- **Processing** → constrained LLM reasoning governed by hierarchical relationships and prompt structure  
+- **Output** → aligned narrative summaries across charts, sections, and the full dashboard  
 
-The system functions as a **coordinated reasoning pipeline**, where generation, evaluation, and selection are tightly coupled rather than executed independently.
+The system enforces **consistency across multiple levels of abstraction**, a core requirement for decision-support systems.
+
+This is achieved by:
+
+- Interpreting **raw metrics and derived scores together**, rather than independently  
+- Generating insights at both **local (chart)** and **global (section)** levels  
+- Enforcing **cross-sectional alignment**, ensuring outputs do not contradict one another  
+
+Unlike generic summarization pipelines, the LLM operates within a **structured analytical workflow**, where input design and constraints determine output quality.
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/bc6.png" title="Hierarchical Scorecard and Narrative Generation System" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Structured analytics pipeline with constrained reasoning producing aligned, multi-level narratives.
+</div>
 
 ---
 
 <h2 style="color: #8c4720; margin-top: 40px;">Technical Constraints</h2>
 
-A key challenge was ensuring that generated vulnerabilities remained both realistic and instructionally valuable.
+A key challenge was controlling LLM behavior when interpreting quantitative data.
 
-Naive generation approaches produced outputs that were either too obvious, syntactically unnatural, or disconnected from the surrounding code context.
+Early iterations revealed that the model introduced hallucinated calculations and rounding errors when exposed to raw inputs. This made direct generation unreliable without additional constraints.
 
 To address this:
 
-- Generation was constrained to **existing code structure**, preventing isolated or artificial insertions  
-- Evaluation was introduced as a **first-class system component**, not a post-processing step  
-- LLM-as-judge scoring enforced quality across multiple dimensions rather than relying on single-pass outputs  
-- Ranking logic ensured that only the most pedagogically valuable and technically realistic candidate was selected  
+- Inputs were **pre-structured into deterministic signals** before reaching the model  
+- Prompts were explicitly designed to **prevent independent numerical reasoning**  
+- Output expectations were constrained to **interpretation rather than computation**  
 
-This shifted the system from a generative pipeline into an **evaluation-driven decision system**, where output quality is determined through structured reasoning rather than raw generation.
+This shifted the system from a generative model to a **controlled reasoning layer operating over structured data**, significantly improving reliability.
 
 ---
 
@@ -90,28 +111,28 @@ This shifted the system from a generative pipeline into an **evaluation-driven d
 
 The system is built around:
 
-- Agentic orchestration using CrewAI for multi-step, coordinated reasoning  
-- LLM-as-judge evaluation patterns for structured scoring and comparative selection  
-- Prompt lifecycle management and observability using Langfuse  
-- Programmatic code transformation for controlled vulnerability injection  
-- Secure software engineering grounded in real-world CWE standards  
+- Structured LLM reasoning over multi-source analytical data  
+- Hierarchical interpretation of weighted business metrics  
+- Cross-panel narrative alignment across multi-view dashboards  
+- Prompt-constrained generation for consistent, decision-ready outputs  
 
-It reflects a design approach centered on **evaluation-driven AI systems**, where generation alone is insufficient without structured scoring and selection.
+It reflects a design approach centered on **controlled reasoning over structured data**, where LLMs function as interpretation layers within production analytics systems.
 
 ---
 
 <h2 style="color: #8c4720; margin-top: 40px;">Outcome</h2>
 
-The system transforms vulnerability injection from a static content generation task into a structured reasoning workflow aligned with real-world software behavior.
+The system enabled analysts and clients to identify competitive gaps and marketing opportunities without manually synthesizing fragmented data sources.
 
-Impact includes:
+Impact included:
 
-- Generation of vulnerabilities that more closely reflect how weaknesses emerge in real codebases  
-- Reduction in low-quality or artificial examples through evaluation-driven selection  
-- Improved alignment between generated vulnerabilities and instructional learning objectives  
-- Creation of a scalable pipeline for producing high-signal security exercises across diverse codebases  
+- Reduced manual cognitive effort required to interpret multi-source market data  
+- Enabled faster identification of advertising opportunities across competitors  
+- Introduced consistent narrative alignment across multiple analytics views  
+- Scaled across multiple users via asynchronous API orchestration  
 
-This system demonstrates a broader pattern for building AI applications that combine **generation, evaluation, and ranking** to produce reliable, domain-specific outputs.
+While early iterations required validation due to LLM limitations, the system established a strong foundation for **data-grounded, AI-assisted competitive analysis in production environments**.
+
 <!-- ---
 layout: page
 title: "Brand Compass — Structured LLM Reasoning System for Brand Intelligence"
