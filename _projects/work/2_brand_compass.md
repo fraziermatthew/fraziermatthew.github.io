@@ -4,7 +4,7 @@ page_class: project-detail
 title: "Brand Compass — Structured LLM Reasoning System for Brand Intelligence"
 description: A production-grade system that transforms fragmented brand data into structured, decision-ready intelligence.
 hero_subdescription: "Eliminates guesswork by enforcing alignment across every metric, view, and insight."
-importance: 1
+importance: 2
 img: assets/img/bc2.png
 category: work
 permalink: /projects/work/brand-compass/
