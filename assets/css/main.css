@@ -2052,6 +2052,13 @@ html[data-theme=dark] .cv .cv-resume-switch-custom-input:checked + .cv-resume-sw
   width: calc(100% + 75px);
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .cv .card .skills-grid.cv-skills-grid--align-badge-column {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
 
 .cv .card .cv-skills-list-group > .cv-skills-list-item {
   margin-bottom: 0;
