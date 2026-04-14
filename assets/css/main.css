@@ -1178,10 +1178,6 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   border-bottom-color: var(--global-theme-color);
 }
 
-body:has(.post.project-detail) .container {
-  max-width: min(1180px, 100vw - 2.5rem);
-}
-
 .post.project-detail .post-header {
   margin-bottom: 1.5rem;
 }
