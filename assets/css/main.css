@@ -1181,6 +1181,30 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 .post.project-detail .post-header {
   margin-bottom: 1.5rem;
 }
+.post.project-detail .post-header .hero-description {
+  font-size: 1.1rem;
+  color: #111827;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 16px;
+  margin-bottom: 0;
+  max-width: 650px;
+  letter-spacing: 0.01em;
+}
+.post.project-detail .post-header .hero-subdescription {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-top: 6px;
+  margin-bottom: 0;
+  max-width: 600px;
+}
+html[data-theme=dark] .post.project-detail .post-header .hero-description {
+  color: var(--global-text-color);
+}
+html[data-theme=dark] .post.project-detail .post-header .hero-subdescription {
+  color: var(--global-text-color-light);
+}
 .post.project-detail .project-detail__nav {
   margin-top: -0.625rem;
   margin-bottom: 1.25rem;
@@ -1188,7 +1212,7 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 .post.project-detail article h2 {
   position: relative;
   color: #8c4720;
-  margin-top: 48px;
+  margin-top: 58px;
   margin-bottom: 12px;
   font-size: 1.6rem;
   font-weight: 700;
