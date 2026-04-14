@@ -65,6 +65,18 @@ done
 - should i have an email icon that would automatically open up an email sent to me for contacting me? example at https://jay-sarkar.github.io/ - or maybe a formal contact page
 - should I have a "show more" button on the home page with more details about my bio? see the Leandro A. Bugnon example https://lbugnon.github.io/
 - add table of contents sticky right side floating
+- for the projects subpages, i have the table of contents. currently, only on hover do i have css changes. during vertical scrolling, these are static. i'm wondering if this should change an highlight the active section that is within the viewport during scroll. meaning when i scroll and am in the System Design section, should the On This Page section have a highlight or indication in the table of contents? this is a subtle detail but helps the user see where they are within the page.
+-  for the projects subpages, within the page content itself, should i add the anchor link icons and make them clickable to copy the full url? this is a common pattern found in documentation. see the attached examples from the github and langfuse documentation. it helps the user pass along that specific page reference. another subtle design detail that might add to the masterpiece level signal of senior engineer design and level of detail or is this overdoing it? i understand that these are not documentation pages but they serve an adjacent purpose and could carry similar meaning.
+- YES > should i post multiple cvs? research, ai, and software engineering? https://ioannismavromatis.com/cv/ https://mchadolias.github.io/cv/
+- update academic resume content
+- would like to implement the links and more features - https://mehrdad-noori.github.io/publications/
+- publications, also i found an example where a person put the logo of the conference next to their entry. i've attached the logos for my conferences so i have access to them. i currently have gifs in there from which were just randomly pulled from the internet. instead of listing the name in the badge, i could list the track where the paper was in. for example, at icse i was in the NIER track (new ideas and emerging research) and at iticse i was in the experience reports and tools track. just a thought. what is the masterpiece level choice here?
+- publications, if i don't use the logo, even if i wanted to show the track for the conference, should i include an info button. see the example. this person has an info button labeled "Awarded". mines is not awarded, but i could repurpose the info button and style it for my needs to show the track.
+- publications, should i label my advisors with a tool tip like this person has, for example. in my papers the last two authors were my advisors
+- publications, should I implement this "X more authors" feature? this will do a typing effect to show the rest of the authors. note that for my papers, this is mostly only my work. at most there was only ever 4 authors on my papers. not many authors
+- publications, should I list workshops that I've attended on either my publications page or within my academic resume? i've attended the CRA-WP workshop. I was not a presenter but I attended. https://cra.org/cra-wp/cra-wp-announces-the-2022-grad_cohorts-dates-and-locations/ and https://cra.org/cra-wp/events/2020-grad-cohort-for-urmd/ 
+- publications, i gave talks and a poster session at icse and i gave a talk at iticse. since these are conferences, should i also list these in their own section or simply include buttons with links to the Google slides under each of these respectively to the files?
+- publications, i gave a poster talk at the university of delaware. it was graduate cohort poster session, not a international conference but still for my school. should i include this in the publications page?
 
 ---
 
@@ -77,9 +89,6 @@ Teaching page
 --- 
 
 Resume page
-
-- YES > should i post multiple cvs? research, ai, and software engineering? https://ioannismavromatis.com/cv/ https://mchadolias.github.io/cv/
-- update academic resume content
 
 - is there another template with a table of contents for the resume or do i keep my custom one - https://sk1y101.github.io/cv/ https://joahannes.github.io/cv/ https://bashirkazimi.github.io/cv/
 - i sort of like this better than the cards: https://laurajul.github.io/cv/ - feels less like a template
@@ -97,12 +106,10 @@ Review home page
 
 Publications page
 
-- would like to implement the links and more features - https://mehrdad-noori.github.io/publications/
 - i found an example where a person highlights specific papers in their publications page, should I do something like this?
-- also i found an example where a person put the logo of the conference next to their entry. i've attached the logos for my conferences so i have access to them. i currently have gifs in there from which were just randomly pulled from the internet. instead of listing the name in the badge, i could list the track where the paper was in. for example, at icse i was in the NIER track (new ideas and emerging research) and at iticse i was in the experience reports and tools track. just a thought. what is the masterpiece level choice here?
-- if i don't use the logo, even if i wanted to show the track for the conference, should i include an info button. see the example. this person has an info button labeled "Awarded". mines is not awarded, but i could repurpose the info button and style it for my needs to show the track.
-- should i label my advisors with a tool tip like this person has, for example. in my papers the last two authors were my advisors
-- should I implement this "X more authors" feature? this will do a typing effect to show the rest of the authors. note that for my papers, this is mostly only my work. at most there was only ever 4 authors on my papers. not many authors
-- should I list workshops that I've attended on either my publications page or within my academic resume? i've attended the CRA-WP workshop. I was not a presenter but I attended. https://cra.org/cra-wp/cra-wp-announces-the-2022-grad_cohorts-dates-and-locations/ and https://cra.org/cra-wp/events/2020-grad-cohort-for-urmd/ 
-- i gave talks and a poster session at icse and i gave a talk at iticse. since these are conferences, should i also list these in their own section or simply include buttons with links to the Google slides under each of these respectively to the files?
-- i gave a poster talk at the university of delaware. it was graduate cohort poster session, not a international conference but still for my school. should i include this in the publications page?
+
+---
+
+Projects page(s)
+
+- add another item to research
