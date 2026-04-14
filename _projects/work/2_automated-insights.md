@@ -3,6 +3,7 @@ layout: page
 page_class: project-detail
 title: "Automated Insights — Deterministic Analytics System with Constrained LLM Interpretation"
 description: Structured analytics system that separates deterministic signal computation from LLM-based interpretation to produce consistent, decision-ready insights
+hero_subdescription: "Built so every insight traces from deterministic signals—never from free-form model guesswork."
 img: assets/img/auto-insights1.png
 importance: 2
 category: work

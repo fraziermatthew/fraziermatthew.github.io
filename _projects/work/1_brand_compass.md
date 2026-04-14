@@ -2,7 +2,8 @@
 layout: page
 page_class: project-detail
 title: "Brand Compass — Structured LLM Reasoning System for Brand Intelligence"
-description: Structured reasoning system that converts hierarchical brand analytics into consistent, decision-ready narratives
+description: A production-grade system that transforms fragmented brand data into structured, decision-ready intelligence.
+hero_subdescription: "Built to convert hierarchical brand analytics into consistent, aligned narratives."
 importance: 1
 img: assets/img/bc2.png
 category: work
@@ -31,7 +32,7 @@ I led the development of the LLM reasoning layer that interprets these structure
 
 <h2>Role</h2>
 
-I led the design and implementation of the LLM reasoning layer, owning both the prompt architecture and its integration into the GOES analytics platform.
+I owned the design and implementation of the LLM reasoning layer, from prompt architecture to production integration.
 
 **Lead Engineer (LLM Systems & Prompt Architecture)**  
 - Designed structured prompt frameworks governing LLM reasoning behavior  
@@ -44,7 +45,7 @@ I led the design and implementation of the LLM reasoning layer, owning both the 
   </div>
 </div>
 <div class="caption">
-  Structured scorecard inputs and LLM-generated outputs operating as a unified analytical system.
+  Example of structured scorecard inputs paired with aligned LLM-generated insights.
 </div>
 
 The system operates on top of a multi-source analytics pipeline combining industry, client, and competitive data, organized into weighted sections spanning **Market Snapshot, Mental Availability, Physical Availability, and Perception**.
