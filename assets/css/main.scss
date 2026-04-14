@@ -78,8 +78,9 @@ $secondary-color: #8c4720; // this is brownish
     position: fixed;
     top: 5.25rem;
     z-index: 5;
-    // Pass through as literal CSS — Dart Sass otherwise simplifies nested calc/max and can emit invalid `right`/`width`.
-    right: unquote("max(0.5rem, calc((100vw - #{$max-content-width}) / 2 - 0.5rem))");
+    // Anchor the *left* edge to the main column’s right edge — using `right` + `width` pulled the box left into the 800px column and overlapped the title.
+    left: unquote("calc((100vw + #{$max-content-width}) / 2 + 0.75rem)");
+    right: auto;
     width: unquote("min(13.75rem, max(5.5rem, calc((100vw - #{$max-content-width}) / 2 - 1.25rem)))");
     max-height: calc(100vh - 6rem);
     overflow-x: visible;
