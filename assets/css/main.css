@@ -1193,7 +1193,8 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     position: fixed;
     top: 5.25rem;
     z-index: 5;
-    right: max(0.5rem, calc((100vw - 800px) / 2 - 0.5rem));
+    left: calc((100vw + 800px) / 2 + 0.75rem);
+    right: auto;
     width: min(13.75rem, max(5.5rem, calc((100vw - 800px) / 2 - 1.25rem)));
     max-height: calc(100vh - 6rem);
     overflow-x: visible;
