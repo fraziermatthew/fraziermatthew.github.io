@@ -25,7 +25,7 @@ page_class: teaching-page section-page
     <img src="{{ '/assets/img/fresh.png' | relative_url }}" alt="Presenting research at poster session" loading="lazy" />
     <figcaption class="teaching-approach-caption">Presenting research at poster session</figcaption>
   </figure>
-</div>
+  <div class="teaching-courses-in-poster-grid" markdown="1">
 
 ## Courses Taught
 
@@ -78,6 +78,9 @@ page_class: teaching-page section-page
 </div>
 <div class="teaching-course-meta">Teaching Assistant · Fall ’17 · Dr. Si Chen</div>
 <div class="teaching-course-signal">(Vulnerability analysis, threat modeling, adversarial thinking)</div>
+</div>
+
+  </div>
 </div>
 
 ## Responsibilities
