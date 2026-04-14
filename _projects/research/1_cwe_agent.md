@@ -67,7 +67,7 @@ All prompts, scoring logic, and evaluation workflows are managed through **Langf
   </div>
 </div>
 <div class="caption">
-  Coordinated multi-agent pipeline for generating, evaluating, and selecting vulnerabilities to produce structured learning outcomes.
+  Sequential multi-agent pipeline for generating and evaluating vulnerabilities to produce structured learning outcomes.
 </div>
 
 ---
