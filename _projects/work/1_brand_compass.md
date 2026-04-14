@@ -15,7 +15,7 @@ permalink: /projects/work/brand-compass/
 
 **Marketing teams lack a unified way to understand how a brand truly compares against competitors** using fragmented public and proprietary data.
 
-Without a clear benchmark, identifying where to invest marketing spend becomes guesswork.
+Without a clear benchmark, marketing decisions degrade into guesswork.
 
 Brand Compass combines multi-source market intelligence into a deterministic scoring system—then layers structured LLM reasoning to produce consistent, decision-ready insights.
 
@@ -30,6 +30,8 @@ The system aggregates this data into a deterministic scoring framework across ke
 I led the development of the LLM reasoning layer that interprets these structured signals and generates aligned, context-aware insights directly within the analytics dashboard.
 
 <h2>Role</h2>
+
+I led the design and implementation of the LLM reasoning layer, owning both the prompt architecture and its integration into the GOES analytics platform.
 
 **Lead Engineer (LLM Systems & Prompt Architecture)**  
 - Designed structured prompt frameworks governing LLM reasoning behavior  
@@ -87,7 +89,7 @@ This is achieved by:
 - Generating insights at both **local (chart)** and **global (section)** levels  
 - Enforcing **cross-sectional alignment**, ensuring outputs do not contradict one another  
 
-Unlike generic summarization pipelines, the LLM operates within a **structured analytical workflow**, where input design and constraints determine output quality.
+Unlike generic summarization pipelines, the LLM operates within a **structured analytical workflow**, where input design and constraints determine output quality. This is surfaced directly in the dashboard as structured scorecards and AI-generated insights:
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -131,7 +133,7 @@ It reflects a design approach centered on **controlled reasoning over structured
 
 <h2>Outcome</h2>
 
-The system enabled analysts and clients to identify competitive gaps and marketing opportunities without manually synthesizing fragmented data sources.
+This system replaces manual, subjective insight generation with a scalable, deterministic framework.
 
 Impact included:
 
