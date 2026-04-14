@@ -1241,7 +1241,6 @@ html[data-theme=dark] .post.project-detail article h2::after {
   margin: 28px 0;
   color: #1a1a1a;
   line-height: 1.5;
-  border-left: 3px solid #8c4720;
   padding-left: 14px;
 }
 html[data-theme=dark] .post.project-detail article .highlight {
