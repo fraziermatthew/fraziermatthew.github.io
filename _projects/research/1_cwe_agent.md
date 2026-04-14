@@ -77,10 +77,10 @@ All prompts, scoring logic, and evaluation workflows are managed through **Langf
 The architecture is implemented as a staged agentic workflow with explicit separation between generation, evaluation, and selection.
 
 - **Input Context** → student code, assignment specifications, course materials, and curated CWE mappings  
-- **Injection Stage** → generation of multiple vulnerability candidates  
-- **Evaluation Stage** → scoring using defined pedagogical and technical criteria  
-- **Ranking Stage** → selection of the optimal candidate through weighted comparison  
-- **Learning Stage** → generation of structured educational artifacts aligned with course objectives  
+- **Injection Agent** → generation of multiple vulnerability candidates  
+- **Evaluation Agent** → scoring using defined pedagogical and technical criteria  
+- **Ranking Agent** → selection of the optimal candidate through weighted comparison  
+- **Learning Agent** → generation of structured educational artifacts aligned with course objectives  
 
 <p class="highlight">Evaluation is the control mechanism—generation is only the first step.</p>
 
