@@ -159,7 +159,7 @@ $publication-highlight-bg: rgba(140, 71, 32, 0.04);
 
 .publications {
   // Space after the whole publications block (before the next page paragraph, etc.)
-  margin-bottom: 2.25rem;
+  margin-bottom: 2rem;
 
   ol.bibliography > li {
     margin-bottom: 1.35rem;
@@ -168,7 +168,7 @@ $publication-highlight-bg: rgba(140, 71, 32, 0.04);
   .publication-entry--highlight {
     border-left: 3px solid $publication-highlight-accent;
     background: $publication-highlight-bg;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     padding: 1.5rem 1.75rem;
     box-sizing: border-box;
@@ -539,6 +539,48 @@ a.inline-link:hover {
   li {
     margin-bottom: 0.22rem;
     line-height: 1.5;
+  }
+
+  // Approach + floated poster (see _pages/teaching2.md): H2 full width; image right, text wraps on the left.
+  .teaching-approach-with-media {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .teaching-approach-figure {
+    float: right;
+    width: min(340px, 46%);
+    margin: 0 0 1rem 1.35rem;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 576px) {
+      float: none;
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto 1.25rem;
+    }
+  }
+
+  .teaching-approach-caption {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-top: 0.5rem;
+    line-height: 1.35;
+    text-align: center;
+  }
+
+  html[data-theme='dark'] & .teaching-approach-figure img {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.42);
   }
 
   // course blocks
