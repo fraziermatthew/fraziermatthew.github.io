@@ -123,6 +123,7 @@ $secondary-color: #8c4720; // this is brownish
 .project-detail-toc__list a {
   display: block;
   font-size: 0.875rem;
+  font-weight: 400;
   color: var(--global-text-color);
   text-decoration: none !important;
   border-left: 2px solid transparent;
@@ -132,10 +133,22 @@ $secondary-color: #8c4720; // this is brownish
   padding-bottom: 0.15rem;
   transition:
     color 0.15s ease,
-    border-color 0.15s ease;
+    border-color 0.15s ease,
+    font-weight 0.12s ease;
 }
 
 .project-detail-toc__list a:hover {
+  color: var(--global-theme-color);
+  border-left-color: var(--global-theme-color);
+}
+
+.project-detail-toc__list a.is-active {
+  color: var(--global-theme-color);
+  border-left-color: var(--global-theme-color);
+  font-weight: 500;
+}
+
+.project-detail-toc__list a.is-active:hover {
   color: var(--global-theme-color);
   border-left-color: var(--global-theme-color);
 }

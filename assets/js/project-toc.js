@@ -35,6 +35,8 @@
   var ul = document.createElement('ul');
   ul.className = 'project-detail-toc__list';
 
+  var linksById = {};
+
   Array.prototype.forEach.call(headings, function (h2) {
     if (!h2.id) {
       h2.id = uniqueId(h2.textContent || 'section');
@@ -43,9 +45,51 @@
     var a = document.createElement('a');
     a.href = '#' + h2.id;
     a.textContent = h2.textContent.trim();
+    linksById[h2.id] = a;
     li.appendChild(a);
     ul.appendChild(li);
   });
 
   tocNav.appendChild(ul);
+
+  function scrollSpyThresholdPx() {
+    var nav = document.querySelector('.navbar');
+    var h = nav ? nav.offsetHeight : 56;
+    return h + 16;
+  }
+
+  var spyTicking = false;
+  function updateScrollSpy() {
+    spyTicking = false;
+    var threshold = scrollSpyThresholdPx();
+    var active = headings[0];
+    for (var i = 0; i < headings.length; i++) {
+      var el = headings[i];
+      if (el.getBoundingClientRect().top <= threshold) {
+        active = el;
+      }
+    }
+    var activeId = active.id;
+    Object.keys(linksById).forEach(function (id) {
+      var link = linksById[id];
+      if (id === activeId) {
+        link.classList.add('is-active');
+        link.setAttribute('aria-current', 'location');
+      } else {
+        link.classList.remove('is-active');
+        link.removeAttribute('aria-current');
+      }
+    });
+  }
+
+  function requestScrollSpy() {
+    if (!spyTicking) {
+      spyTicking = true;
+      requestAnimationFrame(updateScrollSpy);
+    }
+  }
+
+  window.addEventListener('scroll', requestScrollSpy, { passive: true });
+  window.addEventListener('resize', requestScrollSpy, { passive: true });
+  updateScrollSpy();
 })();
