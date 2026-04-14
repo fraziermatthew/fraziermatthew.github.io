@@ -62,11 +62,6 @@ $secondary-color: #8c4720; // this is brownish
   }
 }
 
-// Project detail pages: wider main container so the article + TOC read as a true two-column layout (right rail), not a single narrow column.
-body:has(.post.project-detail) .container {
-  max-width: min(1180px, calc(100vw - 2.5rem));
-}
-
 // Individual project write-ups (_projects/** — `page_class: project-detail` in front matter)
 .post.project-detail {
   .post-header {
