@@ -77,6 +77,10 @@ done
 - publications, should I list workshops that I've attended on either my publications page or within my academic resume? i've attended the CRA-WP workshop. I was not a presenter but I attended. https://cra.org/cra-wp/cra-wp-announces-the-2022-grad_cohorts-dates-and-locations/ and https://cra.org/cra-wp/events/2020-grad-cohort-for-urmd/ 
 - publications, i gave talks and a poster session at icse and i gave a talk at iticse. since these are conferences, should i also list these in their own section or simply include buttons with links to the Google slides under each of these respectively to the files?
 - publications, i gave a poster talk at the university of delaware. it was graduate cohort poster session, not a international conference but still for my school. should i include this in the publications page?
+1.	Remove resume card borders
+2.	Highlight ICSE paper
+3.	Add slides/poster links
+4.	Add 1 strong CWE visual
 
 ---
 
