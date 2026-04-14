@@ -1281,6 +1281,11 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 .publications ol.bibliography div.abstract.hidden.open {
   border: none !important;
 }
+.publications.publications--aligned-cards .publication-entry:not(.publication-entry--highlight) {
+  padding-left: calc(3px + 1.75rem);
+  padding-right: 1.75rem;
+  box-sizing: border-box;
+}
 
 html[data-theme=dark] .publications .publication-entry--highlight {
   background: rgba(200, 158, 117, 0.1);
