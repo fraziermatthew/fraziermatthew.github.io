@@ -155,7 +155,7 @@ $secondary-color: #8c4720; // this is brownish
 
 // Featured publication rows — `highlight={true}` in `_bibliography/*.bib` (template: _layouts/bib.html).
 $publication-highlight-accent: #8c4720;
-$publication-highlight-bg: rgba(140, 71, 32, 0.06);
+$publication-highlight-bg: rgba(140, 71, 32, 0.04);
 
 .publications {
   ol.bibliography > li {
