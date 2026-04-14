@@ -875,9 +875,18 @@ html[data-theme='dark'] .cv .cv-resume-switch-custom-input:checked + .cv-resume-
   font-weight: 500;
 }
 
+// Year badge column: inline `width: 75px` is ignored at md+ because `.col-md-2` sets flex-basis/max-width to 16.67% (~121px in a card).
+// Lock to 75px everywhere so it matches the badge min-width and skills-grid bleed math.
+.cv .card .list-group-item > .row > .cv-year-badge-col {
+  flex: 0 0 75px;
+  width: 75px;
+  min-width: 75px;
+  max-width: 75px;
+}
+
 // Technical Systems & Capabilities — skills_grid (see _includes/cv/skills_grid.html)
-// Same list-group-item + row + [col-2 75px | col-10] as time_table; grid is in col-10 then shifted left so it lines up with the badge column.
-$cv-skills-badge-col-width: 75px; // inline width on year badge column in time_table.html
+// Same list-group-item + row + [col-2 75px | col-10] as time_table; grid is in col-10 then shifted left to the badge column.
+$cv-skills-badge-col-width: 75px;
 
 .cv .card .cv-skills-main .item.cv-skills-item {
   max-width: none;
