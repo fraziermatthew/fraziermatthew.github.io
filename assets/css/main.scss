@@ -158,6 +158,9 @@ $publication-highlight-accent: #8c4720;
 $publication-highlight-bg: rgba(140, 71, 32, 0.04);
 
 .publications {
+  // Space after the whole publications block (before the next page paragraph, etc.)
+  margin-bottom: 2.25rem;
+
   ol.bibliography > li {
     margin-bottom: 1.35rem;
   }
@@ -170,11 +173,17 @@ $publication-highlight-bg: rgba(140, 71, 32, 0.04);
     padding: 1.5rem 1.75rem;
     box-sizing: border-box;
   }
+
+  // _base.scss sets `div.abstract.hidden { border: dashed 1px … }` — visible as a line under the buttons; remove for all bibliography rows.
+  ol.bibliography div.abstract.hidden,
+  ol.bibliography div.abstract.hidden.open {
+    border: none !important;
+  }
 }
 
 html[data-theme='dark'] .publications .publication-entry--highlight {
-  background: rgba(140, 71, 32, 0.12);
-  border-left-color: $publication-highlight-accent;
+  background: rgba(200, 158, 117, 0.1);
+  border-left-color: #c89e75;
 }
 
 // Individual project write-ups (_projects/** — `page_class: project-detail` in front matter)
