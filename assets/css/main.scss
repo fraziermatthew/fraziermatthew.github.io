@@ -1129,10 +1129,17 @@ $cv-skills-badge-col-width: 75px; // inline width on year badge column in time_t
 }
 
 // Bleed into the badge column track: col-10 content starts after the 75px column; pull back by that width to match badge inner edge.
+// On narrow viewports, reset bleed — otherwise negative margin pulls the grid outside the card and clips text on the left.
 .cv .card .skills-grid.cv-skills-grid--align-badge-column {
   margin-left: calc(-1 * #{$cv-skills-badge-col-width});
   width: calc(100% + #{$cv-skills-badge-col-width});
   box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 // Single list-group row: avoid extra bottom gap from `.cv .card ul li { margin-bottom }` on the outer li.
