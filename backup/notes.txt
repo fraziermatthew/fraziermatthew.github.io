@@ -1,0 +1,108 @@
+styling example websites
+
+- should i consider a similar nav bar underline on hover as this example - https://carolinacarreira.github.io/outreach/
+- this is just an interesting website design to consider - https://www.cs.columbia.edu/~chen1ru/index.html
+- this is just an overall phenomonal example - https://arampooladian.com/index.html simple minimal and clean
+- this is another clean minimal beautiful site - https://chinmoy-dutta.github.io/
+- this is a clever single page application - https://liamcli.com/#contact
+- another clean design website - https://yoonholee.com/
+- a clean one https://andreaskuster.ch/about
+- interesting design https://jonbarron.info/ https://taidnguyen.github.io/
+- kappa theme - is crimson red really bad? https://daviddmc.github.io/ https://jucheval.github.io/cv/
+- best kappa theme - https://joszuijderwijk.nl/research
+- clean design - https://qingqingchen.info/
+- really cool animating background - https://j1yoo.github.io/
+- interesting home page https://laurajul.github.io/ - also use of different font
+- homepage with a black nav bar background and image on the left instead of right - https://www.silviofanzon.com/
+- interesting single page app idea with anchors - https://kaikaiyao.github.io/
+- left image - https://fanpu.io/
+- light gray background for the theme is a bit nice - https://www.escontrela.me/
+- nice tan background and theme single page app - https://kudhru.github.io/
+- like the use of the quote box here - https://bajinsheng.github.io/
+- cool site - https://physics-morris.github.io/ - nice contact info at the bottom, tech themed, nice contact card under pic
+- should i be using my university logos - https://giuseppeperelli.github.io/
+
+---
+done
+
+- should i show my name is M.Frazier or Matthew Frazier or Matt Frazier? should i include PhD in my name? if so, should it be with periods like Ph.D. or PhD? https://djherron.github.io/
+- should goodway group be a link out to the company website?
+- instead of that long line under my name, should it just be a link to Goodway Group or my research lab , then subsequently where my information previously was, i can list something else or nothing at all? see the Sam Fearn example or Mayank Mittal example
+- should my last name or first name be the bolded one? https://dohaison.github.io/
+- should social links be under by my picture instead? https://zhoji.github.io/
+- should my name just always anchor in the nav bar? this would remove the social links in that spot on the bio page - can include social links elsewhere in the nav - https://www.jedburkat.com/blog/
+- should my homepage image be grayscale?
+- it was recommended against a circle profile image, but what about an oval, or a hexagon?
+- use my real image or cartoonify it? https://aadityaura.github.io/ and do one of those sliding windows between the two? like https://alonkellner.com/
+- typing effect - https://dmitryryumin.github.io/
+- this is cool, particles and typing feature under pic - https://www.tonideleo.com/
+- what about both a bio and a home page? bio is more personal background and interests where as the homepage is the hero landing overall? https://zlatanajanovic.com/bio/
+- the inverted theme where the nav bar is black and the footer is white - interesting flipped theme - https://siddharthsule.com/
+- should the homepage be titled bio, about, home, or something else?
+- should there be any social links at the bottom of the page on any other pages besides my bio page
+- what about adding a small home icon example in the nav - https://jay-sarkar.github.io/ ... another example https://ioannismavromatis.com/projects/
+- should the social links appear on all other pages outside of homepage in the nav bar - see this example https://www.mit.edu/~abobu/service/
+- should i have a contact page? https://johanneshoerner.github.io/contact/ - good contact at the bottom of this page https://j1yoo.github.io/
+- love the use of his quote in this site on the homepage - https://immsrini.github.io/
+- on the homepage, would it be best with no social links or only a few? are the ones i have there now all okay? Mark P. M. Dean example
+
+- should the project tiles be equal sized rectangles? more of an equal grid? https://vud.org/projects/ https://www.zhivotenko.com/projects/
+- should there be a number per column? https://divakar-verma.com/projects/
+- should the categories be in gray or the accent color? what about the line color? now that i changed the border from under the nav bar to 
+- should i change the font for the whole website to match the font of my resume? aventir
+- should these not be grouped by year but instead grouped by category such as theses, articles, journals, conferences etc. https://dongkyu-lee.info/publications/ and then they can just be chronological in all categories
+- should this page be called publications or research? technically speaking all of these publications are for reearch?
+- instead of or in addition to the images next to the publications, should this be a link with a reference to the venue like iticse or icse https://dominikstrb.github.io/publications/
+- should i list my phd thesis/dissertation on my publications page? see the Maruan Al-Shedivat example
+- should the dates be in gray or the accent color? what about the line color?
+- should the nav bar be resume or vitae?
+- refer to the skils section of this cv - https://www.tonideleo.com/cv/
+- should i list references here like this website - https://www.tonideleo.com/cv/
+- should the toc be sticky?
+- looks like you can have a table of contents on multiple pages or maybe he just used the same page type - https://www.byeongsc.com/research/
+- YES > should i post multiple cvs? research, ai, and software engineering? https://ioannismavromatis.com/cv/ https://mchadolias.github.io/cv/
+- should i be using any menu dropdowns for organization or is the nav okay as it is? for example, putting the publications and projects under a research dropdown or something - https://sdaza.com/ https://rodosingh.github.io/ https://mchadolias.github.io/publications/
+- should i have an email icon that would automatically open up an email sent to me for contacting me? example at https://jay-sarkar.github.io/ - or maybe a formal contact page
+- should I have a "show more" button on the home page with more details about my bio? see the Leandro A. Bugnon example https://lbugnon.github.io/
+- add table of contents sticky right side floating
+
+---
+
+Teaching page
+
+- example of sectioned page https://yukimasano.github.io/teaching/
+- detailed teaching page https://qingqingchen.info/teaching/
+- example of sections - https://d-jiao.github.io/teaching/
+
+--- 
+
+Resume page
+
+- YES > should i post multiple cvs? research, ai, and software engineering? https://ioannismavromatis.com/cv/ https://mchadolias.github.io/cv/
+- update academic resume content
+
+- is there another template with a table of contents for the resume or do i keep my custom one - https://sk1y101.github.io/cv/ https://joahannes.github.io/cv/ https://bashirkazimi.github.io/cv/
+- i sort of like this better than the cards: https://laurajul.github.io/cv/ - feels less like a template
+- less of a template - https://hdocmsu.github.io/resume/
+
+---
+
+Review home page
+
+- this is my favorite homepage - https://dineshnatesan.com/ - i found this template... https://github.com/AbstractGeek/ag-folio?tab=readme-ov-file
+- second favorite - https://www.tinkerer.in/
+- great homepage https://ellisbrown.github.io/
+
+---
+
+Publications page
+
+- would like to implement the links and more features - https://mehrdad-noori.github.io/publications/
+- i found an example where a person highlights specific papers in their publications page, should I do something like this?
+- also i found an example where a person put the logo of the conference next to their entry. i've attached the logos for my conferences so i have access to them. i currently have gifs in there from which were just randomly pulled from the internet. instead of listing the name in the badge, i could list the track where the paper was in. for example, at icse i was in the NIER track (new ideas and emerging research) and at iticse i was in the experience reports and tools track. just a thought. what is the masterpiece level choice here?
+- if i don't use the logo, even if i wanted to show the track for the conference, should i include an info button. see the example. this person has an info button labeled "Awarded". mines is not awarded, but i could repurpose the info button and style it for my needs to show the track.
+- should i label my advisors with a tool tip like this person has, for example. in my papers the last two authors were my advisors
+- should I implement this "X more authors" feature? this will do a typing effect to show the rest of the authors. note that for my papers, this is mostly only my work. at most there was only ever 4 authors on my papers. not many authors
+- should I list workshops that I've attended on either my publications page or within my academic resume? i've attended the CRA-WP workshop. I was not a presenter but I attended. https://cra.org/cra-wp/cra-wp-announces-the-2022-grad_cohorts-dates-and-locations/ and https://cra.org/cra-wp/events/2020-grad-cohort-for-urmd/ 
+- i gave talks and a poster session at icse and i gave a talk at iticse. since these are conferences, should i also list these in their own section or simply include buttons with links to the Google slides under each of these respectively to the files?
+- i gave a poster talk at the university of delaware. it was graduate cohort poster session, not a international conference but still for my school. should i include this in the publications page?
