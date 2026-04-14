@@ -13,9 +13,11 @@ permalink: /projects/work/brand-compass/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-**Marketing teams lack a unified way to understand how a brand truly compares against competitors** when intelligence is split across fragmented public and proprietary sources.
+**Marketing teams lack a unified way to understand how a brand truly compares against competitors** using fragmented public and proprietary data.
 
-Brand Compass combines multi-source market intelligence into a deterministic scoring system, then layers structured LLM reasoning to produce consistent, decision-ready insights.
+Without a clear benchmark, identifying where to invest marketing spend becomes guesswork.
+
+Brand Compass combines multi-source market intelligence into a deterministic scoring system—then layers structured LLM reasoning to produce consistent, decision-ready insights.
 
 <h2>Overview</h2>
 
