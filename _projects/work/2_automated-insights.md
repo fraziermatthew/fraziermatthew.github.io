@@ -13,13 +13,15 @@ permalink: /projects/work/automated-insights/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-Marketing analytics relies heavily on subjective interpretation, where analysts manually identify “insights” from campaign performance with limited consistency and repeatability.
+**Marketing analytics relies on subjective interpretation**—analysts manually surface “insights” from campaign performance with little consistency or repeatability.
 
-This system formalizes what constitutes an insight by combining deterministic statistical benchmarking with constrained LLM reasoning, enabling scalable, explainable campaign intelligence.
+This system formalizes what counts as an insight by pairing deterministic statistical benchmarking with constrained LLM reasoning for scalable, explainable campaign intelligence.
 
 <h2>Overview</h2>
 
 This system addresses the challenge of generating actionable insights from historical marketing campaign data.
+
+<p class="highlight">Your own campaign history becomes the benchmark—deviations and opportunities surface against what already worked.</p>
 
 Unlike systems focused on external or competitive data, this framework operates on a client’s own campaign history, identifying meaningful deviations, trends, and opportunities relative to historical performance benchmarks.
 
@@ -52,6 +54,8 @@ The system operates as a layered analytical pipeline where structured statistica
 
 I designed a system that formalizes insight generation by combining statistical benchmarking with structured LLM interpretation.
 
+<p class="highlight">Deterministic signals are computed first; the LLM interprets structured JSON—never free-handing the math.</p>
+
 This included:
 
 - Defining what constitutes an **“insight”** by identifying meaningful deviations from historical campaign performance  
@@ -83,6 +87,8 @@ This separation enforces:
 - controlled variability through prompt constraints  
 
 The structured JSON layer enables **human validation, debugging, and observability**, making insight generation transparent and auditable.
+
+<p class="highlight">Computation owns the numbers; the model owns the narrative—outputs stay traceable end to end.</p>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">

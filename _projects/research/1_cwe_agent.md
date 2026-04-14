@@ -13,13 +13,15 @@ permalink: /projects/research/cwe-agent/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-Security education relies heavily on static examples, making it difficult for students to understand how vulnerabilities emerge in real code.
+**Security education leans on static examples**, so students rarely see how vulnerabilities emerge in real code.
 
-This system introduces a multi-agent pipeline that injects, evaluates, and ranks vulnerabilities directly within student-submitted code, generating personalized, context-aware learning experiences.
+This system injects, evaluates, and ranks vulnerabilities directly within student-submitted code—yielding personalized, context-aware learning grounded in each student’s own implementation.
 
 <h2>Overview</h2>
 
 Traditional approaches to teaching secure coding rely on isolated examples that fail to reflect how vulnerabilities appear in real systems.
+
+<p class="highlight">Abstract CWE concepts land in the exact lines students wrote—not a toy repo.</p>
 
 I designed and implemented an end-to-end multi-agent pipeline that injects realistic vulnerabilities into student code, evaluates their educational value, and generates structured learning artifacts tailored to the student’s own implementation.
 
@@ -38,6 +40,8 @@ The system transforms abstract security concepts into **contextualized learning 
 <h2>What I Built</h2>
 
 I developed a multi-agent system that simulates the lifecycle of vulnerability discovery and analysis within student code.
+
+<p class="highlight">This pipeline turns live student code into personalized, evaluation-driven security exercises—not canned examples.</p>
 
 This includes:
 
@@ -72,6 +76,8 @@ The architecture is implemented as a staged agentic workflow, where each agent o
 Each stage produces structured outputs that feed into the next, enabling reproducibility and systematic evaluation.
 
 The system behaves as a **coordinated reasoning pipeline**, where generation, evaluation, and selection are tightly coupled rather than executed independently.
+
+<p class="highlight">Every handoff is structured—so experiments stay reproducible and traceable in Langfuse.</p>
 
 ---
 

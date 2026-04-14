@@ -13,13 +13,15 @@ permalink: /projects/work/brand-compass/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-Marketing teams lack a unified way to understand how a brand truly compares against competitors using fragmented public and proprietary data.
+**Marketing teams lack a unified way to understand how a brand truly compares against competitors** when intelligence is split across fragmented public and proprietary sources.
 
-Brand Compass solves this by combining multi-source market intelligence into a deterministic scoring system, then layering structured LLM reasoning to generate consistent, decision-ready insights.
+Brand Compass combines multi-source market intelligence into a deterministic scoring system, then layers structured LLM reasoning to produce consistent, decision-ready insights.
 
 <h2>Overview</h2>
 
 Brand Compass is a competitive intelligence system that models how a company performs relative to its industry and direct competitors using publicly available data (YouGov, Meltwater, Vivvix, Google Insights) alongside client-provided inputs.
+
+<p class="highlight">Competitive intelligence becomes one coherent story—grounded in scorecards, aligned across every view.</p>
 
 The system aggregates this data into a deterministic scoring framework across key dimensions such as market dynamics, mental availability, physical availability, and brand perception.
 
@@ -49,6 +51,8 @@ The system operates on top of a multi-source analytics pipeline combining indust
 
 I designed and implemented a structured LLM reasoning layer that transforms deterministic brand scorecard data into consistent, decision-ready narratives across a competitive analysis dashboard.
 
+<p class="highlight">This system turns fragmented market data into a consistent, decision-ready narrative layer.</p>
+
 This included:
 
 - Designing **prompt architectures** (ReAct, few-shot, structured CoT) to enforce interpretation grounded in deterministic signals rather than freeform generation  
@@ -66,6 +70,8 @@ The result is a system where the LLM operates as a **controlled reasoning compon
 <h2>System Design</h2>
 
 The architecture is designed as a structured interpretation layer on top of deterministic analytical inputs.
+
+<p class="highlight">The LLM interprets weighted signals—never drifting from the deterministic scorecard underneath.</p>
 
 - **Input** → weighted scorecard data composed of metrics, benchmarks, and derived signals  
 - **Processing** → constrained LLM reasoning governed by hierarchical relationships and prompt structure  
