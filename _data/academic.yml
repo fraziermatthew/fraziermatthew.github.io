@@ -27,7 +27,7 @@
     - title: Ph.D. Researcher
       highlight_role: true
       institution: University of Delaware
-      year: 2018 - 2024
+      year: 2018 — 2024
       description:
         - <strong>Conducted</strong> research on conversational agents and LLM-guided reasoning in computer science education, developing interaction frameworks that guide user reasoning through structured dialogue (RAG, CoT, few-shot), resulting in peer-reviewed publications at ICSE and ITiCSE
         - <strong>Designed and implemented</strong> AI-based learning systems emphasizing Socratic reasoning and guided problem-solving over direct answer generation, contributing to emerging paradigms in AI-assisted education
@@ -35,7 +35,7 @@
 
     - title: Graduate Assistant & Researcher
       institution: West Chester University of Pennsylvania
-      year: 2016 - 2017
+      year: 2016 — 2017
       description:
         - <strong>Developed</strong> a computer vision system for parking availability detection using Python and OpenCV, applying image processing techniques to real-world sensing problems
 
@@ -45,14 +45,14 @@
   contents:
     - title: Ph.D., Computer and Information Sciences
       institution: University of Delaware
-      year: 2018 - 2024
+      year: 2024
       description:
         - Advised by Lori Pollock
         - '**Research focus:** conversational agents, LLM-guided reasoning, and AI-supported learning systems in computer science education'
         - '**Methods:** Mixed-methods research, empirical evaluation, survey design (Qualtrics), qualitative analysis, experimental design, usability testing, and user interviews'
     - title: M.Sc., Computer Science (Cum Laude)
       institution: West Chester University of Pennsylvania
-      year: 2016 - 2017
+      year: 2017
     - title: B.Sc., Marketing
       institution: West Chester University of Pennsylvania
       year: 2010
@@ -62,7 +62,7 @@
   contents:
     - title: Instructor / Teaching Assistant
       institution: University of Delaware
-      year: 2018 - 2024
+      year: 2018 — 2024
       description:
         - <strong>Taught</strong> undergraduate courses (introductory programming, early-stage data structures, and computing ethics), emphasizing debugging, system thinking, and applied problem-solving
         - <strong>Designed</strong> course materials and assignments focused on structured reasoning and algorithmic thinking
@@ -73,7 +73,7 @@
   contents:
     - title: Senior Software Engineer (Data Science, Scaled Media Solutions)
       institution: Goodway Group
-      year: 2021 - Present
+      year: 2021 — Present
       description:
         - <strong>Improved</strong> stability of **RealValue™ (40M+ daily decisions)** by re-architecting validation and error handling, reducing production errors by **90%**
         - <strong>Designed and deployed</strong> distributed data pipelines and ETL systems (Airflow, MWAA, Argo, Redshift, Snowflake, S3) supporting large-scale marketing analytics and multi-source data ingestion
@@ -85,21 +85,21 @@
 
     - title: Senior Technical Operations Engineer (Business Intelligence)
       institution: Goodway Group
-      year: 2018 - 2021
+      year: 2018 — 2021
       description:
         - <strong>Owned</strong> reliability, integrity, and availability of analytics infrastructure (Airflow, Redshift, S3, Tableau) supporting production reporting systems under strict data freshness SLAs
         - <strong>Led</strong> organization-wide incident response, root cause analysis, and postmortem processes, implementing preventative monitoring and reducing recurring data pipeline failures
 
     - title: Principal Campaign Operations Engineer
       institution: Goodway Group
-      year: 2014 - 2018
+      year: 2014 — 2018
       description:
         - <strong>Built</strong> COLT, a web-based automation system for campaign production, reducing creative turnaround time by **~80% (10-12 days to ~2 days)** and enabling scalable execution across multi-location clients (e.g., Chevrolet)
         - <strong>Managed</strong> execution and reporting of large-scale programmatic campaigns across platforms including TTD, Google Ads, YouTube, and Meta
 
     - title: Senior SEO Strategist
       institution: IONOS (1&1 Internet)
-      year: 2012 - 2014
+      year: 2012 — 2014
       description:
         - <strong>Led</strong> SEO and SEM strategy for **300+** websites using A/B testing, keyword analysis, and user behavior analytics (CTR, engagement), improving organic traffic across US, UK, and Canadian markets
 

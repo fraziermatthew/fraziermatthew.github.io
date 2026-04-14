@@ -718,9 +718,9 @@ a.inline-link:hover {
 
 // CV / Resume page
 .cv .card {
-  border-radius: 0px; // no border
+  border-radius: 0px;
   box-shadow: none;
-  border: none;
+  border: none; // no border
   // border-radius: 10px;
   // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
