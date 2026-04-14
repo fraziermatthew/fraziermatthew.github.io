@@ -1263,6 +1263,23 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   border-left-color: var(--global-theme-color);
 }
 
+.publications ol.bibliography > li {
+  margin-bottom: 1.35rem;
+}
+.publications .publication-entry--highlight {
+  border-left: 3px solid #8c4720;
+  background: rgba(140, 71, 32, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1.5rem 1.75rem;
+  box-sizing: border-box;
+}
+
+html[data-theme=dark] .publications .publication-entry--highlight {
+  background: rgba(140, 71, 32, 0.12);
+  border-left-color: #8c4720;
+}
+
 .post.project-detail .post-header {
   margin-bottom: 1.5rem;
 }
