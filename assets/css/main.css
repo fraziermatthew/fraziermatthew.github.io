@@ -1205,11 +1205,68 @@ html[data-theme=dark] .post.project-detail .post-header .hero-description {
 html[data-theme=dark] .post.project-detail .post-header .hero-subdescription {
   color: var(--global-text-color-light);
 }
+.post.project-detail .project-detail-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(11rem, 13.75rem);
+  gap: 2rem 2.5rem;
+  align-items: start;
+}
+@media (max-width: 991.98px) {
+  .post.project-detail .project-detail-body {
+    display: block;
+  }
+  .post.project-detail .project-detail-toc {
+    display: none;
+  }
+}
+.post.project-detail .project-detail-toc__inner {
+  position: sticky;
+  top: 5.25rem;
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+  padding: 0.25rem 0 1rem 1rem;
+  border-left: 1px solid var(--global-divider-color);
+  -webkit-overflow-scrolling: touch;
+}
+.post.project-detail .project-detail-toc__title {
+  margin: 0 0 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+.post.project-detail .project-detail-toc__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.post.project-detail .project-detail-toc__list li {
+  margin: 0 0 0.5rem;
+  line-height: 1.35;
+}
+.post.project-detail .project-detail-toc__list a {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--global-text-color);
+  text-decoration: none !important;
+  border-left: 2px solid transparent;
+  margin-left: -1rem;
+  padding-left: calc(1rem - 2px);
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.post.project-detail .project-detail-toc__list a:hover {
+  color: var(--global-theme-color);
+  border-left-color: var(--global-theme-color);
+}
 .post.project-detail .project-detail__nav {
   margin-top: 1.1rem;
   margin-bottom: 1.6rem;
 }
 .post.project-detail article h2 {
+  scroll-margin-top: 5.5rem;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
