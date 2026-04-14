@@ -3,7 +3,7 @@ layout: page
 page_class: project-detail
 title: "Automated Insights — Deterministic Analytics System with Constrained LLM Interpretation"
 description: Structured analytics system that separates deterministic signal computation from LLM-based interpretation to produce consistent, decision-ready insights
-hero_subdescription: "Built so every insight traces from deterministic signals—never from free-form model guesswork."
+hero_subdescription: "Built so every insight traces to deterministic signals, never to free-form model guesswork."
 img: assets/img/auto-insights1.png
 importance: 1
 category: work
@@ -14,10 +14,10 @@ permalink: /projects/work/automated-insights/
   <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to projects</a>
 </p>
 
-**Most marketing insights are not reproducible.  
+**Most marketing insights are not reproducible.
 They depend on who is analyzing the data.**
 
-Analysts manually interpret campaign performance, often producing different conclusions from the same inputs.
+Analysts often interpret the same campaign performance differently, producing inconsistent conclusions from identical inputs.
 
 This system formalizes what counts as an insight by separating deterministic signal computation from constrained LLM interpretation.
 
@@ -37,11 +37,11 @@ The result is a repeatable system that replaces subjective analysis with consist
 
 <h2>Role</h2>
 
-**Sole Engineer (Analytics Framework + LLM System Design)**  
-- Defined the analytical framework for identifying meaningful insights from campaign data  
-- Designed and implemented SQL-based benchmarking and anomaly detection logic  
-- Developed structured prompt systems to interpret signals within campaign context  
-- Built automated pipelines for recurring insight generation and delivery  
+**Sole Engineer (Analytics Framework + LLM System Design)**
+- Defined the analytical framework for identifying meaningful insights from campaign data
+- Designed and implemented SQL-based benchmarking and anomaly detection logic
+- Developed structured prompt systems to interpret signals within campaign context
+- Built automated pipelines for recurring insight generation and delivery
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
@@ -64,13 +64,13 @@ I designed a system that formalizes insight generation by combining statistical 
 
 This included:
 
-- Defining what constitutes an **“insight”** through measurable deviations from historical campaign performance  
-- Building a benchmarking framework comparing active campaigns against historical medians across key metrics  
-- Detecting anomalies and statistically significant variations in campaign performance  
-- Designing prompt architectures that enforce context-aware interpretation aligned with campaign objectives  
-- Structuring a **stats JSON schema** as the sole contract between computation and interpretation layers  
-- Enforcing structured outputs to ensure consistency, traceability, and downstream usability  
-- Automating recurring pipelines to generate insights for newly completed campaigns  
+- Defining what constitutes an **“insight”** through measurable deviations in historical campaign performance
+- Building a benchmarking framework that compares active campaigns against historical medians across key metrics
+- Detecting anomalies and statistically significant variations in campaign performance
+- Designing prompt architectures that enforce context-aware interpretation aligned with campaign objectives
+- Structuring a **stats JSON schema** as the sole contract between computation and interpretation layers
+- Enforcing structured outputs to ensure consistency, traceability, and downstream usability
+- Automating recurring pipelines to generate insights for newly completed campaigns
 
 The system ensures all reasoning is grounded in precomputed signals, with the LLM restricted to **interpretation rather than computation**.
 
@@ -80,19 +80,19 @@ The system ensures all reasoning is grounded in precomputed signals, with the LL
 
 The architecture is built around a strict separation of concerns:
 
-- **Computation Layer (SQL)**  
-  Computes all metrics, benchmarks, and comparative signals deterministically  
+- **Computation Layer (SQL)**
+  Computes all metrics, benchmarks, and comparative signals deterministically
 
-- **Interpretation Layer (LLM)**  
-  Consumes structured inputs and generates narrative insights without performing calculations  
+- **Interpretation Layer (LLM)**
+  Consumes structured inputs and generates narrative insights without performing calculations
 
 <p class="highlight">Reliability comes from structure, not from the model.</p>
 
 This separation enforces:
 
-- Elimination of LLM-driven numerical reasoning  
-- Consistent and reproducible outputs  
-- Controlled variability through prompt constraints  
+- Elimination of LLM-driven numerical reasoning
+- Consistent and reproducible outputs
+- Controlled variability through prompt constraints
 
 The structured JSON layer provides **observability, validation, and debuggability**, making insight generation transparent and auditable.
 
@@ -117,9 +117,9 @@ Early iterations revealed risks of over-interpretation and inconsistent reasonin
 
 To address this:
 
-- Statistical signals were **filtered and validated before reaching the model**  
-- Prompts were structured to enforce **context-aware interpretation tied to campaign objectives**  
-- Outputs were constrained to reflect **explicit relationships between metrics**  
+- Statistical signals were **filtered and validated before reaching the model**
+- Prompts were structured to enforce **context-aware interpretation tied to campaign objectives**
+- Outputs were constrained to reflect **explicit relationships between metrics**
 
 This ensured insights remained both actionable and defensible in production use.
 
@@ -129,10 +129,10 @@ This ensured insights remained both actionable and defensible in production use.
 
 The system is built around:
 
-- Formalizing subjective analytical workflows into deterministic frameworks  
-- Statistical benchmarking and anomaly detection across campaign histories  
-- Structured LLM reasoning constrained by analytical and business context  
-- Automated pipelines for recurring insight generation  
+- Formalizing subjective analytical workflows into deterministic frameworks
+- Statistical benchmarking and anomaly detection across campaign histories
+- Structured LLM reasoning constrained by analytical and business context
+- Automated pipelines for recurring insight generation
 
 At its core, the system demonstrates how **controlled reasoning over structured data** enables scalable, consistent analytics.
 
@@ -142,14 +142,14 @@ At its core, the system demonstrates how **controlled reasoning over structured 
 
 The system replaces manual post-campaign analysis with automated, structured insight generation.
 
-Instead of relying on individual interpretation, teams receive consistent outputs grounded in historical performance.
+Instead of relying on individual interpretation, teams receive consistent outputs grounded in historical benchmarks.
 
-- Reduced analyst effort required to identify campaign insights  
-- Improved consistency in how insights are defined and communicated  
-- Enabled scalable insight generation across recurring campaign cycles  
-- Validated internally, with analytics leadership endorsing output quality  
+- Reduced analyst effort required to identify campaign insights
+- Improved consistency in how insights are defined and communicated
+- Enabled scalable insight generation across recurring campaign cycles
+- Validated internally, with analytics leadership endorsing output quality
 
-The result is a foundation for **scalable, data-grounded insight generation across clients and marketing workflows**.
+The result is a scalable foundation for **data-grounded insight generation across clients and marketing workflows**.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
