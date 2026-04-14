@@ -1716,6 +1716,7 @@ a.inline-link:hover {
 .cv .card {
   border-radius: 0px;
   box-shadow: none;
+  border: none;
 }
 
 .cv .card .list-group-flush .list-group-item {
