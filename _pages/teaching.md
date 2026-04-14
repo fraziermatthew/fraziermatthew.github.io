@@ -4,7 +4,7 @@ permalink: /education/
 title: education
 heading: Teaching
 description: Teaching experience focused on developing structured reasoning, system thinking, and applied engineering skills.
-nav: false
+nav: true
 nav_order: 5
 page_class: teaching-page section-page
 ---
