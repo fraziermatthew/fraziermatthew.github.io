@@ -619,23 +619,26 @@ a.inline-link:hover {
       }
     }
 
+    // Mobile: stack as Approach (h2, outside grid) → text → image → Courses Taught.
+    // Explicit `order` so the figure is not forced above the copy (avoids image jammed under #approach).
     @media (max-width: 576px) {
       grid-template-columns: 1fr;
       grid-template-rows: none;
+      row-gap: 0;
 
       .teaching-approach-text {
         grid-column: 1;
         grid-row: auto;
-        order: 2;
+        order: 1;
       }
 
       .teaching-approach-figure {
         grid-column: 1;
         grid-row: auto;
-        order: -1;
+        order: 2;
         justify-self: center;
         max-width: 240px;
-        margin: 0 auto 0.75rem;
+        margin: 1rem auto 1rem;
       }
 
       .teaching-approach-figure img {
@@ -652,9 +655,16 @@ a.inline-link:hover {
         order: 3;
 
         h2#courses-taught {
-          margin-top: 1.75rem;
+          margin-top: 0.5rem;
         }
       }
+    }
+  }
+
+  // Extra breathing room between "Approach" and the poster grid on small screens only (desktop unchanged).
+  @media (max-width: 576px) {
+    h2#approach {
+      margin-bottom: 1.35rem;
     }
   }
 
