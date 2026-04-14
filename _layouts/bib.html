@@ -1,6 +1,7 @@
 ---
 ---
 <!-- _layouts/bib.html -->
+      <div class="publication-entry{% if entry.highlight %} publication-entry--highlight{% endif %}">
       <div class="row">
         <div class="col-sm-2{% if entry.preview %} preview{% endif %}{% if entry.abbr %} abbr{% endif %}">
         {%- if entry.abbr -%}
@@ -254,4 +255,5 @@
           </div>
           {%- endif %}
         </div>
+      </div>
       </div>

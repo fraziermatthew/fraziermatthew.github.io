@@ -153,6 +153,30 @@ $secondary-color: #8c4720; // this is brownish
   border-left-color: var(--global-theme-color);
 }
 
+// Featured publication rows — `highlight={true}` in `_bibliography/*.bib` (template: _layouts/bib.html).
+$publication-highlight-accent: #8c4720;
+$publication-highlight-bg: rgba(140, 71, 32, 0.06);
+
+.publications {
+  ol.bibliography > li {
+    margin-bottom: 1.35rem;
+  }
+
+  .publication-entry--highlight {
+    border-left: 3px solid $publication-highlight-accent;
+    background: $publication-highlight-bg;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1.5rem 1.75rem;
+    box-sizing: border-box;
+  }
+}
+
+html[data-theme='dark'] .publications .publication-entry--highlight {
+  background: rgba(140, 71, 32, 0.12);
+  border-left-color: $publication-highlight-accent;
+}
+
 // Individual project write-ups (_projects/** — `page_class: project-detail` in front matter)
 .post.project-detail {
   .post-header {
@@ -886,7 +910,8 @@ html[data-theme='dark'] .cv .card {
     border-color: $secondary-color;
   }
 
-  // Layered focus ring (#c89e75 base, softened)
+  // tertiary color - Layered focus ring (#c89e75 base, softened)
+  // from logo rbg(200,158,117) = #c89e75
   $resume-switch-focus-ring:
     0 0 0 2px rgba(200, 158, 117, 0.55),
     0 0 0 5px rgba(200, 158, 117, 0.18);
