@@ -1,22 +1,26 @@
 <ul class="card-text font-weight-light list-group list-group-flush cv-skills-list-group">
   <li class="list-group-item cv-skills-list-item border-0">
     {%- comment -%}
-      Same outer shell as time_table (list-group-item padding) so horizontal spacing matches other cards.
-      No badge/text row: a 75px + col-10 row would start content in the *second* column (with Ph.D. text).
-      The grid starts at the same x-position as the year badge column — first column of the row layout.
+      Same row/columns as time_table.html (badge col + body col). Grid lives in col-10 for width math;
+      CSS bleeds it left so headings/bullets align with the year badge column, not the Ph.D. text column.
     {%- endcomment -%}
-    <div class="item">
-      <div class="skills-grid">
-        {% for block in entry.contents %}
-          <div class="skill-block">
-            <h4>{{ block.heading }}</h4>
-            <ul>
-              {% for item in block.items %}
-                <li>{% include cv/md_inline.html text=item %}</li>
-              {% endfor %}
-            </ul>
+    <div class="row">
+      <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;" aria-hidden="true">&nbsp;</div>
+      <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0 cv-skills-main">
+        <div class="item cv-skills-item">
+          <div class="skills-grid cv-skills-grid--align-badge-column">
+            {% for block in entry.contents %}
+              <div class="skill-block">
+                <h4>{{ block.heading }}</h4>
+                <ul>
+                  {% for item in block.items %}
+                    <li>{% include cv/md_inline.html text=item %}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
           </div>
-        {% endfor %}
+        </div>
       </div>
     </div>
   </li>

@@ -876,7 +876,13 @@ html[data-theme='dark'] .cv .cv-resume-switch-custom-input:checked + .cv-resume-
 }
 
 // Technical Systems & Capabilities — skills_grid (see _includes/cv/skills_grid.html)
-// list-group-item + .item matches card padding / body width; do not wrap in row + col-10 (that aligns with degree text, not the badge column).
+// Same list-group-item + row + [col-2 75px | col-10] as time_table; grid is in col-10 then shifted left so it lines up with the badge column.
+$cv-skills-badge-col-width: 75px; // inline width on year badge column in time_table.html
+
+.cv .card .cv-skills-main .item.cv-skills-item {
+  max-width: none;
+}
+
 .cv .card .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -888,6 +894,13 @@ html[data-theme='dark'] .cv .cv-resume-switch-custom-input:checked + .cv-resume-
     column-gap: 0;
     row-gap: 1.5rem;
   }
+}
+
+// Bleed into the badge column track: col-10 content starts after the 75px column; pull back by that width to match badge inner edge.
+.cv .card .skills-grid.cv-skills-grid--align-badge-column {
+  margin-left: calc(-1 * #{$cv-skills-badge-col-width});
+  width: calc(100% + #{$cv-skills-badge-col-width});
+  box-sizing: border-box;
 }
 
 // Single list-group row: avoid extra bottom gap from `.cv .card ul li { margin-bottom }` on the outer li.
