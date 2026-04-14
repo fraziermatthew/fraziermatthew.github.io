@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /education
+permalink: /education/
 title: education
 heading: Teaching
 description: Teaching experience focused on developing structured reasoning, system thinking, and applied engineering skills.
