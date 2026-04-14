@@ -4,7 +4,7 @@ permalink: /publications2/
 title: publications
 heading: Publications
 description: >
-  Experimental layout: publication rows use aligned horizontal inset so highlighted and non-highlighted entries share the same x-position for previews and text. Compare with the <a href="/publications/">main Publications page</a>.
+  Research informing the design of production AI systems grounded in structured reasoning and human-centered interaction, with publications at ICSE and ITiCSE.
 nav: false
 nav_order: 99
 page_class: section-page
