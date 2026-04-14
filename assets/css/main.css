@@ -1281,10 +1281,12 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 .publications ol.bibliography div.abstract.hidden.open {
   border: none !important;
 }
-.publications.publications--aligned-cards .publication-entry:not(.publication-entry--highlight) {
-  padding-left: calc(3px + 1.75rem);
-  padding-right: 1.75rem;
-  box-sizing: border-box;
+@media (min-width: 577px) {
+  .publications.publications--aligned-cards .publication-entry:not(.publication-entry--highlight) {
+    padding-left: calc(3px + 1.75rem);
+    padding-right: 1.75rem;
+    box-sizing: border-box;
+  }
 }
 
 html[data-theme=dark] .publications .publication-entry--highlight {
@@ -1292,6 +1294,20 @@ html[data-theme=dark] .publications .publication-entry--highlight {
   border-left-color: #c89e75;
 }
 
+@media (max-width: 576px) {
+  .publications.publications--aligned-cards .publication-entry--highlight {
+    border: none !important;
+    border-left: none !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  html[data-theme=dark] .publications.publications--aligned-cards .publication-entry--highlight {
+    background: transparent !important;
+    border-left-color: transparent !important;
+  }
+}
 .post.project-detail .post-header {
   margin-bottom: 1.5rem;
 }
