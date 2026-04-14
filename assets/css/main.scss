@@ -156,6 +156,8 @@ $secondary-color: #8c4720; // this is brownish
 // Featured publication rows — `highlight={true}` in `_bibliography/*.bib` (template: _layouts/bib.html).
 $publication-highlight-accent: #8c4720;
 $publication-highlight-bg: rgba(140, 71, 32, 0.04);
+$publication-highlight-border-width: 3px;
+$publication-highlight-pad-x: 1.75rem;
 
 .publications {
   // Space after the whole publications block (before the next page paragraph, etc.)
@@ -166,11 +168,11 @@ $publication-highlight-bg: rgba(140, 71, 32, 0.04);
   }
 
   .publication-entry--highlight {
-    border-left: 3px solid $publication-highlight-accent;
+    border-left: $publication-highlight-border-width solid $publication-highlight-accent;
     background: $publication-highlight-bg;
     border-radius: 10px;
     overflow: hidden;
-    padding: 1.5rem 1.75rem;
+    padding: 1.5rem $publication-highlight-pad-x;
     box-sizing: border-box;
   }
 
@@ -178,6 +180,13 @@ $publication-highlight-bg: rgba(140, 71, 32, 0.04);
   ol.bibliography div.abstract.hidden,
   ol.bibliography div.abstract.hidden.open {
     border: none !important;
+  }
+
+  // publications2 only: match non-highlight rows to the inner x-origin of `.publication-entry--highlight`.
+  &.publications--aligned-cards .publication-entry:not(.publication-entry--highlight) {
+    padding-left: calc(#{$publication-highlight-border-width} + #{$publication-highlight-pad-x});
+    padding-right: $publication-highlight-pad-x;
+    box-sizing: border-box;
   }
 }
 
