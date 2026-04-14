@@ -1596,10 +1596,10 @@ a.inline-link:hover {
 }
 .post.teaching-page .teaching-approach-with-media {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(200px, min(340px, 44%));
+  grid-template-columns: minmax(0, 1fr) minmax(0, 240px);
   grid-template-rows: auto auto;
   column-gap: 1.35rem;
-  row-gap: 1rem;
+  row-gap: 1.35rem;
   align-items: start;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1627,28 +1627,32 @@ a.inline-link:hover {
 }
 .post.teaching-page .teaching-approach-with-media .teaching-approach-figure {
   grid-column: 2;
-  grid-row: 1/-1;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
   margin: 0;
   width: 100%;
+  max-width: 240px;
 }
 .post.teaching-page .teaching-approach-with-media .teaching-approach-figure img {
   display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 240px;
   height: auto;
-  max-height: min(440px, 52vh);
+  max-height: min(360px, 48vh);
+  margin-left: auto;
   object-fit: contain;
-  object-position: top center;
+  object-position: top right;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 .post.teaching-page .teaching-approach-with-media .teaching-courses-in-poster-grid {
-  grid-column: 1;
+  grid-column: 1/-1;
   grid-row: 2;
   min-width: 0;
 }
 .post.teaching-page .teaching-approach-with-media .teaching-courses-in-poster-grid h2#courses-taught {
-  margin-top: 0.35rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 @media (max-width: 576px) {
@@ -1665,11 +1669,16 @@ a.inline-link:hover {
     grid-column: 1;
     grid-row: auto;
     order: -1;
-    max-width: 360px;
+    justify-self: center;
+    max-width: 240px;
     margin: 0 auto 0.75rem;
   }
   .post.teaching-page .teaching-approach-with-media .teaching-approach-figure img {
+    max-width: 240px;
     max-height: none;
+    margin-left: auto;
+    margin-right: auto;
+    object-position: top center;
   }
   .post.teaching-page .teaching-approach-with-media .teaching-courses-in-poster-grid {
     grid-column: 1;
