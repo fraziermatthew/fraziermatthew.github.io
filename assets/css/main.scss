@@ -569,7 +569,7 @@ a.inline-link:hover {
 
       ul {
         margin-top: 0.35rem;
-        margin-bottom: 0;
+        margin-bottom: 1.05rem;
         padding-left: 1.25rem;
       }
 
@@ -586,7 +586,7 @@ a.inline-link:hover {
       align-self: start;
       margin: 0;
       width: 100%;
-      max-width: 240px;
+      max-width: 231px;
 
       img {
         display: block;
@@ -599,6 +599,12 @@ a.inline-link:hover {
         object-position: top right;
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        // Match `.profile img` on the about page (_sass/_base.scss)
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
       }
     }
 
