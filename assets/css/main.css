@@ -1292,8 +1292,12 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
 }
 
 html[data-theme=dark] .publications .publication-entry--highlight {
-  background: rgba(200, 158, 117, 0.1);
+  background: rgba(200, 158, 117, 0.12);
   border-left-color: #c89e75;
+}
+
+html[data-theme=dark] .publications h2.category {
+  opacity: 0.9;
 }
 
 @media (max-width: 576px) {
@@ -2366,7 +2370,7 @@ html[data-theme=dark] .cv .publications a:hover {
 
 #back-to-top {
   position: fixed;
-  bottom: 40px;
+  bottom: 72px;
   right: 40px;
   z-index: 1050;
   width: 42px;
