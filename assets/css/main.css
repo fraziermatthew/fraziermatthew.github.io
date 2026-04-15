@@ -36,18 +36,18 @@
 }
 
 html[data-theme=dark] {
-  --global-bg-color: #1C1C1D;
-  --global-code-bg-color: #2c3237;
-  --global-text-color: #e8e8e8;
-  --global-text-color-light: #e8e8e8;
-  --global-theme-color: #d6a07a;
-  --global-hover-color: #d6a07a;
-  --global-footer-bg-color: #e8e8e8;
-  --global-footer-text-color: #1C1C1D;
-  --global-footer-link-color: #000000;
-  --global-distill-app-color: #e8e8e8;
-  --global-divider-color: #424246;
-  --global-card-bg-color: #212529;
+  --global-bg-color: #16171b;
+  --global-code-bg-color: #1d1f24;
+  --global-text-color: #e3e4e8;
+  --global-text-color-light: #b7bac3;
+  --global-theme-color: #d3ab86;
+  --global-hover-color: #d3ab86;
+  --global-footer-bg-color: #111214;
+  --global-footer-text-color: rgba(255, 255, 255, 0.62);
+  --global-footer-link-color: rgba(255, 255, 255, 0.78);
+  --global-distill-app-color: #e3e4e8;
+  --global-divider-color: #353840;
+  --global-card-bg-color: #1c1f25;
 }
 html[data-theme=dark] .fa-sun {
   padding-left: 10px;
@@ -1515,6 +1515,9 @@ a.inline-link:hover {
   opacity: 0.72;
   margin-top: 0.15rem;
 }
+html[data-theme=dark] .post.about-page .subtitle-secondary {
+  opacity: 0.82;
+}
 .post.about-page .subtitle-link {
   color: var(--global-text-color);
   text-decoration: none !important;
@@ -1568,6 +1571,9 @@ a.inline-link:hover {
   opacity: 0.75;
   line-height: 1.2;
   margin: 0 0 0.16rem 0;
+}
+html[data-theme=dark] .post.about-page .profile-contact-label {
+  opacity: 0.82;
 }
 .post.about-page .profile-contact-email {
   font-size: 0.95rem;
