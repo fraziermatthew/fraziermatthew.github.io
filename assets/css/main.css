@@ -457,11 +457,13 @@ footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
   border-top: 2px solid #8c4720 !important;
   font-size: 0.75rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 footer.fixed-bottom .container {
   color: var(--global-footer-text-color);
-  padding-top: 9px;
-  padding-bottom: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 footer.fixed-bottom a {
   color: var(--global-footer-link-color);
@@ -473,8 +475,8 @@ footer.fixed-bottom a:hover {
 
 footer.sticky-bottom {
   border-top: 2px solid #8c4720 !important;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-size: 0.9rem;
 }
 
@@ -2391,7 +2393,8 @@ html[data-theme=dark] footer {
   border-top: 1px solid #b8875c !important;
   color: #8a8a8a;
   text-align: center;
-  padding: 16px 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-size: 0.85rem;
   letter-spacing: 0.3px;
 }
