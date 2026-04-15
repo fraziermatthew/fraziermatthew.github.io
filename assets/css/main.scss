@@ -996,8 +996,15 @@ $resume-panel-shift-ease: cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
 }
 
+// Dark mode: match page background so sections read as one surface (light mode is already continuous).
 html[data-theme='dark'] .cv .card {
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  background-color: var(--global-bg-color);
+  box-shadow: none;
+}
+
+// Same idea for the resume TOC strip — avoid a second “card” panel (_base.scss uses a light tint in dark mode).
+html[data-theme='dark'] .cv .cv-toc.on-this-page {
+  background: transparent;
 }
 
 // Resume header: H1 (left) vs. switch + PDFs (right)
@@ -1407,6 +1414,19 @@ $cv-skills-badge-col-width: 75px; // inline width on year badge column in time_t
 
 .cv .card .skill-block li::marker {
   color: #b8b8b8;
+}
+
+// skills_grid: h4/li use fixed grays above — restore readable contrast on dark backgrounds
+html[data-theme='dark'] .cv .card .skill-block h4 {
+  color: var(--global-text-color);
+}
+
+html[data-theme='dark'] .cv .card .skill-block li {
+  color: var(--global-text-color);
+}
+
+html[data-theme='dark'] .cv .card .skill-block li::marker {
+  color: rgba(255, 255, 255, 0.42);
 }
 
 .cv .card h6 {
