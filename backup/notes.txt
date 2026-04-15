@@ -23,6 +23,15 @@ styling example websites
 - should i be using my university logos - https://giuseppeperelli.github.io/
 
 ---
+
+site wide ideas
+
+- should i have a page where i list any lifestyle recommendations? maybe this is a blog post of my favorie books or finance things? https://freifrauvonbleifrei.github.io/books/ or a gallery of photos taken https://zhoji.github.io/gallery/
+- should i buy my own domain and connect it to the website?
+- darkmode styling review
+
+
+---
 done
 
 - should i show my name is M.Frazier or Matthew Frazier or Matt Frazier? should i include PhD in my name? if so, should it be with periods like Ph.D. or PhD? https://djherron.github.io/
@@ -45,7 +54,8 @@ done
 - should i have a contact page? https://johanneshoerner.github.io/contact/ - good contact at the bottom of this page https://j1yoo.github.io/
 - love the use of his quote in this site on the homepage - https://immsrini.github.io/
 - on the homepage, would it be best with no social links or only a few? are the ones i have there now all okay? Mark P. M. Dean example
-
+- should i show the results chart for my research papers?
+- should i include some sort of quote from the student qualitative data?
 - should the project tiles be equal sized rectangles? more of an equal grid? https://vud.org/projects/ https://www.zhivotenko.com/projects/
 - should there be a number per column? https://divakar-verma.com/projects/
 - should the categories be in gray or the accent color? what about the line color? now that i changed the border from under the nav bar to 
@@ -83,6 +93,9 @@ done
 4.	Add 1 strong CWE visual
 5.	Add 1–2 student quotes
 6.	Add citation count (subtle)
+- i found an example where a person highlights specific papers in their publications page, should I do something like this?
+- add slides and poster to iticse, icse, and dissertation
+- should i add my image from working at my apartment or from presenting at the UD poster session?
 
 ---
 
@@ -112,7 +125,7 @@ Review home page
 
 Publications page
 
-- i found an example where a person highlights specific papers in their publications page, should I do something like this?
+- add citations number
 
 ---
 
@@ -120,3 +133,11 @@ Projects page(s)
 
 - add another item to research
 - for the projects page, i know we said no horizontal, but another good example is Leandro A. Bugnon to consider based on his consulting page
+
+---
+
+Project - CWE
+
+- should make some demos like this website - https://physics-morris.github.io/
+- should i show a citation? https://qingqingchen.info/
+- recreate image charts that were ai generated
