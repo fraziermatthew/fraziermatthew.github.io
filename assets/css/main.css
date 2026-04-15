@@ -2016,7 +2016,8 @@ html[data-theme=dark] .cv .card .list-group-flush .list-group-item {
 html[data-theme=dark] .cv .card {
   background-color: var(--global-bg-color);
   box-shadow: none;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
 }
 
 html[data-theme=dark] .cv .cv-toc.on-this-page {
