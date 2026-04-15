@@ -701,10 +701,11 @@ html[data-theme='dark'] .cv-toc.on-this-page {
     }
   }
 
-  .card {
-    img {
-      width: 100%;
-    }
+  // Vertical grid thumbnails: fixed panel + contain (see `.grid-item .project-image-wrapper`).
+  // Horizontal cards use full-width images in `.card-img`.
+  .card-item .card img,
+  .card .card-img img {
+    width: 100%;
   }
 
   .card-item {
@@ -753,10 +754,42 @@ html[data-theme='dark'] .cv-toc.on-this-page {
       min-height: 100%;
     }
 
+    .project-image-wrapper {
+      flex-shrink: 0;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f7f7f7;
+      overflow: hidden;
+
+      figure {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      picture {
+        display: contents;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
     .card-body {
       flex: 1;
       display: flex;
       flex-direction: column;
+      min-height: 340px;
     }
 
     .card-body > .row:last-child {

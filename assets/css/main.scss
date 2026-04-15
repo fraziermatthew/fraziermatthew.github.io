@@ -254,6 +254,10 @@ html[data-theme='dark'] .projects .grid-item > a:hover .card {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 
+html[data-theme='dark'] .projects .grid-item .project-image-wrapper {
+  background: #252a33;
+}
+
 // Individual project write-ups (_projects/** — `page_class: project-detail` in front matter)
 .post.project-detail {
   .post-header {

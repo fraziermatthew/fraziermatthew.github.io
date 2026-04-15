@@ -67,6 +67,7 @@ done
 - should i be using my university logos - https://giuseppeperelli.github.io/
 - should i buy my own domain and connect it to the website?
 - darkmode styling review
+- should the image box and the description box in the projects pages in the cards be all the same size?
 
 ---
 
