@@ -194,8 +194,12 @@ $publication-highlight-pad-x: 1.75rem;
 }
 
 html[data-theme='dark'] .publications .publication-entry--highlight {
-  background: rgba(200, 158, 117, 0.1);
+  background: rgba(200, 158, 117, 0.12);
   border-left-color: #c89e75;
+}
+
+html[data-theme='dark'] .publications h2.category {
+  opacity: 0.9;
 }
 
 // Hybrid: `--aligned-cards` is flush-left on small screens (match h2.category); strip highlight box so cards match.
@@ -1502,9 +1506,10 @@ html[data-theme='dark'] .cv .publications a:hover {
 }
 
 // Floating back-to-top (see _includes/back_to_top.html)
+// Sit above `footer.fixed-bottom` (padding + copy + border) — was 40px and overlapped after tighter footer padding.
 #back-to-top {
   position: fixed;
-  bottom: 40px;
+  bottom: 72px;
   right: 40px;
   z-index: 1050;
   width: 42px;
