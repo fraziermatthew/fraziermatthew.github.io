@@ -145,7 +145,7 @@ Instead of working with abstract examples, students engaged with vulnerabilities
 <div class="project-quote-strip">
   <p>“The vulnerability made me think differently about my code.”</p>
   <p>“It showed a type of bug I did not realize my logic was vulnerable to.”</p>
-  <p>“The flaw felt subtle and realistic.”</p>
+  <!-- <p>“The flaw felt subtle and realistic.”</p> -->
 </div>
 
 - Increased engagement through personalized, context-aware exercises

@@ -312,6 +312,27 @@ html[data-theme='dark'] .publications .publication-entry--highlight {
     border-left-color: var(--global-theme-color);
   }
 
+  // Student quotes / callouts (_projects/research/1_cwe_agent.md — `.project-quote-strip`)
+  .project-quote-strip {
+    margin: 2rem 0 2.5rem;
+    padding: 1.25rem 1.5rem;
+    border-left: 3px solid var(--global-theme-color);
+    background: rgba(165, 105, 63, 0.05);
+    border-radius: 0 10px 10px 0;
+  }
+
+  .project-quote-strip p {
+    margin: 0;
+    font-size: 1.02rem;
+    line-height: 1.8;
+    font-style: italic;
+    color: var(--global-text-color);
+  }
+
+  .project-quote-strip p + p {
+    margin-top: 1rem;
+  }
+
   article .caption,
   article figcaption.caption {
     margin-top: 0.75rem;
