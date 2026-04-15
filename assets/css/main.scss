@@ -1084,11 +1084,13 @@ $resume-panel-shift-ease: cubic-bezier(0.4, 0, 0.2, 1);
 html[data-theme='dark'] .cv .card {
   background-color: var(--global-bg-color);
   box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-// Same idea for the resume TOC strip — avoid a second “card” panel (_base.scss uses a light tint in dark mode).
+// Resume TOC strip: no fill; subtle edge (_base.scss uses a light tint in dark mode).
 html[data-theme='dark'] .cv .cv-toc.on-this-page {
   background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 // Resume header: H1 (left) vs. switch + PDFs (right)
@@ -1130,7 +1132,7 @@ html[data-theme='dark'] .cv .cv-toc.on-this-page {
   transition: color 0.15s ease, opacity 0.15s ease;
 }
 
-// Active label: body text; inactive: same hue family, de-emphasized (checkbox drives state via :has)
+// Active label: body text; inactive: de-emphasized (checkbox drives state via :has)
 .cv .cv-resume-switch-group:has(#cvResumeModeSwitch:not(:checked)) {
   #cv-label-industry {
     color: var(--global-text-color);
@@ -1138,13 +1140,13 @@ html[data-theme='dark'] .cv .cv-toc.on-this-page {
   }
 
   #cv-label-academic {
-    opacity: 0.6;
+    opacity: 0.5;
   }
 }
 
 .cv .cv-resume-switch-group:has(#cvResumeModeSwitch:checked) {
   #cv-label-industry {
-    opacity: 0.6;
+    opacity: 0.5;
   }
 
   #cv-label-academic {
@@ -1381,6 +1383,10 @@ html[data-theme='dark'] .cv .cv-resume-switch-custom-input:checked + .cv-resume-
   opacity: 0.9;
 }
 
+html[data-theme='dark'] .cv .pub-venue {
+  opacity: 0.82;
+}
+
 // Selected Publications (card_class: publications): align year badge with first line of the entry.
 // Zero the global `.cv .card ul { margin-top }` nudge; no bullets (list-style: none) for this card only.
 .cv .card.publications .item > ul.items {
@@ -1510,7 +1516,7 @@ html[data-theme='dark'] .cv .card .skill-block li {
 }
 
 html[data-theme='dark'] .cv .card .skill-block li::marker {
-  color: rgba(255, 255, 255, 0.42);
+  color: rgba(255, 255, 255, 0.32);
 }
 
 .cv .card h6 {
@@ -1574,7 +1580,7 @@ html[data-theme='dark'] .cv .publications a:hover {
 }
 
 .cv .cv-section-footer a.view-all:hover {
-  transform: translateX(2px);
+  transform: translateX(1px);
 }
 
 // Floating back-to-top (see _includes/back_to_top.html)
