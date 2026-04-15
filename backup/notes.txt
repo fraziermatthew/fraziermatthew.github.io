@@ -1,4 +1,14 @@
 ---
+
+TODO
+
+- Projects, should make some demos like this website - https://physics-morris.github.io/
+- Projects, add another item to research
+- Projects, recreate image charts that were ai generated
+- move this entire website to Vercel
+- 2nd blog website, should i have a page where i list any lifestyle recommendations? maybe this is a blog post of my favorie books or finance things? https://freifrauvonbleifrei.github.io/books/ or a gallery of photos taken https://zhoji.github.io/gallery/
+
+---
 done
 
 - should i show my name is M.Frazier or Matthew Frazier or Matt Frazier? should i include PhD in my name? if so, should it be with periods like Ph.D. or PhD? https://djherron.github.io/
@@ -142,11 +152,3 @@ Project - CWE
 
 - should i show a citation? https://qingqingchen.info/
 
----
-
-TODO
-
-- Projects, should make some demos like this website - https://physics-morris.github.io/
-- Projects, add another item to research
-- Projects, recreate image charts that were ai generated
-- New website, should i have a page where i list any lifestyle recommendations? maybe this is a blog post of my favorie books or finance things? https://freifrauvonbleifrei.github.io/books/ or a gallery of photos taken https://zhoji.github.io/gallery/

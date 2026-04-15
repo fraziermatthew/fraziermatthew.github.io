@@ -26,8 +26,8 @@ profile:
   image_circular: false # crops the image to make it circular
   # JS-built mailto (no address in static HTML) — see _includes/profile_contact_obfuscated.html
   obfuscate_email: true
-  email_user: matthew
-  email_domain: udel.edu
+  email_user: matthew.r.frazier
+  email_domain: gmail.com
   # address: >
   #   <a class="affiliation-link" href="https://sites.udel.edu/se-research/">SAC Lab</a>
   #   <p>PhD, Computer Science</p>
