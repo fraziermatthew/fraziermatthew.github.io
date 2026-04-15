@@ -1314,6 +1314,35 @@ html[data-theme=dark] .publications h2.category {
     border-left-color: transparent !important;
   }
 }
+html[data-theme=dark] .projects .card {
+  background-color: #1b1f26;
+  border: 1px solid rgba(255, 255, 255, 0.045);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+html[data-theme=dark] .projects h2.category {
+  color: var(--global-text-color-light);
+  opacity: 0.32;
+}
+
+html[data-theme=dark] .projects .card-text,
+html[data-theme=dark] .projects .card p {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.projects .grid-item > a .card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.projects .grid-item > a:hover .card {
+  transform: translateY(-2px);
+}
+
+html[data-theme=dark] .projects .grid-item > a:hover .card {
+  border-color: rgba(211, 171, 134, 0.22);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
 .post.project-detail .post-header {
   margin-bottom: 1.5rem;
 }
