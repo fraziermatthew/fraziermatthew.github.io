@@ -2386,4 +2386,36 @@ html[data-theme=dark] .cv .publications a:hover {
   transform: translateY(-2px);
 }
 
+html[data-theme=dark] footer {
+  background-color: #111111;
+  border-top: 1px solid #b8875c !important;
+  color: #8a8a8a;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+}
+html[data-theme=dark] footer .container {
+  color: #8a8a8a;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+html[data-theme=dark] footer p {
+  margin: 0;
+  color: #8a8a8a;
+  font-weight: 400;
+}
+html[data-theme=dark] footer strong,
+html[data-theme=dark] footer .name {
+  color: #b5b5b5;
+  font-weight: 500;
+}
+html[data-theme=dark] footer a {
+  color: #b8875c;
+}
+html[data-theme=dark] footer a:hover {
+  color: var(--global-hover-color);
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=main.css.map */
