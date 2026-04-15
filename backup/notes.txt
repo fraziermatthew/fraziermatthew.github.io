@@ -81,6 +81,7 @@ done
 2.	Highlight ICSE paper
 3.	Add slides/poster links
 4.	Add 1 strong CWE visual
+5.	Add 1–2 student quotes
 
 ---
 

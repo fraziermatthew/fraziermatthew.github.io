@@ -129,9 +129,7 @@ At its core, the project demonstrates how **evaluation-driven pipelines** produc
 
 <h2>Outcome</h2>
 
-InjectEd was evaluated in a classroom setting to assess its impact on student understanding of secure coding practices.
-
-Instead of working with abstract examples, students engaged with vulnerabilities embedded in their own code.
+InjectEd was evaluated in a classroom setting to assess its impact on student understanding of secure coding practices. Instead of working with abstract examples, students engaged with vulnerabilities embedded in their own code.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
