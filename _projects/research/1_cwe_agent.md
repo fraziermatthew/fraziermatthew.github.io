@@ -1,9 +1,10 @@
 ---
 layout: page
 page_class: project-detail
-title: "CWE Agent — Multi-Agent System for Vulnerability Injection and Evaluation"
+title: "InjectEd — Multi-Agent System for Vulnerability Injection and Evaluation"
 description: Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities to generate structured security learning outcomes
-hero_subdescription: "Built to ground abstract CWE concepts in each student's own code through multi-agent injection and evaluation."
+hero_subdescription: "InjectEd grounds abstract CWE concepts in each student's own code through multi-agent injection, evaluation, and selection."
+# hero_subdescription: "Built to ground abstract CWE concepts in each student's own code through multi-agent injection and evaluation."
 img: assets/img/cwe.png
 importance: 1
 category: research
@@ -18,19 +19,19 @@ permalink: /projects/research/cwe-agent/
 
 Students learn CWE concepts in isolation, without seeing how they emerge in their own implementations.
 
-This system embeds vulnerabilities directly into student-submitted code, then evaluates and selects the most educational examples through a structured multi-agent pipeline.
+InjectEd embeds embeds vulnerabilities directly into student-submitted code, then evaluates and selects the most educational examples through a structured multi-agent pipeline.
 
 ---
 
 <h2>Overview</h2>
 
-This system transforms abstract secure coding concepts into personalized, code-level learning experiences.
+InjectEd embeds transforms abstract secure coding concepts into personalized, code-level learning experiences.
 
 <p class="highlight">Vulnerabilities are injected into the exact code students wrote—not into prebuilt examples.</p>
 
 Instead of relying on static exercises, the system operates on real student submissions, generating context-aware vulnerabilities aligned with assignment objectives and implementation details.
 
-I designed and implemented an end-to-end multi-agent pipeline that injects vulnerabilities, evaluates their educational value, and generates structured learning artifacts grounded in the student’s own code.
+I designed and implemented InjectEd as an end-to-end multi-agent pipeline that injects vulnerabilities, evaluates their educational value, and generates structured learning artifacts grounded in the student’s own code.
 
 The result is a system that turns theoretical security concepts into **contextualized, experiential learning**.
 
@@ -48,7 +49,7 @@ The result is a system that turns theoretical security concepts into **contextua
 
 <h2>What I Built</h2>
 
-I developed a multi-agent system that formalizes vulnerability generation, evaluation, and selection within student code.
+I developed InjectEd as a multi-agent system that formalizes vulnerability generation, evaluation, and selection within student code.
 
 <p class="highlight">Generation alone is not enough—the system evaluates and selects what is most educational.</p>
 
@@ -128,15 +129,30 @@ At its core, the project demonstrates how **evaluation-driven pipelines** produc
 
 <h2>Outcome</h2>
 
-The system was evaluated in a classroom setting to assess its impact on student understanding of secure coding practices.
+InjectEd was evaluated in a classroom setting to assess its impact on student understanding of secure coding practices.
 
 Instead of working with abstract examples, students engaged with vulnerabilities embedded in their own code.
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.html path="assets/img/InjectEd.png" title="InjectEd Student Evaluation Results" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Student evaluation results comparing InjectEd with a baseline interaction across perceived learning impact and engagement dimensions.
+</div>
+
+<div class="project-quote-strip">
+  <p>“The vulnerability made me think differently about my code.”</p>
+  <p>“It showed a type of bug I did not realize my logic was vulnerable to.”</p>
+  <p>“The flaw felt subtle and realistic.”</p>
+</div>
 
 - Increased engagement through personalized, context-aware exercises
 - Improved qualitative understanding of how vulnerabilities manifest in real implementations
 - Strong positive feedback from students on relevance and clarity
 - No statistically significant quantitative improvement, highlighting the difficulty of measuring learning outcomes in small samples
 
-The project demonstrates how agentic AI systems can transform security education by making concepts **experiential, contextual, and student-specific**.
+The project demonstrates how agentic AI systems like InjectEd can transform security education by making concepts **experiential, contextual, and student-specific**.
 
 It also reinforces the importance of combining qualitative and quantitative evaluation when assessing educational systems.
