@@ -1525,3 +1525,42 @@ html[data-theme='dark'] .cv .publications a:hover {
     transform: translateY(-2px);
   }
 }
+
+// Site footer — dark mode only (overrides _base.scss `footer.fixed-bottom` / `footer.sticky-bottom` borders & padding).
+html[data-theme='dark'] footer {
+  background-color: #111111;
+  border-top: 1px solid #b8875c !important;
+  color: #8a8a8a;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+
+  .container {
+    color: #8a8a8a;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+    color: #8a8a8a;
+    font-weight: 400;
+  }
+
+  strong,
+  .name {
+    color: #b5b5b5;
+    font-weight: 500;
+  }
+
+  // Base footer uses `--global-footer-link-color` (black in dark theme) — unreadable on #111.
+  a {
+    color: #b8875c;
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: none;
+    }
+  }
+}
