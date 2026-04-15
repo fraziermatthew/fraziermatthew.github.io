@@ -1969,6 +1969,16 @@ html[data-theme=dark] .post.teaching-page .teaching-approach-figure img {
   }
 }
 
+html[data-theme=dark] .post.teaching-page .teaching-course:not(:last-of-type) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+html[data-theme=dark] .post.teaching-page .teaching-course-meta {
+  opacity: 0.78;
+}
+html[data-theme=dark] .post.teaching-page .teaching-course-signal {
+  opacity: 0.9;
+}
+
 .cv .card {
   border-radius: 0px;
   box-shadow: none;
