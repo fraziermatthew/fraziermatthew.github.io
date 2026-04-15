@@ -466,6 +466,10 @@ a.inline-link:hover {
     margin-top: 0.15rem;
   }
 
+  html[data-theme='dark'] & .subtitle-secondary {
+    opacity: 0.82;
+  }
+
   .subtitle-link {
     color: var(--global-text-color);
     text-decoration: none !important;
@@ -517,6 +521,10 @@ a.inline-link:hover {
     opacity: 0.75;
     line-height: 1.2;
     margin: 0 0 0.16rem 0;
+  }
+
+  html[data-theme='dark'] & .profile-contact-label {
+    opacity: 0.82;
   }
   
   .profile-contact-email {

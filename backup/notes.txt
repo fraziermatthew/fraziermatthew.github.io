@@ -1,36 +1,3 @@
-styling example websites
-
-- should i consider a similar nav bar underline on hover as this example - https://carolinacarreira.github.io/outreach/
-- this is just an interesting website design to consider - https://www.cs.columbia.edu/~chen1ru/index.html
-- this is just an overall phenomonal example - https://arampooladian.com/index.html simple minimal and clean
-- this is another clean minimal beautiful site - https://chinmoy-dutta.github.io/
-- this is a clever single page application - https://liamcli.com/#contact
-- another clean design website - https://yoonholee.com/
-- a clean one https://andreaskuster.ch/about
-- interesting design https://jonbarron.info/ https://taidnguyen.github.io/
-- kappa theme - is crimson red really bad? https://daviddmc.github.io/ https://jucheval.github.io/cv/
-- best kappa theme - https://joszuijderwijk.nl/research
-- clean design - https://qingqingchen.info/
-- really cool animating background - https://j1yoo.github.io/
-- interesting home page https://laurajul.github.io/ - also use of different font
-- homepage with a black nav bar background and image on the left instead of right - https://www.silviofanzon.com/
-- interesting single page app idea with anchors - https://kaikaiyao.github.io/
-- left image - https://fanpu.io/
-- light gray background for the theme is a bit nice - https://www.escontrela.me/
-- nice tan background and theme single page app - https://kudhru.github.io/
-- like the use of the quote box here - https://bajinsheng.github.io/
-- cool site - https://physics-morris.github.io/ - nice contact info at the bottom, tech themed, nice contact card under pic
-- should i be using my university logos - https://giuseppeperelli.github.io/
-
----
-
-site wide ideas
-
-- should i have a page where i list any lifestyle recommendations? maybe this is a blog post of my favorie books or finance things? https://freifrauvonbleifrei.github.io/books/ or a gallery of photos taken https://zhoji.github.io/gallery/
-- should i buy my own domain and connect it to the website?
-- darkmode styling review
-
-
 ---
 done
 
@@ -96,6 +63,38 @@ done
 - i found an example where a person highlights specific papers in their publications page, should I do something like this?
 - add slides and poster to iticse, icse, and dissertation
 - should i add my image from working at my apartment or from presenting at the UD poster session?
+- should i be using my university logos - https://giuseppeperelli.github.io/
+- should i buy my own domain and connect it to the website?
+- darkmode styling review
+
+---
+
+styling example websites
+
+- should i consider a similar nav bar underline on hover as this example - https://carolinacarreira.github.io/outreach/
+- this is just an interesting website design to consider - https://www.cs.columbia.edu/~chen1ru/index.html
+- this is just an overall phenomonal example - https://arampooladian.com/index.html simple minimal and clean
+- this is another clean minimal beautiful site - https://chinmoy-dutta.github.io/
+- this is a clever single page application - https://liamcli.com/#contact
+- another clean design website - https://yoonholee.com/
+- a clean one https://andreaskuster.ch/about
+- interesting design https://jonbarron.info/ https://taidnguyen.github.io/
+- kappa theme - is crimson red really bad? https://daviddmc.github.io/ https://jucheval.github.io/cv/
+- best kappa theme - https://joszuijderwijk.nl/research
+- clean design - https://qingqingchen.info/
+- really cool animating background - https://j1yoo.github.io/
+- interesting home page https://laurajul.github.io/ - also use of different font
+- homepage with a black nav bar background and image on the left instead of right - https://www.silviofanzon.com/
+- interesting single page app idea with anchors - https://kaikaiyao.github.io/
+- left image - https://fanpu.io/
+- light gray background for the theme is a bit nice - https://www.escontrela.me/
+- nice tan background and theme single page app - https://kudhru.github.io/
+- like the use of the quote box here - https://bajinsheng.github.io/
+- cool site - https://physics-morris.github.io/ - nice contact info at the bottom, tech themed, nice contact card under pic
+
+---
+
+site wide ideas
 
 ---
 
@@ -131,13 +130,19 @@ Publications page
 
 Projects page(s)
 
-- add another item to research
 - for the projects page, i know we said no horizontal, but another good example is Leandro A. Bugnon to consider based on his consulting page
 
 ---
 
 Project - CWE
 
-- should make some demos like this website - https://physics-morris.github.io/
 - should i show a citation? https://qingqingchen.info/
-- recreate image charts that were ai generated
+
+---
+
+TODO
+
+- Projects, should make some demos like this website - https://physics-morris.github.io/
+- Projects, add another item to research
+- Projects, recreate image charts that were ai generated
+- New website, should i have a page where i list any lifestyle recommendations? maybe this is a blog post of my favorie books or finance things? https://freifrauvonbleifrei.github.io/books/ or a gallery of photos taken https://zhoji.github.io/gallery/
