@@ -60,6 +60,7 @@ done
 4.	Add 1 strong CWE visual
 5.	Add 1–2 student quotes
 6.	Add citation count (subtle)
+7.	Decide dark mode (keep only if perfect)
 - i found an example where a person highlights specific papers in their publications page, should I do something like this?
 - add slides and poster to iticse, icse, and dissertation
 - should i add my image from working at my apartment or from presenting at the UD poster session?
