@@ -191,53 +191,6 @@ $publication-highlight-pad-x: 1.75rem;
       box-sizing: border-box;
     }
   }
-
-  // Linked venue (`pub-venue-badge` — not Bootstrap `.badge`, which MDB colors blue)
-  ol.bibliography .abbr abbr.pub-venue-badge.pub-venue-badge--link {
-    background: transparent !important;
-    padding: 0;
-    border: none;
-  }
-
-  ol.bibliography .abbr abbr.pub-venue-badge .pub-button {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    border: 1px solid var(--global-theme-color);
-    background: transparent;
-    color: var(--global-text-color);
-    padding: 0.4rem 0.75rem;
-    border-radius: 0.35rem;
-    text-decoration: none;
-    font-weight: 600;
-    line-height: 1.25;
-    transition:
-      background-color 0.18s ease,
-      color 0.18s ease,
-      border-color 0.18s ease,
-      transform 0.18s ease,
-      box-shadow 0.18s ease;
-  }
-
-  // UA `:visited` defaults (often blue/purple) — theme vars already switch for light vs dark via `:root` / `html[data-theme='dark']`
-  ol.bibliography .abbr abbr.pub-venue-badge .pub-button:link,
-  ol.bibliography .abbr abbr.pub-venue-badge .pub-button:visited {
-    color: var(--global-text-color);
-    border-color: var(--global-theme-color);
-  }
-
-  ol.bibliography .abbr abbr.pub-venue-badge .pub-button:hover {
-    background-color: var(--global-theme-color);
-    color: #ffffff;
-    border-color: var(--global-theme-color);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  }
-
-  ol.bibliography .abbr abbr.pub-venue-badge .pub-button:visited:hover {
-    color: #ffffff;
-  }
 }
 
 html[data-theme='dark'] .publications .publication-entry--highlight {
@@ -247,10 +200,6 @@ html[data-theme='dark'] .publications .publication-entry--highlight {
 
 html[data-theme='dark'] .publications h2.category {
   opacity: 0.9;
-}
-
-html[data-theme='dark'] .publications ol.bibliography .abbr abbr.pub-venue-badge .pub-button:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 // Hybrid: `--aligned-cards` is flush-left on small screens (match h2.category); strip highlight box so cards match.
