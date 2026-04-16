@@ -1319,25 +1319,10 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     box-sizing: border-box;
   }
 }
-.publications.publications--aligned-cards ol.bibliography li .abbr abbr.badge {
-  min-height: 2.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0.35rem;
-  padding-bottom: 0.35rem;
-  box-sizing: border-box;
-}
-.publications.publications--aligned-cards ol.bibliography li .abbr.preview {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
 .publications.publications--aligned-cards ol.bibliography li .abbr.preview figure {
-  margin: 0.5rem 0 0;
-  flex: 0 0 auto;
+  margin: 0;
   width: 100%;
-  height: 9rem;
+  height: 6.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1356,8 +1341,8 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   object-fit: contain;
 }
 .publications.publications--aligned-cards ol.bibliography li .abbr.preview > img.preview {
-  margin: 0.5rem 0 0;
-  height: 9rem;
+  margin: 0;
+  height: 6.5rem;
   background: #f2f2f2;
   border-radius: 4px;
 }
