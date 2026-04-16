@@ -1319,40 +1319,47 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     box-sizing: border-box;
   }
 }
-.publications ol.bibliography .abbr abbr.pub-venue-badge.pub-venue-badge--link {
-  background: transparent !important;
-  padding: 0;
-  border: none;
-}
-.publications ol.bibliography .abbr abbr.pub-venue-badge .pub-button {
-  display: block;
-  width: 100%;
+.publications.publications--aligned-cards ol.bibliography li .abbr abbr.badge {
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
   box-sizing: border-box;
-  text-align: center;
-  border: 1px solid var(--global-theme-color);
-  background: transparent;
-  color: var(--global-text-color);
-  padding: 0.4rem 0.75rem;
-  border-radius: 0.35rem;
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 1.25;
-  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
 }
-.publications ol.bibliography .abbr abbr.pub-venue-badge .pub-button:link,
-.publications ol.bibliography .abbr abbr.pub-venue-badge .pub-button:visited {
-  color: var(--global-text-color);
-  border-color: var(--global-theme-color);
+.publications.publications--aligned-cards ol.bibliography li .abbr.preview {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
-.publications ol.bibliography .abbr abbr.pub-venue-badge .pub-button:hover {
-  background-color: var(--global-theme-color);
-  color: #ffffff;
-  border-color: var(--global-theme-color);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+.publications.publications--aligned-cards ol.bibliography li .abbr.preview figure {
+  margin: 0.5rem 0 0;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  border-radius: 4px;
+  overflow: hidden;
 }
-.publications ol.bibliography .abbr abbr.pub-venue-badge .pub-button:visited:hover {
-  color: #ffffff;
+.publications.publications--aligned-cards ol.bibliography li .abbr.preview picture {
+  display: contents;
+}
+.publications.publications--aligned-cards ol.bibliography li .abbr.preview img.preview {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.publications.publications--aligned-cards ol.bibliography li .abbr.preview > img.preview {
+  margin: 0.5rem 0 0;
+  height: 9rem;
+  background: #f2f2f2;
+  border-radius: 4px;
 }
 
 html[data-theme=dark] .publications .publication-entry--highlight {
@@ -1364,8 +1371,9 @@ html[data-theme=dark] .publications h2.category {
   opacity: 0.9;
 }
 
-html[data-theme=dark] .publications ol.bibliography .abbr abbr.pub-venue-badge .pub-button:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+html[data-theme=dark] .publications.publications--aligned-cards ol.bibliography li .abbr.preview figure,
+html[data-theme=dark] .publications.publications--aligned-cards ol.bibliography li .abbr.preview > img.preview {
+  background: #252a33;
 }
 
 @media (max-width: 576px) {
