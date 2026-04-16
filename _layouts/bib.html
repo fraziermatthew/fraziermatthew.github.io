@@ -6,11 +6,7 @@
         <div class="col-sm-2{% if entry.preview %} preview{% endif %}{% if entry.abbr %} abbr{% endif %}">
         {%- if entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
-            {%- assign venue_style = nil -%}
-            {%- if site.data.venues[entry.abbr].color != blank -%}
-              {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' -%}
-            {%- endif -%}
-            <abbr class="badge" {% if venue_style %}{{venue_style}}{% endif %}><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+            <abbr class="badge badge--venue-link"><a class="pub-button" href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a></abbr>
           {%- else -%}
             <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
