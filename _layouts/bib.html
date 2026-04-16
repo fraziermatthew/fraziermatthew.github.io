@@ -6,7 +6,8 @@
         <div class="col-sm-2{% if entry.preview %} preview{% endif %}{% if entry.abbr %} abbr{% endif %}">
         {%- if entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
-            <abbr class="badge badge--venue-link"><a class="pub-button" href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a></abbr>
+            {%- comment -%} Linked venue: custom classes only — do not use Bootstrap `.badge` here (MDB styles it blue). {%- endcomment -%}
+            <abbr class="pub-venue-badge pub-venue-badge--link"><a class="pub-button" href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a></abbr>
           {%- else -%}
             <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
