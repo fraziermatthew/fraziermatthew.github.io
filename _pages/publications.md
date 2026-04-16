@@ -19,6 +19,9 @@ page_class: section-page
   <h2 class="category">Conference Articles</h2>
   {% bibliography -f papers -q @inproceedings %}
 
+   <h2 class="category">Preprints & Working Papers</h2>
+  {% bibliography -f papers -q @misc %}
+
 </div>
 
 <p class="mt-4 mb-0">This work informs my approach to designing production AI systems grounded in structured reasoning and human-centered interaction.</p>
