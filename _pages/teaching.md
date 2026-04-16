@@ -111,5 +111,5 @@ page_class: teaching-page section-page
 
 <figure class="education-poster-figure" markdown="0">
   <img src="{{ '/assets/img/poster-session-ud.jpeg' | relative_url }}" alt="Presenting research with collaborators at the University of Delaware on conversational agents, AI-supported learning, and software engineering education" loading="lazy" />
-  <figcaption>Presenting research with collaborators at the University of Delaware on conversational agents, AI-supported learning, and software engineering education</figcaption>
+  <figcaption>Presenting research with lab collaborators at University of Delaware Research Day 2022</figcaption>
 </figure>
