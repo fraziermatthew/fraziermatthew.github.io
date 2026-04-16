@@ -108,3 +108,8 @@ page_class: teaching-page section-page
 - Conducted research on conversational agents for supporting structured problem-solving in computer science education
 - Investigated LLM-guided reasoning approaches (CoT, few-shot, RAG) for guiding user interaction and Socratic learning
 - Published peer-reviewed work at ICSE and ITiCSE, demonstrating effectiveness in controlled educational settings and informing the design of structured AI systems
+
+<figure class="education-poster-figure" markdown="0">
+  <img src="{{ '/assets/img/poster-session-ud.jpeg' | relative_url }}" alt="Presenting research with collaborators at the University of Delaware on conversational agents, AI-supported learning, and software engineering education" loading="lazy" />
+  <figcaption>Presenting research with collaborators at the University of Delaware on conversational agents, AI-supported learning, and software engineering education</figcaption>
+</figure>

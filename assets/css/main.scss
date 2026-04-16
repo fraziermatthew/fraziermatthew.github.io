@@ -854,6 +854,38 @@ a.inline-link:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.42);
   }
 
+  // Full-width poster image after Research Experience (_pages/teaching.md)
+  .education-poster-figure {
+    margin: 2.25rem auto 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    figcaption {
+      font-size: 0.85rem;
+      color: var(--global-text-color-light);
+      margin-top: 0.55rem;
+      line-height: 1.45;
+      max-width: 42rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  html[data-theme='dark'] & .education-poster-figure img {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.42);
+  }
+
   // course blocks
   .teaching-course {
     margin-bottom: 1.25rem;
