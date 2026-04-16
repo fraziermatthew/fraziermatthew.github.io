@@ -1899,6 +1899,10 @@ html[data-theme=dark] .post.teaching-page .teaching-approach-figure img {
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.post.teaching-page .education-poster-figure img:hover {
+  transform: scale(1.02);
 }
 .post.teaching-page .education-poster-figure figcaption {
   font-size: 0.85rem;
