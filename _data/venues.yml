@@ -1,7 +1,7 @@
 # Keys must match `abbr` in `_bibliography/papers.bib` exactly (see _layouts/bib.html).
 "ICSE 2022":
   url: https://conf.researchr.org/home/icse-2022
-  color: "#00369f"
+  # Omit `color` so the badge uses theme accent (`--global-theme-color`) like other venues.
 
 "ITiCSE 2024":
   url: https://iticse.acm.org/2024/
