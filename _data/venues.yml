@@ -1,9 +1,16 @@
-"ICSE":
+# Keys must match `abbr` in `_bibliography/papers.bib` exactly (see _layouts/bib.html).
+"ICSE 2022":
   url: https://conf.researchr.org/home/icse-2022
   color: "#00369f"
 
-"ITiCSE":
+"ITiCSE 2024":
   url: https://iticse.acm.org/2024/
+
+"Ph.D.":
+  url: https://udspace.udel.edu/items/1d3815f9-1e86-4665-9ac1-18e81419da45
+
+"Draft":
+  url: https://arxiv.org/abs/2604.13955
 
 "arXiv":
   url: https://arxiv.org/

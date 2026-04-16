@@ -191,6 +191,58 @@ $publication-highlight-pad-x: 1.75rem;
       box-sizing: border-box;
     }
   }
+
+  // Uniform venue badges + fixed GIF panel on /publications/ (`venues.yml` keys must match bib `abbr` for links).
+  &.publications--aligned-cards ol.bibliography li .abbr {
+    abbr.badge {
+      min-height: 2.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 0.35rem;
+      padding-bottom: 0.35rem;
+      box-sizing: border-box;
+    }
+  }
+
+  &.publications--aligned-cards ol.bibliography li .abbr.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    figure {
+      margin: 0.5rem 0 0;
+      flex: 0 0 auto;
+      width: 100%;
+      height: 9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f2f2f2;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    picture {
+      display: contents;
+    }
+
+    img.preview {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+
+    // Remote preview (no <figure>) — same box as figure path
+    > img.preview {
+      margin: 0.5rem 0 0;
+      height: 9rem;
+      background: #f2f2f2;
+      border-radius: 4px;
+    }
+  }
 }
 
 html[data-theme='dark'] .publications .publication-entry--highlight {
@@ -200,6 +252,11 @@ html[data-theme='dark'] .publications .publication-entry--highlight {
 
 html[data-theme='dark'] .publications h2.category {
   opacity: 0.9;
+}
+
+html[data-theme='dark'] .publications.publications--aligned-cards ol.bibliography li .abbr.preview figure,
+html[data-theme='dark'] .publications.publications--aligned-cards ol.bibliography li .abbr.preview > img.preview {
+  background: #252a33;
 }
 
 // Hybrid: `--aligned-cards` is flush-left on small screens (match h2.category); strip highlight box so cards match.
