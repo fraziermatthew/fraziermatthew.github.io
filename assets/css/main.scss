@@ -158,6 +158,7 @@ $publication-highlight-accent: #8c4720;
 $publication-highlight-bg: rgba(140, 71, 32, 0.04);
 $publication-highlight-border-width: 3px;
 $publication-highlight-pad-x: 1.75rem;
+$publication-preview-thumb-height: 6.5rem; // aligned-cards GIF panel only; adjust if previews feel tight/loose
 
 .publications {
   // Space after the whole publications block (before the next page paragraph, etc.)
@@ -192,29 +193,13 @@ $publication-highlight-pad-x: 1.75rem;
     }
   }
 
-  // Uniform venue badges + fixed GIF panel on /publications/ (`venues.yml` keys must match bib `abbr` for links).
-  &.publications--aligned-cards ol.bibliography li .abbr {
-    abbr.badge {
-      min-height: 2.75rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 0.35rem;
-      padding-bottom: 0.35rem;
-      box-sizing: border-box;
-    }
-  }
-
+  // GIF thumbnails only on /publications/ (`--aligned-cards`): uniform box + object-fit: contain. Badges untouched (see _base.scss).
   &.publications--aligned-cards ol.bibliography li .abbr.preview {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-
     figure {
-      margin: 0.5rem 0 0;
-      flex: 0 0 auto;
+      // Flush under badge (no extra gap — avoid margin-top; browser figure defaults add space too)
+      margin: 0;
       width: 100%;
-      height: 9rem;
+      height: $publication-preview-thumb-height;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -235,10 +220,9 @@ $publication-highlight-pad-x: 1.75rem;
       object-fit: contain;
     }
 
-    // Remote preview (no <figure>) — same box as figure path
     > img.preview {
-      margin: 0.5rem 0 0;
-      height: 9rem;
+      margin: 0;
+      height: $publication-preview-thumb-height;
       background: #f2f2f2;
       border-radius: 4px;
     }
