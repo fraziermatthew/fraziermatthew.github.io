@@ -57,4 +57,8 @@ horizontal: false
   </div>
   {%- endif -%}
 {%- endif -%}
+
+<p class="projects-disclaimer">
+  Project descriptions focus on public-facing architecture, technical scope, and system outcomes. Proprietary implementation details, internal code, confidential data, and company-specific intellectual property have been intentionally omitted.
+</p>
 </div>
