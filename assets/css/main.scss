@@ -191,6 +191,23 @@ $publication-highlight-pad-x: 1.75rem;
       box-sizing: border-box;
     }
   }
+
+  // Venue link hover only (`_layouts/bib.html` — `a.pub-button` inside linked `abbr.badge`; default look unchanged)
+  ol.bibliography .abbr abbr.badge > a.pub-button {
+    transition:
+      background-color 0.18s ease,
+      color 0.18s ease,
+      border-color 0.18s ease,
+      transform 0.18s ease,
+      box-shadow 0.18s ease;
+  }
+
+  ol.bibliography .abbr abbr.badge > a.pub-button:hover {
+    background-color: var(--global-theme-color);
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
 }
 
 html[data-theme='dark'] .publications .publication-entry--highlight {
@@ -200,6 +217,10 @@ html[data-theme='dark'] .publications .publication-entry--highlight {
 
 html[data-theme='dark'] .publications h2.category {
   opacity: 0.9;
+}
+
+html[data-theme='dark'] .publications ol.bibliography .abbr abbr.badge > a.pub-button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 // Hybrid: `--aligned-cards` is flush-left on small screens (match h2.category); strip highlight box so cards match.
