@@ -9,6 +9,9 @@ layout: default
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
           <div class="desc">{{ page.subtitle }}</div>
+          {%- if page.highlight_strip %}
+          <div class="about-highlight-strip">{{ page.highlight_strip }}</div>
+          {%- endif %}
         </header>
 
         <article>

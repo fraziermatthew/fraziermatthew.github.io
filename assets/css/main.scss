@@ -721,6 +721,32 @@ a.inline-link:hover {
   }
 }
 
+// Accent strip under the subtitle (see `highlight_strip` in _pages/about.md, rendered in _layouts/about.html)
+.post.about-page .about-highlight-strip {
+  margin: 1.1rem 0 1.45rem;
+  padding: 0.7rem 0.95rem;
+  border-left: 3px solid var(--global-theme-color);
+  background: rgba(140, 71, 32, 0.045);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  font-weight: 500;
+  color: var(--global-text-color);
+  letter-spacing: 0.01em;
+}
+
+html[data-theme='dark'] .post.about-page .about-highlight-strip {
+  background: rgba(200, 158, 117, 0.11);
+}
+
+@media (max-width: 576px) {
+  .post.about-page .about-highlight-strip {
+    margin: 0.95rem 0 1.2rem;
+    padding: 0.65rem 0.85rem;
+    font-size: 0.9rem;
+  }
+}
+
 // Home "Featured Work" (see _includes/featured_work.html — opt in per project via `featured: true`)
 .post.about-page .featured-work-section {
   margin-top: 3rem;

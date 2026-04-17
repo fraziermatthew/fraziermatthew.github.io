@@ -20,6 +20,9 @@ subtitle: |
 #  Sr. Software Engineer | AI & Data Systems @ Goodway Group · CompSci Edu Research @ University of Delaware
 # Senior Software Engineer · AI & Data Systems · Computational Research # Designing production-grade AI systems for structured reasoning and decision intelligence
 
+# Accent strip rendered under the subtitle in `_layouts/about.html`. Comment out (or delete) to hide.
+highlight_strip: "Production AI systems • Structured reasoning • Research-informed engineering"
+
 profile:
   align: right
   image: prof_pic.png
