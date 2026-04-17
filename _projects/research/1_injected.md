@@ -3,7 +3,7 @@ layout: page
 page_class: project-detail
 title: "InjectEd — Multi-Agent System for Vulnerability Injection and Evaluation"
 description: Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities to generate structured security learning outcomes
-hero_subdescription: "InjectEd grounds abstract CWE concepts in each student's own code through multi-agent injection, evaluation, and selection."
+hero_subdescription: "InjectEd grounds abstract CWE concepts in each student's own code through multi-agent injection, evaluation, and selection"
 # hero_subdescription: "Built to ground abstract CWE concepts in each student's own code through multi-agent injection and evaluation."
 img: assets/img/cwe.png
 importance: 1
