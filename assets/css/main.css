@@ -1733,6 +1733,31 @@ html[data-theme=dark] .post.about-page .profile-contact-label {
   text-decoration: underline !important;
 }
 
+.post.about-page .post-header,
+.post.about-page .profile {
+  animation: aboutHeroFade 520ms ease-out both;
+}
+
+.post.about-page .profile {
+  animation-delay: 90ms;
+}
+
+@keyframes aboutHeroFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .post.about-page .post-header,
+  .post.about-page .profile {
+    animation: none;
+  }
+}
 .post.teaching-page {
   max-width: 980px;
 }
