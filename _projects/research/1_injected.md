@@ -3,7 +3,7 @@ layout: page
 page_class: project-detail
 title: "InjectEd — Multi-Agent System for Vulnerability Injection and Evaluation"
 description: Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities to generate structured security learning outcomes
-hero_subdescription: "InjectEd grounds abstract CWE concepts in each student's own code through multi-agent injection, evaluation, and selection"
+hero_subdescription: "InjectEd grounds abstract CWE concepts in each student's own code through multi-agent injection, evaluation, and selection."
 # hero_subdescription: "Built to ground abstract CWE concepts in each student's own code through multi-agent injection and evaluation."
 img: assets/img/cwe.png
 importance: 1
@@ -160,3 +160,27 @@ InjectEd was evaluated in a classroom setting to assess its impact on student un
 The project demonstrates how agentic AI systems like InjectEd can transform security education by making concepts **experiential, contextual, and student-specific**.
 
 It also reinforces the importance of combining qualitative and quantitative evaluation when assessing educational systems.
+
+---
+
+<h2>Related Publication</h2>
+
+<div class="project-related-publication">
+  <p class="project-related-publication__citation">
+    Matthew Frazier and Kostadin Damevski. <em>Towards Personalizing Secure Programming Education with LLM-Injected Vulnerabilities</em>. arXiv preprint, 2026.
+  </p>
+
+  <p class="project-related-publication__note">
+    This paper presents the research framing and evaluation context connected to the system described above.
+  </p>
+
+  <div class="project-related-publication__links">
+    <a href="{{ '/publications/' | relative_url }}" class="inline-link">View on publications page</a>
+    <span>·</span>
+    <a href="https://arxiv.org/abs/2604.13955" class="inline-link" target="_blank" rel="noopener noreferrer">arXiv</a>
+    <span>·</span>
+    <a href="https://arxiv.org/pdf/2604.13955" class="inline-link" target="_blank" rel="noopener noreferrer">PDF</a>
+    <span>·</span>
+    <a href="https://github.com/fraziermatthew/cwe-agent" class="inline-link" target="_blank" rel="noopener noreferrer">Code</a>
+  </div>
+</div>
