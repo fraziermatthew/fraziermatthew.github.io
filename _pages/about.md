@@ -21,7 +21,7 @@ subtitle: |
 # Senior Software Engineer · AI & Data Systems · Computational Research # Designing production-grade AI systems for structured reasoning and decision intelligence
 
 # Accent strip rendered under the subtitle in `_layouts/about.html`. Comment out (or delete) to hide.
-highlight_strip: "Production AI systems • Structured reasoning • Research-informed engineering"
+highlight_strip: "Production AI Systems • Structured Reasoning • Research-Informed Engineering"
 
 profile:
   align: right
