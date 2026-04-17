@@ -1773,8 +1773,8 @@ html[data-theme=dark] .post.about-page .profile-contact-label {
   }
 }
 .post.about-page .featured-work-section {
-  margin-top: 3.6rem;
-  padding-top: 0.2rem;
+  margin-top: 3rem;
+  padding-top: 0;
 }
 
 .post.about-page .featured-work-header {
@@ -1902,7 +1902,7 @@ html[data-theme=dark] .post.about-page .featured-work-image-wrap {
     grid-template-columns: 1fr;
   }
   .post.about-page .featured-work-image-wrap {
-    height: 170px;
+    height: 150px;
   }
 }
 @media (max-width: 576px) {
