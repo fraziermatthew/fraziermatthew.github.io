@@ -8,6 +8,11 @@ img: assets/img/auto-insights1.png
 importance: 1
 category: work
 permalink: /projects/work/automated-insights/
+# Home "Featured Work" — shown when `featured: true` (see _includes/featured_work.html)
+featured: true
+featured_title: "Automated Insights"
+featured_description: "Deterministic analytics system that separates signal computation from constrained LLM interpretation to produce consistent, decision-ready insights."
+featured_meta: "Production AI • Analytics Systems • LLM Reasoning"
 ---
 
 <p class="project-detail__nav">

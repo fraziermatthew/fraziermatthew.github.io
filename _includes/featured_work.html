@@ -1,0 +1,37 @@
+{%- comment -%}
+  Home "Featured Work" — opt in per project with `featured: true` (like `highlight: true` on publications).
+  Optional per-project overrides: `featured_title`, `featured_description`, `featured_meta`.
+  Renders nothing if no project opts in. Order: `importance` (same convention as /projects/).
+{%- endcomment -%}
+{%- assign featured_projects = site.projects | where: "featured", true | sort: "importance" -%}
+{%- if featured_projects.size > 0 %}
+<div class="featured-work-section">
+  <div class="featured-work-header">
+    <h2><a href="{{ '/projects/' | relative_url }}" class="section-link">Featured Work</a></h2>
+    <a href="{{ '/projects/' | relative_url }}" class="featured-work-view-all">View all projects →</a>
+  </div>
+
+  <div class="featured-work-grid">
+    {%- for project in featured_projects %}
+      {%- assign card_title = project.featured_title | default: project.title -%}
+      {%- assign card_desc = project.featured_description | default: project.description -%}
+    <a class="featured-work-card" href="{{ project.url | relative_url }}">
+      {%- if project.img %}
+      <div class="featured-work-image-wrap">
+        <img src="{{ project.img | relative_url }}" alt="{{ card_title | strip_html }} preview" loading="lazy">
+      </div>
+      {%- endif %}
+      <div class="featured-work-body">
+        <h3>{{ card_title }}</h3>
+        {%- if card_desc %}
+        <p>{{ card_desc }}</p>
+        {%- endif %}
+        {%- if project.featured_meta %}
+        <div class="featured-work-meta">{{ project.featured_meta }}</div>
+        {%- endif %}
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</div>
+{%- endif -%}
