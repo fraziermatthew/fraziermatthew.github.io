@@ -8,7 +8,7 @@ hero_subdescription: "InjectEd grounds abstract CWE concepts in each student's o
 img: assets/img/cwe.png
 importance: 1
 category: research
-permalink: /projects/research/cwe-agent/
+permalink: /projects/research/injected/
 # Home "Featured Work" — shown when `featured: true` (see _includes/featured_work.html)
 featured: true
 featured_title: "InjectEd"
