@@ -1198,6 +1198,90 @@ html[data-theme='dark'] .post.about-page .featured-work-image-wrap {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.42);
   }
 
+  // Community & Outreach list (_pages/teaching.md — `.education-outreach-*`)
+  .education-outreach-list {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
+  }
+
+  .education-outreach-item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 1.2rem;
+    align-items: start;
+    padding-bottom: 1.35rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .education-outreach-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .education-outreach-year {
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--global-theme-color);
+    padding-top: 0.15rem;
+  }
+
+  .education-outreach-content h3 {
+    margin: 0 0 0.35rem 0;
+    font-size: 1.02rem;
+    line-height: 1.35;
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+
+  .education-outreach-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--global-text-color-light);
+  }
+
+  .education-outreach-content p a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition:
+      border-color 0.18s ease,
+      color 0.18s ease;
+  }
+
+  .education-outreach-content p a:hover {
+    border-bottom-color: var(--global-theme-color);
+  }
+
+  html[data-theme='dark'] & .education-outreach-item {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+
+  @media (max-width: 768px) {
+    .education-outreach-item {
+      grid-template-columns: 1fr;
+      gap: 0.45rem;
+    }
+
+    .education-outreach-year {
+      padding-top: 0;
+      font-size: 0.8rem;
+    }
+
+    .education-outreach-content h3 {
+      font-size: 0.98rem;
+    }
+
+    .education-outreach-content p {
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+  }
+
   // course blocks
   .teaching-course {
     margin-bottom: 1.25rem;
