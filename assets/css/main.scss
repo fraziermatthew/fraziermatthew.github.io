@@ -670,6 +670,35 @@ a.inline-link:hover {
   }
 }
 
+// Subtle hero fade/translate-in — about/home only (_layouts/about.html → `.post.about-page`).
+// `.profile` starts slightly later so the header reads first. Respects `prefers-reduced-motion`.
+.post.about-page .post-header,
+.post.about-page .profile {
+  animation: aboutHeroFade 520ms ease-out both;
+}
+
+.post.about-page .profile {
+  animation-delay: 90ms;
+}
+
+@keyframes aboutHeroFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post.about-page .post-header,
+  .post.about-page .profile {
+    animation: none;
+  }
+}
+
 // Teaching page (see _pages/teaching.md — `page_class: teaching-page section-page`)
 .post.teaching-page {
   max-width: 980px;
