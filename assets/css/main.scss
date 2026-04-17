@@ -723,8 +723,8 @@ a.inline-link:hover {
 
 // Home "Featured Work" (see _includes/featured_work.html — opt in per project via `featured: true`)
 .post.about-page .featured-work-section {
-  margin-top: 3.6rem;
-  padding-top: 0.2rem;
+  margin-top: 3rem;
+  padding-top: 0;
 }
 
 .post.about-page .featured-work-header {
@@ -860,7 +860,7 @@ html[data-theme='dark'] .post.about-page .featured-work-image-wrap {
   }
 
   .post.about-page .featured-work-image-wrap {
-    height: 170px;
+    height: 150px;
   }
 }
 

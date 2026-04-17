@@ -12,7 +12,8 @@ permalink: /projects/research/injected/
 # Home "Featured Work" — shown when `featured: true` (see _includes/featured_work.html)
 featured: true
 featured_title: "InjectEd"
-featured_description: "Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities in student code to generate structured security learning outcomes."
+featured_description: "Multi-agent system that injects, scores, and selects vulnerabilities in student code to generate structured security learning outcomes."
+# featured_description: "Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities in student code to generate structured security learning outcomes."
 featured_meta: "Research Systems • Multi-Agent AI • Security Education"
 ---
 
