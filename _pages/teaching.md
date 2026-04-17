@@ -129,6 +129,16 @@ page_class: teaching-page section-page
   </div>
 
   <div class="education-outreach-item">
+    <div class="education-outreach-year">2023</div>
+    <div class="education-outreach-content">
+      <h3>CRA-WP Mentor & Panel Guest</h3>
+      <p>
+        Served as a mentor and panel participant supporting graduate students and early-career researchers from underrepresented backgrounds in computing.
+      </p>
+    </div>
+  </div>
+
+  <div class="education-outreach-item">
     <div class="education-outreach-year">2020, 2022</div>
     <div class="education-outreach-content">
       <h3>CRA-WP Grad Cohort for URMD / IDEALS</h3>
@@ -141,13 +151,4 @@ page_class: teaching-page section-page
     </div>
   </div>
 
-  <div class="education-outreach-item">
-    <div class="education-outreach-year">2023</div>
-    <div class="education-outreach-content">
-      <h3>CRA-WP Mentor & Panel Guest</h3>
-      <p>
-        Served as a mentor and panel participant supporting graduate students and early-career researchers from underrepresented backgrounds in computing.
-      </p>
-    </div>
-  </div>
 </div>
