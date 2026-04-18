@@ -11,7 +11,7 @@
 // This is scoped to the document scroll only — inner scroll containers are unaffected.
 html {
   scrollbar-gutter: stable;
-  overscroll-behavior: none;
+  // overscroll-behavior: none;
 }
 
 body {
