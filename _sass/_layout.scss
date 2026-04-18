@@ -4,8 +4,14 @@
 
 // Keep layout width stable when the vertical scrollbar appears (e.g. long pages
 // like /publications/ vs short pages) — avoids the whole column “jumping” sideways.
+//
+// `overscroll-behavior: none` disables macOS/iOS rubber-band bounce past the document
+// edges so the area below the footer is never exposed (would otherwise show the
+// browser-default `html` background as a white strip under the dark footer).
+// This is scoped to the document scroll only — inner scroll containers are unaffected.
 html {
   scrollbar-gutter: stable;
+  overscroll-behavior: none;
 }
 
 body {
