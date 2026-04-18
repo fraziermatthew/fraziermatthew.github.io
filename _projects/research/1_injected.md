@@ -61,10 +61,10 @@ I developed InjectEd as a multi-agent system that formalizes vulnerability gener
 
 This included:
 
-- **CWE Injector Agent**: inserts realistic vulnerabilities into high-signal regions of student code while preserving structural integrity
-- **CWE Evaluator Agent**: scores candidates across realism, complexity, and pedagogical value using LLM-as-judge evaluation
-- **CWE Ranker Agent**: selects the optimal vulnerability using weighted scoring and comparative reasoning
-- **Learning Outcome Agent**: generates structured assessment questions grounded in the injected vulnerability and code context
+- **CWE Injector Agent:** inserts realistic vulnerabilities into high-signal regions of student code while preserving structural integrity
+- **CWE Evaluator Agent:** scores candidates across realism, complexity, and pedagogical value using LLM-as-judge evaluation
+- **CWE Ranker Agent:** selects the optimal vulnerability using weighted scoring and comparative reasoning
+- **Learning Outcome Agent:** generates structured assessment questions grounded in the injected vulnerability and code context
 
 All prompts, scoring logic, and evaluation workflows are managed through **Langfuse**, enabling versioning, experimentation, and traceability across the system.
 
@@ -83,11 +83,11 @@ All prompts, scoring logic, and evaluation workflows are managed through **Langf
 
 The architecture is implemented as a staged agentic workflow with explicit separation between generation, evaluation, and selection.
 
-- **Input Context** → student code, assignment specifications, course materials, and curated CWE mappings
-- **Injection Agent** → generation of multiple vulnerability candidates
-- **Evaluation Agent** → scoring using defined pedagogical and technical criteria
-- **Ranking Agent** → selection of the optimal candidate through weighted comparison
-- **Learning Agent** → generation of structured educational artifacts aligned with course objectives
+- **Input Context**: student code, assignment specifications, course materials, and curated CWE mappings
+- **Injection Agent:** generation of multiple vulnerability candidates
+- **Evaluation Agent:** scoring using defined pedagogical and technical criteria
+- **Ranking Agent:** selection of the optimal candidate through weighted comparison
+- **Learning Agent:** generation of structured educational artifacts aligned with course objectives
 
 <p class="highlight">Evaluation is the control mechanism—generation is only the first step.</p>
 
