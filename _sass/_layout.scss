@@ -4,14 +4,8 @@
 
 // Keep layout width stable when the vertical scrollbar appears (e.g. long pages
 // like /publications/ vs short pages) — avoids the whole column “jumping” sideways.
-//
-// `background-color` matches the footer so macOS/iOS rubber-band overscroll past the
-// document edge reveals the same color as the footer instead of a white strip.
-// Theme-aware via `--global-footer-bg-color` (see _sass/_themes.scss): dark grey in
-// light mode, #111214 in dark mode.
 html {
   scrollbar-gutter: stable;
-  background-color: var(--global-footer-bg-color);
 }
 
 body {
@@ -32,6 +26,30 @@ body.fixed-top-nav {
 body.sticky-bottom-footer {
   // Remove padding below footer.
   padding-bottom: 0;
+
+  // Sticky-footer layout — body fills the viewport, content wrapper grows to push the
+  // footer to the bottom on short pages, and the footer never shrinks. This keeps the
+  // footer flush at the bottom on all pages so overscroll doesn't expose a white strip,
+  // without staining `<html>` (which would bleed dark behind the navbar/scrollbar).
+  // Scoped to this body class so toggling `site.footer_fixed: true` (which uses
+  // `position: fixed` instead) is unaffected.
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  // The three known content wrappers rendered as direct body children:
+  //   - `.container.mt-5`            → _layouts/default.html
+  //   - `.project-detail-page-shell` → _layouts/default.html (page_class: project-detail)
+  //   - `.post.distill`              → _layouts/distill.html
+  > .container,
+  > .project-detail-page-shell,
+  > .post.distill {
+    flex: 1 0 auto;
+  }
+
+  > footer {
+    flex-shrink: 0;
+  }
 }
 
 .container {
