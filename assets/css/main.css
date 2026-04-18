@@ -69,7 +69,6 @@ html[data-theme=dark] .repo-img-dark {
  ******************************************************************************/
 html {
   scrollbar-gutter: stable;
-  overscroll-behavior: none;
 }
 
 body {
