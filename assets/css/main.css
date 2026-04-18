@@ -474,10 +474,23 @@ footer.fixed-bottom a:hover {
 }
 
 footer.sticky-bottom {
+  background-color: var(--global-footer-bg-color);
   border-top: 2px solid #8c4720 !important;
   padding-top: 12px;
   padding-bottom: 12px;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+}
+footer.sticky-bottom .container {
+  color: var(--global-footer-text-color);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+footer.sticky-bottom a {
+  color: var(--global-footer-link-color);
+}
+footer.sticky-bottom a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
 }
 
 .cv-header-row {
