@@ -69,6 +69,7 @@ html[data-theme=dark] .repo-img-dark {
  ******************************************************************************/
 html {
   scrollbar-gutter: stable;
+  background-color: var(--global-footer-bg-color);
 }
 
 body {
