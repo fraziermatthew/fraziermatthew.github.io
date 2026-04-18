@@ -13,7 +13,7 @@ page_class: teaching-page section-page
 
 <div class="teaching-approach-with-media" markdown="0">
   <div class="teaching-approach-text">
-    <p>I teach computer science by training how engineers think — through structured problem-solving, debugging intuition, and applied reasoning in real-world systems.</p>
+    <p>I teach computer science by training how engineers think through structured problem-solving, debugging intuition, and applied reasoning in real-world systems.</p>
     <p>My instruction emphasizes:</p>
     <ul>
       <li>Breaking complex systems into clear <strong>reasoning steps</strong></li>
@@ -120,7 +120,7 @@ page_class: teaching-page section-page
   <div class="education-outreach-item">
     <div class="education-outreach-year">2024</div>
     <div class="education-outreach-content">
-      <h3>CodeBeats Summer Camp — University of Delaware</h3>
+      <h3>CodeBeats Summer Camp • University of Delaware</h3>
       <p>
         NSF-supported music and coding summer program for middle school students focused on broadening participation in computing through beat-making, TunePad, and creative coding experiences.
         <a href="https://sites.udel.edu/ct4ud/" target="_blank" rel="noopener noreferrer">Learn more</a>

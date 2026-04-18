@@ -31,7 +31,7 @@ This system formalizes what counts as an insight by separating deterministic sig
 
 This system generates actionable insights from historical marketing campaign data by using a client’s own performance as the benchmark.
 
-<p class="highlight">Computation owns the signals; the model interprets them—insights remain traceable end to end.</p>
+<p class="highlight">Computation owns the signals; the model interprets them, keeping insights traceable end to end.</p>
 
 Instead of relying on external comparisons, the system evaluates campaigns relative to historical baselines, surfacing meaningful deviations, trends, and opportunities.
 
@@ -66,7 +66,7 @@ The system operates as a layered analytical pipeline where structured statistica
 
 I designed a system that formalizes insight generation by combining statistical benchmarking with structured LLM interpretation.
 
-<p class="highlight">Deterministic signals are computed first; the LLM interprets structured inputs—never performing the analysis itself.</p>
+<p class="highlight">Deterministic signals are computed first; the LLM interprets structured inputs without performing the analysis itself.</p>
 
 This included:
 

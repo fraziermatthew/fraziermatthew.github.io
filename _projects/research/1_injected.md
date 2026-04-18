@@ -57,14 +57,14 @@ The result is a system that turns theoretical security concepts into **contextua
 
 I developed InjectEd as a multi-agent system that formalizes vulnerability generation, evaluation, and selection within student code.
 
-<p class="highlight">Generation alone is not enough—the system evaluates and selects what is most educational.</p>
+<p class="highlight">Generation alone is not enough because the system evaluates and selects what is most educational.</p>
 
 This included:
 
-- **CWE Injector Agent** — inserts realistic vulnerabilities into high-signal regions of student code while preserving structural integrity
-- **CWE Evaluator Agent** — scores candidates across realism, complexity, and pedagogical value using LLM-as-judge evaluation
-- **CWE Ranker Agent** — selects the optimal vulnerability using weighted scoring and comparative reasoning
-- **Learning Outcome Agent** — generates structured assessment questions grounded in the injected vulnerability and code context
+- **CWE Injector Agent**: inserts realistic vulnerabilities into high-signal regions of student code while preserving structural integrity
+- **CWE Evaluator Agent**: scores candidates across realism, complexity, and pedagogical value using LLM-as-judge evaluation
+- **CWE Ranker Agent**: selects the optimal vulnerability using weighted scoring and comparative reasoning
+- **Learning Outcome Agent**: generates structured assessment questions grounded in the injected vulnerability and code context
 
 All prompts, scoring logic, and evaluation workflows are managed through **Langfuse**, enabling versioning, experimentation, and traceability across the system.
 
