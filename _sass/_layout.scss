@@ -4,8 +4,14 @@
 
 // Keep layout width stable when the vertical scrollbar appears (e.g. long pages
 // like /publications/ vs short pages) — avoids the whole column “jumping” sideways.
+//
+// `background-color` matches the footer so macOS/iOS rubber-band overscroll past the
+// document edge reveals the same color as the footer instead of a white strip.
+// Theme-aware via `--global-footer-bg-color` (see _sass/_themes.scss): dark grey in
+// light mode, #111214 in dark mode.
 html {
   scrollbar-gutter: stable;
+  background-color: var(--global-footer-bg-color);
 }
 
 body {
