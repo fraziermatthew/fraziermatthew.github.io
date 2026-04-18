@@ -482,10 +482,26 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   // border-top: 1px solid var(--global-divider-color); // original footer
+  background-color: var(--global-footer-bg-color);
   border-top: 2px solid $secondary-color !important;
   padding-top: 12px;
   padding-bottom: 12px;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+
+  .container {
+    color: var(--global-footer-text-color);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  a {
+    color: var(--global-footer-link-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
 }
 
 // CV (see _layouts/cv.html)
