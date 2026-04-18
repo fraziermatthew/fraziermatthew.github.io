@@ -69,7 +69,6 @@ html[data-theme=dark] .repo-img-dark {
  ******************************************************************************/
 html {
   scrollbar-gutter: stable;
-  background-color: var(--global-footer-bg-color);
 }
 
 body {
@@ -87,6 +86,17 @@ body.fixed-top-nav {
 
 body.sticky-bottom-footer {
   padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body.sticky-bottom-footer > .container,
+body.sticky-bottom-footer > .project-detail-page-shell,
+body.sticky-bottom-footer > .post.distill {
+  flex: 1 0 auto;
+}
+body.sticky-bottom-footer > footer {
+  flex-shrink: 0;
 }
 
 .container {
