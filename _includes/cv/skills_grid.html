@@ -13,11 +13,11 @@
             {% for block in entry.contents %}
               <div class="skill-block">
                 <h4>{{ block.heading }}</h4>
-                <ul>
+                <div class="skill-pills" role="list" aria-label="{{ block.heading }} technologies">
                   {% for item in block.items %}
-                    <li>{% include cv/md_inline.html text=item %}</li>
+                    <span class="skill-pill" role="listitem">{% include cv/md_inline.html text=item %}</span>
                   {% endfor %}
-                </ul>
+                </div>
               </div>
             {% endfor %}
           </div>

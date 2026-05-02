@@ -2001,6 +2001,54 @@ html[data-theme='dark'] .cv .card .skill-block li::marker {
   color: rgba(255, 255, 255, 0.32);
 }
 
+// Skills pill cloud (see _includes/cv/skills_grid.html). Each .skill-pill is a single technology
+// or capability tag rendered inside a .skill-pills flex-wrap container. Visual treatment is
+// intentionally subtle — pills are scannable inventory, not call-to-action buttons.
+.cv .card .skill-block .skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv .card .skill-block .skill-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #444;
+  font-weight: 500;
+  white-space: nowrap;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.cv .card .skill-block .skill-pill:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+  border-color: rgba(0, 0, 0, 0.14);
+  color: #222;
+}
+
+html[data-theme='dark'] .cv .card .skill-block .skill-pill {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.78);
+}
+
+html[data-theme='dark'] .cv .card .skill-block .skill-pill:hover {
+  background-color: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.20);
+  color: var(--global-text-color);
+}
+
 .cv .card h6 {
   font-weight: 500;
 }
