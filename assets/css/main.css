@@ -2756,10 +2756,6 @@ html[data-theme=dark] .cv .pub-venue {
   font-weight: 500;
 }
 
-.cv .card .cv-skills-main .item.cv-skills-item {
-  max-width: none;
-}
-
 .cv .card .cv-skills-list-group > .cv-skills-list-item {
   margin-bottom: 0;
 }
@@ -2813,7 +2809,7 @@ html[data-theme=dark] .resume-skill-pill {
   color: rgba(255, 255, 255, 0.78);
   background: rgba(255, 255, 255, 0.035);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), inset 0 0 0 0 rgba(255, 255, 255, 0);
+  box-shadow: none;
   transition: all 0.18s ease;
 }
 
@@ -2822,7 +2818,7 @@ html[data-theme=dark] .resume-skill-pill:hover {
   color: #e3b894;
   background: rgba(227, 184, 148, 0.08);
   border-color: rgba(227, 184, 148, 0.28);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 768px) {
