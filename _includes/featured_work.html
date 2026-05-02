@@ -2,6 +2,11 @@
   Home "Featured Work" — opt in per project with `featured: true` (like `highlight: true` on publications).
   Optional per-project overrides: `featured_title`, `featured_description`, `featured_meta`.
   Renders nothing if no project opts in. Order: `importance` (same convention as /projects/).
+
+  Card metadata layer is currently the `tech_stack` pill row (sourced from the same array
+  as the projects-index card and the project-detail hero — single source of truth in the
+  project's .md frontmatter). The `featured_meta` rendering is preserved below as a
+  commented-out block; see the inline comment for the rationale and how to re-enable.
 {%- endcomment -%}
 {%- assign featured_projects = site.projects | where: "featured", true | sort: "importance" -%}
 {%- if featured_projects.size > 0 %}
@@ -26,15 +31,24 @@
         {%- if card_desc %}
         <p>{{ card_desc }}</p>
         {%- endif %}
-        {%- if project.featured_meta %}
-        <div class="featured-work-meta">{{ project.featured_meta }}</div>
-        {%- endif %}
         {%- comment -%}
-          Tech-stack pills sourced from the same `tech_stack` frontmatter array used by
-          _includes/projects.html (projects index card) and _layouts/page.html (project
-          detail hero). Single source of truth — edit only in the project's .md file.
-          Styled as tertiary metadata here (quieter than .projects card pills) since
-          they sit under both the description and the editorial featured_meta line.
+          Editorial categorization line (e.g. "Research Systems • Multi-Agent AI • Security Education").
+          Commented out on purpose — when rendered alongside the .project-tech-pills row below, the
+          two metadata layers stacked in the same hierarchy slot and shared overlapping vocabulary
+          ("Multi-Agent AI" vs the "Multi-Agent Systems" pill, "LLM Reasoning" appearing in both).
+          To re-enable: unwrap the next {% comment %}/{% endcomment %} block AND uncomment the
+          matching .featured-work-meta rule in assets/css/main.scss. The `featured_meta:` field is
+          preserved in each project's frontmatter so the data is ready when the rendering returns.
+        {%- endcomment -%}
+        {%- comment -%}
+        {% if project.featured_meta %}
+        <div class="featured-work-meta">{{ project.featured_meta }}</div>
+        {% endif %}
+        {%- endcomment -%}
+        {%- comment -%}
+          Tech-stack pills are the card's only metadata layer — sourced from the same
+          `tech_stack` array used by _includes/projects.html and _layouts/page.html.
+          Single source of truth across home, projects index, and project detail.
         {%- endcomment -%}
         {%- if project.tech_stack and project.tech_stack.size > 0 %}
         <div class="project-tech-pills" role="list" aria-label="Technologies used">

@@ -976,34 +976,33 @@ html[data-theme='dark'] .post.about-page .about-highlight-strip {
   color: var(--global-text-color-light);
 }
 
-.post.about-page .featured-work-meta {
-  font-size: 0.82rem;
-  line-height: 1.42;
-  color: var(--global-text-color-light);
-  opacity: 0.84;
-  font-weight: 500;
-}
+// Editorial categorization line — paired with the featured_meta rendering block in
+// _includes/featured_work.html, which is also currently commented out. Re-enable this rule
+// AND that template block together if you ever want the editorial line back on the home cards.
+// See the inline comment in _includes/featured_work.html for the rationale (vocabulary
+// collision with the tech-stack pills below it).
+//
+// .post.about-page .featured-work-meta {
+//   font-size: 0.82rem;
+//   line-height: 1.42;
+//   color: var(--global-text-color-light);
+//   opacity: 0.84;
+//   font-weight: 500;
+// }
 
-// Featured Work pills — same data + visual identity as the index card pills
-// (.project-tech-pill) but tertiary on the home card: they sit under both the
-// description and the editorial .featured-work-meta line, so they're quieter
-// (smaller, lower opacity) and lift their border-color in concert with the
-// card-hover treatment (brown accent, matching .featured-work-body h3 hover).
+// Featured Work pills — currently the card's only metadata layer (the .featured-work-meta
+// rule above is commented out alongside its template block in _includes/featured_work.html).
+// Sized to match .projects index card pills (.project-tech-pill base) for visual consistency
+// across the two card surfaces; border-color shifts to the brown accent on card-hover,
+// matching the existing .featured-work-card and .featured-work-body h3 hover pattern.
 .post.about-page .featured-work-card .project-tech-pills {
-  margin-top: 0.65rem;
+  margin-top: 0.55rem;
   margin-bottom: 0;
-  gap: 0.3rem 0.34rem;
-}
-
-.post.about-page .featured-work-card .project-tech-pill {
-  padding: 0.2rem 0.55rem;
-  font-size: 0.68rem;
-  opacity: 0.88;
+  gap: 0.32rem 0.36rem;
 }
 
 .post.about-page .featured-work-card:hover .project-tech-pill {
   border-color: rgba(140, 71, 32, 0.22);
-  opacity: 1;
 }
 
 html[data-theme='dark'] .post.about-page .featured-work-card:hover .project-tech-pill {
