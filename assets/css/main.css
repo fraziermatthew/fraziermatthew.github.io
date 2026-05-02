@@ -2767,37 +2767,33 @@ html[data-theme=dark] .cv .pub-venue {
 .resume-skills-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 3rem 4rem;
-  margin-top: 2.25rem;
-}
-
-.resume-skill-group {
-  margin-bottom: 0.5rem;
+  column-gap: 2.75rem;
+  row-gap: 1.75rem;
 }
 
 .resume-skill-group h3 {
-  margin-bottom: 0.9rem;
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.28;
+  margin: 0 0 0.58rem 0;
   color: var(--global-text-color);
 }
 
 .resume-skill-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 0.6rem;
-  max-width: 520px;
+  gap: 0.4rem 0.45rem;
 }
 
 .resume-skill-pill {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
-  padding: 0.38rem 0.78rem;
-  font-size: 0.84rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  padding: 0.32rem 0.7rem;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  font-weight: 500;
+  white-space: nowrap;
   color: rgba(0, 0, 0, 0.72);
   background: rgba(0, 0, 0, 0.035);
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -2832,11 +2828,8 @@ html[data-theme=dark] .resume-skill-pill:hover {
 @media (max-width: 768px) {
   .resume-skills-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  .resume-skill-pill {
-    font-size: 0.8rem;
-    padding: 0.34rem 0.7rem;
+    column-gap: 0;
+    row-gap: 1.5rem;
   }
 }
 .cv .card h6 {
