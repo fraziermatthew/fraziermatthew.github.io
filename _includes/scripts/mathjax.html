@@ -8,5 +8,12 @@
     };
   </script>
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@{{ site.mathjax.version }}/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  {%- comment -%}
+    polyfill.io was compromised in June 2024 and the domain is effectively dead — requests hang
+    until browser timeout (~30-90s), causing DOMContentLoaded to stall and the page to appear
+    extremely slow to load. Disabled here; MathJax works fine in modern browsers without it.
+    If you ever need a safe replacement for very old browsers, use Cloudflare's vetted clone:
+    https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6
+  {%- endcomment -%}
+  {%- comment -%}<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>{%- endcomment -%}
   {%- endif %}
