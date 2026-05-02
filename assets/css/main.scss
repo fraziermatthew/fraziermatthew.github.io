@@ -314,6 +314,50 @@ html[data-theme='dark'] .projects-disclaimer {
   opacity: 0.62;
 }
 
+// Tech-stack pill row inside each project card on the index (_includes/projects.html
+// + projects_horizontal.html). Compact + non-interactive: the entire <a> is the
+// hoverable surface (see .projects .grid-item > a:hover .card above), so per-pill
+// hover would compete with the card-level lift. Sized smaller than .resume-skill-pill
+// because the card has less horizontal space than the resume's 2-col skills grid.
+.project-tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.32rem 0.36rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-tech-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.22rem 0.58rem;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  font-weight: 500;
+  white-space: nowrap;
+
+  color: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.035);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+html[data-theme='dark'] .project-tech-pill {
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+// Card-level hover gives pills a subtle accent shift, reinforcing that the whole
+// card is one interactive unit (matches the brown accent used on resume pills).
+.projects .grid-item > a:hover .project-tech-pill {
+  border-color: rgba(140, 71, 32, 0.18);
+}
+
+html[data-theme='dark'] .projects .grid-item > a:hover .project-tech-pill {
+  border-color: rgba(227, 184, 148, 0.22);
+}
+
 // Individual project write-ups (_projects/** — `page_class: project-detail` in front matter)
 .post.project-detail {
   .post-header {

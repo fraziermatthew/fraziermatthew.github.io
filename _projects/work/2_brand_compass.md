@@ -8,6 +8,18 @@ importance: 2
 img: assets/img/bc2.png
 category: work
 permalink: /projects/work/brand-compass/
+# Tech-stack pills rendered by _includes/projects.html on the projects index card.
+# Keep concise (8-10 max) and ordered: language → data → orchestration → AI/LLM concepts.
+tech_stack:
+  - "Python"
+  - "Snowflake"
+  - "AWS Lambda"
+  - "SQS"
+  - "LLM Reasoning"
+  - "Prompt Engineering"
+  - "ReAct"
+  - "Chain-of-Thought"
+  - "Few-Shot"
 ---
 
 <p class="project-detail__nav">

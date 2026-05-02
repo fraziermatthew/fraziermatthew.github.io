@@ -17,6 +17,13 @@
           <div class="card-body">
             <h3 class="card-title">{{ project.title }}</h3>
             <p class="card-text">{{ project.description }}</p>
+            {%- if project.tech_stack and project.tech_stack.size > 0 %}
+            <div class="project-tech-pills" role="list" aria-label="Technologies used">
+              {%- for tech in project.tech_stack %}
+              <span class="project-tech-pill" role="listitem">{{ tech }}</span>
+              {%- endfor %}
+            </div>
+            {%- endif %}
             <div class="row ml-1 mr-1 p-0">
               {%- if project.github -%}
               <div class="github-icon">

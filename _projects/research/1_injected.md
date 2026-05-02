@@ -9,6 +9,17 @@ img: assets/img/cwe.png
 importance: 1
 category: research
 permalink: /projects/research/injected/
+# Tech-stack pills rendered by _includes/projects.html on the projects index card.
+# Keep concise (8-10 max) and ordered: language → frameworks → AI/LLM concepts → domain.
+tech_stack:
+  - "Python"
+  - "Multi-Agent Systems"
+  - "Agentic Workflows"
+  - "LLM-as-Judge"
+  - "Prompt Engineering"
+  - "Langfuse"
+  - "Evaluation Frameworks"
+  - "CWE Analysis"
 # Home "Featured Work" — shown when `featured: true` (see _includes/featured_work.html)
 featured: true
 featured_title: "InjectEd"

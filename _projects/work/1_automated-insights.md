@@ -8,6 +8,17 @@ img: assets/img/auto-insights1.png
 importance: 1
 category: work
 permalink: /projects/work/automated-insights/
+# Tech-stack pills rendered by _includes/projects.html on the projects index card.
+# Keep concise (8-10 max) and ordered: language → data → orchestration → AI/LLM concepts.
+tech_stack:
+  - "Python"
+  - "SQL"
+  - "Snowflake"
+  - "Airflow"
+  - "LLM Reasoning"
+  - "Prompt Engineering"
+  - "Statistical Analysis"
+  - "Structured Outputs"
 # Home "Featured Work" — shown when `featured: true` (see _includes/featured_work.html)
 featured: true
 featured_title: "Automated Insights"
