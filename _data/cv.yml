@@ -59,6 +59,11 @@
     # Items render as pill tags (see _includes/cv/skills_grid.html). Each entry should be a single
     # token or short phrase — avoid commas inside an item. Order is logical scanning order: language
     # → headline concepts → techniques → frameworks → platforms → tools.
+    #
+    # Category order is tuned so the 2-col grid balances row heights by pill count:
+    #   Row 1: AI (18) | Backend (16)         — headline pair, near-balanced
+    #   Row 2: Distributed (13) | Data (12)   — near-balanced
+    #   Row 3: Tools (12) | Experimentation (5) — imbalance lands bottom-right
     - heading: AI & LLM Systems
       items:
         - "Python"
@@ -79,35 +84,6 @@
         - "Qdrant"
         - "ChromaDB"
         - "Langfuse"
-    - heading: Data & Analytics Engineering
-      items:
-        - "SQL"
-        - "Data Modeling"
-        - "ETL/ELT"
-        - "Statistical Signals"
-        - "Airflow"
-        - "AWS MWAA"
-        - "Argo Workflows"
-        - "Adverity"
-        - "Redshift"
-        - "Snowflake"
-        - "S3"
-        - "Pandas"
-    - heading: Distributed Systems & Infrastructure
-      items:
-        - "AWS Lambda"
-        - "SQS (FIFO)"
-        - "SNS"
-        - "S3"
-        - "AWS CDK"
-        - "Serverless"
-        - "Event-Driven"
-        - "Async Pipelines"
-        - "BullMQ"
-        - "Datadog"
-        - "Rollbar"
-        - "OpenTelemetry"
-        - "Pino"
     - heading: Backend & APIs
       items:
         - "Node.js"
@@ -126,13 +102,35 @@
         - "Drizzle ORM"
         - "Sequelize"
         - "Knex"
-    - heading: Experimentation & Optimization
+    - heading: Distributed Systems & Infrastructure
       items:
-        - "A/B Testing"
-        - "Performance Analysis"
-        - "CTR/VCR Optimization"
-        - "Campaign Analytics"
-        - "Decision Systems"
+        - "AWS Lambda"
+        - "SQS (FIFO)"
+        - "SNS"
+        - "S3"
+        - "AWS CDK"
+        - "Serverless"
+        - "Event-Driven"
+        - "Async Pipelines"
+        - "BullMQ"
+        - "Datadog"
+        - "Rollbar"
+        - "OpenTelemetry"
+        - "Pino"
+    - heading: Data & Analytics Engineering
+      items:
+        - "SQL"
+        - "Data Modeling"
+        - "ETL/ELT"
+        - "Statistical Signals"
+        - "Airflow"
+        - "AWS MWAA"
+        - "Argo Workflows"
+        - "Adverity"
+        - "Redshift"
+        - "Snowflake"
+        - "S3"
+        - "Pandas"
     - heading: Tools & Platforms
       items:
         - "Git"
@@ -147,6 +145,13 @@
         - "Google Ads"
         - "Meta"
         - "YouTube"
+    - heading: Experimentation & Optimization
+      items:
+        - "A/B Testing"
+        - "Performance Analysis"
+        - "CTR/VCR Optimization"
+        - "Campaign Analytics"
+        - "Decision Systems"
 
 - title: Academic Experience
   type: time_table

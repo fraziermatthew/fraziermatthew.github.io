@@ -124,6 +124,11 @@
   contents:
     # Items render as pill tags (see _includes/cv/skills_grid.html). Academic CV emphasizes
     # research methods, evaluation, and empirical/theoretical bent over industry-only tooling.
+    #
+    # Category order is tuned so the 2-col grid balances row heights by pill count:
+    #   Row 1: AI (14) | Backend (10)
+    #   Row 2: Data (10) | Tools (10)         — perfectly balanced
+    #   Row 3: Distributed (9) | Evaluation (8) — near-balanced
     - heading: AI & ML Systems
       items:
         - "Python"
@@ -140,29 +145,6 @@
         - "Vector Databases"
         - "Langfuse"
         - "Evaluation Frameworks"
-    - heading: Data & Analytics Engineering
-      items:
-        - "SQL"
-        - "Data Modeling"
-        - "ETL Pipelines"
-        - "Statistical Signals"
-        - "Airflow"
-        - "AWS MWAA"
-        - "Argo Workflows"
-        - "Redshift"
-        - "Snowflake"
-        - "S3"
-    - heading: Distributed Systems & Infrastructure
-      items:
-        - "AWS Lambda"
-        - "SQS"
-        - "SNS"
-        - "S3"
-        - "Event-Driven"
-        - "Async Pipelines"
-        - "High-Throughput Processing"
-        - "Datadog"
-        - "Rollbar"
     - heading: Backend & APIs
       items:
         - "Python"
@@ -175,16 +157,18 @@
         - "Microservices"
         - "PostgreSQL"
         - "Redis"
-    - heading: Evaluation & Experimentation
+    - heading: Data & Analytics Engineering
       items:
-        - "Mixed-Methods Research"
-        - "Empirical Evaluation"
-        - "Survey Design (Qualtrics)"
-        - "Qualitative Analysis"
-        - "Usability Testing"
-        - "User Interviews"
-        - "A/B Testing"
-        - "Performance Analysis"
+        - "SQL"
+        - "Data Modeling"
+        - "ETL Pipelines"
+        - "Statistical Signals"
+        - "Airflow"
+        - "AWS MWAA"
+        - "Argo Workflows"
+        - "Redshift"
+        - "Snowflake"
+        - "S3"
     - heading: Tools & Platforms
       items:
         - "Git"
@@ -197,3 +181,24 @@
         - "TTD"
         - "Google Ads"
         - "Meta"
+    - heading: Distributed Systems & Infrastructure
+      items:
+        - "AWS Lambda"
+        - "SQS"
+        - "SNS"
+        - "S3"
+        - "Event-Driven"
+        - "Async Pipelines"
+        - "High-Throughput Processing"
+        - "Datadog"
+        - "Rollbar"
+    - heading: Evaluation & Experimentation
+      items:
+        - "Mixed-Methods Research"
+        - "Empirical Evaluation"
+        - "Survey Design (Qualtrics)"
+        - "Qualitative Analysis"
+        - "Usability Testing"
+        - "User Interviews"
+        - "A/B Testing"
+        - "Performance Analysis"
