@@ -2017,29 +2017,14 @@ html[data-theme=dark] .post.about-page .about-highlight-strip {
   color: var(--global-text-color-light);
 }
 
-.post.about-page .featured-work-meta {
-  font-size: 0.82rem;
-  line-height: 1.42;
-  color: var(--global-text-color-light);
-  opacity: 0.84;
-  font-weight: 500;
-}
-
 .post.about-page .featured-work-card .project-tech-pills {
-  margin-top: 0.65rem;
+  margin-top: 0.55rem;
   margin-bottom: 0;
-  gap: 0.3rem 0.34rem;
-}
-
-.post.about-page .featured-work-card .project-tech-pill {
-  padding: 0.2rem 0.55rem;
-  font-size: 0.68rem;
-  opacity: 0.88;
+  gap: 0.32rem 0.36rem;
 }
 
 .post.about-page .featured-work-card:hover .project-tech-pill {
   border-color: rgba(140, 71, 32, 0.22);
-  opacity: 1;
 }
 
 html[data-theme=dark] .post.about-page .featured-work-card:hover .project-tech-pill {
