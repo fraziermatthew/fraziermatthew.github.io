@@ -2025,6 +2025,27 @@ html[data-theme=dark] .post.about-page .about-highlight-strip {
   font-weight: 500;
 }
 
+.post.about-page .featured-work-card .project-tech-pills {
+  margin-top: 0.65rem;
+  margin-bottom: 0;
+  gap: 0.3rem 0.34rem;
+}
+
+.post.about-page .featured-work-card .project-tech-pill {
+  padding: 0.2rem 0.55rem;
+  font-size: 0.68rem;
+  opacity: 0.88;
+}
+
+.post.about-page .featured-work-card:hover .project-tech-pill {
+  border-color: rgba(140, 71, 32, 0.22);
+  opacity: 1;
+}
+
+html[data-theme=dark] .post.about-page .featured-work-card:hover .project-tech-pill {
+  border-color: rgba(227, 184, 148, 0.28);
+}
+
 html[data-theme=dark] .post.about-page .featured-work-card {
   background: rgba(200, 158, 117, 0.11);
   border-left-color: #c89e75;
