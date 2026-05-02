@@ -392,6 +392,21 @@ html[data-theme='dark'] .projects .grid-item > a:hover .project-tech-pill {
     color: var(--global-text-color-light);
   }
 
+  // Hero pill row — same data + visual identity as the index card pills
+  // (.project-tech-pill) but sized slightly larger here so they read with the hero text
+  // rather than as card metadata. max-width matches .hero-description for a tidy column.
+  .post-header .project-tech-pills {
+    margin-top: 1.1rem;
+    margin-bottom: 0;
+    max-width: 650px;
+    gap: 0.4rem 0.45rem;
+  }
+
+  .post-header .project-tech-pill {
+    padding: 0.3rem 0.68rem;
+    font-size: 0.78rem;
+  }
+
   .project-detail__nav {
     margin-top: 1.1rem;
     margin-bottom: 1.6rem;

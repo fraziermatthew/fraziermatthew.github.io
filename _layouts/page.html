@@ -11,6 +11,20 @@ layout: default
             {%- if page.hero_subdescription -%}
             <p class="hero-subdescription">{{ page.hero_subdescription }}</p>
             {%- endif -%}
+            {%- comment -%}
+              Tech-stack pills in the hero. Sourced from the same `tech_stack` frontmatter
+              array used by _includes/projects.html on the index page — single source of truth,
+              edited only in the project's own .md file. Reuses .project-tech-pill class for
+              visual identity; sized slightly larger here via .post.project-detail
+              .post-header .project-tech-pill (see assets/css/main.scss).
+            {%- endcomment -%}
+            {%- if page.tech_stack and page.tech_stack.size > 0 %}
+            <div class="project-tech-pills" role="list" aria-label="Technologies used">
+              {%- for tech in page.tech_stack %}
+              <span class="project-tech-pill" role="listitem">{{ tech }}</span>
+              {%- endfor %}
+            </div>
+            {%- endif %}
             {%- else -%}
             <p class="post-description">{{ page.description }}</p>
             {%- endif -%}
