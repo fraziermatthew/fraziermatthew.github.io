@@ -1915,12 +1915,9 @@ html[data-theme='dark'] .cv .pub-venue {
 // Each .resume-skill-group is a category (heading + pill cloud); pills are scannable inventory
 // tags. Brown/peach hover palette is RGB-literal to match the year-badge accent across themes.
 
-// Structural wrappers from the surrounding card layout — kept so the section integrates cleanly
-// with .cv .card list-group conventions used by time_table.html.
-.cv .card .cv-skills-main .item.cv-skills-item {
-  max-width: none;
-}
-
+// Skills section opts out of the time_table badge/content grid — see _includes/cv/skills_grid.html.
+// Bootstrap's default list-group-item padding (1.25rem horizontal) alone provides the symmetric
+// inset; nothing else is needed here.
 .cv .card .cv-skills-list-group > .cv-skills-list-item {
   margin-bottom: 0;
 }
@@ -1984,9 +1981,7 @@ html[data-theme='dark'] .resume-skill-pill {
   background: rgba(255, 255, 255, 0.035);
   border: 1px solid rgba(255, 255, 255, 0.08);
 
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.5),
-    inset 0 0 0 0 rgba(255, 255, 255, 0);
+  box-shadow: none;
 
   transition: all 0.18s ease;
 }
@@ -1999,7 +1994,7 @@ html[data-theme='dark'] .resume-skill-pill:hover {
   background: rgba(227, 184, 148, 0.08);
   border-color: rgba(227, 184, 148, 0.28);
 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 768px) {

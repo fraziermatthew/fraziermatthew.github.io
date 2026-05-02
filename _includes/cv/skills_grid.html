@@ -1,28 +1,22 @@
 <ul class="card-text font-weight-light list-group list-group-flush cv-skills-list-group">
   <li class="list-group-item cv-skills-list-item border-0">
     {%- comment -%}
-      Same row/columns as time_table.html (badge col + body col). Grid lives in col-10 for width math;
-      CSS bleeds it left so headings/bullets align with the year badge column, not the Ph.D. text column.
+      Skills are not bound to the time_table badge/content grid (no year badge here),
+      so the section uses a single full-width container — list-group-item padding alone
+      provides a symmetric inset matching the rest of the card. See main.scss
+      .resume-skills-grid for the 2-column pill grid inside.
     {%- endcomment -%}
-    <div class="row">
-      {%- comment -%} Spacer matches time_table badge column on md+; hidden on small screens so skills use full card width. {%- endcomment -%}
-      <div class="d-none d-md-block text-center flex-shrink-0" style="width: 75px; min-width: 75px;" aria-hidden="true">&nbsp;</div>
-      <div class="col-12 col-md-10 mt-2 mt-md-0 cv-skills-main">
-        <div class="item cv-skills-item">
-          <div class="resume-skills-grid">
-            {% for block in entry.contents %}
-              <div class="resume-skill-group">
-                <h3>{{ block.heading }}</h3>
-                <div class="resume-skill-pills" role="list" aria-label="{{ block.heading }} technologies">
-                  {% for item in block.items %}
-                    <span class="resume-skill-pill" role="listitem">{% include cv/md_inline.html text=item %}</span>
-                  {% endfor %}
-                </div>
-              </div>
+    <div class="resume-skills-grid">
+      {% for block in entry.contents %}
+        <div class="resume-skill-group">
+          <h3>{{ block.heading }}</h3>
+          <div class="resume-skill-pills" role="list" aria-label="{{ block.heading }} technologies">
+            {% for item in block.items %}
+              <span class="resume-skill-pill" role="listitem">{% include cv/md_inline.html text=item %}</span>
             {% endfor %}
           </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
   </li>
 </ul>
