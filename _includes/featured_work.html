@@ -29,6 +29,20 @@
         {%- if project.featured_meta %}
         <div class="featured-work-meta">{{ project.featured_meta }}</div>
         {%- endif %}
+        {%- comment -%}
+          Tech-stack pills sourced from the same `tech_stack` frontmatter array used by
+          _includes/projects.html (projects index card) and _layouts/page.html (project
+          detail hero). Single source of truth — edit only in the project's .md file.
+          Styled as tertiary metadata here (quieter than .projects card pills) since
+          they sit under both the description and the editorial featured_meta line.
+        {%- endcomment -%}
+        {%- if project.tech_stack and project.tech_stack.size > 0 %}
+        <div class="project-tech-pills" role="list" aria-label="Technologies used">
+          {%- for tech in project.tech_stack %}
+          <span class="project-tech-pill" role="listitem">{{ tech }}</span>
+          {%- endfor %}
+        </div>
+        {%- endif %}
       </div>
     </a>
     {%- endfor %}
