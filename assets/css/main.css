@@ -1503,6 +1503,16 @@ html[data-theme=dark] .post.project-detail .post-header .hero-description {
 html[data-theme=dark] .post.project-detail .post-header .hero-subdescription {
   color: var(--global-text-color-light);
 }
+.post.project-detail .post-header .project-tech-pills {
+  margin-top: 1.1rem;
+  margin-bottom: 0;
+  max-width: 650px;
+  gap: 0.4rem 0.45rem;
+}
+.post.project-detail .post-header .project-tech-pill {
+  padding: 0.3rem 0.68rem;
+  font-size: 0.78rem;
+}
 .post.project-detail .project-detail__nav {
   margin-top: 1.1rem;
   margin-bottom: 1.6rem;
