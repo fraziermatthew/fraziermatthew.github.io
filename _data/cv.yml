@@ -12,30 +12,30 @@
       year: 2021 — Present
       description:
         - <strong>Improved</strong> stability of **RealValue™ (40M+ daily decisions)** by re-architecting validation and error handling, reducing production errors by **90%**
-        - <strong>Integrated</strong> backend microservices and **REST/GraphQL** APIs across **5+** external platforms (TTD, Bing, YouGov, Google Ads, Meta) using **Node.js**, **Hapi.js**, **Apollo Federation**, **Python**, and **FastAPI**, with high-volume ETL pipelines on **Airflow (AWS MWAA)**, **Argo Workflows**, **Adverity**, **Redshift**, **Snowflake**, and **S3** feeding **React**, **Next.js**, and **Streamlit** analytics surfaces, while co-leading **DevOps** and **AI/MLOps** governance
-        - <strong>Built and shipped</strong> production full-stack applications across the **GOES™** and **Goodlook™** platforms with **Next.js 15** (App Router, React Server Components, Server Actions), **React 19**, **TypeScript**, **MUI**, **shadcn/ui** (Tailwind, Radix), **TanStack Query/Table**, **Zustand**, **React Hook Form**, and **Zod** on the frontend, and **Hapi.js**, **Apollo GraphQL Federation**, and **tRPC** type-safe APIs with **PostgreSQL** via **Drizzle ORM**, **Sequelize**, and **Knex** on the backend, plus **Redis** caching and **BullMQ** background workers, hardened with **Vitest**, **Playwright**, **Storybook**, and **MSW**, and instrumented with **Datadog** RUM, APM, and **Pino** structured logs
-        - <strong>Architected</strong> event-driven distributed systems on **AWS Lambda**, **SNS**, **SQS (FIFO)**, and **S3** (provisioned via **AWS CDK** and **Serverless**), replacing manual Jupyter notebook execution for the YouGov analysis pipeline with fully asynchronous processing that streams results back to the **React/Next.js** and **Streamlit** frontends in real time
-        - <strong>Designed and implemented</strong> AI-driven analytics within the **GOES™** **Next.js + tRPC** platform, including **RAG**, hierarchical insight generation (**Brand Compass**), and natural-language query (NLQ) backed by **Snowflake Cortex Agents**, **Vercel AI SDK**, **AWS Bedrock (AgentCore)**, **LangChain/LangGraph**, **CrewAI**, **Langfuse** observability, and vector stores (**Qdrant**, **ChromaDB**), streaming inference responses to the **React 19** UI via **REST** and **Server Actions** with **Drizzle ORM** persistence and **Datadog** tracing
+        - <strong>Integrated</strong> backend microservices and REST/GraphQL APIs across **5+** external platforms (TTD, Bing, YouGov, Google Ads, Meta) using Node.js, Hapi.js, Apollo Federation, Python, and FastAPI, with high-volume ETL pipelines on Airflow (AWS MWAA), Argo Workflows, Adverity, Redshift, Snowflake, and S3 feeding React, Next.js, and Streamlit analytics surfaces, while co-leading DevOps and AI/MLOps governance
+        - <strong>Built and shipped</strong> production full-stack applications across the **GOES™** and **Goodlook™** platforms using Next.js 15 (App Router, React Server Components, Server Actions), React 19, TypeScript, MUI, shadcn/ui (Tailwind, Radix), TanStack Query/Table, Zustand, React Hook Form, and Zod on the frontend, and Hapi.js, Apollo GraphQL Federation, and tRPC type-safe APIs with PostgreSQL via Drizzle ORM, Sequelize, and Knex on the backend, plus Redis caching and BullMQ background workers, hardened with Vitest, Playwright, Storybook, and MSW, and instrumented with Datadog RUM, APM, and Pino structured logs
+        - <strong>Architected</strong> event-driven distributed systems on AWS Lambda, SNS, SQS (FIFO), and S3 (provisioned via AWS CDK and Serverless), replacing manual Jupyter notebook execution for the YouGov analysis pipeline with fully asynchronous processing that streams results back to the React/Next.js and Streamlit frontends in real time
+        - <strong>Designed and implemented</strong> AI-driven analytics within the **GOES™** Next.js + tRPC platform, including RAG, hierarchical insight generation (**Brand Compass**), and natural-language query (NLQ) backed by Snowflake Cortex Agents, Vercel AI SDK, AWS Bedrock (AgentCore), LangChain/LangGraph, CrewAI, Langfuse observability, and vector stores (Qdrant, ChromaDB), streaming inference responses to the React 19 UI via REST and Server Actions with Drizzle ORM persistence and Datadog tracing
 
     - title: Senior Technical Operations Engineer (Business Intelligence)
       institution: Goodway Group
       year: 2018 — 2021
       description:
-        - <strong>Owned</strong> data reliability, integrity, and availability of marketing analytics systems, managing end-to-end data operations and reporting infrastructure (**Airflow**, **Redshift**, **S3**, **Tableau**) under strict daily data freshness SLAs
+        - <strong>Owned</strong> data reliability, integrity, and availability of marketing analytics systems, managing end-to-end data operations and reporting infrastructure (Airflow, Redshift, S3, Tableau) under strict daily data freshness SLAs
         - <strong>Led</strong> org-wide incident response, root-cause analysis, postmortem, and data discrepancy triage across pipeline and reporting systems, adopting preventative fixes and monitoring workflows that improved system stability and reduced recurring issues
 
     - title: Principal Campaign Operations Engineer
       institution: Goodway Group
       year: 2014 — 2018
       description:
-        - <strong>Built</strong> **COLT** (Cacidi On-Line Tool), a full-stack web application on **Node.js** and **JavaScript** that augmented Adobe InDesign templates to parameterize ad copy and legal logic, automating campaign production and reducing creative turnaround by **~80% (from 10-12 business days to ~2 days)** to enable scalable execution across multi-location automotive clients (e.g., Chevrolet)
-        - <strong>Managed</strong> execution, QA, and reporting of programmatic campaigns across **TTD**, **Google Ads**, **YouTube**, and **Meta**, collaborating with ad operations and media trading to improve data-driven campaign pacing and performance
+        - <strong>Built</strong> **COLT** (Cacidi On-Line Tool), a full-stack web application on Node.js and JavaScript that augmented Adobe InDesign templates to parameterize ad copy and legal logic, automating campaign production and reducing creative turnaround by **~80% (from 10-12 business days to ~2 days)** to enable scalable execution across multi-location automotive clients (e.g., Chevrolet)
+        - <strong>Managed</strong> execution, QA, and reporting of programmatic campaigns across TTD, Google Ads, YouTube, and Meta, collaborating with ad operations and media trading to improve data-driven campaign pacing and performance
 
     - title: Senior SEO Strategist
       institution: IONOS (1&1 Internet)
       year: 2012 — 2014
       description:
-        - <strong>Established</strong> and analyzed **SEO** and **SEM** strategies for **300+** small business websites through A/B testing of copy and creative variations, metatag optimization, user engagement behavior analysis (CTR, time-on-page), and keyword analysis, improving organic visibility and traffic across US, UK, and Canadian markets (**Google Analytics**, **SEMrush**)
+        - <strong>Established</strong> and analyzed SEO and SEM strategies for **300+** small business websites through A/B testing of copy and creative variations, metatag optimization, user engagement behavior analysis (CTR, time-on-page), and keyword analysis, improving organic visibility and traffic across US, UK, and Canadian markets (Google Analytics, SEMrush)
 
 # - title: Technical Systems & Capabilities
 #   type: map
@@ -107,7 +107,7 @@
       institution: University of Delaware
       year: 2018 — 2024
       description:
-        - <strong>Led</strong> research on conversational agents and **LLM-guided** reasoning in computer science education, designing and evaluating systems that guide user reasoning through structured prompt engineering (**RAG**, **CoT**, few-shot) to develop AI learning systems that promote reasoning rather than direct answer generation, resulting in peer-reviewed publications at **ICSE** and **ITiCSE**
+        - <strong>Led</strong> research on conversational agents and LLM-guided reasoning in computer science education, designing and evaluating systems that guide user reasoning through structured prompt engineering (RAG, CoT, few-shot) to develop AI learning systems that promote reasoning rather than direct answer generation, resulting in peer-reviewed publications at **ICSE** and **ITiCSE**
         - <strong>Designed and implemented</strong> AI-based learning systems focused on Socratic reasoning support rather than direct answer generation
         - <strong>Taught</strong> undergraduate computer science courses (programming, data structures, ethics), emphasizing debugging, system thinking, and applied problem-solving
 
@@ -115,7 +115,7 @@
       institution: West Chester University of Pennsylvania
       year: 2016 — 2017
       description:
-        - <strong>Developed</strong> a **computer vision** system for parking availability detection in university lots using **Python** and **OpenCV**, applying object detection and identity matching to live video analysis
+        - <strong>Developed</strong> a computer vision system for parking availability detection in university lots using Python and OpenCV, applying object detection and identity matching to live video analysis
 
 - title: Selected Publications
   card_class: publications
