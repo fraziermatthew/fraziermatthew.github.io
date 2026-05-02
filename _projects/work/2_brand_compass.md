@@ -9,17 +9,20 @@ img: assets/img/bc2.png
 category: work
 permalink: /projects/work/brand-compass/
 # Tech-stack pills rendered by _includes/projects.html on the projects index card.
-# Keep concise (8-10 max) and ordered: language → data → orchestration → AI/LLM concepts.
+# Brand Compass is a frontend system: the AI-insights integration lives in the
+# Next.js dashboard alongside each VisualChartCard (see goes/src/features/ai-summaries).
+# Order: language → framework → UI → AI/LLM layer → backend touch points.
 tech_stack:
-  - "Python"
-  - "Snowflake"
-  - "AWS Lambda"
-  - "SQS"
+  - "TypeScript"
+  - "Next.js"
+  - "React"
+  - "Tailwind CSS"
+  - "shadcn/ui"
   - "LLM Reasoning"
   - "Prompt Engineering"
-  - "ReAct"
-  - "Chain-of-Thought"
-  - "Few-Shot"
+  - "Langfuse"
+  - "Snowflake"
+  - "AWS Lambda"
 ---
 
 <p class="project-detail__nav">
