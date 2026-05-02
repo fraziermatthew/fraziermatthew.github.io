@@ -1911,142 +1911,111 @@ html[data-theme='dark'] .cv .pub-venue {
   font-weight: 500;
 }
 
-// Technical Systems & Capabilities — skills_grid (see _includes/cv/skills_grid.html)
-// Same list-group-item + row + [col-2 75px | col-10] as time_table; grid is in col-10 then shifted left so it lines up with the badge column.
-$cv-skills-badge-col-width: 75px; // inline width on year badge column in time_table.html
+// Technical Systems & Capabilities — pill-based skills grid (see _includes/cv/skills_grid.html).
+// Each .resume-skill-group is a category (heading + pill cloud); pills are scannable inventory
+// tags. Brown/peach hover palette is RGB-literal to match the year-badge accent across themes.
 
+// Structural wrappers from the surrounding card layout — kept so the section integrates cleanly
+// with .cv .card list-group conventions used by time_table.html.
 .cv .card .cv-skills-main .item.cv-skills-item {
   max-width: none;
 }
 
-.cv .card .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 2.75rem;
-  row-gap: 1.75rem;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    column-gap: 0;
-    row-gap: 1.5rem;
-  }
-}
-
-// Bleed into the badge column track: col-10 content starts after the 75px column; pull back by that width to match badge inner edge.
-// On narrow viewports, reset bleed — otherwise negative margin pulls the grid outside the card and clips text on the left.
-.cv .card .skills-grid.cv-skills-grid--align-badge-column {
-  margin-left: calc(-1 * #{$cv-skills-badge-col-width});
-  width: calc(100% + #{$cv-skills-badge-col-width});
-  box-sizing: border-box;
-
-  @media (max-width: 768px) {
-    margin-left: 0;
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-// Single list-group row: avoid extra bottom gap from `.cv .card ul li { margin-bottom }` on the outer li.
 .cv .card .cv-skills-list-group > .cv-skills-list-item {
   margin-bottom: 0;
 }
 
-.cv .card .skill-block {
-  display: flex;
-  flex-direction: column;
-  align-self: start;
+.resume-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem 4rem;
+  margin-top: 2.25rem;
 }
 
-.cv .card .skill-block h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #111;
-  line-height: 1.28;
-  margin: 0 0 0.58rem 0;
+.resume-skill-group {
+  margin-bottom: 0.5rem;
 }
 
-// Outside markers sit left of the content box and visually hug the card title; inside keeps markers aligned in the list column.
-.cv .card .skill-block ul {
-  margin: 0;
-  padding-left: 0;
-  list-style-type: circle;
-  list-style-position: inside;
-}
-
-.cv .card .skill-block li {
-  font-size: 0.95rem;
-  color: #666;
-  line-height: 1.5;
-  margin-bottom: 0.34rem;
-}
-
-.cv .card .skill-block li:last-child {
-  margin-bottom: 0;
-}
-
-.cv .card .skill-block li::marker {
-  color: #b8b8b8;
-}
-
-// skills_grid: h4/li use fixed grays above — restore readable contrast on dark backgrounds
-html[data-theme='dark'] .cv .card .skill-block h4 {
+.resume-skill-group h3 {
+  margin-bottom: 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   color: var(--global-text-color);
 }
 
-html[data-theme='dark'] .cv .card .skill-block li {
-  color: var(--global-text-color);
-}
-
-html[data-theme='dark'] .cv .card .skill-block li::marker {
-  color: rgba(255, 255, 255, 0.32);
-}
-
-// Skills pill cloud (see _includes/cv/skills_grid.html). Each .skill-pill is a single technology
-// or capability tag rendered inside a .skill-pills flex-wrap container. Visual treatment is
-// intentionally subtle — pills are scannable inventory, not call-to-action buttons.
-.cv .card .skill-block .skill-pills {
+.resume-skill-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem 0.45rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  gap: 0.5rem 0.6rem;
+  max-width: 520px;
 }
 
-.cv .card .skill-block .skill-pill {
+.resume-skill-pill {
   display: inline-flex;
   align-items: center;
-  font-size: 0.78rem;
-  line-height: 1.2;
-  padding: 0.32rem 0.7rem;
   border-radius: 999px;
-  background-color: rgba(0, 0, 0, 0.04);
+  padding: 0.38rem 0.78rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+
+  color: rgba(0, 0, 0, 0.72);
+  background: rgba(0, 0, 0, 0.035);
   border: 1px solid rgba(0, 0, 0, 0.08);
-  color: #444;
-  font-weight: 500;
-  white-space: nowrap;
-  transition:
-    background-color 0.15s ease,
-    color 0.15s ease,
-    border-color 0.15s ease;
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    inset 0 0 0 0 rgba(0, 0, 0, 0);
+
+  transition: all 0.18s ease;
 }
 
-.cv .card .skill-block .skill-pill:hover {
-  background-color: rgba(0, 0, 0, 0.07);
-  border-color: rgba(0, 0, 0, 0.14);
-  color: #222;
+.resume-skill-pill:hover {
+  transform: translateY(-1px);
+
+  color: var(--global-theme-color);
+
+  background: rgba(140, 71, 32, 0.055);
+  border-color: rgba(140, 71, 32, 0.22);
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-html[data-theme='dark'] .cv .card .skill-block .skill-pill {
-  background-color: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.12);
+html[data-theme='dark'] .resume-skill-pill {
   color: rgba(255, 255, 255, 0.78);
+
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 0 rgba(255, 255, 255, 0);
+
+  transition: all 0.18s ease;
 }
 
-html[data-theme='dark'] .cv .card .skill-block .skill-pill:hover {
-  background-color: rgba(255, 255, 255, 0.10);
-  border-color: rgba(255, 255, 255, 0.20);
-  color: var(--global-text-color);
+html[data-theme='dark'] .resume-skill-pill:hover {
+  transform: translateY(-1px);
+
+  color: #e3b894;
+
+  background: rgba(227, 184, 148, 0.08);
+  border-color: rgba(227, 184, 148, 0.28);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .resume-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .resume-skill-pill {
+    font-size: 0.8rem;
+    padding: 0.34rem 0.7rem;
+  }
 }
 
 .cv .card h6 {

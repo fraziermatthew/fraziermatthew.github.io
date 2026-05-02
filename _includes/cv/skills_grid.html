@@ -9,13 +9,13 @@
       <div class="d-none d-md-block text-center flex-shrink-0" style="width: 75px; min-width: 75px;" aria-hidden="true">&nbsp;</div>
       <div class="col-12 col-md-10 mt-2 mt-md-0 cv-skills-main">
         <div class="item cv-skills-item">
-          <div class="skills-grid cv-skills-grid--align-badge-column">
+          <div class="resume-skills-grid">
             {% for block in entry.contents %}
-              <div class="skill-block">
-                <h4>{{ block.heading }}</h4>
-                <div class="skill-pills" role="list" aria-label="{{ block.heading }} technologies">
+              <div class="resume-skill-group">
+                <h3>{{ block.heading }}</h3>
+                <div class="resume-skill-pills" role="list" aria-label="{{ block.heading }} technologies">
                   {% for item in block.items %}
-                    <span class="skill-pill" role="listitem">{% include cv/md_inline.html text=item %}</span>
+                    <span class="resume-skill-pill" role="listitem">{% include cv/md_inline.html text=item %}</span>
                   {% endfor %}
                 </div>
               </div>
