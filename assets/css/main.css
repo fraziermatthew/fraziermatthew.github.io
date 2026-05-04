@@ -603,7 +603,13 @@ html[data-theme=dark] .cv-toc.on-this-page {
   top: calc(56px + 6px);
   bottom: -1.75rem;
   width: 0;
-  border-left: 2px dotted var(--global-divider-color);
+  border-left: 1px solid var(--global-divider-color);
+}
+.cv .card .cv-timeline .cv-timeline-item:not(.cv-timeline-item--last) .cv-timeline-content::after {
+  content: "";
+  display: block;
+  margin-top: 1rem;
+  border-top: 1px dashed var(--global-divider-color);
 }
 .cv .card .cv-timeline .cv-timeline-marker {
   position: relative;
@@ -676,6 +682,8 @@ html[data-theme=dark] .cv-toc.on-this-page {
   flex-shrink: 0;
   min-width: 105px;
   text-align: center;
+  color: var(--global-card-bg-color) !important;
+  background-color: var(--global-theme-color) !important;
 }
 .cv .card .cv-timeline .cv-timeline-summary {
   margin: 0.6rem 0 0.4rem 0;
