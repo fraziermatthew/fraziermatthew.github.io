@@ -772,7 +772,7 @@ $cv-timeline-marker-col: 52px;
   }
 
   .cv-timeline-summary {
-    margin: 10px 0 0.4rem 0;
+    margin: 10px 0 0 0;
     font-size: 1rem;
     line-height: 1.6;
     color: var(--cv-text-secondary);
@@ -785,36 +785,43 @@ $cv-timeline-marker-col: 52px;
   }
 
   .cv-timeline-details {
-    margin-top: 0.25rem;
+    margin-top: 10px;
   }
 
-  // Native <details> styling — hide the default disclosure marker and supply
-  // our own caret + label.
+  // "Show details" toggle — masterpiece tier:
+  //   Default → muted text, low visual weight (sits below the summary as a
+  //             quiet affordance, never competing with the role title).
+  //   Hover   → lifts to the brown accent and slides 2px right; the caret
+  //             tracks the same color via currentColor.
+  //   Open    → caret rotates 90° (driven by the native <details>[open] state)
+  //             and the label swaps "Show details" ↔ "Hide details".
+  // Native <summary> uses display: list-item; we strip the default marker so
+  // our own caret + label is the only chevron in view.
   .cv-timeline-details-toggle {
     list-style: none;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.15rem 0.1rem;
-    font-size: 0.85rem;
+    gap: 6px;
+    padding: 0.1rem 0.05rem;
+    font-size: 0.95rem;
     font-weight: 500;
-    color: var(--global-theme-color);
+    color: var(--cv-text-muted);
     user-select: none;
-    transition: color 0.15s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 
     &::-webkit-details-marker {
       display: none;
     }
 
     &:hover {
-      color: var(--global-hover-color, var(--global-theme-color));
-      opacity: 0.85;
+      color: var(--global-theme-color);
+      transform: translateX(2px);
     }
 
     &:focus-visible {
       outline: 2px solid var(--global-theme-color);
-      outline-offset: 2px;
+      outline-offset: 3px;
       border-radius: 3px;
     }
   }
@@ -826,7 +833,7 @@ $cv-timeline-marker-col: 52px;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     border-left: 5px solid currentColor;
-    transition: transform 0.15s ease;
+    transition: transform 0.2s ease;
   }
 
   .cv-timeline-details[open] .cv-timeline-details-toggle-caret {
