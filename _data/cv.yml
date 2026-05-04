@@ -41,13 +41,14 @@
 
     - title: Principal Campaign Operations Engineer
       institution: Goodway Group
+      team: Multi-Location, Chevrolet
       logo_url: assets/img/logos/goodway-group.jpeg
       logo_link: https://www.goodwaygroup.com/
       year: 2014 — 2018
-      summary: <strong>Built</strong> **COLT™**, reducing campaign production time by **~80%** (**10–12 days → ~2 days**).
+      summary: <strong>Built</strong> **COLT™**, reducing campaign production time by **~80%** (**10-12 days → ~2 days**).
       description:
         - <strong>Developed</strong> a full-stack Node.js application automating Adobe InDesign campaign generation through template parameterization of ad copy and legal logic
-        - <strong>Enabled</strong> scalable execution for multi-location clients (e.g., Chevrolet) by automating creative production workflows end-to-end
+        - <strong>Enabled</strong> scalable execution for automotive clients by automating creative production workflows end-to-end
         - <strong>Managed</strong> execution, QA, and performance optimization of programmatic campaigns across TTD, Google Ads, YouTube, and Meta
 
     - title: Senior SEO Strategist

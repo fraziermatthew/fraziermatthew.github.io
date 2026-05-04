@@ -98,6 +98,7 @@
         - <strong>Established</strong> data validation and observability practices, improving system stability and cross-team trust in analytical outputs
 
     - title: Principal Campaign Operations Engineer
+      team: Multi-Location, Chevrolet
       institution: Goodway Group
       logo_url: assets/img/logos/goodway-group.jpeg
       logo_link: https://www.goodwaygroup.com/
@@ -105,7 +106,7 @@
       summary: <strong>Built</strong> **COLT**, a campaign-production automation system reducing creative turnaround by **~80%** (**10-12 days to ~2 days**).
       description:
         - <strong>Developed</strong> a full-stack Node.js application that parameterized Adobe InDesign templates, automating ad copy and legal-logic workflows for campaign production
-        - <strong>Enabled</strong> scalable execution for multi-location clients (e.g., Chevrolet) by automating creative production end-to-end
+        - <strong>Enabled</strong> scalable execution for automotive clients by automating creative production end-to-end
         - <strong>Managed</strong> execution, QA, and reporting of large-scale programmatic campaigns across TTD, Google Ads, YouTube, and Meta
 
     - title: Senior SEO Strategist
