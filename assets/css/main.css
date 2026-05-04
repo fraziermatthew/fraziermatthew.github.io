@@ -583,12 +583,19 @@ html[data-theme=dark] .cv-toc.on-this-page {
   background-color: var(--global-theme-color) !important;
 }
 
-.cv .card .cv-timeline {
-  --cv-timeline-rule: rgba(0, 0, 0, 0.08);
-  --cv-timeline-logo-bg: rgba(0, 0, 0, 0.04);
+.cv .card {
   --cv-text-primary: #111111;
   --cv-text-secondary: #444444;
   --cv-text-muted: #6b7280;
+}
+
+.cv .card .institution {
+  font-size: 0.95rem;
+}
+
+.cv .card .cv-timeline {
+  --cv-timeline-rule: rgba(0, 0, 0, 0.08);
+  --cv-timeline-logo-bg: rgba(0, 0, 0, 0.04);
   margin-top: 0.25rem;
 }
 .cv .card .cv-timeline .cv-timeline-item {
@@ -818,12 +825,82 @@ html[data-theme=dark] .cv-toc.on-this-page {
   }
 }
 
-html[data-theme=dark] .cv .card .cv-timeline {
-  --cv-timeline-rule: rgba(255, 255, 255, 0.08);
-  --cv-timeline-logo-bg: rgba(255, 255, 255, 0.05);
+html[data-theme=dark] .cv .card {
   --cv-text-primary: #f5f5f5;
   --cv-text-secondary: #d1d5db;
   --cv-text-muted: #9ca3af;
+}
+
+html[data-theme=dark] .cv .card .cv-timeline {
+  --cv-timeline-rule: rgba(255, 255, 255, 0.08);
+  --cv-timeline-logo-bg: rgba(255, 255, 255, 0.05);
+}
+
+.resume-panel--industry #cv-industry-academic-experience > .card-title,
+.resume-panel--academic #cv-academic-professional-experience > .card-title {
+  color: var(--cv-text-secondary);
+  font-weight: 600;
+  opacity: 0.92;
+}
+.resume-panel--industry #cv-industry-academic-experience .cv-timeline-title,
+.resume-panel--academic #cv-academic-professional-experience .cv-timeline-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--cv-text-secondary);
+}
+.resume-panel--industry #cv-industry-academic-experience .cv-timeline-item:hover .cv-timeline-title,
+.resume-panel--academic #cv-academic-professional-experience .cv-timeline-item:hover .cv-timeline-title {
+  color: var(--cv-text-primary);
+}
+.resume-panel--industry #cv-industry-academic-experience .cv-timeline-meta,
+.resume-panel--academic #cv-academic-professional-experience .cv-timeline-meta {
+  font-size: 0.9rem;
+  color: var(--cv-text-muted);
+}
+.resume-panel--industry #cv-industry-academic-experience .cv-timeline-meta strong,
+.resume-panel--industry #cv-industry-academic-experience .cv-timeline-meta .cv-timeline-org,
+.resume-panel--academic #cv-academic-professional-experience .cv-timeline-meta strong,
+.resume-panel--academic #cv-academic-professional-experience .cv-timeline-meta .cv-timeline-org {
+  color: var(--cv-text-secondary);
+  font-weight: 600;
+}
+.resume-panel--industry #cv-industry-academic-experience .cv-timeline-summary,
+.resume-panel--academic #cv-academic-professional-experience .cv-timeline-summary {
+  color: var(--cv-text-muted);
+}
+.resume-panel--industry #cv-industry-academic-experience .cv-timeline-details-list > li,
+.resume-panel--academic #cv-academic-professional-experience .cv-timeline-details-list > li {
+  color: var(--cv-text-muted);
+}
+
+.resume-panel--academic #cv-academic-research-experience .item h6.title,
+.resume-panel--academic #cv-academic-teaching-experience .item h6.title {
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.resume-panel--academic #cv-academic-research-experience .item h6.institution,
+.resume-panel--academic #cv-academic-teaching-experience .item h6.institution {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--cv-text-primary);
+}
+.resume-panel--academic #cv-academic-research-experience .item h6.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.resume-panel--academic #cv-academic-research-experience ul.items > li,
+.resume-panel--academic #cv-academic-research-experience ul.items > li > .item,
+.resume-panel--academic #cv-academic-research-experience ul.items > li > .subitem {
+  color: var(--cv-text-primary);
+}
+.resume-panel--academic #cv-academic-teaching-experience .item h6.title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.resume-panel--academic #cv-academic-teaching-experience ul.items > li,
+.resume-panel--academic #cv-academic-teaching-experience ul.items > li > .item,
+.resume-panel--academic #cv-academic-teaching-experience ul.items > li > .subitem {
+  color: var(--cv-text-secondary);
 }
 
 @media (min-width: 768px) {
