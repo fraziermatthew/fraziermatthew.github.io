@@ -2828,18 +2828,18 @@ html[data-theme=dark] .cv .card .list-group-flush .list-group-item {
 .cv article .resume-panel {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 180ms cubic-bezier(0.4, 0, 0.2, 1), transform 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 220ms cubic-bezier(0.22, 1, 0.36, 1), transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .cv article .resume-panel.resume-panel--exit {
   opacity: 0;
-  transform: translateY(2px);
+  transform: translateY(6px);
   pointer-events: none;
 }
 
 .cv article .resume-panel.resume-panel--enter {
   opacity: 0;
-  transform: translateY(2px);
+  transform: translateY(6px);
   transition: none;
 }
 

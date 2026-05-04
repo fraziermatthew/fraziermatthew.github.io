@@ -5,7 +5,8 @@
 
   var STORAGE_KEY = 'cvResumeView';
   var PARAM = 'view';
-  var PANEL_MS = 150;
+  var PANEL_MS = 220;
+  // var PANEL_MS = 150;
   var industryPanels = document.querySelectorAll('.resume-panel--industry');
   var academicPanels = document.querySelectorAll('.resume-panel--academic');
   var industryPanel = industryPanels[0];
