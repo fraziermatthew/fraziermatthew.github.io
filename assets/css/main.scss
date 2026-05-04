@@ -1608,8 +1608,8 @@ html[data-theme='dark'] .cv .card .list-group-flush .list-group-item {
 }
 
 // Resume body: mode shift on toggle (see cv_resume_toggle.js)
-$resume-panel-shift-ms: 180ms;
-$resume-panel-shift-ease: cubic-bezier(0.4, 0, 0.2, 1);
+$resume-panel-shift-ms: 220ms;
+$resume-panel-shift-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
 .cv article .resume-panel {
   opacity: 1;
@@ -1621,15 +1621,37 @@ $resume-panel-shift-ease: cubic-bezier(0.4, 0, 0.2, 1);
 
 .cv article .resume-panel.resume-panel--exit {
   opacity: 0;
-  transform: translateY(2px);
+  transform: translateY(6px);
   pointer-events: none;
 }
 
 .cv article .resume-panel.resume-panel--enter {
   opacity: 0;
-  transform: translateY(2px);
+  transform: translateY(6px);
   transition: none;
 }
+// $resume-panel-shift-ms: 180ms;
+// $resume-panel-shift-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+// .cv article .resume-panel {
+//   opacity: 1;
+//   transform: translateY(0);
+//   transition:
+//     opacity $resume-panel-shift-ms $resume-panel-shift-ease,
+//     transform $resume-panel-shift-ms $resume-panel-shift-ease;
+// }
+
+// .cv article .resume-panel.resume-panel--exit {
+//   opacity: 0;
+//   transform: translateY(2px);
+//   pointer-events: none;
+// }
+
+// .cv article .resume-panel.resume-panel--enter {
+//   opacity: 0;
+//   transform: translateY(2px);
+//   transition: none;
+// }
 
 @media (prefers-reduced-motion: reduce) {
   .cv article .resume-panel {
