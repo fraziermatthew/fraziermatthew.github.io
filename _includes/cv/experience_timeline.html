@@ -1,0 +1,115 @@
+{%- comment -%}
+  Renders an experience-style timeline with rounded company logos in the left column
+  and a role card on the right. A dotted vertical connector links consecutive logos.
+
+  Each `entry.contents` item supports:
+    - title             Role title (rendered first, larger)
+    - institution       Company / organization name (shown beneath role)
+    - location          Optional city/region (shown beneath company)
+    - year              Date range, rendered in the existing badge, right-aligned
+    - logo_url          Optional path/URL to the company logo (rounded)
+    - logo_alt          Optional alt text override
+    - logo_link         Optional external URL the logo should link to
+    - summary           Single-sentence headline impact (always visible)
+    - description       Existing list of bullet highlights (rendered inside details)
+    - highlight_role    When true, applies the legacy `.highlight-role` accent
+
+  If `summary` is omitted but `description` is present, the first bullet is
+  promoted to the summary and removed from the expandable list.
+{%- endcomment -%}
+<div class="cv-timeline">
+  {% for content in entry.contents %}
+    {%- assign role_summary = content.summary -%}
+    {%- assign role_details = content.description -%}
+    {%- if role_summary == nil or role_summary == '' -%}
+      {%- if role_details and role_details.size > 0 -%}
+        {%- assign role_summary = role_details | first -%}
+        {%- assign role_details = role_details | shift -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- assign details_count = 0 -%}
+    {%- if role_details -%}
+      {%- assign details_count = role_details.size -%}
+    {%- endif -%}
+
+    <div class="cv-timeline-item{% if forloop.last %} cv-timeline-item--last{% endif %}{% if content.highlight_role %} highlight-role{% endif %}">
+      <div class="cv-timeline-marker">
+        <div class="cv-timeline-logo">
+          {%- if content.logo_url -%}
+            {%- assign logo_src = content.logo_url -%}
+            {%- unless logo_src contains '://' -%}
+              {%- assign logo_src = logo_src | relative_url -%}
+            {%- endunless -%}
+            {%- assign logo_alt = content.logo_alt | default: content.institution | default: content.title -%}
+            {%- if content.logo_link -%}
+              <a href="{{ content.logo_link }}" target="_blank" aria-label="{{ logo_alt | escape }}">
+                <img src="{{ logo_src }}" alt="{{ logo_alt | escape }}" loading="lazy" />
+              </a>
+            {%- else -%}
+              <img src="{{ logo_src }}" alt="{{ logo_alt | escape }}" loading="lazy" />
+            {%- endif -%}
+          {%- else -%}
+            {%- assign logo_initial = content.institution | default: content.title | slice: 0, 1 | upcase -%}
+            <span class="cv-timeline-logo-fallback" aria-hidden="true">{{ logo_initial }}</span>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="cv-timeline-content">
+        <div class="cv-timeline-headline">
+          <div class="cv-timeline-headline-text">
+            {% if content.title %}
+              <h6 class="cv-timeline-title font-weight-bold">{{ content.title }}</h6>
+            {% endif %}
+            {% if content.institution %}
+              <div class="cv-timeline-company">{{ content.institution }}</div>
+            {% endif %}
+            {% if content.location %}
+              <div class="cv-timeline-location">{{ content.location }}</div>
+            {% endif %}
+          </div>
+          {% if content.year %}
+            <span class="badge font-weight-bold danger-color-dark cv-timeline-date">{{ content.year }}</span>
+          {% endif %}
+        </div>
+
+        {% if role_summary %}
+          <p class="cv-timeline-summary">{% include cv/md_inline.html text=role_summary %}</p>
+        {% endif %}
+
+        {% if details_count > 0 %}
+          <details class="cv-timeline-details">
+            <summary class="cv-timeline-details-toggle">
+              <span class="cv-timeline-details-toggle-caret" aria-hidden="true"></span>
+              <span class="cv-timeline-details-toggle-label">
+                <span class="cv-timeline-details-toggle-show">Show details</span>
+                <span class="cv-timeline-details-toggle-hide">Hide details</span>
+              </span>
+            </summary>
+            <ul class="cv-timeline-details-list">
+              {% for item in role_details %}
+                <li>
+                  {% if item.contents %}
+                    <span class="item-title">{{ item.title }}</span>
+                    <ul class="cv-timeline-subitems">
+                      {% for subitem in item.contents %}
+                        <li>{% include cv/md_inline.html text=subitem %}</li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                    {% include cv/md_inline.html text=item %}
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{%- if entry.footer_link %}
+  <div class="cv-section-footer">
+    <a class="view-all" href="{{ entry.footer_link | relative_url }}">{% if entry.footer_link_label %}{{ entry.footer_link_label }}{% else %}View all →{% endif %}</a>
+  </div>
+{%- endif %}

@@ -5,11 +5,14 @@
 #       value: Matthew Frazier
 
 - title: Professional Experience
-  type: time_table
+  type: experience_timeline
   contents:
     - title: Senior Software Engineer (Data Science, Scaled Media Solutions)
       institution: Goodway Group
+      logo_url: assets/img/logos/goodway-group.jpeg
+      logo_link: https://www.goodwaygroup.com/
       year: 2021 — Present
+      summary: <strong>Architect and ship</strong> full-stack and AI-driven platforms across **GOES™** and **Goodlook™** — including RAG, NLQ, and agentic insight generation — while improving **RealValue™** stability (**40M+ daily decisions**) by **90%**.
       description:
         - <strong>Improved</strong> stability of **RealValue™ (40M+ daily decisions)** by re-architecting validation and error handling, reducing production errors by **90%**
         - <strong>Integrated</strong> backend microservices and REST/GraphQL APIs across **5+** external platforms (TTD, Bing, YouGov, Google Ads, Meta) using Node.js, Hapi.js, Apollo Federation, Python, and FastAPI, with high-volume ETL pipelines on Airflow (AWS MWAA), Argo Workflows, Adverity, Redshift, Snowflake, and S3 feeding React, Next.js, and Streamlit analytics surfaces, while co-leading DevOps and AI/MLOps governance
@@ -19,21 +22,30 @@
 
     - title: Senior Technical Operations Engineer (Business Intelligence)
       institution: Goodway Group
+      logo_url: assets/img/logos/goodway-group.jpeg
+      logo_link: https://www.goodwaygroup.com/
       year: 2018 — 2021
+      summary: <strong>Owned</strong> data reliability, integrity, and availability of marketing analytics systems (Airflow, Redshift, S3, Tableau) under strict daily data freshness SLAs.
       description:
         - <strong>Owned</strong> data reliability, integrity, and availability of marketing analytics systems, managing end-to-end data operations and reporting infrastructure (Airflow, Redshift, S3, Tableau) under strict daily data freshness SLAs
         - <strong>Led</strong> org-wide incident response, root-cause analysis, postmortem, and data discrepancy triage across pipeline and reporting systems, adopting preventative fixes and monitoring workflows that improved system stability and reduced recurring issues
 
     - title: Principal Campaign Operations Engineer
       institution: Goodway Group
+      logo_url: assets/img/logos/goodway-group.jpeg
+      logo_link: https://www.goodwaygroup.com/
       year: 2014 — 2018
+      summary: <strong>Built</strong> **COLT** (Cacidi On-Line Tool), a Node.js full-stack app that automated Adobe InDesign campaign production and cut creative turnaround by **~80% (from 10–12 business days to ~2 days)**.
       description:
         - <strong>Built</strong> **COLT** (Cacidi On-Line Tool), a full-stack web application on Node.js and JavaScript that augmented Adobe InDesign templates to parameterize ad copy and legal logic, automating campaign production and reducing creative turnaround by **~80% (from 10-12 business days to ~2 days)** to enable scalable execution across multi-location automotive clients (e.g., Chevrolet)
         - <strong>Managed</strong> execution, QA, and reporting of programmatic campaigns across TTD, Google Ads, YouTube, and Meta, collaborating with ad operations and media trading to improve data-driven campaign pacing and performance
 
     - title: Senior SEO Strategist
       institution: IONOS (1&1 Internet)
+      logo_url: assets/img/logos/ionos.svg
+      logo_link: https://www.ionos.com/
       year: 2012 — 2014
+      summary: <strong>Established</strong> and analyzed SEO/SEM strategies for **300+** small business websites, improving organic visibility and traffic across US, UK, and Canadian markets.
       description:
         - <strong>Established</strong> and analyzed SEO and SEM strategies for **300+** small business websites through A/B testing of copy and creative variations, metatag optimization, user engagement behavior analysis (CTR, time-on-page), and keyword analysis, improving organic visibility and traffic across US, UK, and Canadian markets (Google Analytics, SEMrush)
 

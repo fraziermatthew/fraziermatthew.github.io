@@ -596,6 +596,267 @@ html[data-theme='dark'] .cv-toc.on-this-page {
   }
 }
 
+// Experience timeline (see _includes/cv/experience_timeline.html)
+//
+// Rounded company logo on the left, role + summary + expandable details on the
+// right. A dotted vertical connector links consecutive logos.
+
+$cv-timeline-logo-size: 56px;
+$cv-timeline-gap: 1.25rem;
+$cv-timeline-marker-col: 64px;
+
+.cv .card .cv-timeline {
+  margin-top: 0.25rem;
+
+  .cv-timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: $cv-timeline-marker-col 1fr;
+    column-gap: $cv-timeline-gap;
+    padding-bottom: 1.75rem;
+
+    &:last-child {
+      padding-bottom: 0.25rem;
+    }
+
+    // Dotted connector between consecutive logos. Drawn from below this item's
+    // logo down to the next item's logo. Anchored to the marker column so it
+    // tracks the logo center even when role content height varies.
+    &:not(.cv-timeline-item--last) .cv-timeline-marker::after {
+      content: "";
+      position: absolute;
+      left: calc(#{$cv-timeline-logo-size} / 2 - 1px);
+      top: calc(#{$cv-timeline-logo-size} + 6px);
+      bottom: -1.75rem;
+      width: 0;
+      border-left: 2px dotted var(--global-divider-color);
+    }
+  }
+
+  .cv-timeline-marker {
+    position: relative;
+    width: $cv-timeline-marker-col;
+  }
+
+  .cv-timeline-logo {
+    width: $cv-timeline-logo-size;
+    height: $cv-timeline-logo-size;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+
+    a,
+    img,
+    .cv-timeline-logo-fallback {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    .cv-timeline-logo-fallback {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--global-text-color-light);
+      background: rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  .cv-timeline-content {
+    min-width: 0; // allow flex/grid children to shrink for ellipsis-friendly text
+    padding-top: 0.1rem;
+  }
+
+  .cv-timeline-headline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .cv-timeline-headline-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .cv-timeline-title {
+    font-size: 1rem;
+    margin: 0 0 0.15rem 0;
+    line-height: 1.35;
+  }
+
+  .cv-timeline-company {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--global-text-color);
+    line-height: 1.35;
+  }
+
+  .cv-timeline-location {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-top: 0.1rem;
+  }
+
+  // Reuse the existing .badge styling but right-align it at the top of the row.
+  .cv-timeline-date.badge {
+    align-self: flex-start;
+    flex-shrink: 0;
+    min-width: 105px;
+    text-align: center;
+  }
+
+  .cv-timeline-summary {
+    margin: 0.6rem 0 0.4rem 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--global-text-color);
+  }
+
+  .cv-timeline-details {
+    margin-top: 0.25rem;
+  }
+
+  // Native <details> styling — hide the default disclosure marker and supply
+  // our own caret + label.
+  .cv-timeline-details-toggle {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.15rem 0.1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--global-theme-color);
+    user-select: none;
+    transition: color 0.15s ease;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:hover {
+      color: var(--global-hover-color, var(--global-theme-color));
+      opacity: 0.85;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 2px;
+      border-radius: 3px;
+    }
+  }
+
+  .cv-timeline-details-toggle-caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 5px solid currentColor;
+    transition: transform 0.15s ease;
+  }
+
+  .cv-timeline-details[open] .cv-timeline-details-toggle-caret {
+    transform: rotate(90deg);
+  }
+
+  .cv-timeline-details-toggle-show {
+    display: inline;
+  }
+
+  .cv-timeline-details-toggle-hide {
+    display: none;
+  }
+
+  .cv-timeline-details[open] .cv-timeline-details-toggle-show {
+    display: none;
+  }
+
+  .cv-timeline-details[open] .cv-timeline-details-toggle-hide {
+    display: inline;
+  }
+
+  .cv-timeline-details-list {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin: 0.55rem 0 0 0;
+
+    > li {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      margin-bottom: 0.4rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .cv-timeline-subitems {
+      list-style: circle;
+      padding-left: 1.25rem;
+      margin-top: 0.25rem;
+
+      > li {
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+      }
+    }
+
+    .item-title {
+      font-weight: 600;
+    }
+  }
+
+  // Compact layout for narrow viewports — keep the marker column but tighten
+  // gaps and let the date badge wrap below the title.
+  @media (max-width: 575px) {
+    .cv-timeline-item {
+      grid-template-columns: 48px 1fr;
+      column-gap: 0.85rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .cv-timeline-marker {
+      width: 48px;
+    }
+
+    .cv-timeline-logo {
+      width: 48px;
+      height: 48px;
+    }
+
+    .cv-timeline-item:not(.cv-timeline-item--last) .cv-timeline-marker::after {
+      left: 23px;
+      top: 54px;
+      bottom: -1.5rem;
+    }
+
+    .cv-timeline-headline {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .cv-timeline-date.badge {
+      margin-top: 0.35rem;
+      min-width: 95px;
+    }
+  }
+}
+
 // Repositories
 
 @media (min-width: 768px) {
