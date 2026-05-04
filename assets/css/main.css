@@ -706,7 +706,7 @@ html[data-theme=dark] .cv-toc.on-this-page {
   background-color: var(--global-theme-color) !important;
 }
 .cv .card .cv-timeline .cv-timeline-summary {
-  margin: 10px 0 0.4rem 0;
+  margin: 10px 0 0 0;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--cv-text-secondary);
@@ -715,31 +715,31 @@ html[data-theme=dark] .cv-toc.on-this-page {
   color: var(--global-theme-color);
 }
 .cv .card .cv-timeline .cv-timeline-details {
-  margin-top: 0.25rem;
+  margin-top: 10px;
 }
 .cv .card .cv-timeline .cv-timeline-details-toggle {
   list-style: none;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.15rem 0.1rem;
-  font-size: 0.85rem;
+  gap: 6px;
+  padding: 0.1rem 0.05rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  color: var(--global-theme-color);
+  color: var(--cv-text-muted);
   user-select: none;
-  transition: color 0.15s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 .cv .card .cv-timeline .cv-timeline-details-toggle::-webkit-details-marker {
   display: none;
 }
 .cv .card .cv-timeline .cv-timeline-details-toggle:hover {
-  color: var(--global-hover-color, var(--global-theme-color));
-  opacity: 0.85;
+  color: var(--global-theme-color);
+  transform: translateX(2px);
 }
 .cv .card .cv-timeline .cv-timeline-details-toggle:focus-visible {
   outline: 2px solid var(--global-theme-color);
-  outline-offset: 2px;
+  outline-offset: 3px;
   border-radius: 3px;
 }
 .cv .card .cv-timeline .cv-timeline-details-toggle-caret {
@@ -749,7 +749,7 @@ html[data-theme=dark] .cv-toc.on-this-page {
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   border-left: 5px solid currentColor;
-  transition: transform 0.15s ease;
+  transition: transform 0.2s ease;
 }
 .cv .card .cv-timeline .cv-timeline-details[open] .cv-timeline-details-toggle-caret {
   transform: rotate(90deg);
