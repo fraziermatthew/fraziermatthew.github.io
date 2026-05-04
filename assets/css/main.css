@@ -712,7 +712,7 @@ html[data-theme=dark] .cv-toc.on-this-page {
   color: var(--cv-text-secondary);
 }
 .cv .card .cv-timeline .cv-timeline-item:hover .cv-timeline-title {
-  color: var(--global-theme-color);
+  color: var(--text-primary);
 }
 .cv .card .cv-timeline .cv-timeline-details {
   margin-top: 10px;
