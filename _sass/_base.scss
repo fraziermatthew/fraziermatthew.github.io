@@ -619,7 +619,7 @@ $cv-timeline-marker-col: 64px;
       padding-bottom: 0.25rem;
     }
 
-    // Dotted connector between consecutive logos. Drawn from below this item's
+    // Solid connector between consecutive logos. Drawn from below this item's
     // logo down to the next item's logo. Anchored to the marker column so it
     // tracks the logo center even when role content height varies.
     &:not(.cv-timeline-item--last) .cv-timeline-marker::after {
@@ -629,7 +629,17 @@ $cv-timeline-marker-col: 64px;
       top: calc(#{$cv-timeline-logo-size} + 6px);
       bottom: -1.75rem;
       width: 0;
-      border-left: 2px dotted var(--global-divider-color);
+      border-left: 1px solid var(--global-divider-color);
+    }
+
+    // Dashed horizontal divider between consecutive roles, sitting under the
+    // role content column only (the solid vertical connector continues through
+    // the gap in the marker column, matching the Akash reference).
+    &:not(.cv-timeline-item--last) .cv-timeline-content::after {
+      content: "";
+      display: block;
+      margin-top: 1rem;
+      border-top: 1px dashed var(--global-divider-color);
     }
   }
 
@@ -710,12 +720,16 @@ $cv-timeline-marker-col: 64px;
     margin-top: 0.1rem;
   }
 
-  // Reuse the existing .badge styling but right-align it at the top of the row.
+  // Reuse the same brown accent badge used by the legacy time_table layout
+  // (the existing override is scoped to `.list-group-item .badge`, which the
+  // timeline items don't use, so re-apply theme colors here explicitly).
   .cv-timeline-date.badge {
     align-self: flex-start;
     flex-shrink: 0;
     min-width: 105px;
     text-align: center;
+    color: var(--global-card-bg-color) !important;
+    background-color: var(--global-theme-color) !important;
   }
 
   .cv-timeline-summary {
