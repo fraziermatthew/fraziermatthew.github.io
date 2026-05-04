@@ -605,17 +605,29 @@ $cv-timeline-logo-size: 44px;
 $cv-timeline-gap: 1.1rem;
 $cv-timeline-marker-col: 52px;
 
-.cv .card .cv-timeline {
-  // Local theme tokens — keep the timeline rule + logo surface intentionally
-  // light so the logos read as anchors, not badges. Text tier tokens mirror
-  // the elite-portfolio hierarchy: primary (title) → secondary (company /
-  // summary body) → muted (team, location). All overridden for dark mode
-  // below the main block.
-  --cv-timeline-rule: rgba(0, 0, 0, 0.08);
-  --cv-timeline-logo-bg: rgba(0, 0, 0, 0.04);
+// Card-level text hierarchy tokens. Declared on every resume card (not just
+// the timeline) so siblings of `.cv-timeline` — most importantly the
+// `.card-title` section header — can speak the same palette as the timeline
+// content beneath it. Timeline-specific tokens still live on `.cv-timeline`.
+.cv .card {
   --cv-text-primary: #111111;
   --cv-text-secondary: #444444;
   --cv-text-muted: #6b7280;
+}
+
+// Default institution size for time_table-style sections (Education,
+// Research, Teaching, etc.). Replaces the inline `style="font-size: 0.95rem"`
+// that used to live in `_includes/cv/time_table.html`. Keeping it in CSS
+// frees the institution to be re-scaled per section without `!important`.
+.cv .card .institution {
+  font-size: 0.95rem;
+}
+
+.cv .card .cv-timeline {
+  // Local theme tokens — keep the timeline rule + logo surface intentionally
+  // light so the logos read as anchors, not badges.
+  --cv-timeline-rule: rgba(0, 0, 0, 0.08);
+  --cv-timeline-logo-bg: rgba(0, 0, 0, 0.04);
 
   margin-top: 0.25rem;
 
@@ -928,14 +940,139 @@ $cv-timeline-marker-col: 52px;
   }
 }
 
-// Dark-mode overrides for the timeline rule + logo surface so the connector
-// and dashed dividers stay subtle against the dark card background.
-html[data-theme='dark'] .cv .card .cv-timeline {
-  --cv-timeline-rule: rgba(255, 255, 255, 0.08);
-  --cv-timeline-logo-bg: rgba(255, 255, 255, 0.05);
+// Dark-mode overrides. Card-level text tokens flip first so headers and
+// timeline body share the palette; timeline-specific rule + logo-surface
+// tokens stay scoped to `.cv-timeline` so the connector and dashed dividers
+// stay subtle against the dark card background.
+html[data-theme='dark'] .cv .card {
   --cv-text-primary: #f5f5f5;
   --cv-text-secondary: #d1d5db;
   --cv-text-muted: #9ca3af;
+}
+
+html[data-theme='dark'] .cv .card .cv-timeline {
+  --cv-timeline-rule: rgba(255, 255, 255, 0.08);
+  --cv-timeline-logo-bg: rgba(255, 255, 255, 0.05);
+}
+
+// =============================================================================
+// Resume identity hierarchy — re-rank sections per resume mode.
+// =============================================================================
+// Same components, different story:
+//
+//   Industry Resume → "I'm a software engineer who also did research."
+//     PRIMARY    : Professional Experience  (component default — left as-is)
+//     SECONDARY  : Academic Experience      (demoted below)
+//
+//   Academic CV   → "I'm a researcher who also has industry experience."
+//     PRIMARY    : Research Experience      (component default — left as-is)
+//     SECONDARY  : Professional Experience  (demoted below)
+//
+// We never restyle the primary rank — its component default already does the
+// work. We only DEMOTE the secondary section so the dominant one leads the
+// eye. Demotion targets the section header, role title, meta line, summary,
+// and bullet text. Hover still lifts a touch, but lands on text-primary
+// rather than the brand accent so soft sections never compete with the lead.
+// -----------------------------------------------------------------------------
+.resume-panel--industry #cv-industry-academic-experience,
+.resume-panel--academic #cv-academic-professional-experience {
+  > .card-title {
+    color: var(--cv-text-secondary);
+    font-weight: 600;
+    opacity: 0.92;
+  }
+
+  .cv-timeline-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--cv-text-secondary);
+  }
+
+  .cv-timeline-item:hover .cv-timeline-title {
+    color: var(--cv-text-primary);
+  }
+
+  .cv-timeline-meta {
+    font-size: 0.9rem;
+    color: var(--cv-text-muted);
+
+    strong,
+    .cv-timeline-org {
+      color: var(--cv-text-secondary);
+      font-weight: 600;
+    }
+  }
+
+  .cv-timeline-summary {
+    color: var(--cv-text-muted);
+  }
+
+  .cv-timeline-details-list > li {
+    color: var(--cv-text-muted);
+  }
+}
+
+// =============================================================================
+// Academic CV — intra-tier typography hierarchy.
+// =============================================================================
+// Within the academic CV's primary identity (research-led), Research and
+// Teaching both belong to the leading story, so they speak in primary tone —
+// but Research is the dominant signal and Teaching steps a half-tier below.
+// Professional Experience on this side is already demoted (1.15rem / 600,
+// muted body) by the resume identity hierarchy block above.
+//
+//   Research Experience  (LEAD)        : 1.25rem / 700 title, primary bullets
+//   Teaching Experience  (SUPPORTING)  : 1.15rem / 600 title, secondary bullets
+//   Institutions (both sections)       : 1.05rem / 600, primary
+//
+// Both sections render via the time_table component, so we target its
+// `.item h6.title` (role title) and `.item h6.institution` (institution).
+// Bullets live inside `ul.items`.
+// -----------------------------------------------------------------------------
+.resume-panel--academic {
+  // Shared family — institution + title cadence are consistent across the
+  // two leading sections so the eye reads them as one typographic system.
+  #cv-academic-research-experience,
+  #cv-academic-teaching-experience {
+    .item h6.title {
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    .item h6.institution {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--cv-text-primary);
+    }
+  }
+
+  // Research = lead.
+  #cv-academic-research-experience {
+    .item h6.title {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    ul.items > li,
+    ul.items > li > .item,
+    ul.items > li > .subitem {
+      color: var(--cv-text-primary);
+    }
+  }
+
+  // Teaching = supporting (one rung below research, still primary tone).
+  #cv-academic-teaching-experience {
+    .item h6.title {
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    ul.items > li,
+    ul.items > li > .item,
+    ul.items > li > .subitem {
+      color: var(--cv-text-secondary);
+    }
+  }
 }
 
 // Repositories
