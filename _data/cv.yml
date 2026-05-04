@@ -12,42 +12,52 @@
       logo_url: assets/img/logos/goodway-group.jpeg
       logo_link: https://www.goodwaygroup.com/
       year: 2021 — Present
-      summary: <strong>Architect and ship</strong> full-stack and AI-driven platforms across **GOES™** and **Goodlook™** — including RAG, NLQ, and agentic insight generation — while improving **RealValue™** stability (**40M+ daily decisions**) by **90%**.
+      summary: <strong>Architect and deliver</strong> AI-driven and distributed systems powering **GOES™** and **Goodlook™**, improving **RealValue™** (**40M+ daily decisions**) reliability by **90%**.
+      # summary: <strong>Architect and ship</strong> full-stack and AI-driven platforms across **GOES™** and **Goodlook™** — including RAG, NLQ, and agentic insight generation — while improving **RealValue™** stability (**40M+ daily decisions**) by **90%**.
       description:
-        - <strong>Improved</strong> stability of **RealValue™ (40M+ daily decisions)** by re-architecting validation and error handling, reducing production errors by **90%**
-        - <strong>Integrated</strong> backend microservices and REST/GraphQL APIs across **5+** external platforms (TTD, Bing, YouGov, Google Ads, Meta) using Node.js, Hapi.js, Apollo Federation, Python, and FastAPI, with high-volume ETL pipelines on Airflow (AWS MWAA), Argo Workflows, Adverity, Redshift, Snowflake, and S3 feeding React, Next.js, and Streamlit analytics surfaces, while co-leading DevOps and AI/MLOps governance
-        - <strong>Built and shipped</strong> production full-stack applications across the **GOES™** and **Goodlook™** platforms using Next.js 15 (App Router, React Server Components, Server Actions), React 19, TypeScript, MUI, shadcn/ui (Tailwind, Radix), TanStack Query/Table, Zustand, React Hook Form, and Zod on the frontend, and Hapi.js, Apollo GraphQL Federation, and tRPC type-safe APIs with PostgreSQL via Drizzle ORM, Sequelize, and Knex on the backend, plus Redis caching and BullMQ background workers, hardened with Vitest, Playwright, Storybook, and MSW, and instrumented with Datadog RUM, APM, and Pino structured logs
-        - <strong>Architected</strong> event-driven distributed systems on AWS Lambda, SNS, SQS (FIFO), and S3 (provisioned via AWS CDK and Serverless), replacing manual Jupyter notebook execution for the YouGov analysis pipeline with fully asynchronous processing that streams results back to the React/Next.js and Streamlit frontends in real time
-        - <strong>Designed and implemented</strong> AI-driven analytics within the **GOES™** Next.js + tRPC platform, including RAG, hierarchical insight generation (**Brand Compass**), and natural-language query (NLQ) backed by Snowflake Cortex Agents, Vercel AI SDK, AWS Bedrock (AgentCore), LangChain/LangGraph, CrewAI, Langfuse observability, and vector stores (Qdrant, ChromaDB), streaming inference responses to the React 19 UI via REST and Server Actions with Drizzle ORM persistence and Datadog tracing
+        - <strong>Re-architected</strong> validation and error handling for **RealValue™**, reducing production errors by **90%** at **40M+** daily-decision scale
+        - <strong>Built</strong> microservices and REST/GraphQL APIs across **5+** external platforms (TTD, Google Ads, Meta, YouGov), unifying data pipelines for production analytics
+        - <strong>Designed</strong> event-driven AWS systems (Lambda, SNS, SQS, S3), replacing manual workflows with fully asynchronous, real-time processing
+        - <strong>Shipped</strong> full-stack applications across **GOES™** and **Goodlook™** with Next.js, React, and TypeScript on Node.js, GraphQL, PostgreSQL, and Redis backends
+        - <strong>Implemented</strong> AI-driven analytics in **GOES™** — RAG, NLQ, and agentic pipelines (**Brand Compass**) — on Snowflake Cortex, LangChain, CrewAI, and vector stores, streaming real-time insights to production
+        # - <strong>Improved</strong> stability of **RealValue™ (40M+ daily decisions)** by re-architecting validation and error handling, reducing production errors by **90%**
+        # - <strong>Integrated</strong> backend microservices and REST/GraphQL APIs across **5+** external platforms (TTD, Bing, YouGov, Google Ads, Meta) using Node.js, Hapi.js, Apollo Federation, Python, and FastAPI, with high-volume ETL pipelines on Airflow (AWS MWAA), Argo Workflows, Adverity, Redshift, Snowflake, and S3 feeding React, Next.js, and Streamlit analytics surfaces, while co-leading DevOps and AI/MLOps governance
+        # - <strong>Built and shipped</strong> production full-stack applications across the **GOES™** and **Goodlook™** platforms using Next.js 15 (App Router, React Server Components, Server Actions), React 19, TypeScript, MUI, shadcn/ui (Tailwind, Radix), TanStack Query/Table, Zustand, React Hook Form, and Zod on the frontend, and Hapi.js, Apollo GraphQL Federation, and tRPC type-safe APIs with PostgreSQL via Drizzle ORM, Sequelize, and Knex on the backend, plus Redis caching and BullMQ background workers, hardened with Vitest, Playwright, Storybook, and MSW, and instrumented with Datadog RUM, APM, and Pino structured logs
+        # - <strong>Architected</strong> event-driven distributed systems on AWS Lambda, SNS, SQS (FIFO), and S3 (provisioned via AWS CDK and Serverless), replacing manual Jupyter notebook execution for the YouGov analysis pipeline with fully asynchronous processing that streams results back to the React/Next.js and Streamlit frontends in real time
+        # - <strong>Designed and implemented</strong> AI-driven analytics within the **GOES™** Next.js + tRPC platform, including RAG, hierarchical insight generation (**Brand Compass**), and natural-language query (NLQ) backed by Snowflake Cortex Agents, Vercel AI SDK, AWS Bedrock (AgentCore), LangChain/LangGraph, CrewAI, Langfuse observability, and vector stores (Qdrant, ChromaDB), streaming inference responses to the React 19 UI via REST and Server Actions with Drizzle ORM persistence and Datadog tracing
 
     - title: Senior Technical Operations Engineer (Business Intelligence)
       institution: Goodway Group
       logo_url: assets/img/logos/goodway-group.jpeg
       logo_link: https://www.goodwaygroup.com/
       year: 2018 — 2021
-      summary: <strong>Owned</strong> data reliability, integrity, and availability of marketing analytics systems (Airflow, Redshift, S3, Tableau) under strict daily data freshness SLAs.
+      summary: <strong>Owned</strong> reliability and data integrity of marketing analytics systems under strict daily SLA requirements.
       description:
-        - <strong>Owned</strong> data reliability, integrity, and availability of marketing analytics systems, managing end-to-end data operations and reporting infrastructure (Airflow, Redshift, S3, Tableau) under strict daily data freshness SLAs
-        - <strong>Led</strong> org-wide incident response, root-cause analysis, postmortem, and data discrepancy triage across pipeline and reporting systems, adopting preventative fixes and monitoring workflows that improved system stability and reduced recurring issues
+        - <strong>Managed</strong> end-to-end data infrastructure (Airflow, Redshift, S3, Tableau), ensuring consistent data freshness and reporting accuracy
+        - <strong>Led</strong> org-wide incident response and root-cause analysis across pipelines, reducing recurring data issues through monitoring and preventative fixes
+        - <strong>Established</strong> data validation and postmortem processes, improving system stability and cross-team trust in analytics outputs
 
     - title: Principal Campaign Operations Engineer
       institution: Goodway Group
       logo_url: assets/img/logos/goodway-group.jpeg
       logo_link: https://www.goodwaygroup.com/
       year: 2014 — 2018
-      summary: <strong>Built</strong> **COLT** (Cacidi On-Line Tool), a Node.js full-stack app that automated Adobe InDesign campaign production and cut creative turnaround by **~80% (from 10–12 business days to ~2 days)**.
+      summary: <strong>Built</strong> **COLT**, reducing campaign production time by **~80%** (**10–12 days → ~2 days**).
       description:
-        - <strong>Built</strong> **COLT** (Cacidi On-Line Tool), a full-stack web application on Node.js and JavaScript that augmented Adobe InDesign templates to parameterize ad copy and legal logic, automating campaign production and reducing creative turnaround by **~80% (from 10-12 business days to ~2 days)** to enable scalable execution across multi-location automotive clients (e.g., Chevrolet)
-        - <strong>Managed</strong> execution, QA, and reporting of programmatic campaigns across TTD, Google Ads, YouTube, and Meta, collaborating with ad operations and media trading to improve data-driven campaign pacing and performance
+        - <strong>Developed</strong> a full-stack Node.js application automating Adobe InDesign campaign generation through template parameterization of ad copy and legal logic
+        - <strong>Enabled</strong> scalable execution for multi-location clients (e.g., Chevrolet) by automating creative production workflows end-to-end
+        - <strong>Managed</strong> execution, QA, and performance optimization of programmatic campaigns across TTD, Google Ads, YouTube, and Meta
 
     - title: Senior SEO Strategist
       institution: IONOS (1&1 Internet)
       logo_url: assets/img/logos/ionos.svg
       logo_link: https://www.ionos.com/
       year: 2012 — 2014
-      summary: <strong>Established</strong> and analyzed SEO/SEM strategies for **300+** small business websites, improving organic visibility and traffic across US, UK, and Canadian markets.
+      summary: <strong>Drove</strong> SEO/SEM growth for **300+** small business websites across US, UK, and Canadian markets.
       description:
-        - <strong>Established</strong> and analyzed SEO and SEM strategies for **300+** small business websites through A/B testing of copy and creative variations, metatag optimization, user engagement behavior analysis (CTR, time-on-page), and keyword analysis, improving organic visibility and traffic across US, UK, and Canadian markets (Google Analytics, SEMrush)
+        - <strong>Led</strong> SEO/SEM strategy across keyword research, metatag optimization, and on-page experimentation
+        - <strong>Improved</strong> organic visibility and traffic through A/B testing of copy and creative, plus user engagement analysis (CTR, time-on-page)
+        - <strong>Analyzed</strong> performance and search trends across US, UK, and Canadian markets using Google Analytics and SEMrush
 
 # - title: Technical Systems & Capabilities
 #   type: map
