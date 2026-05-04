@@ -601,11 +601,17 @@ html[data-theme='dark'] .cv-toc.on-this-page {
 // Rounded company logo on the left, role + summary + expandable details on the
 // right. A dotted vertical connector links consecutive logos.
 
-$cv-timeline-logo-size: 56px;
-$cv-timeline-gap: 1.25rem;
-$cv-timeline-marker-col: 64px;
+$cv-timeline-logo-size: 44px;
+$cv-timeline-gap: 1.1rem;
+$cv-timeline-marker-col: 52px;
 
 .cv .card .cv-timeline {
+  // Local theme tokens — keep the timeline rule + logo surface intentionally
+  // light so the logos read as anchors, not badges. Overridden for dark mode
+  // below the main block.
+  --cv-timeline-rule: rgba(0, 0, 0, 0.08);
+  --cv-timeline-logo-bg: rgba(0, 0, 0, 0.04);
+
   margin-top: 0.25rem;
 
   .cv-timeline-item {
@@ -625,11 +631,11 @@ $cv-timeline-marker-col: 64px;
     &:not(.cv-timeline-item--last) .cv-timeline-marker::after {
       content: "";
       position: absolute;
-      left: calc(#{$cv-timeline-logo-size} / 2 - 1px);
+      left: calc(#{$cv-timeline-logo-size} / 2 - 0.5px);
       top: calc(#{$cv-timeline-logo-size} + 6px);
       bottom: -1.75rem;
       width: 0;
-      border-left: 1px solid var(--global-divider-color);
+      border-left: 1px solid var(--cv-timeline-rule);
     }
 
     // Dashed horizontal divider between consecutive roles, sitting under the
@@ -639,7 +645,7 @@ $cv-timeline-marker-col: 64px;
       content: "";
       display: block;
       margin-top: 1rem;
-      border-top: 1px dashed var(--global-divider-color);
+      border-top: 1px dashed var(--cv-timeline-rule);
     }
   }
 
@@ -648,17 +654,18 @@ $cv-timeline-marker-col: 64px;
     width: $cv-timeline-marker-col;
   }
 
+  // Logo as a flat circular anchor — no border, no shadow. The muted surface
+  // is the only thing distinguishing it from the page when the image has
+  // transparency (e.g. SVG logos).
   .cv-timeline-logo {
     width: $cv-timeline-logo-size;
     height: $cv-timeline-logo-size;
     border-radius: 50%;
     overflow: hidden;
-    background: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
+    background: var(--cv-timeline-logo-bg);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 
     a,
     img,
@@ -677,9 +684,8 @@ $cv-timeline-marker-col: 64px;
       align-items: center;
       justify-content: center;
       font-weight: 700;
-      font-size: 1.25rem;
+      font-size: 1rem;
       color: var(--global-text-color-light);
-      background: rgba(0, 0, 0, 0.04);
     }
   }
 
@@ -839,23 +845,23 @@ $cv-timeline-marker-col: 64px;
   // gaps and let the date badge wrap below the title.
   @media (max-width: 575px) {
     .cv-timeline-item {
-      grid-template-columns: 48px 1fr;
-      column-gap: 0.85rem;
+      grid-template-columns: 40px 1fr;
+      column-gap: 0.75rem;
       padding-bottom: 1.5rem;
     }
 
     .cv-timeline-marker {
-      width: 48px;
+      width: 40px;
     }
 
     .cv-timeline-logo {
-      width: 48px;
-      height: 48px;
+      width: 40px;
+      height: 40px;
     }
 
     .cv-timeline-item:not(.cv-timeline-item--last) .cv-timeline-marker::after {
-      left: 23px;
-      top: 54px;
+      left: 19.5px;
+      top: 46px;
       bottom: -1.5rem;
     }
 
@@ -869,6 +875,13 @@ $cv-timeline-marker-col: 64px;
       min-width: 95px;
     }
   }
+}
+
+// Dark-mode overrides for the timeline rule + logo surface so the connector
+// and dashed dividers stay subtle against the dark card background.
+html[data-theme='dark'] .cv .card .cv-timeline {
+  --cv-timeline-rule: rgba(255, 255, 255, 0.08);
+  --cv-timeline-logo-bg: rgba(255, 255, 255, 0.05);
 }
 
 // Repositories
