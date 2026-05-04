@@ -69,39 +69,53 @@
         - <strong>Mentored</strong> students in developing independent problem-solving skills beyond rote memorization
 
 - title: Professional Experience
-  type: time_table
+  type: experience_timeline
   contents:
     - title: Senior Software Engineer (Data Science, Scaled Media Solutions)
       institution: Goodway Group
+      logo_url: assets/img/logos/goodway-group.jpeg
+      logo_link: https://www.goodwaygroup.com/
       year: 2021 — Present
+      summary: <strong>Architect and develop</strong> AI-driven reasoning and distributed analytics systems within **GOES™** and **Goodlook™**, improving **RealValue™** (**40M+ daily decisions**) reliability by **90%**.
       description:
-        - <strong>Improved</strong> stability of **RealValue™ (40M+ daily decisions)** by re-architecting validation and error handling, reducing production errors by **90%**
-        - <strong>Designed and deployed</strong> distributed data pipelines and ETL systems (Airflow, MWAA, Argo, Redshift, Snowflake, S3) supporting large-scale marketing analytics and multi-source data ingestion
-        - <strong>Architected</strong> integrations across **5+** external platforms (TTD, Google Ads, Meta, YouGov, Bing), enabling unified data processing and cross-platform analytics
-        - <strong>Built</strong> event-driven systems (AWS Lambda, SNS, SQS FIFO, S3) to automate analytics workflows, replacing manual notebook-based processes with asynchronous, production-grade pipelines
-        - <strong>Architected</strong> AI-driven analytics capabilities within the **GOES™** platform, transforming campaign data into structured signals (SQL fact tables, benchmark thresholds, tradeoff logic) to enable LLM-based reasoning and insight generation
-        - <strong>Developed</strong> LLM-powered systems including RAG pipelines, streaming API integrations, and hierarchical insight generation (Brand Compass) using structured prompt engineering (CoT, ReAct, few-shot) and agentic workflows (CrewAI, LangChain, vector stores, Langfuse)
-        - <strong>Operated</strong> across backend, data, and AI system layers, bridging infrastructure, analytics, and LLM-driven reasoning in production environments
+        - <strong>Re-architected</strong> validation and error handling for **RealValue™**, reducing production errors by **90%** at **40M+** daily-decision scale
+        - <strong>Designed</strong> distributed ETL pipelines (Airflow, MWAA, Argo, Redshift, Snowflake, S3) and integrations across **5+** external platforms (TTD, Google Ads, Meta, YouGov, Bing), enabling large-scale, multi-source analytics
+        - <strong>Built</strong> event-driven AWS systems (Lambda, SNS, SQS FIFO, S3), replacing notebook-based processes with asynchronous, production-grade pipelines
+        - <strong>Formalized</strong> campaign data as structured signals (SQL fact tables, benchmark thresholds, tradeoff logic) within **GOES™**, enabling LLM-based reasoning and insight generation
+        - <strong>Developed</strong> LLM-powered reasoning systems (**Brand Compass**), including RAG pipelines and hierarchical insight generation, through structured prompt engineering (CoT, ReAct, few-shot) and agentic workflows (CrewAI, LangChain, Langfuse)
 
     - title: Senior Technical Operations Engineer (Business Intelligence)
       institution: Goodway Group
+      logo_url: assets/img/logos/goodway-group.jpeg
+      logo_link: https://www.goodwaygroup.com/
       year: 2018 — 2021
+      summary: <strong>Owned</strong> reliability and integrity of analytics infrastructure supporting production reporting systems under strict daily data freshness SLAs.
       description:
-        - <strong>Owned</strong> reliability, integrity, and availability of analytics infrastructure (Airflow, Redshift, S3, Tableau) supporting production reporting systems under strict data freshness SLAs
-        - <strong>Led</strong> organization-wide incident response, root cause analysis, and postmortem processes, implementing preventative monitoring and reducing recurring data pipeline failures
+        - <strong>Managed</strong> end-to-end analytics infrastructure (Airflow, Redshift, S3, Tableau), ensuring data freshness and reporting accuracy across production systems
+        - <strong>Led</strong> organization-wide incident response, root-cause analysis, and postmortem processes, reducing recurring pipeline failures through preventative monitoring
+        - <strong>Established</strong> data validation and observability practices, improving system stability and cross-team trust in analytical outputs
 
     - title: Principal Campaign Operations Engineer
       institution: Goodway Group
+      logo_url: assets/img/logos/goodway-group.jpeg
+      logo_link: https://www.goodwaygroup.com/
       year: 2014 — 2018
+      summary: <strong>Built</strong> **COLT**, a campaign-production automation system reducing creative turnaround by **~80%** (**10-12 days to ~2 days**).
       description:
-        - <strong>Built</strong> COLT, a web-based automation system for campaign production, reducing creative turnaround time by **~80% (10-12 days to ~2 days)** and enabling scalable execution across multi-location clients (e.g., Chevrolet)
-        - <strong>Managed</strong> execution and reporting of large-scale programmatic campaigns across platforms including TTD, Google Ads, YouTube, and Meta
+        - <strong>Developed</strong> a full-stack Node.js application that parameterized Adobe InDesign templates, automating ad copy and legal-logic workflows for campaign production
+        - <strong>Enabled</strong> scalable execution for multi-location clients (e.g., Chevrolet) by automating creative production end-to-end
+        - <strong>Managed</strong> execution, QA, and reporting of large-scale programmatic campaigns across TTD, Google Ads, YouTube, and Meta
 
     - title: Senior SEO Strategist
       institution: IONOS (1&1 Internet)
+      logo_url: assets/img/logos/ionos.svg
+      logo_link: https://www.ionos.com/
       year: 2012 — 2014
+      summary: <strong>Led</strong> SEO/SEM strategy for **300+** websites across US, UK, and Canadian markets.
       description:
-        - <strong>Led</strong> SEO and SEM strategy for **300+** websites using A/B testing, keyword analysis, and user behavior analytics (CTR, engagement), improving organic traffic across US, UK, and Canadian markets
+        - <strong>Designed</strong> SEO/SEM strategies grounded in keyword analysis, on-page experimentation, and metatag optimization
+        - <strong>Improved</strong> organic visibility and traffic through A/B testing of copy and creative, plus user behavior analytics (CTR, engagement)
+        - <strong>Analyzed</strong> performance and search trends across US, UK, and Canadian markets using Google Analytics and SEMrush
 
 # - title: Technical Systems & Capabilities
 #   type: map
