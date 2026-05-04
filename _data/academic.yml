@@ -71,7 +71,8 @@
 - title: Professional Experience
   type: experience_timeline
   contents:
-    - title: Senior Software Engineer (Data Science, Scaled Media Solutions)
+    - title: Senior Software Engineer
+      team: Data Science, Scaled Media Solutions
       institution: Goodway Group
       logo_url: assets/img/logos/goodway-group.jpeg
       logo_link: https://www.goodwaygroup.com/
@@ -84,7 +85,8 @@
         - <strong>Formalized</strong> campaign data as structured signals (SQL fact tables, benchmark thresholds, tradeoff logic) within **GOES™**, enabling LLM-based reasoning and insight generation
         - <strong>Developed</strong> LLM-powered reasoning systems (**Brand Compass**), including RAG pipelines and hierarchical insight generation, through structured prompt engineering (CoT, ReAct, few-shot) and agentic workflows (CrewAI, LangChain, Langfuse)
 
-    - title: Senior Technical Operations Engineer (Business Intelligence)
+    - title: Senior Technical Operations Engineer
+      team: Business Intelligence
       institution: Goodway Group
       logo_url: assets/img/logos/goodway-group.jpeg
       logo_link: https://www.goodwaygroup.com/

@@ -7,7 +7,8 @@
 - title: Professional Experience
   type: experience_timeline
   contents:
-    - title: Senior Software Engineer (Data Science, Scaled Media Solutions)
+    - title: Senior Software Engineer
+      team: Data Science, Scaled Media Solutions
       institution: Goodway Group
       logo_url: assets/img/logos/goodway-group.jpeg
       logo_link: https://www.goodwaygroup.com/
@@ -26,7 +27,8 @@
         # - <strong>Architected</strong> event-driven distributed systems on AWS Lambda, SNS, SQS (FIFO), and S3 (provisioned via AWS CDK and Serverless), replacing manual Jupyter notebook execution for the YouGov analysis pipeline with fully asynchronous processing that streams results back to the React/Next.js and Streamlit frontends in real time
         # - <strong>Designed and implemented</strong> AI-driven analytics within the **GOES™** Next.js + tRPC platform, including RAG, hierarchical insight generation (**Brand Compass**), and natural-language query (NLQ) backed by Snowflake Cortex Agents, Vercel AI SDK, AWS Bedrock (AgentCore), LangChain/LangGraph, CrewAI, Langfuse observability, and vector stores (Qdrant, ChromaDB), streaming inference responses to the React 19 UI via REST and Server Actions with Drizzle ORM persistence and Datadog tracing
 
-    - title: Senior Technical Operations Engineer (Business Intelligence)
+    - title: Senior Technical Operations Engineer
+      team: Business Intelligence
       institution: Goodway Group
       logo_url: assets/img/logos/goodway-group.jpeg
       logo_link: https://www.goodwaygroup.com/

@@ -59,14 +59,23 @@
         <div class="cv-timeline-headline">
           <div class="cv-timeline-headline-text">
             {% if content.title %}
-              <h6 class="cv-timeline-title font-weight-bold">{{ content.title }}</h6>
+              <h6 class="cv-timeline-title">{{ content.title }}</h6>
             {% endif %}
-            {% if content.institution %}
-              <div class="cv-timeline-company">{{ content.institution }}</div>
-            {% endif %}
-            {% if content.location %}
-              <div class="cv-timeline-location">{{ content.location }}</div>
-            {% endif %}
+            {%- if content.institution or content.team or content.location -%}
+              <div class="cv-timeline-meta">
+                {%- if content.institution -%}
+                  <strong class="cv-timeline-org">{{ content.institution }}</strong>
+                {%- endif -%}
+                {%- if content.team -%}
+                  {%- if content.institution %}<span class="cv-timeline-meta-sep" aria-hidden="true">·</span>{%- endif -%}
+                  <span class="cv-timeline-team">{{ content.team }}</span>
+                {%- endif -%}
+                {%- if content.location -%}
+                  {%- if content.institution or content.team %}<span class="cv-timeline-meta-sep" aria-hidden="true">·</span>{%- endif -%}
+                  <span class="cv-timeline-location">{{ content.location }}</span>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
           </div>
           {% if content.year %}
             <span class="badge font-weight-bold danger-color-dark cv-timeline-date">{{ content.year }}</span>

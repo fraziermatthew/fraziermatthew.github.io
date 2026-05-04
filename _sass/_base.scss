@@ -607,10 +607,15 @@ $cv-timeline-marker-col: 52px;
 
 .cv .card .cv-timeline {
   // Local theme tokens — keep the timeline rule + logo surface intentionally
-  // light so the logos read as anchors, not badges. Overridden for dark mode
+  // light so the logos read as anchors, not badges. Text tier tokens mirror
+  // the elite-portfolio hierarchy: primary (title) → secondary (company /
+  // summary body) → muted (team, location). All overridden for dark mode
   // below the main block.
   --cv-timeline-rule: rgba(0, 0, 0, 0.08);
   --cv-timeline-logo-bg: rgba(0, 0, 0, 0.04);
+  --cv-text-primary: #111111;
+  --cv-text-secondary: #444444;
+  --cv-text-muted: #6b7280;
 
   margin-top: 0.25rem;
 
@@ -707,23 +712,51 @@ $cv-timeline-marker-col: 52px;
     min-width: 0;
   }
 
+  // Role title — dominant tier in the elite-portfolio hierarchy.
+  // Recruiters scan the title first, so it gets the strongest weight, the
+  // primary text color, and a tight tracking for an editorial feel.
   .cv-timeline-title {
-    font-size: 1rem;
-    margin: 0 0 0.15rem 0;
-    line-height: 1.35;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: var(--cv-text-primary);
+    margin: 0;
+    transition: color 0.2s ease;
   }
 
-  .cv-timeline-company {
+  // Meta line: Company (strong) · Team · Location.
+  // Inline flex with explicit separators so the gap is consistent regardless
+  // of which fields are present (e.g. company-only roles still look right).
+  .cv-timeline-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
     font-size: 0.95rem;
     font-weight: 500;
-    color: var(--global-text-color);
-    line-height: 1.35;
+    color: var(--cv-text-muted);
+    line-height: 1.4;
   }
 
+  // Company name carries the secondary tier so it lands between the
+  // dominant title and the muted team/location detail.
+  .cv-timeline-meta strong,
+  .cv-timeline-meta .cv-timeline-org {
+    color: var(--cv-text-secondary);
+    font-weight: 600;
+  }
+
+  .cv-timeline-meta-sep {
+    color: var(--cv-text-muted);
+    opacity: 0.7;
+    user-select: none;
+  }
+
+  .cv-timeline-team,
   .cv-timeline-location {
-    font-size: 0.85rem;
-    color: var(--global-text-color-light);
-    margin-top: 0.1rem;
+    color: var(--cv-text-muted);
   }
 
   // Reuse the same brown accent badge used by the legacy time_table layout
@@ -739,10 +772,16 @@ $cv-timeline-marker-col: 52px;
   }
 
   .cv-timeline-summary {
-    margin: 0.6rem 0 0.4rem 0;
-    font-size: 0.95rem;
-    line-height: 1.55;
-    color: var(--global-text-color);
+    margin: 10px 0 0.4rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--cv-text-secondary);
+  }
+
+  // Premium micro-interaction: title shifts to the brown accent on item
+  // hover. Transition lives on the title itself so unhover animates back.
+  .cv-timeline-item:hover .cv-timeline-title {
+    color: var(--global-theme-color);
   }
 
   .cv-timeline-details {
@@ -882,6 +921,9 @@ $cv-timeline-marker-col: 52px;
 html[data-theme='dark'] .cv .card .cv-timeline {
   --cv-timeline-rule: rgba(255, 255, 255, 0.08);
   --cv-timeline-logo-bg: rgba(255, 255, 255, 0.05);
+  --cv-text-primary: #f5f5f5;
+  --cv-text-secondary: #d1d5db;
+  --cv-text-muted: #9ca3af;
 }
 
 // Repositories
@@ -1185,8 +1227,14 @@ html[data-theme='dark'] .cv .card .cv-timeline {
       .abbr {
         margin-bottom: 0.5rem;
 
+        // Flex centering instead of `display: block; text-align: center` —
+        // guarantees the inner text (or anchor) is visually centered even
+        // when the child is an inline `<a>` whose layout box is content-
+        // sized rather than full-width.
         abbr {
-          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 100%;
           box-sizing: border-box;
           text-align: center;
@@ -1194,6 +1242,21 @@ html[data-theme='dark'] .cv .card .cv-timeline {
           padding-left: 1rem;
           padding-right: 1rem;
 
+          // The linked variant: anchor becomes the full-width centered surface
+          // so its hover transform/box-shadow and text alignment are stable.
+          > a.pub-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: white;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+
+          // Fallback for any other anchor shape (e.g. legacy `a` without
+          // `.pub-button`) — keep text white + no underline on hover.
           a {
             color: white;
 
