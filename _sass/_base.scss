@@ -781,7 +781,8 @@ $cv-timeline-marker-col: 52px;
   // Premium micro-interaction: title shifts to the brown accent on item
   // hover. Transition lives on the title itself so unhover animates back.
   .cv-timeline-item:hover .cv-timeline-title {
-    color: var(--global-theme-color);
+    // color: var(--global-theme-color);
+    color: var(--text-primary);
   }
 
   .cv-timeline-details {
