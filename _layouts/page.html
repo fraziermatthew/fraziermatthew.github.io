@@ -25,6 +25,27 @@ layout: default
               {%- endfor %}
             </div>
             {%- endif %}
+            {%- comment -%}
+              Hero CTAs — only render when the project ships with public links.
+              Primary "Try Live App" + secondary "View Code". See the
+              .project-actions / .project-btn rules in assets/css/main.scss.
+            {%- endcomment -%}
+            {%- comment -%}
+              Inner <span> is just the arrow; the label is a bare text node so
+              the .project-btn:hover span rule (translateX 2px) only nudges
+              the arrow on hover, not the whole label. Flex `gap` controls
+              spacing between the label and arrow.
+            {%- endcomment -%}
+            {%- if page.live_url or page.code_url %}
+            <div class="project-actions">
+              {%- if page.live_url %}
+              <a class="project-btn project-btn--primary" href="{{ page.live_url }}" target="_blank" rel="noopener noreferrer">Try Live App<span aria-hidden="true">→</span></a>
+              {%- endif %}
+              {%- if page.code_url %}
+              <a class="project-btn project-btn--secondary" href="{{ page.code_url }}" target="_blank" rel="noopener noreferrer">View Code<span aria-hidden="true">→</span></a>
+              {%- endif %}
+            </div>
+            {%- endif %}
             {%- else -%}
             <p class="post-description">{{ page.description }}</p>
             {%- endif -%}

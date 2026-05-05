@@ -281,20 +281,38 @@ html[data-theme='dark'] .projects .card p {
   color: rgba(255, 255, 255, 0.62);
 }
 
-.projects .grid-item > a .card {
+// .grid-item now contains .card directly (no wrapping <a>) so hover keys on the
+// grid-item itself; the stretched .card-link-stretched <a> inside .card-title
+// is what makes the whole surface clickable. See _includes/projects.html.
+.projects .grid-item .card {
+  position: relative; // stretched-link anchor target
   transition:
     transform 0.18s ease,
     box-shadow 0.18s ease,
     border-color 0.18s ease;
 }
 
-.projects .grid-item > a:hover .card {
+.projects .grid-item:hover .card {
   transform: translateY(-2px);
 }
 
-html[data-theme='dark'] .projects .grid-item > a:hover .card {
+html[data-theme='dark'] .projects .grid-item:hover .card {
   border-color: rgba(211, 171, 134, 0.22);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+// Stretched link — title <a> covers the whole card so any click on the card
+// (outside of nested action buttons) opens the project detail page.
+.projects .grid-item .card-link-stretched {
+  color: inherit;
+  text-decoration: none;
+}
+
+.projects .grid-item .card-link-stretched::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 html[data-theme='dark'] .projects .grid-item .project-image-wrapper {
@@ -350,12 +368,151 @@ html[data-theme='dark'] .project-tech-pill {
 
 // Card-level hover gives pills a subtle accent shift, reinforcing that the whole
 // card is one interactive unit (matches the brown accent used on resume pills).
-.projects .grid-item > a:hover .project-tech-pill {
+.projects .grid-item:hover .project-tech-pill {
   border-color: rgba(140, 71, 32, 0.18);
 }
 
-html[data-theme='dark'] .projects .grid-item > a:hover .project-tech-pill {
+html[data-theme='dark'] .projects .grid-item:hover .project-tech-pill {
   border-color: rgba(227, 184, 148, 0.22);
+}
+
+// ---------------------------------------------------------------------------
+// Project action buttons (.project-actions row + .project-btn)
+//
+// Three surfaces share the same classes — sizing varies by container:
+//   1. _layouts/page.html  → hero CTAs under the project-detail tags
+//      ("Try Live App" primary + "View Code" secondary, side-by-side)
+//   2. _includes/projects.html  → single primary "Live App" on each
+//      project-index card
+//   3. _includes/featured_work.html  → single primary "Live App" on the
+//      home Featured Work card
+//
+// Both card surfaces also use a stretched-link <a> over the card to keep
+// "click anywhere → project detail" UX. The .project-btn sits at
+// `position: relative; z-index: 2` so its own click reaches the live URL
+// instead of bubbling to the stretched link. (See the .card-link-stretched
+// and .featured-work-card-link rules elsewhere in this file.)
+//
+// Color system: primary uses --global-theme-color (brown accent in light,
+// tan #d3ab86 in dark) — matching links, focus rings, and resume pills.
+// Secondary is a quiet outline that picks up the accent only on hover.
+// ---------------------------------------------------------------------------
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.8rem;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 32px;
+  padding: 0.45rem 0.8rem;
+  border-radius: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.project-btn:hover {
+  text-decoration: none;
+}
+
+// Inner <span> (the arrow) eases right on hover, giving the button a quiet
+// directional cue without a button-level shift on every variant.
+.project-btn span {
+  transition: transform 160ms ease;
+}
+
+.project-btn:hover span {
+  transform: translateX(2px);
+}
+
+// Primary — accent-tinted (quiet, brand-aligned). Subtle background fill in
+// the brown/tan accent + accent-color text. Only the primary lifts on hover
+// so the visual hierarchy stays clear when paired with secondary.
+.project-btn--primary {
+  background: rgba(140, 71, 32, 0.08);
+  color: var(--global-theme-color);
+  border: 1px solid rgba(140, 71, 32, 0.18);
+  box-shadow: none;
+}
+
+.project-btn--primary:hover,
+.project-btn--primary:focus-visible {
+  background: rgba(140, 71, 32, 0.14);
+  border-color: rgba(140, 71, 32, 0.28);
+  transform: translateY(-1px);
+}
+
+// Secondary — quiet outlined. Reads as a calm "view code" affordance; picks
+// up the accent only when the user reaches for it.
+.project-btn--secondary {
+  background: transparent;
+  color: var(--global-text-color-light);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.project-btn--secondary:hover,
+.project-btn--secondary:focus-visible {
+  color: var(--global-theme-color);
+  border-color: rgba(140, 71, 32, 0.3);
+  background: rgba(140, 71, 32, 0.04);
+}
+
+// Dark mode — same translucency strategy keyed on the tan accent (#d3ab86)
+// instead of the brown (#8c4720) to keep contrast comfortable on the dark bg.
+html[data-theme='dark'] .project-btn--primary {
+  background: rgba(211, 171, 134, 0.08);
+  color: var(--global-theme-color);
+  border-color: rgba(211, 171, 134, 0.22);
+}
+
+html[data-theme='dark'] .project-btn--primary:hover,
+html[data-theme='dark'] .project-btn--primary:focus-visible {
+  background: rgba(211, 171, 134, 0.16);
+  border-color: rgba(211, 171, 134, 0.34);
+}
+
+html[data-theme='dark'] .project-btn--secondary {
+  color: var(--global-text-color-light);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+html[data-theme='dark'] .project-btn--secondary:hover,
+html[data-theme='dark'] .project-btn--secondary:focus-visible {
+  color: var(--global-theme-color);
+  border-color: rgba(211, 171, 134, 0.34);
+  background: rgba(211, 171, 134, 0.06);
+}
+
+// ---- Card-scoped overrides ----------------------------------------------
+// The base size now matches what cards need, so cards only adjust spacing
+// and stacking — no sizing override required. position/z-index lifts the
+// button above the stretched <a> so its own click goes to the live URL
+// instead of bubbling to the project-detail link spanning the whole card.
+
+.featured-work-card .project-actions,
+.projects .grid-item .project-actions {
+  margin-top: 1.15rem;
+}
+
+.featured-work-card .project-btn,
+.projects .grid-item .project-btn {
+  position: relative;
+  z-index: 2;
 }
 
 // Individual project write-ups (_projects/** — `page_class: project-detail` in front matter)
@@ -913,6 +1070,7 @@ html[data-theme='dark'] .post.about-page .about-highlight-strip {
 }
 
 .post.about-page .featured-work-card {
+  position: relative; // stretched-link target — see .featured-work-card-link below
   display: flex;
   flex-direction: column;
   color: inherit;
@@ -928,6 +1086,17 @@ html[data-theme='dark'] .post.about-page .about-highlight-strip {
     background-color 0.18s ease,
     border-color 0.18s ease,
     box-shadow 0.18s ease;
+}
+
+// Stretched link — invisible <a> spanning the card so the whole surface is
+// clickable (preserves prior wrapping-anchor behavior). The Live App action
+// button inside the card sits at z-index: 2 so it captures its own clicks.
+.post.about-page .featured-work-card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 
 .post.about-page .featured-work-card:hover {

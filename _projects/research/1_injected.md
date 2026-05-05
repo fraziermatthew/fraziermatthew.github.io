@@ -20,12 +20,19 @@ tech_stack:
   - "Langfuse"
   - "Evaluation Frameworks"
   - "CWE Analysis"
+  - "Case Study"
 # Home "Featured Work" — shown when `featured: true` (see _includes/featured_work.html)
 featured: true
 featured_title: "InjectEd"
 featured_description: "Multi-agent system that injects, scores, and selects vulnerabilities in student code to generate structured security learning outcomes."
 # featured_description: "Evaluation-driven multi-agent system that injects, scores, and selects vulnerabilities in student code to generate structured security learning outcomes."
 featured_meta: "Research Systems • Multi-Agent AI • Security Education"
+# Action buttons rendered on the index card, the home Featured Work card, and the
+# project-detail hero. Both fields are optional — only the corresponding button
+# renders when its URL is set, so other projects without a deployed app or
+# public repo continue to render unchanged.
+live_url: "https://injected.vercel.app"
+code_url: "https://github.com/fraziermatthew/injected"
 ---
 
 <p class="project-detail__nav">

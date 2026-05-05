@@ -20,7 +20,16 @@
     {%- for project in featured_projects %}
       {%- assign card_title = project.featured_title | default: project.title -%}
       {%- assign card_desc = project.featured_description | default: project.description -%}
-    <a class="featured-work-card" href="{{ project.url | relative_url }}">
+    {%- comment -%}
+      Card was previously a wrapping <a>. To allow a nested "Live App" action
+      button (valid HTML forbids <a> inside <a>) the card is now a <div> with
+      a stretched <a class="featured-work-card-link"> spanning the whole card.
+      The action button sits position: relative; z-index: 2 above it.
+    {%- endcomment -%}
+    <div class="featured-work-card">
+      <a class="featured-work-card-link" href="{{ project.url | relative_url }}" aria-label="{{ card_title | strip_html }} project details">
+        {{ card_title | strip_html }} project details
+      </a>
       {%- if project.img %}
       <div class="featured-work-image-wrap">
         <img src="{{ project.img | relative_url }}" alt="{{ card_title | strip_html }} preview" loading="lazy">
@@ -57,8 +66,18 @@
           {%- endfor %}
         </div>
         {%- endif %}
+        {%- comment -%}
+          Per surface policy: Featured Work card shows only the primary
+          Live App CTA (View Code is reserved for the projects-index card
+          and the project-detail hero, which have more room to breathe).
+        {%- endcomment -%}
+        {%- if project.live_url %}
+        <div class="project-actions">
+          <a class="project-btn project-btn--primary" href="{{ project.live_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ card_title | strip_html }} live app in a new tab">Live App<span aria-hidden="true">→</span></a>
+        </div>
+        {%- endif %}
       </div>
-    </a>
+    </div>
     {%- endfor %}
   </div>
 </div>

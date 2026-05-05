@@ -1,44 +1,68 @@
 <!-- _includes/projects.html -->
+{%- comment -%}
+  Card was previously a wrapping <a>. To allow a nested "Live App" action
+  button (valid HTML forbids <a> inside <a>) the card title is now a
+  stretched <a class="card-link-stretched"> via ::after positioned over the
+  whole .card surface. The optional Live App button sits position: relative;
+  z-index: 2 so it captures its own clicks above the stretched link.
+  See the .project-cta-card and .card-link-stretched rules in main.scss.
+{%- endcomment -%}
 <div class="grid-item">
-  {% if project.redirect -%}
-  <a href="{{ project.redirect }}">
-    {%- else -%}
-    <a href="{{ project.url | relative_url }}">
+  <div class="card hoverable">
+    {%- if project.img %}
+    <div class="project-image-wrapper">
+      {%- include figure.html
+        path=project.img
+        alt="project thumbnail" -%}
+    </div>
+    {%- endif %}
+    <div class="card-body">
+      <h2 class="card-title">
+        {%- if project.redirect -%}
+        <a href="{{ project.redirect }}" class="card-link-stretched">{{ project.title }}</a>
+        {%- else -%}
+        <a href="{{ project.url | relative_url }}" class="card-link-stretched">{{ project.title }}</a>
+        {%- endif -%}
+      </h2>
+      <p class="card-text">{{ project.description }}</p>
+      {%- if project.tech_stack and project.tech_stack.size > 0 %}
+      <div class="project-tech-pills" role="list" aria-label="Technologies used">
+        {%- for tech in project.tech_stack %}
+        <span class="project-tech-pill" role="listitem">{{ tech }}</span>
+        {%- endfor %}
+      </div>
       {%- endif %}
-      <div class="card hoverable">
-        {%- if project.img %}
-        <div class="project-image-wrapper">
-          {%- include figure.html
-            path=project.img
-            alt="project thumbnail" -%}
+      {%- comment -%}
+        Per surface policy: projects-index card pairs Live App (primary)
+        with View Code (secondary) when both URLs are present. Either
+        button renders standalone if only one URL is set — keeps other
+        projects without a deployed app or public repo from breaking.
+      {%- endcomment -%}
+      {%- if project.live_url or project.code_url %}
+      <div class="project-actions">
+        {%- if project.live_url %}
+        <a class="project-btn project-btn--primary" href="{{ project.live_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ project.title | strip_html }} live app in a new tab">Live App<span aria-hidden="true">→</span></a>
+        {%- endif %}
+        {%- if project.code_url %}
+        <a class="project-btn project-btn--secondary" href="{{ project.code_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ project.title | strip_html }} source code on GitHub">View Code<span aria-hidden="true">→</span></a>
+        {%- endif %}
+      </div>
+      {%- endif %}
+      <div class="row ml-1 mr-1 p-0">
+        {%- if project.github -%}
+        <div class="github-icon">
+          <div class="icon" data-toggle="tooltip" title="Code Repository">
+            <a href="{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
+          </div>
+          {%- if project.github_stars -%}
+          <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+            <i class="fas fa-star"></i>
+            <span id="{{ project.github_stars }}-stars"></span>
+          </span>
+          {%- endif %}
         </div>
         {%- endif %}
-        <div class="card-body">
-          <h2 class="card-title">{{ project.title }}</h2>
-          <p class="card-text">{{ project.description }}</p>
-          {%- if project.tech_stack and project.tech_stack.size > 0 %}
-          <div class="project-tech-pills" role="list" aria-label="Technologies used">
-            {%- for tech in project.tech_stack %}
-            <span class="project-tech-pill" role="listitem">{{ tech }}</span>
-            {%- endfor %}
-          </div>
-          {%- endif %}
-          <div class="row ml-1 mr-1 p-0">
-            {%- if project.github -%}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
-              </div>
-              {%- if project.github_stars -%}
-              <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                <i class="fas fa-star"></i>
-                <span id="{{ project.github_stars }}-stars"></span>
-              </span>
-              {%- endif %}
-            </div>
-            {%- endif %}
-          </div>
-        </div>
       </div>
-    </a>
+    </div>
+  </div>
 </div>
